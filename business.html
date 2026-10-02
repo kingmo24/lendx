@@ -1256,5 +1256,18 @@ footer { background: rgb(15, 23, 42); border-top: 1px solid rgba(255, 255, 255, 
 }
 @media(min-width:901px){.ham-btn{display:none!important}}
 @media(max-width:540px){.n-outline{display:none!important}}
+
+/* Fix: remove body padding-top left over from fixed-nav pages */
+body{padding-top:0!important;margin-top:0!important}
+html{margin-top:0!important;padding-top:0!important}
+/* Fix: ensure logo SVG always renders at correct size regardless of page CSS */
+.brand .lx-logo-svg,
+svg.lx-logo-svg,
+.nav .lx-logo-svg{
+  width:36px!important;height:36px!important;min-width:36px!important;
+  display:block!important;flex-shrink:0!important;
+}
+/* Fix: brand link always same height, no extra padding */
+.brand{padding:0!important;margin:0!important}
 </style>
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowmode="open"><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
