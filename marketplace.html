@@ -1,0 +1,2079 @@
+<!DOCTYPE html><html lang="en" crxlauncher-bridged="" crxlauncher=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+@charset "utf-8";
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+</style><style>
+@charset "utf-8";
+
+
+
+</style><style>
+@charset "utf-8";
+
+:root { --ink: #0b1523; --ink-2: #1c2e45; --ink-3: #2d4263; --cobalt: #059669; --cobalt-2: #047857; --cobalt-light: #d1fae5; --sky: #34d399; --white: #fff; --off: #f7f9fc; --off-2: #eef2f9; --border: #dde4f0; --border-2: #c8d4e8; --muted: #6278a0; --text: #1a2540; --text-2: #384e72; --green: #22c55e; --green-bg: #dcfce7; --green-text: #15803d; --amber: #f59e0b; --amber-bg: #fef3c7; --amber-text: #92400e; --red: #ef4444; --red-bg: #fee2e2; --red-text: #b91c1c; --sh-sm: 0 2px 12px rgba(11,21,35,.06); --sh: 0 8px 40px rgba(11,21,35,.10); --sh-lg: 0 24px 80px rgba(11,21,35,.14); --font: 'Nunito',-apple-system,BlinkMacSystemFont,'SF Pro Rounded',sans-serif; --nav-h: 60px; --bottom-h: 68px; }
+
+*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+html { font-size: 16px; scroll-behavior: smooth; overflow-x: hidden; max-width: 100%; text-size-adjust: 100%; }
+
+body { font-family: var(--font); color: var(--text); background: var(--off); -webkit-font-smoothing: antialiased; overflow-x: hidden; max-width: 100%; width: 100%; position: relative; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 14px; font-family: var(--font); font-weight: 800; cursor: pointer; transition: 0.18s; text-decoration: none; }
+
+.btn-primary { background: var(--cobalt); color: rgb(255, 255, 255); box-shadow: rgba(5, 150, 105, 0.3) 0px 4px 16px; }
+
+.btn-primary:hover { background: var(--cobalt-2); transform: translateY(-1px); box-shadow: rgba(5, 150, 105, 0.4) 0px 6px 22px; }
+
+.btn-ghost { background: var(--off-2); color: var(--text-2); border: 1.5px solid var(--border); }
+
+.btn-ghost:hover { border-color: var(--cobalt); color: var(--cobalt); }
+
+.btn-sm { padding: 9px 18px; font-size: 0.84rem; }
+
+.btn-md { padding: 13px 24px; font-size: 0.93rem; }
+
+.btn-lg { padding: 15px 28px; font-size: 1rem; width: 100%; }
+
+.card { background: var(--white); border-radius: 20px; border: 1px solid var(--border); box-shadow: var(--sh-sm); }
+
+.pill { display: inline-flex; align-items: center; border-radius: 999px; font-size: 0.72rem; font-weight: 700; padding: 3px 10px; gap: 5px; }
+
+.pill-green { background: var(--green-bg); color: var(--green-text); }
+
+.pill-amber { background: var(--amber-bg); color: var(--amber-text); }
+
+.pill-red { background: var(--red-bg); color: var(--red-text); }
+
+.pill-blue { background: var(--cobalt-light); color: var(--cobalt); }
+
+input, select { font-family: var(--font); font-size: 1rem; font-weight: 500; color: var(--text); outline: none; transition: border-color 0.17s; }
+
+.fi { width: 100%; padding: 12px 15px; border: 1.5px solid var(--border); border-radius: 12px; background: var(--off); }
+
+.fi:focus { border-color: var(--cobalt); background: var(--white); }
+
+.label { display: block; font-size: 0.78rem; font-weight: 700; color: var(--text-2); margin-bottom: 6px; }
+
+.section-title { font-size: 1.05rem; font-weight: 800; color: var(--ink); letter-spacing: -0.02em; }
+
+.section-sub { font-size: 0.82rem; color: var(--muted); font-weight: 500; margin-top: 3px; }
+
+#view-auth, #view-app { min-height: 100vh; }
+
+.hidden { display: none !important; }
+
+#view-auth { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 32px 20px 48px; background: linear-gradient(160deg,#ecfdf5 0%,#f0fdf4 40%,var(--off) 100%); min-height: 100vh; }
+
+.auth-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; text-decoration: none; }
+
+.auth-logo-mark { height: 44px; width: auto; }
+
+.auth-logo-word { font-family: var(--font); font-weight: 800; font-size: 1.3rem; color: var(--ink); letter-spacing: -0.025em; }
+
+.auth-logo-word span { color: var(--cobalt); }
+
+.auth-hero { text-align: center; margin-bottom: 28px; max-width: 380px; }
+
+.auth-hero h1 { font-size: 1.55rem; font-weight: 900; color: var(--ink); letter-spacing: -0.03em; line-height: 1.2; margin-bottom: 8px; }
+
+.auth-hero h1 span { color: var(--cobalt); }
+
+.auth-hero p { font-size: 0.88rem; color: var(--muted); font-weight: 500; line-height: 1.5; }
+
+.auth-trust { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
+
+.auth-trust-item { display: flex; align-items: center; gap: 5px; font-size: 0.72rem; font-weight: 700; color: var(--muted); }
+
+.auth-trust-item svg { width: 13px; height: 13px; stroke: var(--cobalt); }
+
+.auth-box { width: 100%; max-width: 420px; background: var(--white); border-radius: 24px; border: 1px solid var(--border); box-shadow: var(--sh-lg); overflow: hidden; }
+
+.auth-cta-row { display: flex; gap: 10px; width: 100%; max-width: 420px; margin-bottom: 20px; background: var(--white); padding: 6px; border-radius: 20px; border: 1px solid var(--border); box-shadow: var(--sh-sm); }
+
+.auth-cta-btn { flex: 1 1 0%; padding: 13px 20px; border-radius: 14px; font-family: var(--font); font-size: 0.95rem; font-weight: 800; cursor: pointer; transition: 0.2s; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; letter-spacing: -0.01em; }
+
+.auth-cta-btn.primary { background: var(--cobalt); color: rgb(255, 255, 255); box-shadow: rgba(5, 150, 105, 0.35) 0px 3px 12px; }
+
+.auth-cta-btn.primary:hover { background: var(--cobalt-2); transform: translateY(-1px); box-shadow: rgba(5, 150, 105, 0.45) 0px 6px 20px; }
+
+.auth-cta-btn.ghost { background: transparent; color: var(--muted); }
+
+.auth-cta-btn.ghost:hover { color: var(--cobalt); background: var(--cobalt-light); }
+
+.auth-box-header { padding: 24px 28px 0px; display: flex; flex-direction: column; gap: 3px; }
+
+#auth-box-title { font-size: 1.2rem; font-weight: 900; color: var(--ink); letter-spacing: -0.025em; }
+
+#auth-box-sub { font-size: 0.82rem; color: var(--muted); font-weight: 500; }
+
+.auth-body { padding: 20px 28px 28px; }
+
+.auth-form { display: flex; flex-direction: column; gap: 16px; }
+
+.auth-form-group { display: flex; flex-direction: column; }
+
+.auth-sep { display: flex; align-items: center; gap: 12px; margin: 4px 0px; font-size: 0.75rem; font-weight: 600; color: var(--muted); }
+
+.auth-sep::before, .auth-sep::after { content: ""; flex: 1 1 0%; height: 1px; background: var(--border); }
+
+.auth-social { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px; border-radius: 12px; border: 1.5px solid var(--border); background: var(--off); font-family: var(--font); font-size: 0.88rem; font-weight: 700; color: var(--text); cursor: pointer; transition: 0.17s; width: 100%; }
+
+.auth-social:hover { border-color: var(--cobalt); color: var(--cobalt); }
+
+.auth-note { font-size: 0.72rem; color: var(--muted); text-align: center; line-height: 1.5; margin-top: 8px; }
+
+.auth-note a { color: var(--cobalt); }
+
+.oauth-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+
+.oauth-btn { display: flex; align-items: center; justify-content: center; gap: 7px; padding: 11px 8px; border-radius: 12px; border: 1.5px solid var(--border); background: var(--off); font-family: var(--font); font-size: 0.82rem; font-weight: 700; color: var(--text); cursor: pointer; transition: 0.17s; }
+
+.oauth-btn:hover { border-color: var(--cobalt); background: var(--cobalt-light); color: var(--cobalt); }
+
+.auth-error { background: var(--red-bg); color: var(--red-text); border-radius: 10px; padding: 10px 14px; font-size: 0.82rem; font-weight: 600; display: none; align-items: center; gap: 8px; }
+
+.ff-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.pass-wrap { position: relative; }
+
+.pass-toggle { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; color: var(--muted); font-size: 0.8rem; font-weight: 700; font-family: var(--font); }
+
+#view-app { display: flex; flex-direction: column; padding-bottom: calc(var(--bottom-h) + env(safe-area-inset-bottom,0px)); padding-top: calc(var(--nav-h) + env(safe-area-inset-top,0px)); }
+
+.app-nav { position: fixed; top: 0px; left: 0px; right: 0px; z-index: 50; height: calc(var(--nav-h) + env(safe-area-inset-top, 0px)); padding-top: env(safe-area-inset-top, 0px); background: rgba(255, 255, 255, 0.97); backdrop-filter: blur(20px) saturate(1.6); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding-left: 16px; padding-right: 16px; gap: 12px; }
+
+.app-nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+
+.app-nav-logo svg { height: 28px; width: auto; }
+
+.app-nav-word { font-weight: 800; font-size: 1rem; color: var(--ink); letter-spacing: -0.02em; }
+
+.app-nav-word span { color: var(--sky); }
+
+.app-nav-right { display: flex; align-items: center; gap: 8px; }
+
+.icon-btn { width: 38px; height: 38px; border-radius: 11px; border: 1px solid var(--border); background: var(--off); display: grid; place-items: center; cursor: pointer; position: relative; transition: 0.17s; }
+
+.icon-btn:hover { border-color: var(--cobalt); background: var(--cobalt-light); }
+
+.notif-dot { position: absolute; top: 7px; right: 7px; width: 7px; height: 7px; border-radius: 50%; background: var(--red); border: 2px solid var(--white); }
+
+.avatar-btn { width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(135deg,var(--cobalt),var(--sky)); display: grid; place-items: center; font-size: 0.85rem; font-weight: 800; color: rgb(255, 255, 255); cursor: pointer; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; flex-shrink: 0; }
+
+.bottom-nav { position: fixed; bottom: 0px; left: 0px; right: 0px; z-index: 50; height: calc(var(--bottom-h) + env(safe-area-inset-bottom, 0px)); padding-bottom: env(safe-area-inset-bottom, 0px); background: rgba(255, 255, 255, 0.97); backdrop-filter: blur(20px) saturate(1.6); border-top: 1px solid var(--border); display: flex; align-items: flex-start; justify-content: space-around; padding-top: 10px; box-shadow: 0 -1px 0 var(--border),0 -4px 16px rgba(0,0,0,.04); }
+
+.bn-tab { display: flex; flex-direction: column; align-items: center; gap: 4px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; padding: 4px 20px; font-family: var(--font); transition: 0.17s; flex: 1 1 0%; }
+
+.bn-tab svg { width: 22px; height: 22px; stroke: var(--muted); transition: stroke 0.17s; }
+
+.bn-tab span { font-size: 0.65rem; font-weight: 700; color: var(--muted); transition: color 0.17s; }
+
+.bn-tab.active svg { stroke: var(--cobalt); }
+
+.bn-tab.active span { color: var(--cobalt); }
+
+.bn-tab-dot { position: relative; }
+
+.bn-tab-dot::after { content: ""; position: absolute; top: -3px; right: -3px; width: 7px; height: 7px; border-radius: 50%; background: var(--red); border: 1.5px solid var(--white); }
+
+.app-content { flex: 1 1 0%; padding: 16px; display: flex; flex-direction: column; gap: 16px; max-width: 600px; margin: 0px auto; width: 100%; }
+
+.page { display: none; flex-direction: column; gap: 16px; width: 100%; }
+
+.page.active { display: flex; }
+
+.home-greeting { padding: 4px 0px; }
+
+.home-greeting h2 { font-size: 1.35rem; font-weight: 900; color: var(--ink); letter-spacing: -0.025em; }
+
+.home-greeting p { font-size: 0.85rem; color: var(--muted); font-weight: 500; margin-top: 2px; }
+
+.balance-card { background: linear-gradient(140deg,var(--cobalt) 0%,#047857 60%,var(--sky) 100%); border-radius: 22px; padding: 24px; position: relative; overflow: hidden; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; }
+
+.balance-card::before { content: ""; position: absolute; top: -40px; right: -40px; width: 180px; height: 180px; border-radius: 50%; background: rgba(255, 255, 255, 0.07); pointer-events: none; }
+
+.balance-card::after { content: ""; position: absolute; bottom: -60px; left: -20px; width: 200px; height: 200px; border-radius: 50%; background: rgba(255, 255, 255, 0.05); pointer-events: none; }
+
+.bc-label { font-size: 0.72rem; font-weight: 700; color: rgba(255, 255, 255, 0.65); letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 6px; }
+
+.bc-amount { font-size: 2.6rem; font-weight: 900; color: rgb(255, 255, 255); letter-spacing: -0.04em; line-height: 1; position: relative; z-index: 1; }
+
+.bc-amount sup { font-size: 1.2rem; vertical-align: top; margin-top: 6px; font-weight: 700; }
+
+.bc-row { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 20px; position: relative; z-index: 1; }
+
+.bc-stat { text-align: left; }
+
+.bc-stat-val { font-size: 1rem; font-weight: 800; color: rgb(255, 255, 255); }
+
+.bc-stat-lbl { font-size: 0.68rem; color: rgba(255, 255, 255, 0.55); font-weight: 600; margin-top: 1px; }
+
+.bc-actions { display: flex; gap: 8px; }
+
+.bc-btn { padding: 8px 16px; border-radius: 10px; border: 1.5px solid rgba(255, 255, 255, 0.35); background: rgba(255, 255, 255, 0.18); color: rgb(255, 255, 255); font-family: var(--font); font-size: 0.78rem; font-weight: 800; cursor: pointer; transition: 0.17s; }
+
+.bc-btn:hover { background: rgba(255, 255, 255, 0.28); }
+
+.quick-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+
+.qs-card { background: var(--white); border-radius: 16px; border: 1px solid var(--border); padding: 14px 12px; text-align: center; }
+
+.qs-val { font-size: 1.1rem; font-weight: 900; color: var(--ink); letter-spacing: -0.025em; }
+
+.qs-lbl { font-size: 0.68rem; font-weight: 600; color: var(--muted); margin-top: 3px; }
+
+.activity-item { display: flex; align-items: center; gap: 12px; padding: 12px 0px; border-bottom: 1px solid var(--border); }
+
+.activity-item:last-child { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.act-icon { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; font-size: 1.1rem; flex-shrink: 0; }
+
+.act-icon.green { background: var(--green-bg); }
+
+.act-icon.blue { background: var(--cobalt-light); }
+
+.act-icon.amber { background: var(--amber-bg); }
+
+.act-main { flex: 1 1 0%; }
+
+.act-title { font-size: 0.88rem; font-weight: 700; color: var(--ink); }
+
+.act-sub { font-size: 0.72rem; color: var(--muted); font-weight: 500; margin-top: 2px; }
+
+.act-amount { font-size: 0.92rem; font-weight: 800; text-align: right; }
+
+.act-amount.pos { color: var(--green-text); }
+
+.act-amount.neg { color: var(--red-text); }
+
+.act-date { font-size: 0.68rem; color: var(--muted); text-align: right; margin-top: 2px; }
+
+.market-filters { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
+
+.market-filters::-webkit-scrollbar { display: none; }
+
+.filter-chip { flex-shrink: 0; padding: 7px 14px; border-radius: 999px; border: 1.5px solid var(--border); background: var(--white); font-family: var(--font); font-size: 0.78rem; font-weight: 700; color: var(--text-2); cursor: pointer; transition: 0.17s; white-space: nowrap; }
+
+.filter-chip.active { background: var(--cobalt); color: rgb(255, 255, 255); border-color: var(--cobalt); }
+
+.filter-chip:hover:not(.active) { border-color: var(--cobalt); color: var(--cobalt); }
+
+.listing-card { background: var(--white); border-radius: 20px; border: 1px solid var(--border); box-shadow: var(--sh-sm); padding: 18px; transition: transform 0.2s, box-shadow 0.2s; }
+
+.listing-card:hover { transform: translateY(-3px); box-shadow: var(--sh); }
+
+.lc-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
+
+.lc-borrower { display: flex; align-items: center; gap: 11px; }
+
+.lc-av { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; font-size: 0.95rem; font-weight: 800; color: rgb(255, 255, 255); flex-shrink: 0; }
+
+.lc-name { font-size: 0.9rem; font-weight: 800; color: var(--ink); }
+
+.lc-meta { font-size: 0.73rem; color: var(--muted); font-weight: 500; margin-top: 2px; }
+
+.lc-rate { text-align: right; }
+
+.lc-rate-val { font-size: 1.3rem; font-weight: 900; color: var(--cobalt); letter-spacing: -0.025em; line-height: 1; }
+
+.lc-rate-lbl { font-size: 0.65rem; color: var(--muted); font-weight: 600; margin-top: 2px; }
+
+.lc-specs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 14px; }
+
+.lc-spec { text-align: center; background: var(--off); border-radius: 10px; padding: 8px 6px; }
+
+.lc-spec-val { font-size: 0.88rem; font-weight: 800; color: var(--ink); }
+
+.lc-spec-lbl { font-size: 0.65rem; color: var(--muted); font-weight: 600; margin-top: 2px; }
+
+.lc-progress { margin-bottom: 14px; }
+
+.lc-prog-row { display: flex; justify-content: space-between; margin-bottom: 6px; }
+
+.lc-prog-lbl { font-size: 0.72rem; font-weight: 600; color: var(--muted); }
+
+.lc-prog-pct { font-size: 0.72rem; font-weight: 800; color: var(--cobalt); }
+
+.prog-bar { height: 6px; border-radius: 99px; background: var(--off-2); overflow: hidden; }
+
+.prog-fill { height: 100%; border-radius: 99px; background: linear-gradient(90deg,var(--cobalt),var(--sky)); transition: width 1s cubic-bezier(0.34, 1, 0.64, 1); }
+
+.lc-bottom { display: flex; gap: 10px; align-items: center; }
+
+.lc-remaining { font-size: 0.78rem; font-weight: 700; color: var(--text-2); flex: 1 1 0%; }
+
+.lc-remaining span { color: var(--ink); font-weight: 800; }
+
+.port-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.port-card { background: var(--white); border-radius: 18px; border: 1px solid var(--border); padding: 16px; }
+
+.port-card.full { grid-column: 1 / -1; }
+
+.port-val { font-size: 1.4rem; font-weight: 900; color: var(--ink); letter-spacing: -0.03em; }
+
+.port-lbl { font-size: 0.72rem; font-weight: 600; color: var(--muted); margin-top: 3px; }
+
+.port-change { font-size: 0.75rem; font-weight: 700; margin-top: 6px; }
+
+.port-change.up { color: var(--green-text); }
+
+.investment-item { display: flex; flex-direction: column; gap: 10px; padding: 16px; background: var(--white); border-radius: 16px; border: 1px solid var(--border); }
+
+.ii-top { display: flex; justify-content: space-between; align-items: flex-start; }
+
+.ii-left h4 { font-size: 0.9rem; font-weight: 800; color: var(--ink); }
+
+.ii-left p { font-size: 0.73rem; color: var(--muted); font-weight: 500; margin-top: 2px; }
+
+.ii-right { text-align: right; }
+
+.ii-return { font-size: 1rem; font-weight: 900; color: var(--green-text); }
+
+.ii-earned { font-size: 0.7rem; color: var(--muted); margin-top: 2px; }
+
+.ii-bar-row { display: flex; align-items: center; gap: 8px; }
+
+.ii-bar-label { font-size: 0.7rem; font-weight: 600; color: var(--muted); min-width: 70px; }
+
+.ii-days { font-size: 0.7rem; font-weight: 700; color: var(--text-2); }
+
+.acct-profile { background: linear-gradient(140deg,var(--cobalt),var(--sky)); border-radius: 22px; padding: 24px; display: flex; align-items: center; gap: 16px; }
+
+.acct-avatar { width: 64px; height: 64px; border-radius: 50%; background: rgba(255, 255, 255, 0.2); display: grid; place-items: center; font-size: 1.5rem; font-weight: 900; color: rgb(255, 255, 255); border: 3px solid rgba(255, 255, 255, 0.4); flex-shrink: 0; }
+
+.acct-name { font-size: 1.15rem; font-weight: 900; color: rgb(255, 255, 255); letter-spacing: -0.02em; }
+
+.acct-email { font-size: 0.8rem; color: rgba(255, 255, 255, 0.65); margin-top: 3px; font-weight: 500; }
+
+.acct-kyc { display: inline-flex; align-items: center; gap: 6px; background: rgba(255, 255, 255, 0.2); color: rgb(255, 255, 255); border-radius: 999px; padding: 4px 12px; font-size: 0.72rem; font-weight: 700; margin-top: 8px; }
+
+.menu-group { background: var(--white); border-radius: 18px; border: 1px solid var(--border); overflow: hidden; }
+
+.menu-group-title { font-size: 0.7rem; font-weight: 800; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; padding: 14px 16px 8px; }
+
+.menu-item { display: flex; align-items: center; gap: 13px; padding: 14px 16px; border-top: 1px solid var(--border); cursor: pointer; transition: background 0.15s; }
+
+.menu-item:first-of-type { border-top-width: medium; border-top-style: none; border-top-color: currentcolor; }
+
+.menu-item:hover { background: var(--off); }
+
+.mi-icon { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; font-size: 1rem; flex-shrink: 0; }
+
+.mi-text { flex: 1 1 0%; }
+
+.mi-title { font-size: 0.9rem; font-weight: 700; color: var(--ink); }
+
+.mi-sub { font-size: 0.72rem; color: var(--muted); font-weight: 500; margin-top: 1px; }
+
+.mi-arrow { color: var(--muted); }
+
+.menu-item.danger .mi-title { color: var(--red-text); }
+
+.acct-stat-card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 12px 10px; text-align: center; }
+
+.asc-val { font-size: 1.05rem; font-weight: 900; color: var(--ink); letter-spacing: -0.02em; line-height: 1; }
+
+.asc-label { font-size: 0.62rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
+
+.acct-panel { display: none; position: fixed; inset: 0px; z-index: 300; background: var(--off); flex-direction: column; transform: translateX(100%); transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1); overflow: hidden; padding-top: env(safe-area-inset-top,0px); }
+
+.acct-panel.open { display: flex; transform: translateX(0px); }
+
+.ap-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; background: var(--white); border-bottom: 1px solid var(--border); flex-shrink: 0; }
+
+.ap-back { background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; display: grid; place-items: center; color: var(--cobalt); padding: 4px; border-radius: 8px; }
+
+.ap-title { font-size: 1rem; font-weight: 900; color: var(--ink); letter-spacing: -0.02em; }
+
+.ap-body { flex: 1 1 0%; overflow-y: auto; padding-top: 16px; padding-right: 16px; padding-left: 16px; display: flex; flex-direction: column; gap: 4px; padding-bottom: calc(32px + env(safe-area-inset-bottom,0px)); }
+
+.ap-label { display: block; font-size: 0.72rem; font-weight: 800; color: var(--text); margin-bottom: 4px; letter-spacing: 0.02em; }
+
+.ap-input { width: 100%; padding: 11px 13px; border: 1.5px solid var(--border); border-radius: 11px; font-family: var(--font); font-size: 0.88rem; color: var(--ink); outline: none; background: var(--white); transition: border-color 0.15s; appearance: none; }
+
+.ap-input:focus { border-color: var(--cobalt); }
+
+.ap-btn-primary { width: 100%; padding: 14px; background: var(--cobalt); color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 13px; font-family: var(--font); font-size: 0.92rem; font-weight: 900; cursor: pointer; transition: background 0.17s; letter-spacing: -0.01em; }
+
+.ap-btn-primary:hover { background: var(--cobalt-2); }
+
+.ap-btn-primary:disabled { opacity: 0.55; cursor: not-allowed; }
+
+.ap-err { background: rgb(254, 226, 226); border: 1.5px solid rgb(252, 165, 165); color: rgb(185, 28, 28); font-size: 0.8rem; font-weight: 600; padding: 10px 13px; border-radius: 10px; }
+
+.ap-toggle-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0px; border-bottom: 1px solid var(--off); }
+
+.ap-toggle-row:last-child { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.ap-toggle-title { font-size: 0.87rem; font-weight: 700; color: var(--ink); }
+
+.ap-toggle-sub { font-size: 0.73rem; color: var(--muted); margin-top: 1px; }
+
+.toggle-switch { position: relative; display: inline-block; width: 44px; height: 26px; flex-shrink: 0; }
+
+.toggle-switch input { opacity: 0; width: 0px; height: 0px; }
+
+.toggle-slider { position: absolute; cursor: pointer; inset: 0px; background: rgb(209, 213, 219); border-radius: 999px; transition: 0.2s; }
+
+.toggle-slider::before { content: ""; position: absolute; height: 20px; width: 20px; left: 3px; bottom: 3px; background: rgb(255, 255, 255); border-radius: 50%; transition: 0.2s; box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px; }
+
+.toggle-switch input:checked + .toggle-slider { background: var(--cobalt); }
+
+.toggle-switch input:checked + .toggle-slider::before { transform: translateX(18px); }
+
+.ai-toggle-wrap { width: 52px; height: 30px; background: rgba(255, 255, 255, 0.2); border-radius: 999px; cursor: pointer; position: relative; transition: background 0.2s; flex-shrink: 0; }
+
+.ai-toggle-wrap.on { background: rgb(52, 211, 153); }
+
+.ai-toggle { position: absolute; top: 3px; left: 3px; width: 24px; height: 24px; background: rgb(255, 255, 255); border-radius: 50%; transition: transform 0.2s; box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px; }
+
+.ai-toggle-wrap.on .ai-toggle { transform: translateX(22px); }
+
+.grade-chip { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 14px; border-radius: 12px; border: 2px solid var(--border); cursor: pointer; font-family: var(--font); transition: 0.15s; flex: 1 1 0%; min-width: 80px; }
+
+.grade-chip input { display: none; }
+
+.grade-chip span { font-size: 0.85rem; font-weight: 800; color: var(--muted); }
+
+.grade-chip small { font-size: 0.65rem; color: var(--muted); font-weight: 600; }
+
+.grade-a:has(input:checked) { background: rgb(220, 252, 231); border-color: rgb(34, 197, 94); }
+
+.grade-a:has(input:checked) span { color: rgb(21, 128, 61); }
+
+.grade-b:has(input:checked) { background: rgb(254, 249, 195); border-color: rgb(245, 158, 11); }
+
+.grade-b:has(input:checked) span { color: rgb(146, 64, 14); }
+
+.grade-c:has(input:checked) { background: rgb(254, 226, 226); border-color: rgb(248, 113, 113); }
+
+.grade-c:has(input:checked) span { color: rgb(185, 28, 28); }
+
+.tax-doc-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 16px; padding: 16px; display: flex; align-items: center; gap: 14px; }
+
+.tdc-icon { width: 44px; height: 44px; border-radius: 12px; background: rgb(254, 249, 195); display: grid; place-items: center; font-size: 1.3rem; flex-shrink: 0; }
+
+.tdc-body { flex: 1 1 0%; }
+
+.tdc-title { font-size: 0.9rem; font-weight: 800; color: var(--ink); }
+
+.tdc-sub { font-size: 0.74rem; color: var(--muted); margin-top: 2px; }
+
+.tdc-action { background: var(--cobalt); color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 9px; padding: 8px 14px; font-family: var(--font); font-size: 0.78rem; font-weight: 800; cursor: pointer; white-space: nowrap; }
+
+.tdc-pending { background: var(--off); color: var(--muted); border: 1px solid var(--border); border-radius: 9px; padding: 8px 14px; font-family: var(--font); font-size: 0.78rem; font-weight: 700; white-space: nowrap; cursor: default; }
+
+.modal-overlay { position: fixed; inset: 0px; background: rgba(11, 21, 35, 0.6); z-index: 200; display: flex; align-items: flex-end; justify-content: center; backdrop-filter: blur(4px); opacity: 0; pointer-events: none; transition: opacity 0.25s; }
+
+.modal-overlay.open { opacity: 1; pointer-events: all; }
+
+.modal-sheet { background: var(--white); border-radius: 24px 24px 0px 0px; width: 100%; max-width: 500px; padding: 0px 0px 40px; transform: translateY(100%); transition: transform 0.3s cubic-bezier(0.34, 1.2, 0.64, 1); max-height: 92vh; overflow-y: auto; }
+
+.modal-overlay.open .modal-sheet { transform: translateY(0px); }
+
+.modal-handle { width: 40px; height: 4px; border-radius: 99px; background: var(--border); margin: 12px auto 20px; }
+
+.modal-head { padding: 0px 22px 16px; border-bottom: 1px solid var(--border); }
+
+.modal-head h3 { font-size: 1.1rem; font-weight: 900; color: var(--ink); letter-spacing: -0.025em; }
+
+.modal-head p { font-size: 0.82rem; color: var(--muted); margin-top: 3px; font-weight: 500; }
+
+.modal-body { padding: 20px 22px; display: flex; flex-direction: column; gap: 18px; }
+
+.invest-amount-display { background: var(--cobalt-light); border-radius: 16px; padding: 20px; text-align: center; }
+
+.iad-label { font-size: 0.72rem; font-weight: 700; color: var(--cobalt); letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 6px; }
+
+.iad-val { font-size: 2.8rem; font-weight: 900; color: var(--cobalt); letter-spacing: -0.04em; line-height: 1; }
+
+.invest-presets { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+
+.preset-btn { padding: 10px 4px; border-radius: 11px; border: 1.5px solid var(--border); background: var(--white); font-family: var(--font); font-size: 0.8rem; font-weight: 800; color: var(--text-2); cursor: pointer; transition: 0.17s; text-align: center; }
+
+.preset-btn.active, .preset-btn:hover { border-color: var(--cobalt); color: var(--cobalt); background: var(--cobalt-light); }
+
+.invest-summary { background: var(--off); border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+
+.is-row { display: flex; justify-content: space-between; align-items: center; }
+
+.is-key { font-size: 0.8rem; font-weight: 600; color: var(--muted); }
+
+.is-val { font-size: 0.8rem; font-weight: 800; color: var(--ink); }
+
+.is-val.highlight { color: var(--cobalt); font-size: 0.88rem; }
+
+.is-val.green { color: var(--green-text); }
+
+.modal-footer { padding: 0px 22px; display: flex; flex-direction: column; gap: 10px; }
+
+.success-state { text-align: center; padding: 20px 22px 0px; display: none; flex-direction: column; align-items: center; gap: 10px; }
+
+.success-icon { width: 64px; height: 64px; border-radius: 50%; background: var(--green-bg); display: grid; place-items: center; font-size: 1.8rem; margin: 0px auto; }
+
+.success-state h3 { font-size: 1.15rem; font-weight: 900; color: var(--ink); letter-spacing: -0.02em; }
+
+.success-state p { font-size: 0.85rem; color: var(--muted); line-height: 1.55; }
+
+.agr-overlay { position: fixed; inset: 0px; background: rgba(11, 21, 35, 0.72); z-index: 500; display: none; align-items: center; justify-content: center; padding: 16px; backdrop-filter: blur(4px); }
+
+.agr-overlay.open { display: flex; }
+
+.agr-box { background: rgb(255, 255, 255); border-radius: 20px; width: 100%; max-width: 580px; max-height: 92vh; height: 92vh; display: flex; flex-direction: column; box-shadow: rgba(0, 0, 0, 0.35) 0px 32px 80px; overflow: hidden; }
+
+.agr-box > div { display: flex; flex-direction: column; flex: 1 1 0%; min-height: 0px; overflow: hidden; }
+
+.agr-header { padding: 20px 24px 14px; border-bottom: 1px solid rgb(229, 231, 235); background: linear-gradient(135deg, rgb(5, 150, 105), rgb(4, 120, 87)); display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-shrink: 0; }
+
+.agr-header-left h3 { margin: 0px; color: rgb(255, 255, 255); font-size: 1rem; font-weight: 900; letter-spacing: -0.01em; }
+
+.agr-header-left p { margin: 5px 0px 0px; color: rgba(255, 255, 255, 0.8); font-size: 0.72rem; line-height: 1.4; }
+
+.agr-match-id { font-family: monospace; font-size: 0.7rem; color: rgba(255, 255, 255, 0.75); background: rgba(0, 0, 0, 0.2); border-radius: 6px; padding: 3px 8px; flex-shrink: 0; margin-top: 2px; }
+
+.agr-scroll { padding: 18px 22px; overflow-y: auto; flex: 1 1 0%; min-height: 0px; font-size: 0.78rem; color: rgb(26, 37, 64); line-height: 1.7; }
+
+.agr-scroll h4 { font-size: 0.7rem; font-weight: 900; color: rgb(5, 150, 105); letter-spacing: 0.08em; text-transform: uppercase; margin: 18px 0px 6px; padding-top: 14px; border-top: 1px solid rgb(229, 231, 235); }
+
+.agr-scroll h4:first-child { border-top-width: medium; border-top-style: none; border-top-color: currentcolor; padding-top: 0px; margin-top: 0px; }
+
+.agr-scroll p { margin: 0px 0px 8px; }
+
+.agr-scroll table { width: 100%; border-collapse: collapse; margin: 10px 0px 14px; }
+
+.agr-scroll table td { padding: 7px 10px; border: 1px solid rgb(229, 231, 235); font-size: 0.77rem; }
+
+.agr-scroll table td:first-child { font-weight: 700; background: rgb(249, 250, 251); width: 45%; }
+
+.agr-sign-section { padding: 16px 22px; border-top: 1px solid rgb(229, 231, 235); background: rgb(249, 250, 251); display: flex; flex-direction: column; gap: 12px; flex-shrink: 0; }
+
+.agr-sign-label { font-size: 0.8rem; font-weight: 700; color: rgb(26, 37, 64); }
+
+.agr-sign-label span { font-size: 0.7rem; font-weight: 600; color: rgb(98, 120, 160); display: block; margin-top: 2px; }
+
+.agr-sign-input { width: 100%; padding: 12px 16px; border: 2px solid rgb(209, 213, 219); border-radius: 12px; font-family: "Brush Script MT", cursive, sans-serif; font-size: 1.4rem; color: rgb(5, 150, 105); outline: none; transition: border-color 0.17s; background: rgb(255, 255, 255); }
+
+.agr-sign-input:focus { border-color: rgb(5, 150, 105); }
+
+.agr-sign-input::placeholder { font-family: var(--font); font-size: 0.88rem; color: rgb(156, 163, 175); }
+
+.agr-sign-agree { display: flex; align-items: flex-start; gap: 10px; font-size: 0.76rem; color: rgb(55, 65, 81); line-height: 1.55; }
+
+.agr-sign-agree input { margin-top: 2px; accent-color: rgb(5, 150, 105); flex-shrink: 0; width: 15px; height: 15px; }
+
+.agr-btn-row { display: flex; gap: 10px; }
+
+.agr-btn-sign { flex: 1 1 0%; padding: 13px; background: rgb(5, 150, 105); color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 12px; font-family: var(--font); font-size: 0.88rem; font-weight: 800; cursor: pointer; transition: 0.18s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+
+.agr-btn-sign:hover:not(:disabled) { background: rgb(4, 120, 87); transform: translateY(-1px); }
+
+.agr-btn-sign:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+
+.agr-btn-cancel { padding: 13px 18px; background: transparent; color: rgb(98, 120, 160); border: 1px solid rgb(221, 228, 240); border-radius: 12px; font-family: var(--font); font-size: 0.85rem; font-weight: 700; cursor: pointer; transition: background 0.18s; }
+
+.agr-btn-cancel:hover { background: rgb(240, 244, 255); }
+
+.agr-signed-state { display: none; flex-direction: column; align-items: center; gap: 12px; padding: 28px 22px; text-align: center; }
+
+.agr-signed-state .check { font-size: 2.6rem; }
+
+.agr-signed-state h3 { font-size: 1.1rem; font-weight: 900; color: rgb(5, 150, 105); letter-spacing: -0.02em; }
+
+.agr-signed-state p { font-size: 0.84rem; color: rgb(98, 120, 160); line-height: 1.55; }
+
+.agr-signed-meta { background: rgb(240, 253, 244); border: 1px solid rgb(134, 239, 172); border-radius: 12px; padding: 14px; width: 100%; display: flex; flex-direction: column; gap: 7px; }
+
+.agr-signed-meta .smr { display: flex; justify-content: space-between; font-size: 0.78rem; }
+
+.agr-signed-meta .smr span:first-child { color: rgb(98, 120, 160); font-weight: 600; }
+
+.agr-signed-meta .smr span:last-child { font-weight: 800; color: rgb(26, 37, 64); }
+
+.agr-download-btn { width: 100%; padding: 13px; background: rgb(5, 150, 105); color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 12px; font-family: var(--font); font-size: 0.88rem; font-weight: 800; cursor: pointer; transition: 0.18s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+
+.agr-download-btn:hover { background: rgb(4, 120, 87); transform: translateY(-1px); }
+
+.agr-close-btn { padding: 11px 20px; background: transparent; color: rgb(98, 120, 160); border: 1px solid rgb(221, 228, 240); border-radius: 12px; font-family: var(--font); font-size: 0.85rem; font-weight: 700; cursor: pointer; width: 100%; }
+
+.agr-close-btn:hover { background: rgb(240, 244, 255); }
+
+.notif-panel { position: fixed; top: calc(var(--nav-h) + 8px); right: 8px; z-index: 100; background: var(--white); border-radius: 18px; border: 1px solid var(--border); box-shadow: var(--sh-lg); width: 300px; max-height: 400px; overflow-y: auto; opacity: 0; pointer-events: none; transform: translateY(-10px); transition: 0.22s; }
+
+.notif-panel.open { opacity: 1; pointer-events: all; transform: translateY(0px); }
+
+.notif-head { padding: 14px 16px 10px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+
+.notif-head h4 { font-size: 0.88rem; font-weight: 800; color: var(--ink); }
+
+.notif-item { display: flex; gap: 10px; align-items: flex-start; padding: 12px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.15s; }
+
+.notif-item:hover { background: var(--off); }
+
+@keyframes spin { 
+  100% { transform: rotate(360deg); }
+}
+
+.notif-item:last-child { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.ni-icon { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; font-size: 0.95rem; flex-shrink: 0; }
+
+.ni-title { font-size: 0.82rem; font-weight: 700; color: var(--ink); }
+
+.ni-time { font-size: 0.68rem; color: var(--muted); margin-top: 2px; }
+
+.toast { position: fixed; bottom: calc(var(--bottom-h) + 12px); left: 50%; transform: translateX(-50%) translateY(20px); z-index: 300; background: var(--ink); color: rgb(255, 255, 255); padding: 12px 20px; border-radius: 14px; font-size: 0.85rem; font-weight: 700; box-shadow: var(--sh-lg); opacity: 0; transition: 0.3s; pointer-events: none; white-space: nowrap; }
+
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0px); }
+
+@media (min-width: 640px) {
+  .app-content { padding: 24px; }
+  .quick-stats { grid-template-columns: repeat(3, 1fr); }
+  .lc-specs { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 900px) {
+  #view-app { flex-direction: row; padding-bottom: 0px; }
+  .app-nav { display: none; }
+  .bottom-nav { display: none; }
+  .sidebar { display: flex; flex-direction: column; gap: 4px; width: 220px; flex-shrink: 0; padding: 24px 12px; background: var(--white); border-right: 1px solid var(--border); height: 100vh; position: sticky; top: 0px; overflow-y: auto; }
+  .sidebar-logo { display: flex; align-items: center; gap: 10px; padding: 8px 12px 20px; text-decoration: none; }
+  .sidebar-logo svg { height: 30px; }
+  .sidebar-logo-word { font-weight: 800; font-size: 1rem; color: var(--ink); letter-spacing: -0.02em; }
+  .sidebar-logo-word span { color: var(--sky); }
+  .sb-tab { display: flex; align-items: center; gap: 10px; padding: 11px 14px; border-radius: 13px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; font-family: var(--font); font-size: 0.88rem; font-weight: 700; color: var(--muted); transition: 0.17s; width: 100%; text-align: left; }
+  .sb-tab svg { width: 18px; height: 18px; stroke: var(--muted); transition: stroke 0.17s; flex-shrink: 0; }
+  .sb-tab:hover { background: var(--off); color: var(--text); }
+  .sb-tab.active { background: var(--cobalt-light); color: var(--cobalt); }
+  .sb-tab.active svg { stroke: var(--cobalt); }
+  .sb-divider { height: 1px; background: var(--border); margin: 8px 12px; }
+  .sb-bottom { margin-top: auto; }
+  .app-content { max-width: 700px; padding: 28px; }
+}
+
+.sidebar { display: none; }
+
+.disc-overlay { display: none; position: fixed; inset: 0px; background: rgba(10, 20, 50, 0.72); z-index: 1200; align-items: center; justify-content: center; padding: 16px; backdrop-filter: blur(4px); }
+
+.disc-overlay.open { display: flex; }
+
+.disc-box { background: rgb(255, 255, 255); border-radius: 20px; width: 100%; max-width: 560px; max-height: 90vh; display: flex; flex-direction: column; box-shadow: rgba(0, 0, 0, 0.35) 0px 32px 80px; overflow: hidden; }
+
+.disc-header { padding: 22px 24px 16px; border-bottom: 1px solid rgb(232, 238, 248); background: linear-gradient(135deg, rgb(5, 150, 105), rgb(4, 120, 87)); }
+
+.disc-header h3 { margin: 0px; color: rgb(255, 255, 255); font-size: 1rem; font-weight: 900; letter-spacing: -0.01em; }
+
+.disc-header p { margin: 6px 0px 0px; color: rgba(255, 255, 255, 0.8); font-size: 0.75rem; line-height: 1.45; }
+
+.disc-scroll { padding: 20px 24px; overflow-y: auto; flex: 1 1 0%; font-size: 0.78rem; color: rgb(45, 55, 72); line-height: 1.65; }
+
+.disc-scroll h4 { font-size: 0.72rem; font-weight: 800; color: rgb(5, 150, 105); letter-spacing: 0.07em; text-transform: uppercase; margin: 16px 0px 6px; border-top: 1px solid rgb(232, 238, 248); padding-top: 14px; }
+
+.disc-scroll h4:first-child { border-top-width: medium; border-top-style: none; border-top-color: currentcolor; padding-top: 0px; margin-top: 0px; }
+
+.disc-scroll p { margin: 0px 0px 8px; }
+
+.disc-scroll ul { margin: 0px 0px 8px; padding-left: 18px; }
+
+.disc-scroll ul li { margin-bottom: 4px; }
+
+.disc-footer { padding: 16px 24px 20px; border-top: 1px solid rgb(232, 238, 248); background: rgb(248, 250, 255); }
+
+.disc-agree-row { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 14px; font-size: 0.78rem; color: rgb(45, 55, 72); line-height: 1.5; }
+
+.disc-agree-row input[type="checkbox"] { margin-top: 2px; accent-color: rgb(5, 150, 105); flex-shrink: 0; width: 16px; height: 16px; cursor: pointer; }
+
+.disc-agree-row label { cursor: pointer; }
+
+.disc-agree-row a { color: rgb(5, 150, 105); }
+
+.disc-btn-row { display: flex; gap: 10px; }
+
+.disc-btn-accept { flex: 1 1 0%; padding: 13px; background: rgb(5, 150, 105); color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 12px; font-size: 0.85rem; font-weight: 800; cursor: pointer; transition: background 0.18s, transform 0.15s; }
+
+.disc-btn-accept:hover:not(:disabled) { background: rgb(4, 120, 87); transform: translateY(-1px); }
+
+.disc-btn-accept:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+
+.disc-btn-cancel { padding: 13px 18px; background: transparent; color: rgb(98, 120, 160); border: 1px solid rgb(221, 228, 240); border-radius: 12px; font-size: 0.85rem; font-weight: 700; cursor: pointer; transition: background 0.18s; }
+
+.disc-btn-cancel:hover { background: rgb(240, 244, 255); }
+
+.disc-scroll-hint { font-size: 0.68rem; color: rgb(98, 120, 160); text-align: center; margin-bottom: 10px; }
+
+</style>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<title>LendX Marketplace — Investor Platform | Peer-to-Peer Lending Canada</title>
+<meta name="description" content="Invest in Canadian loans through the LendX peer-to-peer marketplace. Earn competitive returns, diversify your portfolio, and support borrowers across Canada.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="LendX Financial Inc.">
+<meta name="keywords" content="peer to peer lending Canada, P2P investing, alternative investments Canada, LendX marketplace, loan investing, fintech investment platform">
+<link rel="canonical" href="https://lendxfinancial.com/marketplace.html">
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<!-- Open Graph -->
+<meta property="og:title" content="LendX Marketplace — Peer-to-Peer Investor Platform">
+<meta property="og:description" content="Invest in Canadian loans through the LendX marketplace. Earn competitive returns and diversify your portfolio.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lendxfinancial.com/marketplace.html">
+<meta property="og:image" content="https://lendxfinancial.com/favicon.svg">
+<meta property="og:image:alt" content="LendX Financial logo — Canada's peer-to-peer lending marketplace">
+<meta property="og:site_name" content="LendX Financial">
+<meta property="og:locale" content="en_CA">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LendX Marketplace — Peer-to-Peer Investor Platform">
+<meta name="twitter:description" content="Invest in Canadian loans. Earn competitive returns and diversify your portfolio with LendX.">
+<meta name="twitter:image" content="https://lendxfinancial.com/favicon.svg">
+<meta name="twitter:image:alt" content="LendX Financial logo">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#059669">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="LendX">
+<style id="lx-nav-css">
+/* ── LendX canonical nav ── */
+.nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.nav-inner{display:flex;align-items:center;gap:1rem;padding:.75rem 1.25rem;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:.55rem;text-decoration:none;flex-shrink:0}
+.lx-logo-svg{width:36px;height:36px;flex-shrink:0}
+.brand-wordmark{font-family:var(--font,'Nunito',sans-serif);font-size:1.15rem;font-weight:800;color:#111827;letter-spacing:-.02em}
+.brand-wordmark .x-accent{color:#059669}
+.nav-center{display:flex;align-items:center;gap:.15rem;flex:1;justify-content:center}
+.nav-center a{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.38rem .65rem;border-radius:6px;white-space:nowrap;transition:background .15s,color .15s}
+.nav-center a:hover{background:#ecfdf5;color:#059669}
+.nav-center a.active{background:#d1fae5;color:#059669}
+.nav-right{display:flex;align-items:center;gap:.55rem;flex-shrink:0}
+.n-btn{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:700;padding:.42rem .9rem;border-radius:8px;text-decoration:none;cursor:pointer;transition:all .15s}
+.n-outline{border:1.5px solid #059669;color:#059669;background:transparent}
+.n-outline:hover{background:#ecfdf5}
+.n-solid{background:#059669;color:#fff;border:1.5px solid #059669}
+.n-solid:hover{background:#047857}
+.ham-btn{display:none;background:none;border:none;cursor:pointer;padding:.3rem;color:#111827}
+.nav-drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1000}
+.nav-drawer-overlay.open{display:block}
+.nav-drawer{position:fixed;top:0;right:-280px;width:260px;height:100%;background:#fff;z-index:1001;padding:1.5rem 1.25rem;display:flex;flex-direction:column;gap:.5rem;box-shadow:-4px 0 20px rgba(0,0,0,.12);transition:right .28s ease}
+.nav-drawer.open{right:0}
+.nav-drawer a{font-family:var(--font,'Nunito',sans-serif);font-size:.95rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.55rem .75rem;border-radius:8px;transition:background .15s}
+.nav-drawer a:hover{background:#ecfdf5;color:#059669}
+.drawer-cta{margin-top:auto!important;background:#059669!important;color:#fff!important;text-align:center;padding:.7rem 1rem!important;border-radius:10px!important}
+.drawer-cta:hover{background:#047857!important}
+@media(max-width:900px){.nav-center{display:none}.ham-btn{display:flex}}
+@media(max-width:540px){.n-outline{display:none}}
+</style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1334.0" data-gr-ext-installed="">
+
+<!-- ═══════════════════════════════════
+     AUTH SCREEN
+═══════════════════════════════════ -->
+<div id="view-auth">
+  <a class="auth-logo" href="index.html">
+    <svg class="auth-logo-mark" viewBox="0 0 44 44" fill="none" role="img" aria-label="LendX Financial logo">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#14532d"></stop>
+            <stop offset="100%" stop-color="#22c55e"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#4ade80"></stop>
+            <stop offset="60%" stop-color="#16a34a"></stop>
+            <stop offset="100%" stop-color="#166534"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#86efac"></stop>
+            <stop offset="60%" stop-color="#22c55e"></stop>
+            <stop offset="100%" stop-color="#16a34a"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#064E3B"></stop>
+            <stop offset="100%" stop-color="#22c55e"></stop>
+          </linearGradient>
+        </defs>
+        <!-- Upper-left leaf (dark green) -->
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"></path>
+        <!-- Upper-right leaf (bright green) -->
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"></path>
+        <!-- Lower-left leaf (mid green) -->
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"></path>
+        <!-- Lower-right leaf (deep green) -->
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"></path>
+        </svg>
+    <span class="auth-logo-word">Lend<span>X</span> Marketplace</span>
+  </a>
+
+  <div class="auth-hero">
+    <h1>Invest in Canadian<br><span>Peer-to-Peer Loans</span></h1>
+    <p>Earn competitive returns while supporting real borrowers across Canada. Join thousands of investors on the LendX platform.</p>
+  </div>
+
+  <div class="auth-trust">
+    <span class="auth-trust-item">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      PIPEDA Compliant
+    </span>
+    <span class="auth-trust-item">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      256-bit Encryption
+    </span>
+    <span class="auth-trust-item">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      Free to Join
+    </span>
+  </div>
+
+  <div class="auth-cta-row">
+    <button class="auth-cta-btn primary">
+      Log In
+    </button>
+    <button class="auth-cta-btn ghost">
+      Sign Up
+    </button>
+  </div>
+
+  <div class="auth-box">
+    <div class="auth-box-header" id="auth-box-header">
+      <span id="auth-box-title">Welcome back</span>
+      <span id="auth-box-sub">Sign in to your investor account</span>
+    </div>
+
+    <!-- LOGIN -->
+    <div id="tab-login" class="auth-body">
+      <div class="auth-form">
+        <div id="login-error" class="auth-error">Invalid email or password. Please try again.</div>
+        <div class="auth-form-group">
+          <label class="label">Email Address</label>
+          <input class="fi" id="login-email" type="email" placeholder="you@email.com">
+        </div>
+        <div class="auth-form-group">
+          <label class="label">Password</label>
+          <div class="pass-wrap">
+            <input class="fi" id="login-pass" type="password" placeholder="••••••••">
+            <button class="pass-toggle" type="button">Show</button>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-lg" id="login-btn" style="margin-top:4px">Sign In to Marketplace</button>
+        <div class="auth-sep">or continue with</div>
+        <div class="oauth-grid">
+          <button class="oauth-btn" title="Google">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"></path><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"></path><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"></path><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"></path></svg>
+            Google
+          </button>
+          <button class="oauth-btn" title="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073C24 5.404 18.627 0 12 0S0 5.404 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.883v2.258h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"></path></svg>
+            Facebook
+          </button>
+          <button class="oauth-btn" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+            LinkedIn
+          </button>
+          <button class="oauth-btn" title="Apple">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#000"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701z"></path></svg>
+            Apple
+          </button>
+        </div>
+        <p class="auth-note"><a href="marketplace.html#">Don't have an account? Create one free →</a></p>
+        <p class="auth-note"><a href="marketplace.html#">Forgot password?</a></p>
+      </div>
+    </div>
+
+    <!-- SIGNUP -->
+    <div id="tab-signup" class="auth-body hidden">
+      <div class="auth-form">
+        <div id="signup-error" class="auth-error">Please fill in all required fields.</div>
+        <div class="ff-row-2">
+          <div class="auth-form-group">
+            <label class="label">First Name</label>
+            <input class="fi" id="su-first" type="text" placeholder="Alex">
+          </div>
+          <div class="auth-form-group">
+            <label class="label">Last Name</label>
+            <input class="fi" id="su-last" type="text" placeholder="Chen">
+          </div>
+        </div>
+        <div class="auth-form-group">
+          <label class="label">Email Address</label>
+          <input class="fi" id="su-email" type="email" placeholder="you@email.com">
+        </div>
+        <div class="auth-form-group">
+          <label class="label">Phone Number</label>
+          <input class="fi" id="su-phone" type="tel" placeholder="416-555-0100">
+        </div>
+        <div class="auth-form-group">
+          <label class="label">Password</label>
+          <div class="pass-wrap">
+            <input class="fi" id="su-pass" type="password" placeholder="Min. 8 characters">
+            <button class="pass-toggle" type="button">Show</button>
+          </div>
+        </div>
+        <div class="auth-form-group">
+          <label class="label">Province</label>
+          <select class="fi" id="su-prov">
+            <option value="">Select province</option>
+            <option>Ontario</option><option>British Columbia</option>
+            <option>Alberta</option><option>Manitoba</option>
+            <option>Saskatchewan</option><option>Quebec</option>
+          </select>
+        </div>
+        <div style="display:flex;gap:9px;align-items:flex-start;font-size:.75rem;color:var(--muted);line-height:1.5">
+          <input type="checkbox" id="su-agree" style="margin-top:2px;accent-color:var(--cobalt)">
+          <label for="su-agree">I agree to LendX's <a href="marketplace.html#" style="color:var(--cobalt)">Terms of Service</a> and <a href="marketplace.html#" style="color:var(--cobalt)">Privacy Policy</a>. Investor participation subject to regulatory approval.</label>
+        </div>
+        <button class="btn btn-primary btn-lg" id="signup-btn">Create My Investor Account</button>
+        <div class="auth-sep">or sign up with</div>
+        <div class="oauth-grid">
+          <button class="oauth-btn" title="Google">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"></path><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"></path><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"></path><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"></path></svg>
+            Google
+          </button>
+          <button class="oauth-btn" title="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073C24 5.404 18.627 0 12 0S0 5.404 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.883v2.258h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"></path></svg>
+            Facebook
+          </button>
+          <button class="oauth-btn" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+            LinkedIn
+          </button>
+          <button class="oauth-btn" title="Apple">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#000"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701z"></path></svg>
+            Apple
+          </button>
+        </div>
+        <p class="auth-note">Already have an account? <a href="marketplace.html#">Sign in →</a></p>
+        <p class="auth-note" style="font-size:.68rem">This platform is for investor accounts. Personal borrowers <a href="index.html#apply">apply here</a>. Business financing <a href="business.html#apply">apply here</a>. Participation as an investor is subject to eligibility requirements and a signed investor agreement. Investing involves risk of loss of principal.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════
+     APP SHELL (shown after login)
+═══════════════════════════════════ -->
+<div id="view-app" class="hidden">
+
+  <!-- Sidebar (desktop) -->
+  <aside class="sidebar">
+    <a class="sidebar-logo" href="index.html">
+      <svg viewBox="0 0 44 44" fill="none" role="img" aria-label="LendX Financial — back to homepage">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#14532d"></stop>
+            <stop offset="100%" stop-color="#22c55e"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#4ade80"></stop>
+            <stop offset="60%" stop-color="#16a34a"></stop>
+            <stop offset="100%" stop-color="#166534"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#86efac"></stop>
+            <stop offset="60%" stop-color="#22c55e"></stop>
+            <stop offset="100%" stop-color="#16a34a"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#064E3B"></stop>
+            <stop offset="100%" stop-color="#22c55e"></stop>
+          </linearGradient>
+        </defs>
+        <!-- Upper-left leaf (dark green) -->
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"></path>
+        <!-- Upper-right leaf (bright green) -->
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"></path>
+        <!-- Lower-left leaf (mid green) -->
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"></path>
+        <!-- Lower-right leaf (deep green) -->
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"></path>
+        </svg>
+      <span class="sidebar-logo-word">Lend<span>X</span></span>
+    </a>
+    <button class="sb-tab active">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      Home
+    </button>
+    <button class="sb-tab">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+      Marketplace
+    </button>
+    <button class="sb-tab">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path></svg>
+      Portfolio
+    </button>
+    <button class="sb-tab">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path></svg>
+      Borrow
+    </button>
+    <a href="private-mortgage.html" class="sb-tab" style="text-decoration:none;">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      Mortgages
+    </a>
+    <div class="sb-divider"></div>
+    <div class="sb-bottom">
+      <a href="dashboard.html" class="sb-tab" style="text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:4px">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect></svg>
+        Dashboard
+      </a>
+      <button class="sb-tab">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        Account
+      </button>
+      <button class="sb-tab">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+        Sign Out
+      </button>
+    </div>
+  </aside>
+
+  <!-- Top Nav (mobile) -->
+  <nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <svg class="lx-logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LendX Financial logo">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#14532d"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4ade80"/><stop offset="60%" stop-color="#16a34a"/><stop offset="100%" stop-color="#166534"/></linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#86efac"/><stop offset="60%" stop-color="#22c55e"/><stop offset="100%" stop-color="#16a34a"/></linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#064E3B"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+        </defs>
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"/>
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"/>
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"/>
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"/>
+      </svg>
+      <span class="brand-wordmark">Lend<span class="x-accent">X</span> Financial</span>
+    </a>
+    <div class="nav-center">
+      <a href="index.html" >Personal</a>
+      <a href="business.html" >Business</a>
+      <a href="marketplace.html" class="active">Marketplace</a>
+      <a href="payday.html" >Payday Loans</a>
+      <a href="cheque-cashing.html" >Cheque Cashing</a>
+      <a href="private-mortgage.html" >Private Mortgage</a>
+    </div>
+    <div class="nav-right">
+      <a class="n-btn n-outline" href="tel:+16472003526">647-200-3526</a>
+      <a class="n-btn n-solid" href="#waitlist">Join Waitlist →</a>
+      <button class="ham-btn" onclick="toggleMenu()" aria-label="Menu">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="nav-drawer-overlay" id="nav-overlay" onclick="toggleMenu()"></div>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="index.html" >Personal Loans</a>
+  <a href="business.html" >Business Financing</a>
+  <a href="marketplace.html" class="active">Marketplace</a>
+  <a href="payday.html" >Payday Loans</a>
+  <a href="cheque-cashing.html" >Cheque Cashing</a>
+  <a href="private-mortgage.html" >Private Mortgage</a>
+  <a href="calculator.html">Calculator</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About Us</a>
+  <a class="drawer-cta" href="#waitlist" onclick="toggleMenu()">Join Waitlist →</a>
+</div>
+<!-- Main Content -->
+  <main style="flex:1;overflow-y:auto">
+    <div class="app-content">
+
+      <!-- ── HOME ── -->
+      <div id="page-home" class="page active">
+        <div class="home-greeting">
+          <h2>Good morning, <span id="user-name">Alex</span> 👋</h2>
+          <p>Your portfolio is performing well this week.</p>
+        </div>
+
+        <div class="balance-card">
+          <div class="bc-label">Total Portfolio Value</div>
+          <div class="bc-amount"><sup>$</sup><span id="portfolio-val">12,450</span></div>
+          <div class="bc-row">
+            <div style="display:flex;gap:24px">
+              <div class="bc-stat">
+                <div class="bc-stat-val">+$284.20</div>
+                <div class="bc-stat-lbl">This month</div>
+              </div>
+              <div class="bc-stat">
+                <div class="bc-stat-val">11.2%</div>
+                <div class="bc-stat-lbl">Avg. return</div>
+              </div>
+            </div>
+            <div class="bc-actions">
+              <button class="bc-btn">+ Invest</button>
+              <button class="bc-btn">Withdraw</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="quick-stats">
+          <div class="qs-card">
+            <div class="qs-val">8</div>
+            <div class="qs-lbl">Active Loans</div>
+          </div>
+          <div class="qs-card">
+            <div class="qs-val">94%</div>
+            <div class="qs-lbl">Repayment Rate</div>
+          </div>
+          <div class="qs-card">
+            <div class="qs-val">$931</div>
+            <div class="qs-lbl">Earned Total</div>
+          </div>
+        </div>
+
+        <div class="card" style="padding:18px">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+            <span class="section-title">Recent Activity</span>
+            <span style="font-size:.78rem;font-weight:700;color:var(--cobalt);cursor:pointer">View all →</span>
+          </div>
+          <div class="activity-item">
+            <div class="act-icon green">💰</div>
+            <div class="act-main"><div class="act-title">Repayment Received</div><div class="act-sub">Loan #4821 · Grade A · 30-day</div></div>
+            <div style="text-align:right"><div class="act-amount pos">+$98.80</div><div class="act-date">Today</div></div>
+          </div>
+          <div class="activity-item">
+            <div class="act-icon blue">📊</div>
+            <div class="act-main"><div class="act-title">Investment Placed</div><div class="act-sub">Loan #4831 · Grade B · 45-day</div></div>
+            <div style="text-align:right"><div class="act-amount neg">-$500.00</div><div class="act-date">Yesterday</div></div>
+          </div>
+          <div class="activity-item">
+            <div class="act-icon green">💰</div>
+            <div class="act-main"><div class="act-title">Repayment Received</div><div class="act-sub">Loan #4798 · Grade A · 20-day</div></div>
+            <div style="text-align:right"><div class="act-amount pos">+$54.00</div><div class="act-date">Apr 2</div></div>
+          </div>
+          <div class="activity-item">
+            <div class="act-icon amber">⚠️</div>
+            <div class="act-main"><div class="act-title">Payment Reminder Sent</div><div class="act-sub">Loan #4777 · NEO Legal notified</div></div>
+            <div style="text-align:right"><div class="act-amount" style="color:var(--amber)">Pending</div><div class="act-date">Apr 1</div></div>
+          </div>
+        </div>
+
+        <div class="card" style="padding:18px;background:linear-gradient(135deg,#f0f5ff,var(--white))">
+          <div style="display:flex;gap:14px;align-items:flex-start">
+            <div style="font-size:1.4rem">📢</div>
+            <div>
+              <div class="section-title" style="font-size:.92rem">3 new listings available</div>
+              <div class="section-sub" style="margin-top:4px;margin-bottom:12px">Grade A loans just posted. High repayment probability, limited spots.</div>
+              <button class="btn btn-primary btn-sm">Browse Marketplace →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── MARKET ── -->
+      <div id="page-market" class="page">
+        <div>
+          <div class="section-title">Live Marketplace</div>
+          <div class="section-sub">Verified loans open for investment right now</div>
+        </div>
+
+        <div class="market-filters" id="market-filters">
+          <button class="filter-chip active">All Grades</button>
+          <button class="filter-chip">Grade A</button>
+          <button class="filter-chip">Grade B</button>
+          <button class="filter-chip">Grade C</button>
+          <button class="filter-chip">Under 30 days</button>
+          <button class="filter-chip">Under $500</button>
+        </div>
+
+        <div id="listings-container" style="display:flex;flex-direction:column;gap:14px"></div>
+      </div>
+
+      <!-- ── PORTFOLIO ── -->
+      <div id="page-portfolio" class="page">
+        <div>
+          <div class="section-title">My Portfolio</div>
+          <div class="section-sub">Track your investments and returns</div>
+        </div>
+
+        <div class="port-summary">
+          <div class="port-card">
+            <div class="port-val">$12,450</div>
+            <div class="port-lbl">Total Deployed</div>
+            <div class="port-change up">↑ +2.3% this month</div>
+          </div>
+          <div class="port-card">
+            <div class="port-val">$931.40</div>
+            <div class="port-lbl">Total Earned</div>
+            <div class="port-change up">↑ +$284 this month</div>
+          </div>
+          <div class="port-card">
+            <div class="port-val">8</div>
+            <div class="port-lbl">Active Investments</div>
+          </div>
+          <div class="port-card">
+            <div class="port-val">11.2%</div>
+            <div class="port-lbl">Weighted Avg. Return</div>
+          </div>
+          <div class="port-card full" style="background:var(--green-bg);border-color:rgba(34,197,94,.2)">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div class="port-val" style="color:var(--green-text)">94%</div>
+                <div class="port-lbl" style="color:var(--green-text);opacity:.8">Repayment Rate</div>
+              </div>
+              <div style="font-size:1.8rem">✅</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-title" style="margin-bottom:12px">Active Investments</div>
+          <div style="display:flex;flex-direction:column;gap:10px" id="portfolio-investments"></div>
+        </div>
+      </div>
+
+      <!-- ── BORROW ── -->
+      <div id="page-borrow" class="page">
+        <div>
+          <div class="section-title">Borrow Money</div>
+          <div class="section-sub">Personal &amp; business financing products</div>
+        </div>
+
+        <!-- Borrower type toggle -->
+        <div style="display:flex;gap:6px;background:var(--off);border-radius:12px;padding:4px;margin-top:10px">
+          <button id="borrow-tab-personal" style="flex:1;padding:9px;border-radius:9px;border:none;font-family:var(--font);font-size:.83rem;font-weight:800;cursor:pointer;background:var(--cobalt);color:#fff;transition:all .2s">👤 Personal</button>
+          <button id="borrow-tab-business" style="flex:1;padding:9px;border-radius:9px;border:none;font-family:var(--font);font-size:.83rem;font-weight:800;cursor:pointer;background:transparent;color:var(--muted);transition:all .2s">🏢 Business</button>
+        </div>
+
+        <!-- PERSONAL PRODUCTS -->
+        <div id="borrow-personal" style="display:flex;flex-direction:column;gap:14px;margin-top:12px">
+          <!-- PAYDAY LOAN CARD -->
+          <div style="background:linear-gradient(135deg,#1546c8,#0f35a0);border-radius:20px;padding:24px;color:#fff;position:relative;overflow:hidden">
+            <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:rgba(255,255,255,.06);border-radius:50%"></div>
+            <div style="font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:6px">Most Popular</div>
+            <div style="font-size:1.25rem;font-weight:900;letter-spacing:-.03em;margin-bottom:4px">Payday Loan</div>
+            <div style="font-size:.82rem;color:rgba(255,255,255,.75);margin-bottom:14px">$300 – $1,500 · Up to 62 days · $14 per $100</div>
+            <div style="background:rgba(255,255,255,.1);border-radius:12px;padding:12px;margin-bottom:14px">
+              <div style="font-size:.64rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:8px">Rate Matrix — $14 per $100 (Ontario)</div>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:5px" id="mini-matrix-inner">
+                <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:7px 8px;text-align:center"><div style="font-size:.62rem;color:rgba(255,255,255,.6)">$300</div><div style="font-size:.88rem;font-weight:900">$42</div><div style="font-size:.6rem;color:rgba(255,255,255,.5)">fee</div></div>
+                <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:7px 8px;text-align:center"><div style="font-size:.62rem;color:rgba(255,255,255,.6)">$500</div><div style="font-size:.88rem;font-weight:900">$70</div><div style="font-size:.6rem;color:rgba(255,255,255,.5)">fee</div></div>
+                <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:7px 8px;text-align:center"><div style="font-size:.62rem;color:rgba(255,255,255,.6)">$1,000</div><div style="font-size:.88rem;font-weight:900">$140</div><div style="font-size:.6rem;color:rgba(255,255,255,.5)">fee</div></div>
+                <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:7px 8px;text-align:center"><div style="font-size:.62rem;color:rgba(255,255,255,.6)">$300 → repay</div><div style="font-size:.82rem;font-weight:900">$342</div><div style="font-size:.6rem;color:#6ee7b7">total</div></div>
+                <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:7px 8px;text-align:center"><div style="font-size:.62rem;color:rgba(255,255,255,.6)">$500 → repay</div><div style="font-size:.82rem;font-weight:900">$570</div><div style="font-size:.6rem;color:#6ee7b7">total</div></div>
+                <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:7px 8px;text-align:center"><div style="font-size:.62rem;color:rgba(255,255,255,.6)">$1,000 → repay</div><div style="font-size:.82rem;font-weight:900">$1,140</div><div style="font-size:.6rem;color:#6ee7b7">total</div></div>
+              </div>
+            </div>
+            <div style="display:flex;gap:8px">
+              <a href="payday.html#apply" style="flex:1;background:#fff;color:var(--cobalt);font-family:var(--font);font-size:.85rem;font-weight:900;padding:11px 0;border-radius:10px;text-align:center;text-decoration:none;display:block">Apply Now →</a>
+              <a href="payday.html" style="background:rgba(255,255,255,.15);color:#fff;font-family:var(--font);font-size:.82rem;font-weight:800;padding:11px 14px;border-radius:10px;text-decoration:none;white-space:nowrap">Full Matrix</a>
+            </div>
+          </div>
+
+          <!-- CHEQUE CASHING CARD -->
+          <div style="background:linear-gradient(135deg,#059669,#047857);border-radius:20px;padding:24px;color:#fff;position:relative;overflow:hidden">
+            <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:rgba(255,255,255,.06);border-radius:50%"></div>
+            <div style="font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:6px">Instant Service</div>
+            <div style="font-size:1.25rem;font-weight:900;letter-spacing:-.03em;margin-bottom:4px">Cheque Cashing</div>
+            <div style="font-size:.82rem;color:rgba(255,255,255,.75);margin-bottom:14px">$100 – $10,000 · Interac e-Transfer · 5–15 min</div>
+            <div style="background:rgba(255,255,255,.1);border-radius:12px;padding:12px;margin-bottom:14px">
+              <div style="font-size:.64rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:8px">Fee Rates by Cheque Type</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px">
+                <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:8px 10px"><div style="font-size:.68rem;color:rgba(255,255,255,.65)">Gov't / CRA</div><div style="font-size:1.05rem;font-weight:900">1.5%</div><div style="font-size:.62rem;color:rgba(255,255,255,.5)">min $5</div></div>
+                <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:8px 10px"><div style="font-size:.68rem;color:rgba(255,255,255,.65)">Payroll</div><div style="font-size:1.05rem;font-weight:900">2.5%</div><div style="font-size:.62rem;color:rgba(255,255,255,.5)">min $8</div></div>
+                <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:8px 10px"><div style="font-size:.68rem;color:rgba(255,255,255,.65)">Business</div><div style="font-size:1.05rem;font-weight:900">3.5%</div><div style="font-size:.62rem;color:rgba(255,255,255,.5)">min $12</div></div>
+                <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:8px 10px"><div style="font-size:.68rem;color:rgba(255,255,255,.65)">Personal</div><div style="font-size:1.05rem;font-weight:900">5%</div><div style="font-size:.62rem;color:rgba(255,255,255,.5)">min $15</div></div>
+              </div>
+            </div>
+            <a href="cheque-cashing.html#apply-form" style="display:block;background:#fff;color:var(--green);font-family:var(--font);font-size:.85rem;font-weight:900;padding:11px 0;border-radius:10px;text-align:center;text-decoration:none">Cash a Cheque Now →</a>
+          </div>
+
+          <!-- PRIVATE MORTGAGE -->
+          <div style="background:linear-gradient(135deg,#7c3aed,#5b21b6);border-radius:20px;padding:24px;color:#fff;position:relative;overflow:hidden">
+            <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:rgba(255,255,255,.06);border-radius:50%"></div>
+            <div style="font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:6px">Broker Referral Program</div>
+            <div style="font-size:1.25rem;font-weight:900;letter-spacing:-.03em;margin-bottom:4px">Private Mortgage Financing</div>
+            <div style="font-size:.82rem;color:rgba(255,255,255,.75);margin-bottom:14px">B borrowers, construction &amp; bridge loans · 8%–15% · Secured by real estate</div>
+            <a href="private-mortgage.html" style="display:block;background:#fff;color:#7c3aed;font-family:var(--font);font-size:.85rem;font-weight:900;padding:11px 0;border-radius:10px;text-align:center;text-decoration:none">Apply for Mortgage →</a>
+          </div>
+        </div>
+
+        <!-- QUICK APPLY INLINE FORM -->
+        <div style="margin-top:14px;background:var(--off);border:1.5px solid var(--border);border-radius:18px;padding:18px">
+          <div style="font-size:.92rem;font-weight:900;color:var(--ink);margin-bottom:3px">Quick Payday Apply</div>
+          <div style="font-size:.74rem;color:var(--muted);margin-bottom:14px">Ontario · $14/$100 · Same-day Interac</div>
+          <div id="borrow-err" style="background:#fee2e2;border:1.5px solid #fca5a5;color:#b91c1c;font-size:.76rem;font-weight:600;padding:8px 12px;border-radius:8px;display:none;margin-bottom:8px"></div>
+          <div id="borrow-success" style="background:var(--green-light);border:1.5px solid #6ee7b7;color:#065f46;padding:14px;border-radius:10px;display:none;font-size:.8rem;line-height:1.6"></div>
+          <form id="borrow-quick-form" style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <input type="text" name="first_name" placeholder="First name *" required="" style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.85rem;color:var(--ink)">
+              <input type="text" name="last_name" placeholder="Last name *" required="" style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.85rem;color:var(--ink)">
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <div><label style="font-size:.7rem;font-weight:800;display:block;margin-bottom:3px">Amount</label>
+              <select name="loan_amount" style="width:100%;padding:9px 10px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.83rem;color:var(--ink)">
+                <option value="300">$300</option><option value="400">$400</option><option value="500" selected="">$500</option><option value="600">$600</option><option value="700">$700</option><option value="800">$800</option><option value="1000">$1,000</option><option value="1200">$1,200</option><option value="1500">$1,500</option>
+              </select></div>
+              <div><label style="font-size:.7rem;font-weight:800;display:block;margin-bottom:3px">Term</label>
+              <select name="loan_term" style="width:100%;padding:9px 10px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.83rem;color:var(--ink)">
+                <option value="7">7 days</option><option value="14" selected="">14 days</option><option value="21">21 days</option><option value="30">30 days</option><option value="45">45 days</option><option value="62">62 days</option>
+              </select></div>
+            </div>
+            <div style="background:#fff;border:1.5px solid var(--border);border-radius:9px;padding:10px;font-size:.78rem">
+              <div style="display:flex;justify-content:space-between;padding:2px 0"><span style="color:var(--muted)">Fee (14%)</span><span id="bc-fee" style="font-weight:900;color:var(--amber)">$70.00</span></div>
+              <div style="display:flex;justify-content:space-between;padding:4px 0;border-top:1px solid var(--border);margin-top:4px"><span style="font-weight:700">Total repay</span><span id="bc-repay" style="font-weight:900;color:var(--cobalt)">$570.00</span></div>
+            </div>
+            <input type="email" name="email" placeholder="Email address *" required="" style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.85rem;color:var(--ink)">
+            <input type="tel" name="phone" placeholder="Phone number *" required="" style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.85rem;color:var(--ink)">
+            <select name="income_source" style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.85rem;color:var(--ink)">
+              <option value="">Income source (optional)</option>
+              <option value="Employment">Employment (full-time/part-time)</option>
+              <option value="Self-Employed">Self-Employed</option>
+              <option value="ODSP">ODSP</option>
+              <option value="OW">Ontario Works</option>
+              <option value="CPP/OAS">CPP / OAS</option>
+              <option value="EI">Employment Insurance</option>
+              <option value="Other">Other</option>
+            </select>
+            
+            <button type="submit" id="borrow-quick-btn" style="padding:12px;background:var(--cobalt);color:#fff;border:none;border-radius:10px;font-family:var(--font);font-size:.85rem;font-weight:900;cursor:pointer">Get Decision in Minutes →</button>
+          </form>
+        </div>
+        </div><!-- /borrow-personal -->
+
+        <!-- BUSINESS PRODUCTS -->
+        <div id="borrow-business" style="display:none;flex-direction:column;gap:14px;margin-top:12px">
+
+          <!-- Business Term Loan -->
+          <div style="background:linear-gradient(135deg,#1e3a8a,#1d4ed8);border-radius:20px;padding:24px;color:#fff;position:relative;overflow:hidden">
+            <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:rgba(255,255,255,.06);border-radius:50%"></div>
+            <div style="font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:6px">Most Popular</div>
+            <div style="font-size:1.25rem;font-weight:900;letter-spacing:-.03em;margin-bottom:4px">Business Term Loan</div>
+            <div style="font-size:.82rem;color:rgba(255,255,255,.75);margin-bottom:14px">$10,000 – $500,000 · 6–60 months · 9–29% APR</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;margin-bottom:14px">
+              <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:8px 10px;text-align:center"><div style="font-size:.62rem;color:rgba(255,255,255,.6)">Min amount</div><div style="font-size:.95rem;font-weight:900">$10K</div></div>
+              <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:8px 10px;text-align:center"><div style="font-size:.62rem;color:rgba(255,255,255,.6)">Max amount</div><div style="font-size:.95rem;font-weight:900">$500K</div></div>
+              <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:8px 10px;text-align:center"><div style="font-size:.62rem;color:rgba(255,255,255,.6)">Decision</div><div style="font-size:.95rem;font-weight:900">24 hrs</div></div>
+            </div>
+            <a href="business.html#apply" style="display:block;background:#fff;color:#1d4ed8;font-family:var(--font);font-size:.85rem;font-weight:900;padding:11px 0;border-radius:10px;text-align:center;text-decoration:none">Apply for Business Loan →</a>
+          </div>
+
+          <!-- Line of Credit -->
+          <div style="background:linear-gradient(135deg,#047857,#059669);border-radius:20px;padding:24px;color:#fff;position:relative;overflow:hidden">
+            <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:rgba(255,255,255,.06);border-radius:50%"></div>
+            <div style="font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:6px">Flexible Access</div>
+            <div style="font-size:1.25rem;font-weight:900;letter-spacing:-.03em;margin-bottom:4px">Business Line of Credit</div>
+            <div style="font-size:.82rem;color:rgba(255,255,255,.75);margin-bottom:14px">Up to $250,000 · Revolving · 12–24% APR</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-bottom:14px">
+              <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:8px 10px"><div style="font-size:.68rem;color:rgba(255,255,255,.65)">Draw funds anytime</div><div style="font-size:.9rem;font-weight:900">On demand</div></div>
+              <div style="background:rgba(255,255,255,.12);border-radius:7px;padding:8px 10px"><div style="font-size:.68rem;color:rgba(255,255,255,.65)">Interest on used only</div><div style="font-size:.9rem;font-weight:900">Pay as you go</div></div>
+            </div>
+            <a href="business.html#apply" style="display:block;background:#fff;color:#059669;font-family:var(--font);font-size:.85rem;font-weight:900;padding:11px 0;border-radius:10px;text-align:center;text-decoration:none">Apply for Line of Credit →</a>
+          </div>
+
+          <!-- Invoice Factoring -->
+          <div style="background:linear-gradient(135deg,#0d9488,#0f766e);border-radius:20px;padding:24px;color:#fff;position:relative;overflow:hidden">
+            <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:rgba(255,255,255,.06);border-radius:50%"></div>
+            <div style="font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:6px">Get Paid Today</div>
+            <div style="font-size:1.25rem;font-weight:900;letter-spacing:-.03em;margin-bottom:4px">Invoice Factoring</div>
+            <div style="font-size:.82rem;color:rgba(255,255,255,.75);margin-bottom:14px">Up to 90% advance · 1.5–4% / month · Same-day</div>
+            <div style="background:rgba(255,255,255,.1);border-radius:12px;padding:12px;margin-bottom:14px">
+              <div style="font-size:.64rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:6px">How it works</div>
+              <div style="display:flex;flex-direction:column;gap:5px">
+                <div style="display:flex;align-items:center;gap:8px;font-size:.78rem;color:rgba(255,255,255,.85)"><span style="width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;font-size:.62rem;font-weight:900;flex-shrink:0">1</span>Submit your outstanding invoices</div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:.78rem;color:rgba(255,255,255,.85)"><span style="width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;font-size:.62rem;font-weight:900;flex-shrink:0">2</span>Receive up to 90% advance today</div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:.78rem;color:rgba(255,255,255,.85)"><span style="width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;font-size:.62rem;font-weight:900;flex-shrink:0">3</span>Remainder paid when client pays</div>
+              </div>
+            </div>
+            <a href="business.html#apply" style="display:block;background:#fff;color:#0d9488;font-family:var(--font);font-size:.85rem;font-weight:900;padding:11px 0;border-radius:10px;text-align:center;text-decoration:none">Apply for Invoice Factoring →</a>
+          </div>
+
+          <!-- Commercial Mortgage -->
+          <div style="background:linear-gradient(135deg,#92400e,#b45309);border-radius:20px;padding:24px;color:#fff;position:relative;overflow:hidden">
+            <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:rgba(255,255,255,.06);border-radius:50%"></div>
+            <div style="font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:6px">Broker Referral</div>
+            <div style="font-size:1.25rem;font-weight:900;letter-spacing:-.03em;margin-bottom:4px">Commercial Mortgage</div>
+            <div style="font-size:.82rem;color:rgba(255,255,255,.75);margin-bottom:14px">$100K – $5M · 8–15% · 6 mo – 3 yrs · Up to 75% LTV</div>
+            <a href="private-mortgage.html#broker-referral" style="display:block;background:#fff;color:#92400e;font-family:var(--font);font-size:.85rem;font-weight:900;padding:11px 0;border-radius:10px;text-align:center;text-decoration:none">Submit via Broker →</a>
+          </div>
+
+          <!-- Business Cheque Cashing -->
+          <div style="background:linear-gradient(135deg,#5b21b6,#7c3aed);border-radius:20px;padding:24px;color:#fff;position:relative;overflow:hidden">
+            <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:rgba(255,255,255,.06);border-radius:50%"></div>
+            <div style="font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:6px">Instant Payout</div>
+            <div style="font-size:1.25rem;font-weight:900;letter-spacing:-.03em;margin-bottom:4px">Business Cheque Cashing</div>
+            <div style="font-size:.82rem;color:rgba(255,255,255,.75);margin-bottom:14px">Payroll, certified &amp; commercial cheques · 1.5–3.5% fee</div>
+            <a href="cheque-cashing.html#apply-form" style="display:block;background:#fff;color:#7c3aed;font-family:var(--font);font-size:.85rem;font-weight:900;padding:11px 0;border-radius:10px;text-align:center;text-decoration:none">Cash a Business Cheque →</a>
+          </div>
+
+          <!-- Quick Business Apply Form -->
+          <div style="background:var(--off);border:1.5px solid var(--border);border-radius:18px;padding:18px">
+            <div style="font-size:.92rem;font-weight:900;color:var(--ink);margin-bottom:3px">Quick Business Apply</div>
+            <div style="font-size:.74rem;color:var(--muted);margin-bottom:14px">All products · 24hr decision · No credit impact</div>
+            <div id="biz-borrow-err" style="background:#fee2e2;border:1.5px solid #fca5a5;color:#b91c1c;font-size:.76rem;font-weight:600;padding:8px 12px;border-radius:8px;display:none;margin-bottom:8px"></div>
+            <div id="biz-borrow-success" style="background:var(--green-light);border:1.5px solid #6ee7b7;color:#065f46;padding:14px;border-radius:10px;display:none;font-size:.8rem;line-height:1.6"></div>
+            <form id="biz-borrow-form" style="display:flex;flex-direction:column;gap:10px">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+                <input type="text" name="first_name" placeholder="First name *" required="" style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.85rem;color:var(--ink)">
+                <input type="text" name="last_name" placeholder="Last name *" required="" style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.85rem;color:var(--ink)">
+              </div>
+              <input type="text" name="company" placeholder="Business name *" required="" style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.85rem;color:var(--ink)">
+              <input type="email" name="email" placeholder="Business email *" required="" style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.85rem;color:var(--ink)">
+              <input type="tel" name="phone" placeholder="Phone number *" required="" style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.85rem;color:var(--ink)">
+              <select name="product" style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.85rem;color:var(--ink)" required="">
+                <option value="">Product needed *</option>
+                <option value="term_loan">Business Term Loan</option>
+                <option value="line_of_credit">Line of Credit</option>
+                <option value="invoice_factoring">Invoice Factoring</option>
+                <option value="commercial_mortgage">Commercial Mortgage</option>
+                <option value="cheque_cashing">Business Cheque Cashing</option>
+              </select>
+              <select name="amount" style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--font);font-size:.85rem;color:var(--ink)" required="">
+                <option value="">Amount needed *</option>
+                <option value="5k-25k">$5,000 – $25,000</option>
+                <option value="25k-75k">$25,000 – $75,000</option>
+                <option value="75k-150k">$75,000 – $150,000</option>
+                <option value="150k-500k">$150,000 – $500,000</option>
+                <option value="500k+">$500,000+</option>
+              </select>
+              <button type="submit" id="biz-borrow-btn" style="padding:12px;background:#1d4ed8;color:#fff;border:none;border-radius:10px;font-family:var(--font);font-size:.85rem;font-weight:900;cursor:pointer">Get Business Decision →</button>
+            </form>
+          </div>
+
+          <a href="business.html" style="display:block;text-align:center;padding:13px;background:var(--off);border:1.5px solid var(--border);border-radius:12px;font-family:var(--font);font-size:.85rem;font-weight:800;color:var(--cobalt);text-decoration:none">View All Business Products →</a>
+        </div><!-- /borrow-business -->
+      </div>
+
+      <!-- ── ACCOUNT ── -->
+      <div id="page-account" class="page">
+
+        <!-- Profile Hero -->
+        <div class="acct-profile" id="acct-profile-hero">
+          <div class="acct-avatar" id="acct-avatar-letter">A</div>
+          <div style="flex:1">
+            <div class="acct-name" id="acct-full-name">Loading…</div>
+            <div class="acct-email" id="acct-email-display"></div>
+            <div id="acct-kyc-badge" class="acct-kyc">● Checking status…</div>
+          </div>
+          <button style="background:var(--off);border:1.5px solid var(--border);border-radius:10px;padding:7px 13px;font-family:var(--font);font-size:.78rem;font-weight:800;color:var(--ink);cursor:pointer">Edit</button>
+        </div>
+
+        <!-- Portfolio Snapshot -->
+        <div id="acct-stats-row" style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:4px">
+          <div class="acct-stat-card"><div class="asc-val" id="as-invested">—</div><div class="asc-label">Invested</div></div>
+          <div class="acct-stat-card"><div class="asc-val" id="as-active">—</div><div class="asc-label">Active Loans</div></div>
+          <div class="acct-stat-card"><div class="asc-val" id="as-rate">—</div><div class="asc-label">Avg Rate</div></div>
+          <div class="acct-stat-card"><div class="asc-val" id="as-return" style="color:var(--green)">—</div><div class="asc-label">Proj. Return</div></div>
+        </div>
+
+        <!-- Menu Groups -->
+        <div class="menu-group">
+          <div class="menu-group-title">Investor Tools</div>
+
+          <div class="menu-item">
+            <div class="mi-icon" style="background:#ecfdf5">⚡</div>
+            <div class="mi-text">
+              <div class="mi-title">Auto-Invest</div>
+              <div class="mi-sub" id="ai-menu-sub">Set rules · automatically deploy capital</div>
+            </div>
+            <span id="ai-menu-badge" class="pill pill-green" style="display:none">ON</span>
+            <svg class="mi-arrow" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"></path></svg>
+          </div>
+
+          <div class="menu-item">
+            <div class="mi-icon" style="background:var(--amber-bg)">📄</div>
+            <div class="mi-text">
+              <div class="mi-title">Tax Documents</div>
+              <div class="mi-sub" id="tax-menu-sub">T5 slips · CRA reporting</div>
+            </div>
+            <svg class="mi-arrow" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"></path></svg>
+          </div>
+
+          <div class="menu-item">
+            <div class="mi-icon" style="background:var(--green-bg)">🪪</div>
+            <div class="mi-text">
+              <div class="mi-title">Identity Verification (KYC)</div>
+              <div class="mi-sub" id="kyc-menu-sub">Loading…</div>
+            </div>
+            <span id="kyc-menu-badge" class="pill pill-green">—</span>
+          </div>
+        </div>
+
+        <div class="menu-group">
+          <div class="menu-group-title">Settings</div>
+
+          <div class="menu-item">
+            <div class="mi-icon" style="background:#eff6ff">🔔</div>
+            <div class="mi-text"><div class="mi-title">Notifications</div><div class="mi-sub" id="notif-menu-sub">Email, push &amp; SMS preferences</div></div>
+            <svg class="mi-arrow" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"></path></svg>
+          </div>
+
+          <div class="menu-item">
+            <div class="mi-icon" style="background:#fdf4ff">🔒</div>
+            <div class="mi-text"><div class="mi-title">Security &amp; Password</div><div class="mi-sub">Change password · account security</div></div>
+            <svg class="mi-arrow" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"></path></svg>
+          </div>
+        </div>
+
+        <div class="menu-group">
+          <div class="menu-group-title">Support</div>
+          <div class="menu-item">
+            <div class="mi-icon" style="background:var(--off)">📞</div>
+            <div class="mi-text"><div class="mi-title">Call Us</div><div class="mi-sub">647-200-3526 · Mon–Fri 9am–6pm ET</div></div>
+            <svg class="mi-arrow" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"></path></svg>
+          </div>
+          <div class="menu-item">
+            <div class="mi-icon" style="background:var(--off)">✉️</div>
+            <div class="mi-text"><div class="mi-title">Email Investor Relations</div><div class="mi-sub">investors@lendxfinancial.com</div></div>
+            <svg class="mi-arrow" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"></path></svg>
+          </div>
+          <div class="menu-item danger">
+            <div class="mi-icon" style="background:var(--red-bg)">🚪</div>
+            <div class="mi-text"><div class="mi-title">Sign Out</div></div>
+          </div>
+        </div>
+
+        <div style="text-align:center;font-size:.66rem;color:var(--muted);padding:4px 0 14px;line-height:1.7">
+          LendX Financial Inc. · v2.0 · <a href="index.html" style="color:var(--cobalt)">Main Site</a> · <a href="calculator.html" style="color:var(--cobalt)">Calculator</a><br>
+          Investing involves risk. Past returns ≠ future performance.
+        </div>
+      </div>
+
+      <!-- ══ ACCOUNT SUB-PANELS (slide over) ══ -->
+
+      <!-- ── Profile Edit Panel ── -->
+      <div id="acct-panel-profile" class="acct-panel">
+        <div class="ap-header">
+          <button class="ap-back">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"></path></svg>
+          </button>
+          <div class="ap-title">Edit Profile</div>
+          <div style="width:32px"></div>
+        </div>
+        <div class="ap-body">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+            <div><label class="ap-label">First Name</label><input class="ap-input" id="pf-first" type="text" placeholder="First name"></div>
+            <div><label class="ap-label">Last Name</label><input class="ap-input" id="pf-last" type="text" placeholder="Last name"></div>
+          </div>
+          <div style="margin-bottom:12px"><label class="ap-label">Phone Number</label><input class="ap-input" id="pf-phone" type="tel" placeholder="+1 (416) 555-0100"></div>
+          <div style="margin-bottom:12px"><label class="ap-label">Province</label>
+            <select class="ap-input" id="pf-province">
+              <option value="">Select province</option>
+              <option value="ON">Ontario</option><option value="BC">British Columbia</option>
+              <option value="AB">Alberta</option><option value="QC">Quebec</option>
+              <option value="MB">Manitoba</option><option value="SK">Saskatchewan</option>
+              <option value="NS">Nova Scotia</option><option value="NB">New Brunswick</option>
+              <option value="NL">Newfoundland &amp; Labrador</option><option value="PE">PEI</option>
+            </select>
+          </div>
+          <div style="margin-bottom:20px"><label class="ap-label">Date of Birth</label><input class="ap-input" id="pf-dob" type="date"></div>
+          <div id="pf-err" class="ap-err" style="display:none"></div>
+          <button class="ap-btn-primary" id="pf-save-btn">Save Changes</button>
+        </div>
+      </div>
+
+      <!-- ── Auto-Invest Panel ── -->
+      <div id="acct-panel-autoinvest" class="acct-panel">
+        <div class="ap-header">
+          <button class="ap-back">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"></path></svg>
+          </button>
+          <div class="ap-title">Auto-Invest</div>
+          <div style="width:32px"></div>
+        </div>
+        <div class="ap-body">
+          <!-- Toggle -->
+          <div style="background:linear-gradient(135deg,#064e3b,#059669);border-radius:18px;padding:20px;margin-bottom:18px;color:#fff">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-size:1rem;font-weight:900;letter-spacing:-.02em">Auto-Invest</div>
+                <div style="font-size:.78rem;opacity:.75;margin-top:2px" id="ai-toggle-sub">Automatically invest in new loans matching your rules</div>
+              </div>
+              <div class="ai-toggle-wrap">
+                <div class="ai-toggle" id="ai-toggle-btn"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="ai-settings" style="display:flex;flex-direction:column;gap:14px">
+            <!-- Min/Max per investment -->
+            <div style="background:var(--white);border:1.5px solid var(--border);border-radius:14px;padding:16px">
+              <div style="font-size:.78rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px">Investment Amount Per Loan</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                <div><label class="ap-label">Min per loan</label>
+                  <div style="position:relative"><span style="position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted);font-weight:700">$</span>
+                  <input class="ap-input" id="ai-min" type="number" min="50" max="5000" value="100" style="padding-left:24px"></div></div>
+                <div><label class="ap-label">Max per loan</label>
+                  <div style="position:relative"><span style="position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted);font-weight:700">$</span>
+                  <input class="ap-input" id="ai-max" type="number" min="50" max="5000" value="500" style="padding-left:24px"></div></div>
+              </div>
+              <div style="margin-top:10px"><label class="ap-label">Daily deployment limit</label>
+                <div style="position:relative"><span style="position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted);font-weight:700">$</span>
+                <input class="ap-input" id="ai-daily" type="number" min="100" max="10000" value="1000" style="padding-left:24px"></div>
+              </div>
+            </div>
+
+            <!-- Loan Grades -->
+            <div style="background:var(--white);border:1.5px solid var(--border);border-radius:14px;padding:16px">
+              <div style="font-size:.78rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px">Loan Grades</div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <label class="grade-chip grade-a"><input type="checkbox" id="ai-grade-a" checked=""><span>Grade A</span><small>Low Risk · 8–12%</small></label>
+                <label class="grade-chip grade-b"><input type="checkbox" id="ai-grade-b" checked=""><span>Grade B</span><small>Med Risk · 13–18%</small></label>
+                <label class="grade-chip grade-c"><input type="checkbox" id="ai-grade-c"><span>Grade C</span><small>High Risk · 19–25%</small></label>
+              </div>
+            </div>
+
+            <!-- Rate Range -->
+            <div style="background:var(--white);border:1.5px solid var(--border);border-radius:14px;padding:16px">
+              <div style="font-size:.78rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px">Interest Rate Range</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                <div><label class="ap-label">Min rate (%)</label><input class="ap-input" id="ai-minrate" type="number" min="6" max="25" value="8"></div>
+                <div><label class="ap-label">Max rate (%)</label><input class="ap-input" id="ai-maxrate" type="number" min="6" max="25" value="25"></div>
+              </div>
+            </div>
+
+            <!-- Max term + reinvest -->
+            <div style="background:var(--white);border:1.5px solid var(--border);border-radius:14px;padding:16px">
+              <div style="font-size:.78rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px">Other Settings</div>
+              <div style="margin-bottom:12px"><label class="ap-label">Max loan term (days)</label>
+                <select class="ap-input" id="ai-term">
+                  <option value="14">14 days</option><option value="21">21 days</option>
+                  <option value="30">30 days</option><option value="45">45 days</option>
+                  <option value="62" selected="">62 days (max)</option>
+                </select>
+              </div>
+              <div class="ap-toggle-row">
+                <div><div style="font-size:.87rem;font-weight:700">Reinvest Returns</div><div style="font-size:.75rem;color:var(--muted)">Auto-reinvest repaid principal + interest</div></div>
+                <label class="toggle-switch"><input type="checkbox" id="ai-reinvest" checked=""><span class="toggle-slider"></span></label>
+              </div>
+            </div>
+
+            <div id="ai-err" class="ap-err" style="display:none"></div>
+            <button class="ap-btn-primary" id="ai-save-btn">Save Auto-Invest Rules</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Tax Documents Panel ── -->
+      <div id="acct-panel-tax" class="acct-panel">
+        <div class="ap-header">
+          <button class="ap-back">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"></path></svg>
+          </button>
+          <div class="ap-title">Tax Documents</div>
+          <div style="width:32px"></div>
+        </div>
+        <div class="ap-body">
+          <div style="background:#fefce8;border:1.5px solid #fde68a;border-radius:14px;padding:14px;margin-bottom:16px;font-size:.8rem;color:#78350f;line-height:1.5">
+            <strong>📋 CRA Reporting:</strong> LendX issues T5 slips for investment income earned through the P2P platform. Report Box 13 (Interest from Canadian Sources) on line 12100 of your T1 return.
+          </div>
+          <div id="tax-docs-list" style="display:flex;flex-direction:column;gap:12px">
+            <div style="text-align:center;padding:32px;color:var(--muted)"><div class="spinner"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── KYC Panel ── -->
+      <div id="acct-panel-kyc" class="acct-panel">
+        <div class="ap-header">
+          <button class="ap-back">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"></path></svg>
+          </button>
+          <div class="ap-title">Identity Verification</div>
+          <div style="width:32px"></div>
+        </div>
+        <div class="ap-body">
+          <div id="kyc-panel-content">
+            <div style="text-align:center;padding:32px;color:var(--muted)"><div class="spinner"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Notifications Panel ── -->
+      <div id="acct-panel-notifications" class="acct-panel">
+        <div class="ap-header">
+          <button class="ap-back">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"></path></svg>
+          </button>
+          <div class="ap-title">Notifications</div>
+          <div style="width:32px"></div>
+        </div>
+        <div class="ap-body">
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <div style="font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;margin-top:4px">Email</div>
+            <div class="ap-toggle-row"><div><div class="ap-toggle-title">New loan match</div><div class="ap-toggle-sub">When a loan matches your criteria</div></div><label class="toggle-switch"><input type="checkbox" id="n-email-match" checked=""><span class="toggle-slider"></span></label></div>
+            <div class="ap-toggle-row"><div><div class="ap-toggle-title">Repayment received</div><div class="ap-toggle-sub">When a borrower repays</div></div><label class="toggle-switch"><input type="checkbox" id="n-email-repay" checked=""><span class="toggle-slider"></span></label></div>
+            <div class="ap-toggle-row"><div><div class="ap-toggle-title">Agreement signed</div><div class="ap-toggle-sub">Investment agreement confirmation</div></div><label class="toggle-switch"><input type="checkbox" id="n-email-agree" checked=""><span class="toggle-slider"></span></label></div>
+            <div class="ap-toggle-row"><div><div class="ap-toggle-title">Withdrawal processed</div><div class="ap-toggle-sub">When your withdrawal completes</div></div><label class="toggle-switch"><input type="checkbox" id="n-email-withdraw" checked=""><span class="toggle-slider"></span></label></div>
+            <div class="ap-toggle-row"><div><div class="ap-toggle-title">Platform updates</div><div class="ap-toggle-sub">New features &amp; investor newsletter</div></div><label class="toggle-switch"><input type="checkbox" id="n-email-mkt"><span class="toggle-slider"></span></label></div>
+
+            <div style="font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;margin-top:12px">Push Notifications</div>
+            <div class="ap-toggle-row"><div><div class="ap-toggle-title">New match available</div><div class="ap-toggle-sub">Instant push when loans go live</div></div><label class="toggle-switch"><input type="checkbox" id="n-push-match" checked=""><span class="toggle-slider"></span></label></div>
+
+            <div style="font-size:.72rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;margin-top:12px">SMS</div>
+            <div class="ap-toggle-row"><div><div class="ap-toggle-title">New match available</div><div class="ap-toggle-sub">Text alert for new loans (carrier rates apply)</div></div><label class="toggle-switch"><input type="checkbox" id="n-sms-match"><span class="toggle-slider"></span></label></div>
+            <div class="ap-toggle-row"><div><div class="ap-toggle-title">Repayment received</div><div class="ap-toggle-sub">Text when repayment lands</div></div><label class="toggle-switch"><input type="checkbox" id="n-sms-repay"><span class="toggle-slider"></span></label></div>
+          </div>
+          <div id="notif-err" class="ap-err" style="display:none;margin-top:10px"></div>
+          <button class="ap-btn-primary" id="notif-save-btn" style="margin-top:18px">Save Preferences</button>
+        </div>
+      </div>
+
+      <!-- ── Security Panel ── -->
+      <div id="acct-panel-security" class="acct-panel">
+        <div class="ap-header">
+          <button class="ap-back">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"></path></svg>
+          </button>
+          <div class="ap-title">Security &amp; Password</div>
+          <div style="width:32px"></div>
+        </div>
+        <div class="ap-body">
+          <div style="background:#f0fdf4;border:1.5px solid #6ee7b7;border-radius:12px;padding:14px;margin-bottom:18px;font-size:.8rem;color:#065f46">
+            🔒 Use a strong, unique password. LendX will never ask for your password by email or phone.
+          </div>
+          <div style="margin-bottom:12px"><label class="ap-label">Current Password</label><input class="ap-input" id="sec-cur" type="password" placeholder="Current password"></div>
+          <div style="margin-bottom:12px"><label class="ap-label">New Password</label><input class="ap-input" id="sec-new" type="password" placeholder="At least 8 characters"></div>
+          <div style="margin-bottom:20px"><label class="ap-label">Confirm New Password</label><input class="ap-input" id="sec-conf" type="password" placeholder="Repeat new password"></div>
+          <div id="sec-err" class="ap-err" style="display:none"></div>
+          <div id="sec-ok" style="display:none;background:#dcfce7;border:1.5px solid #6ee7b7;color:#065f46;border-radius:10px;padding:11px 14px;font-size:.82rem;font-weight:700;margin-bottom:10px"></div>
+          <button class="ap-btn-primary" id="sec-save-btn">Update Password</button>
+          <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border)">
+            <div style="font-size:.82rem;font-weight:800;color:var(--ink);margin-bottom:8px">Active Sessions</div>
+            <div style="background:var(--off);border:1px solid var(--border);border-radius:10px;padding:12px;font-size:.8rem">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div><strong>Current session</strong><br><span style="color:var(--muted)">This device · Active now</span></div>
+                <span class="pill pill-green" style="font-size:.65rem">Active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main></div><!-- /app-content -->
+  
+
+  <!-- Bottom Nav (mobile) -->
+  <!-- INVEST MODAL -->
+<div class="modal-overlay" id="invest-modal">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div id="modal-invest-form">
+      <div class="modal-head">
+        <h3 id="modal-title">Invest in Loan #4821</h3>
+        <p id="modal-subtitle">Grade A · 12.4% return · 30 days</p>
+      </div>
+      <div class="modal-body">
+        <div class="invest-amount-display">
+          <div class="iad-label">Investment Amount</div>
+          <div class="iad-val" id="invest-display">$250</div>
+        </div>
+        <div>
+          <div class="label" style="margin-bottom:8px">Quick Select</div>
+          <div class="invest-presets">
+            <button class="preset-btn">$100</button>
+            <button class="preset-btn active">$250</button>
+            <button class="preset-btn">$500</button>
+            <button class="preset-btn">$1,000</button>
+          </div>
+        </div>
+        <div class="auth-form-group">
+          <label class="label">Custom Amount</label>
+          <input class="fi" id="custom-amount" type="number" min="50" max="5000" placeholder="Enter amount (min. $50)">
+        </div>
+        <div class="invest-summary">
+          <div class="is-row"><span class="is-key">Loan Amount</span><span class="is-val" id="sum-loan">$800</span></div>
+          <div class="is-row"><span class="is-key">Your Investment</span><span class="is-val highlight" id="sum-invest">$250</span></div>
+          <div class="is-row"><span class="is-key">Interest Rate</span><span class="is-val" id="sum-rate">12.4%</span></div>
+          <div class="is-row"><span class="is-key">Term</span><span class="is-val" id="sum-term">30 days</span></div>
+          <div class="is-row" style="border-top:1px solid var(--border);padding-top:10px"><span class="is-key" style="color:var(--muted)">Gross Return</span><span class="is-val" id="sum-gross" style="color:var(--muted)">$2.56</span></div>
+          <div class="is-row"><span class="is-key" style="color:var(--muted)">LendX Fee (1% p.a.)</span><span class="is-val" id="sum-fee" style="color:#f59e0b">−$0.21</span></div>
+          <div class="is-row" style="background:var(--green-bg,#f0fdf4);margin:4px -4px;padding:8px 4px;border-radius:8px"><span class="is-key" style="font-weight:800;color:var(--text)">Net Return to You</span><span class="is-val green" id="sum-return" style="font-size:1.05rem;font-weight:800">+$2.35</span></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-lg">Confirm Investment</button>
+        <button class="btn btn-ghost btn-lg">Cancel</button>
+        <p style="font-size:.68rem;color:var(--muted);text-align:center;line-height:1.5">Returns are projected estimates based on loan grade and term — <strong>not guaranteed</strong>. Investing involves risk of principal loss. Funds are transferred via EFT.</p>
+      </div>
+    </div>
+    <div class="success-state" id="modal-success">
+      <div class="success-icon">🎉</div>
+      <h3>Investment Confirmed!</h3>
+      <p>Your investment has been placed. You'll receive repayment notifications by email and in-app.</p>
+      <button class="btn btn-primary btn-md" style="margin-top:8px">View Portfolio →</button>
+    </div>
+  </div>
+</div>
+
+<!-- Notification Panel -->
+<div class="notif-panel" id="notif-panel">
+  <div class="notif-head">
+    <h4>Notifications</h4>
+    <span style="font-size:.72rem;font-weight:700;color:var(--cobalt);cursor:pointer">Mark all read</span>
+  </div>
+  <div class="notif-item">
+    <div class="ni-icon" style="background:var(--green-bg)">💰</div>
+    <div><div class="ni-title">Repayment received on Loan #4821</div><div class="ni-time">2 min ago</div></div>
+  </div>
+  <div class="notif-item">
+    <div class="ni-icon" style="background:var(--cobalt-light)">📊</div>
+    <div><div class="ni-title">3 new Grade A listings available</div><div class="ni-time">1 hr ago</div></div>
+  </div>
+  <div class="notif-item">
+    <div class="ni-icon" style="background:var(--amber-bg)">⚠️</div>
+    <div><div class="ni-title">Loan #4777 — payment reminder sent</div><div class="ni-time">Yesterday</div></div>
+  </div>
+  <div class="notif-item">
+    <div class="ni-icon" style="background:var(--green-bg)">✅</div>
+    <div><div class="ni-title">KYC verification approved</div><div class="ni-time">Apr 1</div></div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+
+
+
+<!-- ═══════════════════════════════════════
+     AGREEMENT MODAL
+═══════════════════════════════════════ -->
+<div class="agr-overlay" id="agr-overlay">
+  <div class="agr-box" role="dialog" aria-modal="true">
+
+    <!-- Form state -->
+    <div id="agr-form-state">
+      <div class="agr-header">
+        <div class="agr-header-left">
+          <h3>📄 P2P Loan Investment Agreement</h3>
+          <p>Read the full agreement below, then e-sign to confirm your investment.</p>
+        </div>
+        <div class="agr-match-id" id="agr-match-id-display">MX-…</div>
+      </div>
+      <div class="agr-scroll" id="agr-scroll-body">
+
+        <h4>1. Parties</h4>
+        <p>This Peer-to-Peer Loan Investment Agreement (the "<strong>Agreement</strong>") is entered into between:</p>
+        <table>
+          <tbody><tr><td>Platform Operator</td><td><strong>LendX Financial Inc.</strong>, a federally incorporated Canadian corporation operating a peer-to-peer lending marketplace.</td></tr>
+          <tr><td>Investor</td><td id="agr-party-investor">—</td></tr>
+          <tr><td>Borrower Reference</td><td id="agr-party-borrower">—</td></tr>
+          <tr><td>Match ID</td><td id="agr-party-matchid" style="font-family:monospace">—</td></tr>
+          <tr><td>Agreement Date</td><td id="agr-party-date">—</td></tr>
+        </tbody></table>
+
+        <h4>2. Investment Terms</h4>
+        <table>
+          <tbody><tr><td>Loan Amount (Total)</td><td id="agr-t-loan">—</td></tr>
+          <tr><td>Investor Contribution</td><td id="agr-t-invest">—</td></tr>
+          <tr><td>Annual Interest Rate</td><td id="agr-t-rate">—</td></tr>
+          <tr><td>Term</td><td id="agr-t-term">—</td></tr>
+          <tr><td>Risk Grade</td><td id="agr-t-grade">—</td></tr>
+          <tr><td>Projected Investor Return</td><td id="agr-t-return">—</td></tr>
+          <tr><td>Maturity Date</td><td id="agr-t-maturity">—</td></tr>
+        </tbody></table>
+
+        <h4>3. Nature of the Agreement</h4>
+        <p>This Agreement is a participation agreement. The Investor is not making a loan directly to the borrower. LendX Financial Inc. issues the loan to the borrower, and the Investor participates in the economic outcome of the loan by providing capital to LendX for deployment. The Investor holds a contractual right to receive returns as specified herein, subject to borrower repayment.</p>
+        <p><strong>This Agreement does not constitute a security or investment contract regulated by provincial securities legislation.</strong> All marketplace transactions are subject to LendX's operational policies and regulatory compliance framework.</p>
+
+        <h4>4. Investor Representations &amp; Warranties</h4>
+        <p>The Investor hereby represents and warrants that:</p>
+        <p>(a) They are a Canadian resident aged 18 or older (or the age of majority in their province);</p>
+        <p>(b) They have read and understood the full terms of this Agreement;</p>
+        <p>(c) They understand that investing in consumer loans involves risk of partial or complete loss of principal;</p>
+        <p>(d) They have not relied on any representation made by LendX beyond this Agreement;</p>
+        <p>(e) They have the legal capacity and authority to enter into this Agreement.</p>
+
+        <h4>5. Fees &amp; Platform Charges</h4>
+        <p>LendX Financial Inc. charges the following fees which are deducted from borrower payments before investor disbursements:</p>
+        <table>
+          <tbody><tr><td>Origination Fee</td><td>2% – 5% of the loan amount (charged to borrower at origination)</td></tr>
+          <tr><td>Servicing Fee</td><td>1% – 3% per annum of outstanding principal (deducted from repayments)</td></tr>
+          <tr><td>Collections Fee</td><td>Applied only on delinquent accounts; handled by NEO Legal Services PC</td></tr>
+        </tbody></table>
+        <p>The projected return displayed in Section 2 reflects the Investor's net return after platform fees.</p>
+
+        <h4>6. Collections &amp; Default</h4>
+        <p>In the event of borrower default, LendX Financial Inc. will engage NEO Legal Services Professional Corporation (Mo Farooqui, LSO #P21785) to pursue collections on behalf of platform participants. Collections fees will be applied to recovered amounts before distribution. LendX makes no guarantee of full recovery in the event of default.</p>
+
+        <h4>7. Payment Disbursement</h4>
+        <p>Upon maturity or repayment of the underlying loan, LendX will disburse the Investor's principal plus accrued return via Electronic Funds Transfer (EFT) to the Investor's registered bank account on file, within five (5) business days of receipt of borrower repayment.</p>
+
+        <h4>8. Data &amp; Privacy</h4>
+        <p>This Agreement and all associated personal information is processed in accordance with Canada's <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA). The Investor's name and email address are used solely for the purpose of administering this investment. LendX will not sell or disclose Investor data to third parties without consent, except as required by law.</p>
+
+        <h4>9. Electronic Signature</h4>
+        <p>The Investor agrees that their typed full legal name entered below constitutes a valid and binding electronic signature under the <em>Electronic Commerce Act, 2000</em> (Ontario) and applicable federal electronic signature legislation. This Agreement is enforceable in the same manner as a wet-ink signature.</p>
+
+        <h4>10. Regulatory Notice</h4>
+        <p>The LendX P2P marketplace operates in compliance with applicable Canadian federal and provincial law. Full investor participation is subject to eligibility requirements and a signed investor agreement. LendX Financial Inc. is committed to compliance with all applicable securities and lending regulations.</p>
+
+        <h4>11. Governing Law &amp; Dispute Resolution</h4>
+        <p>This Agreement is governed by the laws of the Province of Ontario and the federal laws of Canada. Any disputes arising under this Agreement shall be resolved before the courts of Ontario. The parties waive any objection to jurisdiction or venue in Ontario courts.</p>
+
+        <h4>12. Entire Agreement</h4>
+        <p>This Agreement, together with LendX's <a href="terms.html" style="color:#059669">Terms of Service</a> and <a href="privacy.html" style="color:#059669">Privacy Policy</a>, constitutes the entire agreement between the parties with respect to the subject matter hereof and supersedes all prior representations and agreements.</p>
+
+      </div>
+      <div class="agr-sign-section">
+        <div class="agr-sign-label">
+          E-Signature — Type your full legal name to sign
+          <span>Your typed name constitutes a binding electronic signature under Ontario's Electronic Commerce Act, 2000.</span>
+        </div>
+        <input class="agr-sign-input" id="agr-sig-input" type="text" placeholder="Type your full legal name here" autocomplete="name">
+        <div class="agr-sign-agree">
+          <input type="checkbox" id="agr-agree-chk">
+          <label for="agr-agree-chk">I have read this entire Agreement, I understand its terms, and I agree that my typed name above constitutes a legally binding electronic signature. I understand this investment involves risk of loss.</label>
+        </div>
+        <div class="agr-btn-row">
+          <button class="agr-btn-cancel" id="agr-cancel-btn">Cancel</button>
+          <button class="agr-btn-sign" id="agr-sign-btn" disabled="">
+            <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            Sign &amp; Confirm Investment →
+          </button>
+        </div>
+        <p style="font-size:.67rem;color:#9ca3af;text-align:center;line-height:1.5">Investing involves risk of loss of principal. Returns are projected estimates and not guaranteed. Funds transferred via EFT.</p>
+      </div>
+    </div>
+
+    <!-- Signed state -->
+    <div class="agr-signed-state" id="agr-signed-state">
+      <div class="check">✅</div>
+      <h3>Agreement Signed!</h3>
+      <p>Your investment agreement has been signed and recorded. You can download a copy of your signed agreement as a PDF.</p>
+      <div class="agr-signed-meta" id="agr-signed-meta">
+        <div class="smr"><span>Match ID</span><span id="agr-s-matchid">—</span></div>
+        <div class="smr"><span>Investor</span><span id="agr-s-name">—</span></div>
+        <div class="smr"><span>Investment</span><span id="agr-s-invest">—</span></div>
+        <div class="smr"><span>Projected Return</span><span id="agr-s-return">—</span></div>
+        <div class="smr"><span>Maturity</span><span id="agr-s-maturity">—</span></div>
+        <div class="smr"><span>Signed</span><span id="agr-s-signame">—</span></div>
+        <div class="smr"><span>Signed At</span><span id="agr-s-sigtime">—</span></div>
+      </div>
+      <button class="agr-download-btn">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"></path></svg>
+        Download Signed Agreement (PDF)
+      </button>
+      <button class="agr-close-btn">View Portfolio →</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CANADA-COMPLIANT DISCLAIMER MODAL
+═══════════════════════════════════════ -->
+<div class="disc-overlay" id="disc-overlay">
+  <div class="disc-box" role="dialog" aria-modal="true" aria-labelledby="disc-title">
+    <div class="disc-header">
+      <h3 id="disc-title">⚖️ Important Disclosure &amp; Consent — Required Before Proceeding</h3>
+      <p>Please read and agree to the following disclosures as required under Canadian federal and provincial law.</p>
+    </div>
+    <div class="disc-scroll" id="disc-scroll-body">
+
+      <h4>1. Platform Status &amp; Regulatory Disclosure</h4>
+      <p>LendX Financial Inc. ("<strong>LendX</strong>") operates a peer-to-peer lending marketplace in Canada. Participation as an investor is subject to eligibility requirements, provincial securities legislation, and execution of a formal investor agreement. This platform does not constitute a prospectus, offering memorandum, or solicitation to invest.</p>
+
+      <h4>2. Privacy &amp; Consent to Collect Personal Information (PIPEDA)</h4>
+      <p>By creating an account, you expressly consent to LendX Financial Inc. collecting, using, and disclosing your personal information for the following purposes under the <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA) and applicable provincial privacy legislation:</p>
+      <ul>
+        <li>Account creation, identity verification, and KYC/AML compliance</li>
+        <li>Communicating with you about your account, platform updates, and regulatory matters</li>
+        <li>Fraud prevention, security monitoring, and legal compliance</li>
+        <li>Statistical and aggregated platform analytics (non-identifying)</li>
+      </ul>
+      <p>Your information will not be sold to third parties for marketing purposes. You may withdraw consent or request access/correction at any time by contacting privacy@lendxfinancial.com. See our full <a href="marketplace.html#" style="color:#059669">Privacy Policy</a> for details.</p>
+
+      <h4>3. Electronic Communications Consent (CASL)</h4>
+      <p>By registering, you provide express consent under Canada's <em>Anti-Spam Legislation</em> (CASL) to receive transactional and account-related electronic communications from LendX Financial Inc. You may opt out of promotional messages at any time via the unsubscribe link in any email.</p>
+
+      <h4>4. Investor Eligibility &amp; Risk Disclosure</h4>
+      <p>Access to investment opportunities through this platform is restricted to eligible Canadian investors as defined under applicable securities legislation (including accredited investor and eligible investor categories). <strong>Investing in loans involves risk, including risk of partial or total loss of principal.</strong> Past performance is not indicative of future returns. Investments made through the LendX marketplace are not covered by CDIC deposit insurance.</p>
+
+      <h4>5. Identity Verification (KYC/AML)</h4>
+      <p>To comply with Canada's <em>Proceeds of Crime (Money Laundering) and Terrorist Financing Act</em> (PCMLTFA) and FINTRAC guidelines, LendX is required to verify the identity of all account holders. By creating an account, you agree to provide accurate identifying information and consent to identity verification procedures.</p>
+
+      <h4>6. No Guarantee of Returns</h4>
+      <p>Any projected returns, interest rates, or yield figures displayed on this platform are estimates based on historical data and are not guaranteed. Actual returns may differ materially. LendX does not provide financial, tax, or investment advice. Consult a qualified financial advisor before making investment decisions.</p>
+
+      <h4>7. Jurisdiction &amp; Governing Law</h4>
+      <p>This platform and all services are governed by the laws of the Province of Ontario and the federal laws of Canada. Any disputes are subject to the exclusive jurisdiction of Ontario courts, unless otherwise required by applicable provincial legislation in your province of residence.</p>
+
+      <h4>8. Age &amp; Residency Requirement</h4>
+      <p>You must be at least 18 years of age (or the age of majority in your province) and a Canadian resident to create an account. By proceeding, you confirm you meet these requirements.</p>
+
+    </div>
+    <div class="disc-footer">
+      <div class="disc-scroll-hint">↑ Please scroll through the full disclosure above ↑</div>
+      <div class="disc-agree-row">
+        <input type="checkbox" id="disc-agree-chk">
+        <label for="disc-agree-chk">I have read, understood, and agree to the disclosures above. I confirm I am a Canadian resident aged 18 or older and consent to the collection and use of my personal information as described, in accordance with PIPEDA and applicable provincial law.</label>
+      </div>
+      <div class="disc-btn-row">
+        <button class="disc-btn-cancel">Cancel</button>
+        <button class="disc-btn-accept" id="disc-accept-btn" disabled="">I Agree &amp; Continue →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowmode="open"><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

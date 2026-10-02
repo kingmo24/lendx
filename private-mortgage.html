@@ -1,0 +1,950 @@
+<!DOCTYPE html><html lang="en" crxlauncher-bridged="" crxlauncher=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+@charset "utf-8";
+
+@font-face { font-family: Nunito; font-style: italic; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaORs71cA.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: italic; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaHRs71cA.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: italic; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaMRs71cA.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: italic; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaNRs71cA.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: italic; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaDRs4.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: italic; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaORs71cA.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: italic; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaHRs71cA.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: italic; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaMRs71cA.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: italic; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaNRs71cA.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: italic; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaDRs4.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+</style><style>
+@charset "utf-8";
+
+
+
+</style><style>
+@charset "utf-8";
+
+:root { --cobalt: #1d4ed8; --cobalt-light: #eff6ff; --cobalt-mid: #3b82f6; --ink: #0f172a; --text-2: #374151; --muted: #64748b; --off: #f8fafc; --border: #e2e8f0; --white: #fff; --amber: #f59e0b; --amber-light: #fffbeb; --gold: #d97706; --gold-light: #fef3c7; --green: #059669; --green-light: #d1fae5; --red: #dc2626; --red-light: #fee2e2; --sh: 0 4px 24px rgba(0,0,0,.07); --sh-lg: 0 12px 40px rgba(0,0,0,.10); }
+
+*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+html { scroll-behavior: smooth; overflow-x: hidden; }
+
+body { font-family: Nunito, sans-serif; color: var(--ink); background: var(--white); -webkit-font-smoothing: antialiased; }
+
+.nav { position: sticky; top: 0px; z-index: 100; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+
+.wrap { max-width: 1200px; margin: 0px auto; padding: 0px 24px; }
+
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+
+.brand-word { font-size: 1.1rem; font-weight: 800; color: var(--ink); letter-spacing: -0.02em; }
+
+.brand-word span { color: rgb(34, 197, 94); }
+
+.nav-links { display: flex; gap: 1px; justify-content: center; }
+
+.nav-links a { padding: 6px 10px; border-radius: 8px; font-size: 0.8rem; font-weight: 600; color: var(--text-2); text-decoration: none; transition: 0.15s; white-space: nowrap; }
+
+.nav-links a:hover, .nav-links a.active { color: var(--cobalt); background: var(--cobalt-light); }
+
+@media (max-width: 1300px) {
+  .nav-links a { font-size: 0.72rem; padding: 5px 8px; }
+  .brand-word { font-size: 0.9rem; }
+  .n-btn { font-size: 0.8rem; padding: 7px 12px; }
+}
+
+.nav-right { display: flex; gap: 10px; align-items: center; }
+
+.n-btn { padding: 8px 18px; border-radius: 10px; font-size: 0.875rem; font-weight: 700; text-decoration: none; transition: 0.18s; }
+
+.n-outline { border: 1.5px solid var(--border); color: var(--text-2); }
+
+.n-outline:hover { border-color: var(--cobalt); color: var(--cobalt); }
+
+.n-solid { background: var(--cobalt); color: rgb(255, 255, 255); }
+
+.n-solid:hover { background: rgb(30, 64, 175); }
+
+@media (max-width: 1200px) {
+  .nav-links, .nav-right .n-outline { display: none; }
+}
+
+.hero { padding: 80px 0px 72px; background: linear-gradient(135deg, rgb(15, 23, 42) 0%, rgb(30, 58, 95) 50%, rgb(20, 83, 45) 100%); position: relative; overflow: hidden; }
+
+.hero::before { content: ""; position: absolute; inset: 0px; background: radial-gradient(80% 60% at 60% 40%, rgba(245, 158, 11, 0.15) 0%, transparent 70%); pointer-events: none; }
+
+.hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+
+.hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); color: rgb(251, 191, 36); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 20px; padding: 5px 14px; margin-bottom: 20px; }
+
+.hero-eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: rgb(245, 158, 11); animation: 2s ease 0s infinite normal none running pulse; }
+
+@keyframes pulse { 
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.3); }
+}
+
+.hero h1 { font-size: 3rem; font-weight: 900; color: rgb(255, 255, 255); line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 20px; }
+
+.hero h1 em { font-style: italic; color: rgb(251, 191, 36); }
+
+.hero-sub { font-size: 1.05rem; color: rgba(255, 255, 255, 0.75); line-height: 1.7; margin-bottom: 32px; max-width: 520px; }
+
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+
+.btn-primary { padding: 13px 28px; border-radius: 12px; background: var(--amber); color: rgb(255, 255, 255); font-size: 0.95rem; font-weight: 800; text-decoration: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; transition: 0.18s; display: inline-flex; align-items: center; gap: 8px; }
+
+.btn-primary:hover { background: rgb(217, 119, 6); transform: translateY(-1px); box-shadow: rgba(245, 158, 11, 0.4) 0px 6px 20px; }
+
+.btn-ghost { padding: 13px 28px; border-radius: 12px; border: 1.5px solid rgba(255, 255, 255, 0.3); color: rgba(255, 255, 255, 0.9); font-size: 0.95rem; font-weight: 700; text-decoration: none; transition: 0.18s; display: inline-flex; align-items: center; gap: 8px; }
+
+.btn-ghost:hover { border-color: rgba(255, 255, 255, 0.6); color: rgb(255, 255, 255); background: rgba(255, 255, 255, 0.08); }
+
+.hero-badges { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+
+.hbadge { display: inline-flex; align-items: center; gap: 7px; padding: 5px 12px; border-radius: 20px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.75rem; font-weight: 700; color: rgba(255, 255, 255, 0.8); }
+
+.hbadge .dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+
+.hbadge .dot.green { background: rgb(74, 222, 128); }
+
+.hbadge .dot.amber { background: rgb(251, 191, 36); }
+
+.hbadge .dot.blue { background: rgb(96, 165, 250); }
+
+.rate-card { background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 20px; padding: 32px; backdrop-filter: blur(8px); }
+
+.rate-card-label { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255, 255, 255, 0.5); margin-bottom: 10px; }
+
+.rate-big { font-size: 3.5rem; font-weight: 900; color: rgb(251, 191, 36); line-height: 1; letter-spacing: -0.04em; }
+
+.rate-sub { font-size: 0.875rem; color: rgba(255, 255, 255, 0.6); margin-bottom: 24px; margin-top: 4px; }
+
+.rate-specs { display: flex; flex-direction: column; gap: 10px; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 20px; }
+
+.rate-spec { display: flex; justify-content: space-between; align-items: center; }
+
+.rate-sk { font-size: 0.78rem; color: rgba(255, 255, 255, 0.55); font-weight: 600; }
+
+.rate-sv { font-size: 0.82rem; color: rgba(255, 255, 255, 0.9); font-weight: 700; }
+
+.cs-pill { display: inline-flex; align-items: center; gap: 6px; margin-top: 20px; padding: 7px 16px; border-radius: 20px; background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(245, 158, 11, 0.1)); border: 1px solid rgba(245, 158, 11, 0.4); color: rgb(251, 191, 36); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+
+.section-eyebrow { display: inline-block; padding: 4px 14px; border-radius: 20px; background: var(--amber-light); color: var(--gold); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 14px; }
+
+.section-eyebrow.blue { background: var(--cobalt-light); color: var(--cobalt); }
+
+.section-eyebrow.green { background: var(--green-light); color: var(--green); }
+
+h2.display { font-size: 2.2rem; font-weight: 900; line-height: 1.15; letter-spacing: -0.03em; color: var(--ink); }
+
+h2.display em { font-style: italic; color: var(--gold); }
+
+.section-sub { font-size: 1rem; color: var(--muted); line-height: 1.7; max-width: 600px; }
+
+.overview-section { padding: 96px 0px; background: var(--off); }
+
+.overview-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+
+.ov-card { background: var(--white); border-radius: 16px; padding: 28px; border: 1.5px solid var(--border); transition: 0.2s; }
+
+.ov-card:hover { border-color: var(--amber); box-shadow: var(--sh); transform: translateY(-2px); }
+
+.ov-icon { width: 48px; height: 48px; border-radius: 14px; background: var(--gold-light); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 16px; }
+
+.ov-card h3 { font-size: 1rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.01em; }
+
+.ov-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.65; }
+
+.ov-card .ov-rate { font-size: 1.5rem; font-weight: 900; color: var(--gold); margin: 12px 0px 4px; letter-spacing: -0.03em; }
+
+.ov-card .ov-rate-label { font-size: 0.75rem; color: var(--muted); font-weight: 600; }
+
+.hiw-section { padding: 96px 0px; background: var(--white); }
+
+.hiw-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 56px; position: relative; }
+
+.hiw-steps::before { content: ""; position: absolute; top: 32px; left: calc(12.5% + 20px); right: calc(12.5% + 20px); height: 2px; background: linear-gradient(90deg, var(--gold-light), var(--gold), var(--gold-light)); }
+
+.hiw-step { display: flex; flex-direction: column; align-items: center; text-align: center; }
+
+.hiw-circle { width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--gold); background: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 16px; position: relative; z-index: 1; box-shadow: 0 0 0 6px var(--white); }
+
+.hiw-step h4 { font-size: 0.9rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; }
+
+.hiw-step p { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+
+.loan-types-section { padding: 96px 0px; background: linear-gradient(135deg, rgb(15, 23, 42) 0%, rgb(30, 58, 95) 100%); }
+
+.loan-types-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+
+.lt-card { background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 28px; transition: 0.2s; }
+
+.lt-card:hover { background: rgba(255, 255, 255, 0.1); border-color: rgba(245, 158, 11, 0.4); transform: translateY(-2px); }
+
+.lt-icon { font-size: 2rem; margin-bottom: 16px; }
+
+.lt-card h3 { font-size: 1rem; font-weight: 800; color: rgb(255, 255, 255); margin-bottom: 8px; letter-spacing: -0.01em; }
+
+.lt-card p { font-size: 0.84rem; color: rgba(255, 255, 255, 0.6); line-height: 1.65; margin-bottom: 16px; }
+
+.lt-specs { display: flex; flex-direction: column; gap: 6px; }
+
+.lt-spec { display: flex; justify-content: space-between; align-items: center; padding: 5px 0px; border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+
+.lt-sk { font-size: 0.75rem; color: rgba(255, 255, 255, 0.45); font-weight: 600; }
+
+.lt-sv { font-size: 0.8rem; color: rgba(255, 255, 255, 0.85); font-weight: 700; }
+
+.why-section { padding: 96px 0px; background: var(--off); }
+
+.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-top: 48px; }
+
+.why-list { display: flex; flex-direction: column; gap: 20px; }
+
+.why-item { display: flex; gap: 16px; align-items: flex-start; }
+
+.why-bullet { width: 40px; height: 40px; border-radius: 12px; background: var(--gold-light); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+
+.why-item h4 { font-size: 0.95rem; font-weight: 800; color: var(--ink); margin-bottom: 4px; }
+
+.why-item p { font-size: 0.84rem; color: var(--muted); line-height: 1.6; }
+
+.stats-block { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.stat-box { background: var(--white); border-radius: 16px; padding: 24px; border: 1.5px solid var(--border); text-align: center; }
+
+.stat-box .sb-val { font-size: 2rem; font-weight: 900; color: var(--gold); letter-spacing: -0.03em; margin-bottom: 4px; }
+
+.stat-box .sb-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); }
+
+.broker-section { padding: 96px 0px; background: var(--white); }
+
+.broker-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; margin-top: 48px; }
+
+.broker-card { background: linear-gradient(135deg, rgb(254, 243, 199) 0%, rgb(255, 251, 235) 100%); border: 2px solid rgb(253, 230, 138); border-radius: 20px; padding: 36px; }
+
+.broker-card h3 { font-size: 1.3rem; font-weight: 900; color: var(--ink); margin-bottom: 12px; letter-spacing: -0.02em; }
+
+.broker-card p { font-size: 0.9rem; color: var(--text-2); line-height: 1.7; margin-bottom: 24px; }
+
+.broker-perks { display: flex; flex-direction: column; gap: 12px; }
+
+.broker-perk { display: flex; align-items: center; gap: 12px; }
+
+.broker-perk-icon { width: 32px; height: 32px; border-radius: 8px; background: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 4px; }
+
+.broker-perk span { font-size: 0.85rem; font-weight: 700; color: var(--text-2); }
+
+.broker-form-side h3 { font-size: 1.3rem; font-weight: 900; color: var(--ink); margin-bottom: 8px; letter-spacing: -0.02em; }
+
+.broker-form-side p { font-size: 0.875rem; color: var(--muted); margin-bottom: 24px; line-height: 1.6; }
+
+.form-group { margin-bottom: 16px; }
+
+.form-group label { display: block; font-size: 0.8rem; font-weight: 700; color: var(--text-2); margin-bottom: 6px; }
+
+.form-group input, .form-group select, .form-group textarea { width: 100%; padding: 11px 14px; border-radius: 10px; border: 1.5px solid var(--border); font-family: Nunito, sans-serif; font-size: 0.875rem; color: var(--ink); background: var(--white); transition: border-color 0.15s; outline: none; }
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--amber); }
+
+.form-group textarea { resize: vertical; min-height: 100px; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.consent-text { font-size: 0.75rem; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+
+.footer-cta-section { padding: 80px 0px; background: var(--ink); text-align: center; }
+
+.footer-cta-section h2 { font-size: 2rem; font-weight: 900; color: rgb(255, 255, 255); letter-spacing: -0.03em; margin-bottom: 12px; }
+
+.footer-cta-section h2 em { font-style: italic; color: rgb(251, 191, 36); }
+
+.footer-cta-section p { font-size: 0.95rem; color: rgba(255, 255, 255, 0.6); margin-bottom: 32px; }
+
+.footer-cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+footer { background: rgb(15, 23, 42); border-top: 1px solid rgba(255, 255, 255, 0.08); padding: 32px 0px; }
+
+.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+.footer-copy { font-size: 0.78rem; color: rgba(255, 255, 255, 0.4); line-height: 1.6; }
+
+.footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+
+.footer-links a { font-size: 0.78rem; color: rgba(255, 255, 255, 0.4); text-decoration: none; font-weight: 600; transition: color 0.15s; }
+
+.footer-links a:hover { color: rgba(255, 255, 255, 0.8); }
+
+.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(60px); background: var(--ink); color: rgb(255, 255, 255); padding: 12px 24px; border-radius: 12px; font-size: 0.875rem; font-weight: 700; box-shadow: var(--sh-lg); z-index: 9999; transition: transform 0.3s; white-space: nowrap; }
+
+.toast.show { transform: translateX(-50%) translateY(0px); }
+
+.ham-btn { display: none; flex-direction: column; gap: 5px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; padding: 8px; border-radius: 8px; }
+
+.ham-btn span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: 0.2s; }
+
+.ham-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+
+.ham-btn.open span:nth-child(2) { opacity: 0; }
+
+.ham-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mob-drawer { display: none; position: fixed; top: calc(64px + env(safe-area-inset-top,0px)); left: 0px; right: 0px; background: rgb(255, 255, 255); border-bottom: 1px solid var(--border); z-index: 99; padding: 12px 20px 20px; flex-direction: column; gap: 4px; box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px; animation: 0.18s ease 0s 1 normal none running slideDown; }
+
+.mob-drawer.open { display: flex; }
+
+.mob-drawer a { display: block; padding: 11px 14px; border-radius: 10px; font-size: 0.9rem; font-weight: 700; color: var(--text-2); text-decoration: none; }
+
+.mob-drawer a:hover, .mob-drawer a:active { background: var(--off); color: var(--cobalt); }
+
+.mob-drawer .drawer-cta { margin-top: 8px; background: var(--cobalt); text-align: center; border-radius: 12px; padding: 13px; font-size: 0.95rem; color: rgb(255, 255, 255) !important; }
+
+.mob-drawer-overlay { display: none; position: fixed; inset: 0px; z-index: 98; }
+
+.mob-drawer-overlay.open { display: block; }
+
+@keyframes slideDown { 
+  0% { opacity: 0; transform: translateY(-6px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+@media (max-width: 900px) {
+  .hero-grid, .why-grid, .broker-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero h1 { font-size: 2.2rem; }
+  .overview-grid, .loan-types-grid { grid-template-columns: 1fr 1fr; }
+  .hiw-steps { grid-template-columns: 1fr 1fr; }
+  .hiw-steps::before { display: none; }
+}
+
+@media (max-width: 1200px) {
+  .nav-links, .nav-right .n-outline { display: none; }
+  .ham-btn { display: flex; }
+  .nav { position: fixed; top: 0px; left: 0px; right: 0px; padding-top: env(safe-area-inset-top,0px); }
+  body { padding-top: calc(64px + env(safe-area-inset-top,0px)) !important; }
+}
+
+@media (max-width: 600px) {
+  .overview-grid, .loan-types-grid, .hiw-steps { grid-template-columns: 1fr; }
+  .stats-block { grid-template-columns: 1fr 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions a, .hero-actions button { text-align: center; justify-content: center; }
+  .hero { padding: 52px 0px 56px; }
+  .hero h1 { font-size: clamp(1.8rem, 7vw, 2.4rem); }
+  .section-title { font-size: clamp(1.5rem, 5vw, 2rem); }
+  .display { font-size: clamp(1.6rem, 6vw, 2.2rem) !important; }
+  .rate-card { padding: 24px 20px; }
+  .rate-big { font-size: 3rem; }
+  .stats-block { padding: 24px 20px; }
+  .stat-num { font-size: 2rem; }
+  .overview-card, .loan-type-card { padding: 24px 20px; }
+  .hiw-circle { width: 52px; height: 52px; font-size: 1.3rem; }
+  .footer-cta-section { padding: 48px 0px; }
+  .footer-cta-section h2 { font-size: 1.5rem; }
+  .footer-cta-actions { flex-direction: column; align-items: stretch; }
+  .footer-cta-actions a, .footer-cta-actions button { text-align: center; }
+  .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
+  .footer-links { justify-content: center; }
+  .wrap { padding: 0px 16px; }
+  .hero-badges { flex-wrap: wrap; gap: 8px; }
+  .hbadge { font-size: 0.75rem; }
+  .n-solid { font-size: 0.82rem; padding: 8px 14px; }
+}
+
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s, transform 0.6s; }
+
+.reveal.visible { opacity: 1; transform: translateY(0px); }
+
+.gallery { padding: 72px 0px; }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+@media (max-width: 860px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 540px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+}
+
+.gallery-item { border-radius: 22px; overflow: hidden; box-shadow: rgba(11, 21, 35, 0.06) 0px 2px 12px; transition: 0.3s; position: relative; }
+
+.gallery-item:hover { box-shadow: rgba(11, 21, 35, 0.1) 0px 8px 40px; transform: translateY(-4px); }
+
+.gallery-item img { width: 100%; height: 260px; object-fit: cover; display: block; }
+
+@media (max-width: 600px) {
+  .gallery-item img { height: 200px; }
+}
+
+.gallery-caption { position: absolute; bottom: 0px; left: 0px; right: 0px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); padding: 40px 16px 14px; color: rgb(255, 255, 255); font-size: 0.82rem; font-weight: 700; }
+
+</style>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+  <title>Private Mortgage Financing | LendX Financial</title>
+  <meta name="description" content="Private mortgage financing for B borrowers, construction and bridge loans. 8%–15% interest. Secured by real estate. Apply via broker referral — LendX Financial.">
+  <link rel="canonical" href="https://lendxfinancial.com/private-mortgage.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&amp;display=swap" rel="stylesheet">
+  
+<style id="lx-nav-css">
+/* ── LendX canonical nav ── */
+.nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.nav-inner{display:flex;align-items:center;gap:1rem;padding:.75rem 1.25rem;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:.55rem;text-decoration:none;flex-shrink:0}
+.lx-logo-svg{width:36px;height:36px;flex-shrink:0}
+.brand-wordmark{font-family:var(--font,'Nunito',sans-serif);font-size:1.15rem;font-weight:800;color:#111827;letter-spacing:-.02em}
+.brand-wordmark .x-accent{color:#059669}
+.nav-center{display:flex;align-items:center;gap:.15rem;flex:1;justify-content:center}
+.nav-center a{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.38rem .65rem;border-radius:6px;white-space:nowrap;transition:background .15s,color .15s}
+.nav-center a:hover{background:#ecfdf5;color:#059669}
+.nav-center a.active{background:#d1fae5;color:#059669}
+.nav-right{display:flex;align-items:center;gap:.55rem;flex-shrink:0}
+.n-btn{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:700;padding:.42rem .9rem;border-radius:8px;text-decoration:none;cursor:pointer;transition:all .15s}
+.n-outline{border:1.5px solid #059669;color:#059669;background:transparent}
+.n-outline:hover{background:#ecfdf5}
+.n-solid{background:#059669;color:#fff;border:1.5px solid #059669}
+.n-solid:hover{background:#047857}
+.ham-btn{display:none;background:none;border:none;cursor:pointer;padding:.3rem;color:#111827}
+.nav-drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1000}
+.nav-drawer-overlay.open{display:block}
+.nav-drawer{position:fixed;top:0;right:-280px;width:260px;height:100%;background:#fff;z-index:1001;padding:1.5rem 1.25rem;display:flex;flex-direction:column;gap:.5rem;box-shadow:-4px 0 20px rgba(0,0,0,.12);transition:right .28s ease}
+.nav-drawer.open{right:0}
+.nav-drawer a{font-family:var(--font,'Nunito',sans-serif);font-size:.95rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.55rem .75rem;border-radius:8px;transition:background .15s}
+.nav-drawer a:hover{background:#ecfdf5;color:#059669}
+.drawer-cta{margin-top:auto!important;background:#059669!important;color:#fff!important;text-align:center;padding:.7rem 1rem!important;border-radius:10px!important}
+.drawer-cta:hover{background:#047857!important}
+@media(max-width:900px){.nav-center{display:none}.ham-btn{display:flex}}
+@media(max-width:540px){.n-outline{display:none}}
+</style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1334.0" data-gr-ext-installed="">
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <svg class="lx-logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LendX Financial logo">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#14532d"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4ade80"/><stop offset="60%" stop-color="#16a34a"/><stop offset="100%" stop-color="#166534"/></linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#86efac"/><stop offset="60%" stop-color="#22c55e"/><stop offset="100%" stop-color="#16a34a"/></linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#064E3B"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+        </defs>
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"/>
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"/>
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"/>
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"/>
+      </svg>
+      <span class="brand-wordmark">Lend<span class="x-accent">X</span> Financial</span>
+    </a>
+    <div class="nav-center">
+      <a href="index.html" >Personal</a>
+      <a href="business.html" >Business</a>
+      <a href="marketplace.html" >Marketplace</a>
+      <a href="payday.html" >Payday Loans</a>
+      <a href="cheque-cashing.html" >Cheque Cashing</a>
+      <a href="private-mortgage.html" class="active">Private Mortgage</a>
+    </div>
+    <div class="nav-right">
+      <a class="n-btn n-outline" href="tel:+16472003526">647-200-3526</a>
+      <a class="n-btn n-solid" href="#contact">Get a Quote →</a>
+      <button class="ham-btn" onclick="toggleMenu()" aria-label="Menu">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="nav-drawer-overlay" id="nav-overlay" onclick="toggleMenu()"></div>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="index.html" >Personal Loans</a>
+  <a href="business.html" >Business Financing</a>
+  <a href="marketplace.html" >Marketplace</a>
+  <a href="payday.html" >Payday Loans</a>
+  <a href="cheque-cashing.html" >Cheque Cashing</a>
+  <a href="private-mortgage.html" class="active">Private Mortgage</a>
+  <a href="calculator.html">Calculator</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About Us</a>
+  <a class="drawer-cta" href="#contact" onclick="toggleMenu()">Get a Quote →</a>
+</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow"><span class="dot"></span>Now Live — Private Mortgage Financing</div>
+        <h1>Private Mortgage<br>Financing for <em>B Borrowers.</em></h1>
+        <p class="hero-sub">When the big banks say no, LendX says yes. Real estate-secured financing for borrowers who don't fit traditional criteria — bridge loans, construction financing, and alternative mortgages at 8–15% interest.</p>
+        <div class="hero-actions">
+          <a href="private-mortgage.html#broker-referral" class="btn-primary">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            Submit a Deal
+          </a>
+          <a href="private-mortgage.html#broker-referral" class="btn-ghost">
+            Broker Referral Form
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+          </a>
+        </div>
+        <div class="hero-badges">
+          <span class="hbadge"><span class="dot green"></span>Secured by Real Estate</span>
+          <span class="hbadge"><span class="dot amber"></span>8–15% Interest Rate</span>
+          <span class="hbadge"><span class="dot blue"></span>FSRA Compliant</span>
+          <span class="hbadge"><span class="dot green"></span>Broker Referral Program</span>
+        </div>
+      </div>
+      <div>
+        <div class="rate-card">
+          <div class="rate-card-label">Private Mortgage Rate Range</div>
+          <div class="rate-big">8–15%</div>
+          <div class="rate-sub">Annual interest rate</div>
+          <div class="rate-specs">
+            <div class="rate-spec"><span class="rate-sk">Borrower profile</span><span class="rate-sv">B borrowers &amp; alternative</span></div>
+            <div class="rate-spec"><span class="rate-sk">Loan type</span><span class="rate-sv">Bridge, construction, refinance</span></div>
+            <div class="rate-spec"><span class="rate-sk">Security</span><span class="rate-sv">First or second mortgage (real estate)</span></div>
+            <div class="rate-spec"><span class="rate-sk">Lender fee</span><span class="rate-sv">1% – 3% of loan amount</span></div>
+            <div class="rate-spec"><span class="rate-sk">Term</span><span class="rate-sv">6 months – 3 years</span></div>
+            <div class="rate-spec"><span class="rate-sk">Regulator</span><span class="rate-sv">FSRA — Ontario</span></div>
+            <div class="rate-spec"><span class="rate-sk">Year 3 book target</span><span class="rate-sv">$5M+</span></div>
+            <div class="rate-spec"><span class="rate-sk">Referral program</span><span class="rate-sv">Broker-only applications</span></div>
+          </div>
+          <div class="cs-pill">✅ Now Accepting Applications</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT OVERVIEW -->
+<section class="overview-section">
+  <div class="wrap">
+    <div class="reveal visible" style="text-align:center">
+      <div class="section-eyebrow">What We Offer</div>
+      <h2 class="display" style="margin-bottom:12px">Three mortgage <em>product streams.</em></h2>
+      <p class="section-sub" style="margin:0 auto">Purpose-built for borrowers and deal structures that the chartered banks won't touch.</p>
+    </div>
+    <div class="overview-grid">
+
+      <div class="ov-card reveal visible">
+        <div class="ov-icon">🏗️</div>
+        <h3>Construction &amp; Bridge Financing</h3>
+        <div class="ov-rate">8–12%</div>
+        <div class="ov-rate-label">Annual interest rate</div>
+        <p style="margin-top:12px">Short-term capital for builders and developers at critical project stages. Fund purchases, complete renovations, or bridge to permanent financing — fast.</p>
+      </div>
+
+      <div class="ov-card reveal visible">
+        <div class="ov-icon">🔑</div>
+        <h3>B Borrower Mortgages</h3>
+        <div class="ov-rate">10–15%</div>
+        <div class="ov-rate-label">Annual interest rate</div>
+        <p style="margin-top:12px">For clients with non-traditional income, recent credit events, self-employment, or complex ownership structures. We underwrite the deal, not just the score.</p>
+      </div>
+
+      <div class="ov-card reveal visible">
+        <div class="ov-icon">🔄</div>
+        <h3>Refinance &amp; Debt Consolidation</h3>
+        <div class="ov-rate">9–13%</div>
+        <div class="ov-rate-label">Annual interest rate</div>
+        <p style="margin-top:12px">Access equity tied up in real property to consolidate high-interest debt, fund business operations, or take advantage of time-sensitive opportunities.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="hiw-section">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <div class="section-eyebrow blue">How It Works</div>
+      <h2 class="display" style="margin-bottom:12px">Broker-referred, <em>fast-tracked.</em></h2>
+      <p class="section-sub" style="margin:0 auto">All private mortgage applications are submitted by licensed mortgage brokers. No direct consumer applications.</p>
+    </div>
+    <div class="hiw-steps">
+      <div class="hiw-step reveal">
+        <div class="hiw-circle">📋</div>
+        <h4>Broker Submits Deal</h4>
+        <p>Your licensed mortgage broker completes a referral form and submits deal details directly to LendX.</p>
+      </div>
+      <div class="hiw-step reveal">
+        <div class="hiw-circle">🔍</div>
+        <h4>Underwriting Review</h4>
+        <p>LendX underwrites the property, borrower profile, and loan structure. Decision issued within 48–72 hours.</p>
+      </div>
+      <div class="hiw-step reveal">
+        <div class="hiw-circle">✍️</div>
+        <h4>Term Sheet &amp; Legal</h4>
+        <p>Conditional approval issued. Legal documentation prepared. Mortgage registered on title through Ontario counsel.</p>
+      </div>
+      <div class="hiw-step reveal">
+        <div class="hiw-circle">💸</div>
+        <h4>Funds Disbursed</h4>
+        <p>Capital deployed to borrower. Broker commission paid at funding. Repayments tracked through LendX platform.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOAN TYPES (dark) -->
+<section class="loan-types-section">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <div class="section-eyebrow" style="background:rgba(245,158,11,.15);color:#fbbf24">Loan Structures</div>
+      <h2 class="display" style="color:#fff;margin-bottom:12px">Flexible structures for <em style="color:#fbbf24">real deals.</em></h2>
+      <p class="section-sub" style="color:rgba(255,255,255,.6);margin:0 auto">Every deal is different. LendX structures each mortgage around the borrower's situation, not a one-size-fits-all product.</p>
+    </div>
+    <div class="loan-types-grid">
+
+      <div class="lt-card reveal">
+        <div class="lt-icon">🏠</div>
+        <h3>Residential First Mortgage</h3>
+        <p>Primary first-charge residential mortgages for owner-occupied or investment properties.</p>
+        <div class="lt-specs">
+          <div class="lt-spec"><span class="lt-sk">LTV</span><span class="lt-sv">Up to 75%</span></div>
+          <div class="lt-spec"><span class="lt-sk">Rate</span><span class="lt-sv">8%–11% p.a.</span></div>
+          <div class="lt-spec"><span class="lt-sk">Term</span><span class="lt-sv">1–3 years</span></div>
+          <div class="lt-spec"><span class="lt-sk">Amortization</span><span class="lt-sv">Interest-only option</span></div>
+        </div>
+      </div>
+
+      <div class="lt-card reveal">
+        <div class="lt-icon">🏢</div>
+        <h3>Second Mortgage / Equity Takeout</h3>
+        <p>Access equity from existing real property for debt consolidation, business capital, or investment.</p>
+        <div class="lt-specs">
+          <div class="lt-spec"><span class="lt-sk">LTV</span><span class="lt-sv">Up to 80% combined</span></div>
+          <div class="lt-spec"><span class="lt-sk">Rate</span><span class="lt-sv">12%–15% p.a.</span></div>
+          <div class="lt-spec"><span class="lt-sk">Term</span><span class="lt-sv">6–24 months</span></div>
+          <div class="lt-spec"><span class="lt-sk">Prepayment</span><span class="lt-sv">Open after 3 months</span></div>
+        </div>
+      </div>
+
+      <div class="lt-card reveal">
+        <div class="lt-icon">🏗️</div>
+        <h3>Construction / Bridge Loan</h3>
+        <p>Short-term financing for builds, renovations, and property flips where timing is critical.</p>
+        <div class="lt-specs">
+          <div class="lt-spec"><span class="lt-sk">LTV</span><span class="lt-sv">Up to 70% as-improved</span></div>
+          <div class="lt-spec"><span class="lt-sk">Rate</span><span class="lt-sv">10%–14% p.a.</span></div>
+          <div class="lt-spec"><span class="lt-sk">Term</span><span class="lt-sv">3–18 months</span></div>
+          <div class="lt-spec"><span class="lt-sk">Draws</span><span class="lt-sv">Progress-based advances</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY LENDX -->
+<section class="why-section">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-eyebrow green">Why LendX</div>
+      <h2 class="display" style="margin-bottom:12px">Speed and common sense <em>underwriting.</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-list">
+        <div class="why-item reveal">
+          <div class="why-bullet">⚡</div>
+          <div>
+            <h4>48–72 Hour Commitments</h4>
+            <p>No endless committee review. LendX issues conditional commitments within 2–3 business days of receiving a complete submission from your broker.</p>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-bullet">🧠</div>
+          <div>
+            <h4>Common Sense Underwriting</h4>
+            <p>We underwrite the deal and the property, not just the credit score. Recent credit events, non-traditional income, and complex deal structures are welcome.</p>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-bullet">🤝</div>
+          <div>
+            <h4>Broker-First Approach</h4>
+            <p>We only accept applications through licensed mortgage brokers. You're always in the deal, earning your referral fee, and in control of the client relationship.</p>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-bullet">⚖️</div>
+          <div>
+            <h4>FSRA-Regulated</h4>
+            <p>Fully compliant with Ontario's Financial Services Regulatory Authority requirements for private mortgage lenders and mortgage brokerages.</p>
+          </div>
+        </div>
+      </div>
+      <div class="stats-block reveal">
+        <div class="stat-box">
+          <div class="sb-val">8–15%</div>
+          <div class="sb-label">Interest Rate Range</div>
+        </div>
+        <div class="stat-box">
+          <div class="sb-val">72h</div>
+          <div class="sb-label">Commitment Turnaround</div>
+        </div>
+        <div class="stat-box">
+          <div class="sb-val">75%</div>
+          <div class="sb-label">Max LTV (first mortgage)</div>
+        </div>
+        <div class="stat-box">
+          <div class="sb-val">$5M+</div>
+          <div class="sb-label">Year 3 Book Target</div>
+        </div>
+        <div class="stat-box" style="grid-column:span 2">
+          <div class="sb-val">FSRA</div>
+          <div class="sb-label">Ontario — Regulated Mortgage Lender &amp; Broker</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BROKER REFERRAL FORM -->
+<section id="broker-referral" class="broker-section">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:48px">
+      <div class="section-eyebrow">Broker &amp; Realtor Partners</div>
+      <h2 class="display" style="margin-bottom:12px">Partner with LendX — <em>earn on every deal.</em></h2>
+      <p class="section-sub" style="margin:0 auto">Licensed mortgage brokers and realtors can pre-register now for our broker partner program. Submit deals at launch and earn competitive referral fees on every funded mortgage.</p>
+    </div>
+    <div class="broker-grid">
+
+      <div class="broker-card reveal">
+        <h3>Broker Partner Benefits</h3>
+        <p>LendX is built for brokers. You bring the deal, we provide the capital. Every application flows through you — no direct-to-consumer bypass, ever.</p>
+        <div class="broker-perks">
+          <div class="broker-perk">
+            <div class="broker-perk-icon">💰</div>
+            <span>Competitive referral fee on every funded mortgage</span>
+          </div>
+          <div class="broker-perk">
+            <div class="broker-perk-icon">⚡</div>
+            <span>48–72 hour commitment letters for clean deals</span>
+          </div>
+          <div class="broker-perk">
+            <div class="broker-perk-icon">🔓</div>
+            <span>Open prepayment options — exit when your client refinances</span>
+          </div>
+          <div class="broker-perk">
+            <div class="broker-perk-icon">📊</div>
+            <span>Broker portal: deal tracking, document upload, payout status</span>
+          </div>
+          <div class="broker-perk">
+            <div class="broker-perk-icon">🤝</div>
+            <span>Dedicated LendX contact — direct line, no call centre</span>
+          </div>
+          <div class="broker-perk">
+            <div class="broker-perk-icon">🏆</div>
+            <span>Volume bonuses for brokers exceeding $500K placed annually</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="broker-form-side reveal">
+        <h3>Pre-Register as a Broker Partner</h3>
+        <p>Register now to get first access, priority deal submissions, and preferred broker rates.</p>
+        <form id="broker-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bf-first">First Name *</label>
+              <input id="bf-first" type="text" placeholder="Jane" required="">
+            </div>
+            <div class="form-group">
+              <label for="bf-last">Last Name *</label>
+              <input id="bf-last" type="text" placeholder="Smith" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="bf-email">Email Address *</label>
+            <input id="bf-email" type="email" placeholder="jane@brokerage.ca" required="">
+          </div>
+          <div class="form-group">
+            <label for="bf-phone">Phone Number</label>
+            <input id="bf-phone" type="tel" placeholder="416-555-0100">
+          </div>
+          <div class="form-group">
+            <label for="bf-brokerage">Brokerage Name *</label>
+            <input id="bf-brokerage" type="text" placeholder="Meridian Mortgage Group" required="">
+          </div>
+          <div class="form-group">
+            <label for="bf-license">FSRA License / Registration Number</label>
+            <input id="bf-license" type="text" placeholder="M12345678">
+          </div>
+          <div class="form-group">
+            <label for="bf-volume">Estimated Annual Referral Volume</label>
+            <select id="bf-volume">
+              <option value="">Select range…</option>
+              <option value="under-500k">Under $500K</option>
+              <option value="500k-1m">$500K – $1M</option>
+              <option value="1m-3m">$1M – $3M</option>
+              <option value="3m-plus">$3M+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bf-notes">Typical Deal Profile (optional)</label>
+            <textarea id="bf-notes" placeholder="e.g. B borrowers in GTA, bridge loans for builders, second mortgages for debt consolidation…"></textarea>
+          </div>
+          <p class="consent-text">By submitting this form you consent to LendX Financial contacting you regarding our broker partner program. Your information is protected under PIPEDA and will not be shared with third parties. This is an expression of interest, not a formal agreement.</p>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center" id="broker-submit-btn">
+            Pre-Register as Broker Partner →
+          </button>
+        </form>
+        <div id="broker-form-success" style="display:none;text-align:center;padding:40px 0">
+          <div style="font-size:3rem;margin-bottom:12px">✅</div>
+          <h4 style="font-size:1.1rem;font-weight:900;color:var(--ink);margin-bottom:8px">You're on the list!</h4>
+          <p style="font-size:.875rem;color:var(--muted)">We'll reach out with onboarding details shortly. Check your email — a confirmation is on its way.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER CTA -->
+<section class="footer-cta-section">
+  <div class="wrap">
+    <h2>Want to <em>invest</em> in private mortgages?</h2>
+    <p>Private mortgage deals are available to accredited investors through the LendX marketplace. Apply now or explore current P2P investment opportunities.</p>
+    <div class="footer-cta-actions">
+      <a href="marketplace.html" class="btn-primary">
+        Invest in Private Mortgages
+      </a>
+      <a href="marketplace.html" class="btn-ghost" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.3);color:#fff">
+        View Current Marketplace →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="wrap" style="text-align:center;margin-bottom:36px">
+    <div style="display:inline-block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#22c55e;margin-bottom:10px">Real People, Real Stories</div>
+    <h2 style="font-size:1.8rem;font-weight:900;color:var(--ink,#0b1523);margin:0 auto;max-width:600px;line-height:1.25">Canadians choosing LendX Financial.</h2>
+  </div>
+  <div class="wrap">
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-22.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Modern lending for modern Canadians.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-23.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Approval you can count on.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-24.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Funding your future, one loan at a time.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="wrap footer-inner">
+    <p class="footer-copy">© 2025 LendX Financial Technologies Inc. · Toronto, ON · <a href="mailto:info@lendxfinancial.com" style="color:rgba(255,255,255,.4)">info@lendxfinancial.com</a><br>Private mortgage financing subject to FSRA licensing. Terms and conditions apply.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="marketplace.html">Investor Platform</a>
+      <a href="cheque-cashing.html">Cheque Cashing</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+
+<div class="toast" id="toast"></div>
+
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowmode="open"><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

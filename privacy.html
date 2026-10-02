@@ -1,0 +1,543 @@
+<!DOCTYPE html><html lang="en" crxlauncher-bridged="" crxlauncher=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+@charset "utf-8";
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+</style><style>
+@charset "utf-8";
+
+
+
+</style><style>
+@charset "utf-8";
+
+:root { --ink: #0b1523; --ink-2: #1c2e45; --cobalt: #059669; --cobalt-2: #047857; --cobalt-light: #d1fae5; --sky: #34d399; --white: #ffffff; --off: #f7f9fc; --off-2: #eef2f9; --border: #dde4f0; --muted: #6278a0; --text: #1a2540; --text-2: #384e72; --green-bg: #dcfce7; --green-text: #15803d; --max: 820px; --font: 'Nunito',-apple-system,BlinkMacSystemFont,'SF Pro Rounded',sans-serif; }
+
+*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; max-width: 100%; }
+
+body { font-family: var(--font); color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; overflow-x: hidden; letter-spacing: -0.01em; max-width: 100%; width: 100%; }
+
+.wrap { max-width: 1100px; margin: 0px auto; padding: 0px 24px; }
+
+.doc-wrap { max-width: var(--max); margin: 0px auto; padding: 0px 24px; }
+
+.nav { position: sticky; top: 0px; z-index: 100; background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(24px); border-bottom: 1px solid var(--border); }
+
+.nav-inner { display: flex; justify-content: space-between; align-items: center; height: 62px; gap: 16px; }
+
+.brand { display: flex; gap: 10px; align-items: center; text-decoration: none; flex-shrink: 0; }
+
+.brand-word { font-weight: 800; font-size: 1.05rem; color: var(--ink); letter-spacing: -0.02em; }
+
+.brand-word .x { color: var(--sky); }
+
+.nav-links { display: flex; gap: 2px; justify-content: center; }
+
+.nav-links a { color: var(--text-2); text-decoration: none; font-size: 0.87rem; font-weight: 600; padding: 7px 13px; border-radius: 10px; transition: 0.17s; white-space: nowrap; }
+
+.nav-links a:hover, .nav-links a.active { color: var(--cobalt); background: var(--cobalt-light); }
+
+@media (max-width: 1200px) {
+  .nav-links a { font-size: 0.78rem; padding: 6px 10px; }
+  .brand-word { font-size: 0.95rem; }
+  .n-btn { font-size: 0.8rem; padding: 7px 12px; }
+}
+
+.btn-apply { padding: 9px 20px; border-radius: 12px; font-weight: 700; font-size: 0.87rem; font-family: var(--font); cursor: pointer; transition: 0.18s; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; background: var(--cobalt); color: rgb(255, 255, 255); text-decoration: none; box-shadow: rgba(5, 150, 105, 0.3) 0px 4px 16px; }
+
+.btn-apply:hover { background: var(--cobalt-2); transform: translateY(-1px); }
+
+@media (max-width: 1200px) {
+  .nav-links { display: none; }
+}
+
+.page-hero { background: linear-gradient(135deg,var(--cobalt) 0%,#047857 60%,var(--sky) 100%); padding: 56px 0px 64px; position: relative; overflow: hidden; }
+
+.page-hero::before { content: ""; position: absolute; inset: 0px; background: radial-gradient(700px 400px at 80% 50%, rgba(255, 255, 255, 0.08), transparent 60%); pointer-events: none; }
+
+.page-hero-inner { position: relative; z-index: 1; text-align: center; }
+
+.hero-eyebrow { display: inline-block; background: rgba(255, 255, 255, 0.15); color: rgb(255, 255, 255); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; border-radius: 999px; padding: 5px 16px; margin-bottom: 16px; }
+
+.page-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: rgb(255, 255, 255); letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 14px; }
+
+.page-hero p { font-size: 0.92rem; color: rgba(255, 255, 255, 0.75); max-width: 500px; margin: 0px auto; }
+
+.doc-body { padding: 56px 0px 80px; }
+
+.doc-toc { background: var(--off); border: 1px solid var(--border); border-radius: 18px; padding: 24px 28px; margin-bottom: 48px; }
+
+.doc-toc h2 { font-size: 0.78rem; font-weight: 800; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 14px; }
+
+.doc-toc ol { list-style: decimal; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+
+.doc-toc a { font-size: 0.87rem; font-weight: 600; color: var(--cobalt); text-decoration: none; transition: color 0.17s; }
+
+.doc-toc a:hover { color: var(--cobalt-2); }
+
+.doc-section { margin-bottom: 48px; }
+
+.doc-section h2 { font-size: 1.2rem; font-weight: 900; color: var(--ink); letter-spacing: -0.02em; margin-bottom: 14px; padding-top: 8px; border-top: 2px solid var(--border); }
+
+.doc-section h3 { font-size: 0.97rem; font-weight: 800; color: var(--ink); margin: 20px 0px 8px; }
+
+.doc-section p { font-size: 0.9rem; color: var(--text-2); line-height: 1.75; margin-bottom: 14px; }
+
+.doc-section p:last-child { margin-bottom: 0px; }
+
+.doc-section ul, .doc-section ol { margin-left: 20px; margin-bottom: 14px; }
+
+.doc-section li { font-size: 0.9rem; color: var(--text-2); line-height: 1.75; margin-bottom: 6px; }
+
+.doc-section strong { color: var(--text); font-weight: 800; }
+
+.callout { background: var(--green-bg); border: 1px solid rgba(34, 197, 94, 0.25); border-radius: 14px; padding: 16px 20px; margin-bottom: 16px; }
+
+.callout p { font-size: 0.87rem; color: var(--green-text); margin: 0px; font-weight: 600; }
+
+.warning { background: rgb(254, 243, 199); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 14px; padding: 16px 20px; margin-bottom: 16px; }
+
+.warning p { font-size: 0.87rem; color: rgb(146, 64, 14); margin: 0px; font-weight: 600; }
+
+.contact-box { background: var(--off-2); border: 1px solid var(--border); border-radius: 16px; padding: 24px; }
+
+.page-footer { background: var(--ink); padding: 0px; }
+
+.foot-main { padding: 40px 0px 28px; }
+
+.foot-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap; }
+
+.foot-brand-text { font-weight: 800; color: rgb(255, 255, 255); font-size: 0.97rem; letter-spacing: -0.02em; }
+
+.foot-links { display: flex; gap: 20px; flex-wrap: wrap; }
+
+.foot-links a { font-size: 0.8rem; color: rgba(255, 255, 255, 0.4); text-decoration: none; transition: color 0.17s; }
+
+.foot-links a:hover { color: var(--sky); }
+
+.foot-legal { font-size: 0.67rem; color: rgba(255, 255, 255, 0.2); line-height: 1.7; border-top: 1px solid rgba(255, 255, 255, 0.07); padding-top: 20px; margin-top: 20px; }
+
+.gallery { padding: 72px 0px; }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+@media (max-width: 860px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 540px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+}
+
+.gallery-item { border-radius: 22px; overflow: hidden; box-shadow: rgba(11, 21, 35, 0.06) 0px 2px 12px; transition: 0.3s; position: relative; }
+
+.gallery-item:hover { box-shadow: rgba(11, 21, 35, 0.1) 0px 8px 40px; transform: translateY(-4px); }
+
+.gallery-item img { width: 100%; height: 260px; object-fit: cover; display: block; }
+
+@media (max-width: 600px) {
+  .gallery-item img { height: 200px; }
+}
+
+.gallery-caption { position: absolute; bottom: 0px; left: 0px; right: 0px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); padding: 40px 16px 14px; color: rgb(255, 255, 255); font-size: 0.82rem; font-weight: 700; }
+
+</style>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Privacy Policy — LendX Financial Inc.</title>
+<meta name="description" content="LendX Financial's Privacy Policy. How we collect, use, protect, and disclose your personal information under Canada's PIPEDA. Last updated April 2026.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="LendX Financial Inc.">
+<link rel="canonical" href="https://lendxfinancial.com/privacy.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta property="og:title" content="Privacy Policy — LendX Financial">
+<meta property="og:description" content="How LendX Financial collects, uses, and protects your personal information under PIPEDA.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lendxfinancial.com/privacy.html">
+<meta property="og:image" content="https://lendxfinancial.com/favicon.svg">
+<meta property="og:site_name" content="LendX Financial">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#059669">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="LendX">
+<style id="lx-nav-css">
+/* ── LendX canonical nav ── */
+.nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.nav-inner{display:flex;align-items:center;gap:1rem;padding:.75rem 1.25rem;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:.55rem;text-decoration:none;flex-shrink:0}
+.lx-logo-svg{width:36px;height:36px;flex-shrink:0}
+.brand-wordmark{font-family:var(--font,'Nunito',sans-serif);font-size:1.15rem;font-weight:800;color:#111827;letter-spacing:-.02em}
+.brand-wordmark .x-accent{color:#059669}
+.nav-center{display:flex;align-items:center;gap:.15rem;flex:1;justify-content:center}
+.nav-center a{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.38rem .65rem;border-radius:6px;white-space:nowrap;transition:background .15s,color .15s}
+.nav-center a:hover{background:#ecfdf5;color:#059669}
+.nav-center a.active{background:#d1fae5;color:#059669}
+.nav-right{display:flex;align-items:center;gap:.55rem;flex-shrink:0}
+.n-btn{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:700;padding:.42rem .9rem;border-radius:8px;text-decoration:none;cursor:pointer;transition:all .15s}
+.n-outline{border:1.5px solid #059669;color:#059669;background:transparent}
+.n-outline:hover{background:#ecfdf5}
+.n-solid{background:#059669;color:#fff;border:1.5px solid #059669}
+.n-solid:hover{background:#047857}
+.ham-btn{display:none;background:none;border:none;cursor:pointer;padding:.3rem;color:#111827}
+.nav-drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1000}
+.nav-drawer-overlay.open{display:block}
+.nav-drawer{position:fixed;top:0;right:-280px;width:260px;height:100%;background:#fff;z-index:1001;padding:1.5rem 1.25rem;display:flex;flex-direction:column;gap:.5rem;box-shadow:-4px 0 20px rgba(0,0,0,.12);transition:right .28s ease}
+.nav-drawer.open{right:0}
+.nav-drawer a{font-family:var(--font,'Nunito',sans-serif);font-size:.95rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.55rem .75rem;border-radius:8px;transition:background .15s}
+.nav-drawer a:hover{background:#ecfdf5;color:#059669}
+.drawer-cta{margin-top:auto!important;background:#059669!important;color:#fff!important;text-align:center;padding:.7rem 1rem!important;border-radius:10px!important}
+.drawer-cta:hover{background:#047857!important}
+@media(max-width:900px){.nav-center{display:none}.ham-btn{display:flex}}
+@media(max-width:540px){.n-outline{display:none}}
+</style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1334.0" data-gr-ext-installed="">
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <svg class="lx-logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LendX Financial logo">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#14532d"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4ade80"/><stop offset="60%" stop-color="#16a34a"/><stop offset="100%" stop-color="#166534"/></linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#86efac"/><stop offset="60%" stop-color="#22c55e"/><stop offset="100%" stop-color="#16a34a"/></linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#064E3B"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+        </defs>
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"/>
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"/>
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"/>
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"/>
+      </svg>
+      <span class="brand-wordmark">Lend<span class="x-accent">X</span> Financial</span>
+    </a>
+    <div class="nav-center">
+      <a href="index.html" >Personal</a>
+      <a href="business.html" >Business</a>
+      <a href="marketplace.html" >Marketplace</a>
+      <a href="payday.html" >Payday Loans</a>
+      <a href="cheque-cashing.html" >Cheque Cashing</a>
+      <a href="private-mortgage.html" >Private Mortgage</a>
+    </div>
+    <div class="nav-right">
+      <a class="n-btn n-outline" href="tel:+16472003526">647-200-3526</a>
+      <a class="n-btn n-solid" href="index.html#apply">Apply Now →</a>
+      <button class="ham-btn" onclick="toggleMenu()" aria-label="Menu">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="nav-drawer-overlay" id="nav-overlay" onclick="toggleMenu()"></div>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="index.html" >Personal Loans</a>
+  <a href="business.html" >Business Financing</a>
+  <a href="marketplace.html" >Marketplace</a>
+  <a href="payday.html" >Payday Loans</a>
+  <a href="cheque-cashing.html" >Cheque Cashing</a>
+  <a href="private-mortgage.html" >Private Mortgage</a>
+  <a href="calculator.html">Calculator</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About Us</a>
+  <a class="drawer-cta" href="index.html#apply" onclick="toggleMenu()">Apply Now →</a>
+</div>
+<section class="page-hero">
+  <div class="wrap page-hero-inner">
+    <div class="hero-eyebrow">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: April 4, 2026 · Effective immediately for all LendX Financial users.</p>
+  </div>
+</section>
+
+<div class="doc-body">
+<div class="doc-wrap">
+
+  <div class="callout" role="note">
+    <p>🔒 Summary: LendX Financial never sells your personal information to third parties. We collect only what's necessary, protect it with industry-standard security, and comply fully with Canada's PIPEDA.</p>
+  </div>
+
+  <article>
+
+  <div class="doc-section" id="scope">
+    <h2>1. Scope and Application</h2>
+    <p>This Privacy Policy applies to <strong>LendX Financial Inc.</strong> ("LendX," "we," "us," or "our"), a federally incorporated Canadian company operating at <a href="https://lendxfinancial.com/">lendxfinancial.com</a>. It governs all personal information collected through our website, mobile interfaces, loan application forms, credit report requests, and investor marketplace.</p>
+    <p>This policy is governed by the <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA), S.C. 2000, c. 5, and applicable provincial privacy legislation. By using LendX's services, you consent to the practices described in this policy.</p>
+  </div>
+
+  <div class="doc-section" id="collection">
+    <h2>2. Information We Collect</h2>
+    <h3>2.1 Information You Provide Directly</h3>
+    <ul>
+      <li><strong>Identity information:</strong> Full legal name, date of birth, government ID type and number.</li>
+      <li><strong>Contact information:</strong> Email address, phone number, mailing address, province of residence.</li>
+      <li><strong>Financial information:</strong> Employment status, income, bank account details (for EFT disbursement and repayment), loan purpose.</li>
+      <li><strong>Investor information:</strong> Investment preferences, accredited investor status (if applicable), bank account details for marketplace participation.</li>
+      <li><strong>Communications:</strong> Any messages, emails, or support requests you send to us.</li>
+    </ul>
+    <h3>2.2 Information Collected Automatically</h3>
+    <ul>
+      <li><strong>Device and browser data:</strong> IP address, browser type and version, operating system, referring URLs, pages viewed, time on site.</li>
+      <li><strong>Usage data:</strong> Calculator interactions, form completion rates, session duration, click patterns.</li>
+      <li><strong>Cookies and local storage:</strong> Session identifiers, preference settings, form progress (see Section 9).</li>
+    </ul>
+    <h3>2.3 Information from Third Parties</h3>
+    <ul>
+      <li><strong>Credit bureau data:</strong> Soft credit inquiry results from TransUnion or Equifax Canada (see Section 5).</li>
+      <li><strong>Verification services:</strong> Identity verification data from KYC/AML service providers.</li>
+      <li><strong>Banking verification:</strong> Bank account verification data (read-only access for Interac confirmation).</li>
+    </ul>
+  </div>
+
+  <div class="doc-section" id="use">
+    <h2>3. How We Use Your Information</h2>
+    <p>We use personal information only for the purposes for which it was collected or to which you have consented:</p>
+    <ul>
+      <li>Evaluating loan applications and determining creditworthiness.</li>
+      <li>Disbursing loan funds via Interac e-Transfer® to your bank account.</li>
+      <li>Processing repayments via Electronic Funds Transfer (EFT).</li>
+      <li>Providing free credit report access and monitoring alerts.</li>
+      <li>Managing investor marketplace accounts and P2P loan participation.</li>
+      <li>Sending transactional communications: application status, payment reminders, account notices.</li>
+      <li>Complying with legal and regulatory obligations including identity verification, anti-money laundering (AML), and know-your-customer (KYC) requirements.</li>
+      <li>Fraud detection and prevention.</li>
+      <li>Improving our platform through aggregated, anonymized analytics.</li>
+      <li>Responding to your inquiries and providing customer support.</li>
+    </ul>
+    <p>We do <strong>not</strong> use your information for:</p>
+    <ul>
+      <li>Selling or renting personal information to data brokers or marketers.</li>
+      <li>Targeted advertising beyond our own platform communications.</li>
+      <li>Profiling for purposes unrelated to your direct use of LendX services.</li>
+    </ul>
+  </div>
+
+  <div class="doc-section" id="disclosure">
+    <h2>4. Disclosure to Third Parties</h2>
+    <p>LendX does not sell personal information. We may share information with the following categories of trusted service providers solely to operate our platform:</p>
+    <ul>
+      <li><strong>Payment processors:</strong> For Interac e-Transfer® disbursement and EFT repayment processing.</li>
+      <li><strong>Credit bureaus:</strong> TransUnion and/or Equifax Canada for soft and (with your consent) hard credit inquiries.</li>
+      <li><strong>Identity verification:</strong> KYC/AML compliance service providers.</li>
+      <li><strong>Legal counsel:</strong> NEO Legal Services Professional Corporation, for collections, contract enforcement, and regulatory compliance. NEO operates under strict confidentiality obligations.</li>
+      <li><strong>Email delivery:</strong> Transactional email service providers (e.g. Resend) for application and account notifications.</li>
+      <li><strong>Cloud infrastructure:</strong> Vercel Inc. for hosting and serverless function execution. Data is processed in accordance with their privacy terms.</li>
+    </ul>
+    <p>All third-party service providers are required by contract to protect personal information at a standard at least equivalent to LendX's obligations under PIPEDA.</p>
+    <p>We may also disclose personal information when legally required: in response to a valid court order, government investigation, regulatory request, or to prevent fraud or imminent harm.</p>
+  </div>
+
+  <div class="doc-section" id="credit">
+    <h2>5. Credit Inquiries</h2>
+    <div class="callout" role="note">
+      <p>✓ Rate checks and application submissions use soft credit inquiries only — zero impact on your credit score.</p>
+    </div>
+    <p><strong>Soft credit inquiry (rate check / application):</strong> When you check your rate or submit a loan application, LendX performs a soft credit inquiry with TransUnion and/or Equifax Canada. A soft inquiry does not appear on your credit report and has no effect on your credit score.</p>
+    <p><strong>Hard credit inquiry (loan agreement signing):</strong> A hard credit inquiry — which does appear on your credit report — is only performed with your explicit written consent, and only at the stage when you are presented with a loan agreement for signing. You will be clearly notified before any hard inquiry is initiated.</p>
+    <p><strong>Free credit report:</strong> When you request your free credit report through LendX, we access your credit data solely for the purpose of displaying it to you. This data is not stored beyond the session or used for LendX's own credit decisioning without separate consent.</p>
+  </div>
+
+  <div class="doc-section" id="security">
+    <h2>6. Data Security</h2>
+    <p>LendX implements industry-standard technical and organizational security measures to protect personal information from unauthorized access, use, disclosure, alteration, or destruction:</p>
+    <ul>
+      <li>TLS 1.2+ encryption for all data transmitted between your browser and our servers.</li>
+      <li>Encryption at rest for sensitive personal and financial data.</li>
+      <li>Role-based access controls limiting internal data access to staff with a legitimate need.</li>
+      <li>Secure, SOC 2-compliant cloud infrastructure (Vercel).</li>
+      <li>Regular security assessments and penetration testing of the loan platform.</li>
+      <li>Incident response plan to detect, contain, and report data breaches within 72 hours where required by law.</li>
+    </ul>
+    <p>No system is completely secure. If you believe your account has been compromised, contact us immediately at <a href="mailto:hello@lendxfinancial.com">hello@lendxfinancial.com</a>.</p>
+  </div>
+
+  <div class="doc-section" id="retention">
+    <h2>7. Retention and Deletion</h2>
+    <p>We retain personal information for as long as necessary to fulfill the purposes for which it was collected, or as required by law:</p>
+    <ul>
+      <li><strong>Active borrower accounts:</strong> For the duration of the loan agreement plus 7 years (to comply with provincial financial record-keeping requirements).</li>
+      <li><strong>Declined applications:</strong> Up to 2 years for fraud prevention and regulatory compliance.</li>
+      <li><strong>Credit report requests:</strong> Session-only; not retained after session ends unless you create an account.</li>
+      <li><strong>Investor accounts:</strong> For the duration of marketplace participation plus 7 years.</li>
+      <li><strong>Marketing communications:</strong> Until you withdraw consent.</li>
+    </ul>
+    <p>You may request deletion of your personal information at any time (see Section 8). Certain information may be retained beyond your request where required by law or to protect LendX's legal interests (e.g. outstanding loan obligations, fraud investigations).</p>
+  </div>
+
+  <div class="doc-section" id="rights">
+    <h2>8. Your Rights Under PIPEDA</h2>
+    <p>Under PIPEDA and applicable provincial privacy laws, you have the following rights with respect to your personal information held by LendX:</p>
+    <ul>
+      <li><strong>Right of Access:</strong> You may request a copy of the personal information we hold about you.</li>
+      <li><strong>Right to Correction:</strong> You may request correction of inaccurate personal information.</li>
+      <li><strong>Right to Withdraw Consent:</strong> You may withdraw consent to our use of your information for non-essential purposes (e.g. marketing) at any time. Note: withdrawal of consent for core purposes (e.g. repayment processing) may require closure of your account.</li>
+      <li><strong>Right to Deletion:</strong> You may request deletion of your personal information, subject to legal retention requirements.</li>
+      <li><strong>Right to Complain:</strong> If you believe LendX has handled your personal information improperly, you may file a complaint with the <a href="https://www.priv.gc.ca/" target="_blank" rel="noopener noreferrer">Office of the Privacy Commissioner of Canada</a>.</li>
+    </ul>
+    <p>To exercise any of these rights, contact our Privacy Officer at the address in Section 12.</p>
+  </div>
+
+  <div class="doc-section" id="cookies">
+    <h2>9. Cookies and Tracking</h2>
+    <p>LendX uses the following types of cookies and client-side storage:</p>
+    <ul>
+      <li><strong>Essential cookies:</strong> Session management, form progress saving (localStorage), CSRF protection. Required for platform functionality — cannot be disabled.</li>
+      <li><strong>Analytics cookies:</strong> Aggregated, anonymized usage analytics to improve calculator and form flows. IP addresses are anonymized.</li>
+    </ul>
+    <p>LendX does <strong>not</strong> use third-party advertising cookies, cross-site tracking pixels, or behavioural advertising technology. You may disable non-essential cookies through your browser settings without affecting core platform functionality.</p>
+  </div>
+
+  <div class="doc-section" id="minors">
+    <h2>10. Minors</h2>
+    <p>LendX's products and services are available only to individuals 18 years of age or older (or the age of majority in their province of residence, whichever is higher). We do not knowingly collect personal information from individuals under the age of majority. If you believe a minor has submitted personal information to LendX, contact us immediately and we will delete it promptly.</p>
+  </div>
+
+  <div class="doc-section" id="changes">
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or business operations. When we make material changes, we will:</p>
+    <ul>
+      <li>Update the "Last updated" date at the top of this page.</li>
+      <li>Send an email notification to registered account holders.</li>
+      <li>Display a notice on the LendX platform for 30 days following the change.</li>
+    </ul>
+    <p>Continued use of LendX's services after a policy update constitutes acceptance of the revised policy.</p>
+  </div>
+
+  <div class="doc-section" id="contact-us">
+    <h2>12. Contact Our Privacy Officer</h2>
+    <div class="contact-box">
+      <p style="font-size:.9rem;font-weight:800;color:var(--ink);margin-bottom:12px">Privacy Officer — LendX Financial Inc.</p>
+      <p style="margin-bottom:8px"><strong>c/o NEO Legal Services Professional Corporation</strong><br>Mo Farooqui, LSO Licence #P21785<br>Toronto, Ontario, Canada</p>
+      <p style="margin-bottom:8px"><a href="mailto:hello@lendxfinancial.com" style="color:var(--cobalt);font-weight:700">hello@lendxfinancial.com</a></p>
+      <p><a href="tel:+16472003526" style="color:var(--cobalt);font-weight:700">647-200-3526</a> · <a href="tel:+18885192435" style="color:var(--cobalt);font-weight:700">1-888-519-2435</a></p>
+      <p style="margin-top:12px;font-size:.82rem;color:var(--muted)">We will acknowledge your request within 2 business days and provide a substantive response within 30 calendar days, as required by PIPEDA.</p>
+    </div>
+  </div>
+
+  </article>
+</div>
+</div>
+
+<footer class="page-footer">
+  <div class="wrap">
+    <div class="foot-main">
+      <div class="foot-inner">
+        <div>
+          <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px">
+            <svg height="28" width="auto" viewBox="0 0 44 44" fill="none" role="img" aria-label="LendX Financial logo">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#14532d"></stop>
+            <stop offset="100%" stop-color="#22c55e"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#4ade80"></stop>
+            <stop offset="60%" stop-color="#16a34a"></stop>
+            <stop offset="100%" stop-color="#166534"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#86efac"></stop>
+            <stop offset="60%" stop-color="#22c55e"></stop>
+            <stop offset="100%" stop-color="#16a34a"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#064E3B"></stop>
+            <stop offset="100%" stop-color="#22c55e"></stop>
+          </linearGradient>
+        </defs>
+        <!-- Upper-left leaf (dark green) -->
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"></path>
+        <!-- Upper-right leaf (bright green) -->
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"></path>
+        <!-- Lower-left leaf (mid green) -->
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"></path>
+        <!-- Lower-right leaf (deep green) -->
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"></path>
+        </svg>
+            <span class="foot-brand-text">LendX Financial</span>
+          </div>
+          <div style="font-size:.78rem;color:rgba(255,255,255,.3)">Toronto, Ontario, Canada</div>
+        </div>
+        <div class="foot-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="privacy.html" style="color:rgba(255,255,255,.7)">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="legal.html">Legal</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="foot-legal">© 2026 LendX Financial Inc. All rights reserved. LendX Financial Inc. is federally incorporated under the Canada Business Corporations Act. This Privacy Policy is governed by Canada's <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA), S.C. 2000, c. 5.</div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowmode="open"><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

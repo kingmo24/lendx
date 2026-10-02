@@ -1,0 +1,540 @@
+<!DOCTYPE html><html lang="en" crxlauncher-bridged="" crxlauncher=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+@charset "utf-8";
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+</style><style>
+@charset "utf-8";
+
+
+
+</style><style>
+@charset "utf-8";
+
+:root { --ink: #0b1523; --ink-2: #1c2e45; --cobalt: #059669; --cobalt-2: #047857; --cobalt-light: #d1fae5; --sky: #34d399; --white: #ffffff; --off: #f7f9fc; --off-2: #eef2f9; --border: #dde4f0; --muted: #6278a0; --text: #1a2540; --text-2: #384e72; --green-bg: #dcfce7; --green-text: #15803d; --amber-bg: #fef3c7; --amber-text: #92400e; --max: 820px; --font: 'Nunito',-apple-system,BlinkMacSystemFont,'SF Pro Rounded',sans-serif; }
+
+*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; max-width: 100%; }
+
+body { font-family: var(--font); color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; overflow-x: hidden; letter-spacing: -0.01em; max-width: 100%; width: 100%; }
+
+.wrap { max-width: 1100px; margin: 0px auto; padding: 0px 24px; }
+
+.doc-wrap { max-width: var(--max); margin: 0px auto; padding: 0px 24px; }
+
+.nav { position: sticky; top: 0px; z-index: 100; background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(24px); border-bottom: 1px solid var(--border); }
+
+.nav-inner { display: flex; justify-content: space-between; align-items: center; height: 62px; gap: 16px; }
+
+.brand { display: flex; gap: 10px; align-items: center; text-decoration: none; flex-shrink: 0; }
+
+.brand-word { font-weight: 800; font-size: 1.05rem; color: var(--ink); letter-spacing: -0.02em; }
+
+.brand-word .x { color: var(--sky); }
+
+.nav-links { display: flex; gap: 2px; justify-content: center; }
+
+.nav-links a { color: var(--text-2); text-decoration: none; font-size: 0.87rem; font-weight: 600; padding: 7px 13px; border-radius: 10px; transition: 0.17s; white-space: nowrap; }
+
+.nav-links a:hover, .nav-links a.active { color: var(--cobalt); background: var(--cobalt-light); }
+
+@media (max-width: 1200px) {
+  .nav-links a { font-size: 0.78rem; padding: 6px 10px; }
+  .brand-word { font-size: 0.95rem; }
+  .n-btn { font-size: 0.8rem; padding: 7px 12px; }
+}
+
+.btn-apply { padding: 9px 20px; border-radius: 12px; font-weight: 700; font-size: 0.87rem; font-family: var(--font); cursor: pointer; transition: 0.18s; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; background: var(--cobalt); color: rgb(255, 255, 255); text-decoration: none; box-shadow: rgba(5, 150, 105, 0.3) 0px 4px 16px; }
+
+.btn-apply:hover { background: var(--cobalt-2); transform: translateY(-1px); }
+
+@media (max-width: 1200px) {
+  .nav-links { display: none; }
+}
+
+.page-hero { background: linear-gradient(135deg,var(--cobalt) 0%,#047857 60%,var(--sky) 100%); padding: 56px 0px 64px; position: relative; overflow: hidden; }
+
+.page-hero::before { content: ""; position: absolute; inset: 0px; background: radial-gradient(700px 400px at 80% 50%, rgba(255, 255, 255, 0.08), transparent 60%); pointer-events: none; }
+
+.page-hero-inner { position: relative; z-index: 1; text-align: center; }
+
+.hero-eyebrow { display: inline-block; background: rgba(255, 255, 255, 0.15); color: rgb(255, 255, 255); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; border-radius: 999px; padding: 5px 16px; margin-bottom: 16px; }
+
+.page-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: rgb(255, 255, 255); letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 14px; }
+
+.page-hero p { font-size: 0.92rem; color: rgba(255, 255, 255, 0.75); max-width: 500px; margin: 0px auto; }
+
+.doc-body { padding: 56px 0px 80px; }
+
+.doc-toc { background: var(--off); border: 1px solid var(--border); border-radius: 18px; padding: 24px 28px; margin-bottom: 48px; }
+
+.doc-toc h2 { font-size: 0.78rem; font-weight: 800; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 14px; }
+
+.doc-toc ol { list-style: decimal; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+
+.doc-toc a { font-size: 0.87rem; font-weight: 600; color: var(--cobalt); text-decoration: none; transition: color 0.17s; }
+
+.doc-toc a:hover { color: var(--cobalt-2); }
+
+.doc-section { margin-bottom: 48px; }
+
+.doc-section h2 { font-size: 1.2rem; font-weight: 900; color: var(--ink); letter-spacing: -0.02em; margin-bottom: 14px; padding-top: 8px; border-top: 2px solid var(--border); }
+
+.doc-section h3 { font-size: 0.97rem; font-weight: 800; color: var(--ink); margin: 20px 0px 8px; }
+
+.doc-section p { font-size: 0.9rem; color: var(--text-2); line-height: 1.75; margin-bottom: 14px; }
+
+.doc-section p:last-child { margin-bottom: 0px; }
+
+.doc-section ul, .doc-section ol { margin-left: 20px; margin-bottom: 14px; }
+
+.doc-section li { font-size: 0.9rem; color: var(--text-2); line-height: 1.75; margin-bottom: 6px; }
+
+.doc-section strong { color: var(--text); font-weight: 800; }
+
+.callout { background: var(--green-bg); border: 1px solid rgba(34, 197, 94, 0.25); border-radius: 14px; padding: 16px 20px; margin-bottom: 16px; }
+
+.callout p { font-size: 0.87rem; color: var(--green-text); margin: 0px; font-weight: 600; }
+
+.warning { background: var(--amber-bg); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 14px; padding: 16px 20px; margin-bottom: 16px; }
+
+.warning p { font-size: 0.87rem; color: var(--amber-text); margin: 0px; font-weight: 600; }
+
+.rate-table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+
+.rate-table th { text-align: left; font-size: 0.75rem; font-weight: 800; color: var(--muted); letter-spacing: 0.07em; text-transform: uppercase; padding: 10px 14px; border-bottom: 2px solid var(--border); }
+
+.rate-table td { padding: 11px 14px; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
+
+.rate-table tr:last-child td { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.rate-table tr:hover td { background: var(--off); }
+
+.page-footer { background: var(--ink); padding: 0px; }
+
+.foot-main { padding: 40px 0px 28px; }
+
+.foot-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap; }
+
+.foot-brand-text { font-weight: 800; color: rgb(255, 255, 255); font-size: 0.97rem; letter-spacing: -0.02em; }
+
+.foot-links { display: flex; gap: 20px; flex-wrap: wrap; }
+
+.foot-links a { font-size: 0.8rem; color: rgba(255, 255, 255, 0.4); text-decoration: none; transition: color 0.17s; }
+
+.foot-links a:hover { color: var(--sky); }
+
+.foot-legal { font-size: 0.67rem; color: rgba(255, 255, 255, 0.2); line-height: 1.7; border-top: 1px solid rgba(255, 255, 255, 0.07); padding-top: 20px; margin-top: 20px; }
+
+.gallery { padding: 72px 0px; }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+@media (max-width: 860px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 540px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+}
+
+.gallery-item { border-radius: 22px; overflow: hidden; box-shadow: rgba(11, 21, 35, 0.06) 0px 2px 12px; transition: 0.3s; position: relative; }
+
+.gallery-item:hover { box-shadow: rgba(11, 21, 35, 0.1) 0px 8px 40px; transform: translateY(-4px); }
+
+.gallery-item img { width: 100%; height: 260px; object-fit: cover; display: block; }
+
+@media (max-width: 600px) {
+  .gallery-item img { height: 200px; }
+}
+
+.gallery-caption { position: absolute; bottom: 0px; left: 0px; right: 0px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); padding: 40px 16px 14px; color: rgb(255, 255, 255); font-size: 0.82rem; font-weight: 700; }
+
+</style>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Legal &amp; Compliance — LendX Financial Inc.</title>
+<meta name="description" content="LendX Financial legal and compliance information. Licensing, borrower rights, provincial regulations, FINTRAC obligations, and regulatory disclosures. Last updated April 2026.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="LendX Financial Inc.">
+<link rel="canonical" href="https://lendxfinancial.com/legal.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta property="og:title" content="Legal &amp; Compliance — LendX Financial">
+<meta property="og:description" content="LendX Financial regulatory compliance, provincial licensing, borrower rights, and legal disclosures.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lendxfinancial.com/legal.html">
+<meta property="og:image" content="https://lendxfinancial.com/favicon.svg">
+<meta property="og:site_name" content="LendX Financial">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#059669">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="LendX">
+<style id="lx-nav-css">
+/* ── LendX canonical nav ── */
+.nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.nav-inner{display:flex;align-items:center;gap:1rem;padding:.75rem 1.25rem;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:.55rem;text-decoration:none;flex-shrink:0}
+.lx-logo-svg{width:36px;height:36px;flex-shrink:0}
+.brand-wordmark{font-family:var(--font,'Nunito',sans-serif);font-size:1.15rem;font-weight:800;color:#111827;letter-spacing:-.02em}
+.brand-wordmark .x-accent{color:#059669}
+.nav-center{display:flex;align-items:center;gap:.15rem;flex:1;justify-content:center}
+.nav-center a{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.38rem .65rem;border-radius:6px;white-space:nowrap;transition:background .15s,color .15s}
+.nav-center a:hover{background:#ecfdf5;color:#059669}
+.nav-center a.active{background:#d1fae5;color:#059669}
+.nav-right{display:flex;align-items:center;gap:.55rem;flex-shrink:0}
+.n-btn{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:700;padding:.42rem .9rem;border-radius:8px;text-decoration:none;cursor:pointer;transition:all .15s}
+.n-outline{border:1.5px solid #059669;color:#059669;background:transparent}
+.n-outline:hover{background:#ecfdf5}
+.n-solid{background:#059669;color:#fff;border:1.5px solid #059669}
+.n-solid:hover{background:#047857}
+.ham-btn{display:none;background:none;border:none;cursor:pointer;padding:.3rem;color:#111827}
+.nav-drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1000}
+.nav-drawer-overlay.open{display:block}
+.nav-drawer{position:fixed;top:0;right:-280px;width:260px;height:100%;background:#fff;z-index:1001;padding:1.5rem 1.25rem;display:flex;flex-direction:column;gap:.5rem;box-shadow:-4px 0 20px rgba(0,0,0,.12);transition:right .28s ease}
+.nav-drawer.open{right:0}
+.nav-drawer a{font-family:var(--font,'Nunito',sans-serif);font-size:.95rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.55rem .75rem;border-radius:8px;transition:background .15s}
+.nav-drawer a:hover{background:#ecfdf5;color:#059669}
+.drawer-cta{margin-top:auto!important;background:#059669!important;color:#fff!important;text-align:center;padding:.7rem 1rem!important;border-radius:10px!important}
+.drawer-cta:hover{background:#047857!important}
+@media(max-width:900px){.nav-center{display:none}.ham-btn{display:flex}}
+@media(max-width:540px){.n-outline{display:none}}
+</style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1334.0" data-gr-ext-installed="">
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <svg class="lx-logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LendX Financial logo">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#14532d"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4ade80"/><stop offset="60%" stop-color="#16a34a"/><stop offset="100%" stop-color="#166534"/></linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#86efac"/><stop offset="60%" stop-color="#22c55e"/><stop offset="100%" stop-color="#16a34a"/></linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#064E3B"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+        </defs>
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"/>
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"/>
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"/>
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"/>
+      </svg>
+      <span class="brand-wordmark">Lend<span class="x-accent">X</span> Financial</span>
+    </a>
+    <div class="nav-center">
+      <a href="index.html" >Personal</a>
+      <a href="business.html" >Business</a>
+      <a href="marketplace.html" >Marketplace</a>
+      <a href="payday.html" >Payday Loans</a>
+      <a href="cheque-cashing.html" >Cheque Cashing</a>
+      <a href="private-mortgage.html" >Private Mortgage</a>
+    </div>
+    <div class="nav-right">
+      <a class="n-btn n-outline" href="tel:+16472003526">647-200-3526</a>
+      <a class="n-btn n-solid" href="index.html#apply">Apply Now →</a>
+      <button class="ham-btn" onclick="toggleMenu()" aria-label="Menu">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="nav-drawer-overlay" id="nav-overlay" onclick="toggleMenu()"></div>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="index.html" >Personal Loans</a>
+  <a href="business.html" >Business Financing</a>
+  <a href="marketplace.html" >Marketplace</a>
+  <a href="payday.html" >Payday Loans</a>
+  <a href="cheque-cashing.html" >Cheque Cashing</a>
+  <a href="private-mortgage.html" >Private Mortgage</a>
+  <a href="calculator.html">Calculator</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About Us</a>
+  <a class="drawer-cta" href="index.html#apply" onclick="toggleMenu()">Apply Now →</a>
+</div>
+<section class="page-hero">
+  <div class="wrap page-hero-inner">
+    <div class="hero-eyebrow">Regulatory</div>
+    <h1>Legal &amp; Compliance</h1>
+    <p>Provincial licensing status, borrower rights, FINTRAC obligations, and all required regulatory disclosures.</p>
+  </div>
+</section>
+
+<div class="doc-body">
+<div class="doc-wrap">
+
+  <div class="callout" role="note">
+    <p>⚖️ LendX Financial Inc. is committed to full compliance with every applicable Canadian law. This page contains required regulatory disclosures and is updated whenever our compliance status changes.</p>
+  </div>
+
+  <article>
+
+  <div class="doc-section" id="corporate">
+    <h2>1. Corporate Information</h2>
+    <p><strong>LendX Financial Inc.</strong> is a corporation incorporated under the <em>Canada Business Corporations Act</em> (CBCA), federal registration number pending at the time of this disclosure.</p>
+    <ul>
+      <li><strong>Legal Name:</strong> LendX Financial Inc.</li>
+      <li><strong>Operating Name:</strong> LendX Financial</li>
+      <li><strong>Incorporation:</strong> Federal (CBCA)</li>
+      <li><strong>Head Office:</strong> Toronto, Ontario, Canada</li>
+      <li><strong>Phone:</strong> <a href="tel:+16472003526">647-200-3526</a> · <a href="tel:+18885192435">1-888-519-2435</a></li>
+      <li><strong>Email:</strong> <a href="mailto:hello@lendxfinancial.com">hello@lendxfinancial.com</a></li>
+      <li><strong>Website:</strong> <a href="https://lendxfinancial.com/">lendxfinancial.com</a></li>
+    </ul>
+  </div>
+
+  <div class="doc-section" id="licensing">
+    <h2>2. Provincial Licensing Status</h2>
+    <p>Payday lending in Canada is regulated at the provincial level. LendX Financial is actively pursuing licences in all provinces where short-term consumer lending is planned.</p>
+    <table class="rate-table" aria-label="Provincial licensing status">
+      <thead><tr><th>Province</th><th>Governing Act</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Ontario</strong></td><td>Payday Loans Act, 2008 (S.O. 2008, c. 9)</td><td>Licence application filed — pending</td></tr>
+        <tr><td>British Columbia</td><td>Business Practices and Consumer Protection Act</td><td>Pending licence application</td></tr>
+        <tr><td>Alberta</td><td>Payday Loans Regulation (AR 157/2009)</td><td>Pending licence application</td></tr>
+        <tr><td>Manitoba</td><td>Consumer Protection Act</td><td>Pending licence application</td></tr>
+        <tr><td>Saskatchewan</td><td>Payday Loans Act, 2018</td><td>Pending licence application</td></tr>
+        <tr><td>Nova Scotia</td><td>Payday Loans Act (SNS 2008, c. 32)</td><td>Pending licence application</td></tr>
+        <tr><td>New Brunswick</td><td>Cost of Credit Disclosure and Payday Loans Act</td><td>Pending licence application</td></tr>
+        <tr><td>Prince Edward Island</td><td>Payday Loans Act (RSPEI 1988, c. P-2.1)</td><td>Pending licence application</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Note:</strong> LendX will not operate in any province until the required licence is issued. Quebec is not currently in our service area. Services are not available in Nunavut, Northwest Territories, or Yukon at this time.</p>
+  </div>
+
+  <div class="doc-section" id="rates">
+    <h2>3. Maximum Cost of Borrowing by Province</h2>
+    <p>The following table shows the maximum cost of borrowing per $100 borrowed as set by provincial law. LendX charges at or below these maximums.</p>
+    <table class="rate-table" aria-label="Maximum cost of borrowing by province">
+      <thead><tr><th>Province</th><th>Max per $100</th><th>Max Term</th><th>Representative Example</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Ontario</strong></td><td><strong>$14.00</strong></td><td>62 days</td><td>$500 × 14 days = $70 fee · $570 total · APR ~365.96%</td></tr>
+        <tr><td>British Columbia</td><td>$15.00</td><td>62 days</td><td>$500 × 14 days = $75 fee · $575 total</td></tr>
+        <tr><td>Alberta</td><td>$15.00</td><td>62 days</td><td>$500 × 14 days = $75 fee · $575 total</td></tr>
+        <tr><td>Manitoba</td><td>$17.00</td><td>62 days</td><td>$500 × 14 days = $85 fee · $585 total</td></tr>
+        <tr><td>Saskatchewan</td><td>$17.00</td><td>62 days</td><td>$500 × 14 days = $85 fee · $585 total</td></tr>
+        <tr><td>Nova Scotia</td><td>$19.00</td><td>62 days</td><td>$500 × 14 days = $95 fee · $595 total</td></tr>
+        <tr><td>New Brunswick</td><td>$15.00</td><td>62 days</td><td>$500 × 14 days = $75 fee · $575 total</td></tr>
+        <tr><td>Prince Edward Island</td><td>$25.00</td><td>62 days</td><td>$500 × 14 days = $125 fee · $625 total</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="doc-section" id="borrower-rights">
+    <h2>4. Borrower Rights</h2>
+    <p>As a borrower of a short-term (payday) loan from LendX Financial, you have the following rights under applicable Canadian law:</p>
+    <h3>Right to Full Disclosure</h3>
+    <p>You have the right to receive, before signing any loan agreement, a written disclosure of: the total cost of borrowing in dollars, the annual percentage rate (APR), all fees, the due date, and the full terms of repayment.</p>
+    <h3>Right to Cancel</h3>
+    <p>In Ontario, you have the right to cancel a payday loan agreement without penalty by the end of the <strong>next business day</strong> after signing. To cancel: return the borrowed funds in full to LendX's office or designated account within that time.</p>
+    <h3>Right Against Rollovers</h3>
+    <p>You cannot be required or induced to roll over your payday loan. LendX is prohibited by law from extending, renewing, or replacing a payday loan with another payday loan if the result would be continuous indebtedness exceeding 62 days.</p>
+    <h3>Right to Extended Repayment</h3>
+    <p>If you have already borrowed and repaid at least two payday loans in the preceding 63-day period, you have the right to request an extended payment plan at no additional cost. Contact LendX before the due date to arrange this.</p>
+    <h3>Right Against Harassment</h3>
+    <p>LendX and its collection agents (including NEO Legal Services PC) are prohibited from using harassing, threatening, or abusive conduct in any collection activity. All collections comply with Ontario's <em>Collection and Debt Settlement Services Act</em>.</p>
+    <h3>Right to Lodge a Complaint</h3>
+    <p>You may file a complaint with:</p>
+    <ul>
+      <li><strong>Ontario:</strong> Ministry of Public and Business Service Delivery (Consumer Protection Ontario)</li>
+      <li><strong>FCAC:</strong> Financial Consumer Agency of Canada — <a href="https://www.canada.ca/en/financial-consumer-agency.html" target="_blank" rel="noopener">canada.ca/fcac</a></li>
+      <li><strong>LendX directly:</strong> <a href="mailto:hello@lendxfinancial.com">hello@lendxfinancial.com</a> or <a href="tel:+16472003526">647-200-3526</a></li>
+    </ul>
+  </div>
+
+  <div class="doc-section" id="required-notice">
+    <h2>5. Required Borrower Notice — Payday Loans Act, 2008</h2>
+    <div class="warning" role="note">
+      <p>⚠️ REQUIRED NOTICE: Payday loans are high-cost, short-term loans. They are not intended to solve long-term financial problems. If you are experiencing ongoing financial difficulty, please contact a non-profit credit counselling service before applying.</p>
+    </div>
+    <p><strong>Credit counselling resources:</strong></p>
+    <ul>
+      <li>Credit Counselling Society: <a href="https://nomoredebts.org/" target="_blank" rel="noopener">nomoredebts.org</a> · 1-888-527-8999</li>
+      <li>Ontario Association of Credit Counselling Services: <a href="https://oaccs.com/" target="_blank" rel="noopener">oaccs.com</a></li>
+      <li>Financial Consumer Agency of Canada: <a href="https://www.canada.ca/en/financial-consumer-agency.html" target="_blank" rel="noopener">canada.ca/fcac</a></li>
+    </ul>
+    <p>LendX Financial Inc. payday lender licence is pending under Ontario's <em>Payday Loans Act, 2008</em> (S.O. 2008, c. 9). Not yet licensed or available in all provinces.</p>
+  </div>
+
+  <div class="doc-section" id="fintrac">
+    <h2>6. FINTRAC / AML Compliance</h2>
+    <p>LendX Financial Inc. is subject to Canada's <em>Proceeds of Crime (Money Laundering) and Terrorist Financing Act</em> (PCMLTFA) and is registered with or in the process of registering with the <strong>Financial Transactions and Reports Analysis Centre of Canada (FINTRAC)</strong> as a money services business.</p>
+    <p>Our AML/ATF compliance program includes:</p>
+    <ul>
+      <li><strong>Client Identification:</strong> All borrowers are required to verify their identity before receiving funds, using government-issued photo ID and other documentary methods as required by FINTRAC guidelines.</li>
+      <li><strong>Beneficial Ownership:</strong> For business applicants, we identify all individuals who own or control 25% or more of the entity.</li>
+      <li><strong>PEP Screening:</strong> We screen all clients against Politically Exposed Persons (PEP) and Head of International Organizations (HIO) lists.</li>
+      <li><strong>Transaction Monitoring:</strong> We monitor transactions for indicators of money laundering, fraud, or terrorist financing.</li>
+      <li><strong>Record Keeping:</strong> We retain all verification records for a minimum of 5 years as required by FINTRAC regulations.</li>
+      <li><strong>Suspicious Transaction Reporting:</strong> We report suspicious transactions and other reportable events to FINTRAC as required by law.</li>
+    </ul>
+    <p>Our compliance officer can be reached at <a href="mailto:hello@lendxfinancial.com">hello@lendxfinancial.com</a>.</p>
+  </div>
+
+  <div class="doc-section" id="pipeda">
+    <h2>7. PIPEDA — Privacy Compliance</h2>
+    <p>LendX Financial Inc. complies with Canada's <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA), S.C. 2000, c. 5. Our full privacy practices are detailed in our <a href="privacy.html">Privacy Policy</a>. Key obligations:</p>
+    <ul>
+      <li>We collect personal information only for identified, specific purposes;</li>
+      <li>We obtain meaningful consent before collection, use, or disclosure;</li>
+      <li>We retain data only as long as necessary and delete it securely;</li>
+      <li>We protect information with appropriate organizational and technical safeguards;</li>
+      <li>We give individuals access to their personal information and the ability to challenge its accuracy.</li>
+    </ul>
+    <p>Our Privacy Officer: <a href="mailto:hello@lendxfinancial.com">hello@lendxfinancial.com</a></p>
+  </div>
+
+  <div class="doc-section" id="fsra">
+    <h2>8. FSRA — Mortgage Compliance</h2>
+    <p>Private mortgage activities in Ontario are regulated by the <strong>Financial Services Regulatory Authority of Ontario (FSRA)</strong> under the <em>Mortgage Brokerages, Lenders and Administrators Act, 2006</em> (MBLAA). LendX's private mortgage vertical is currently under development and is not yet offered to the public.</p>
+    <p>LendX will obtain all required FSRA licences and registrations before offering any mortgage products. Nothing on this website constitutes a mortgage offer or commitment.</p>
+  </div>
+
+  <div class="doc-section" id="neo">
+    <h2>9. NEO Legal Services</h2>
+    <p>LendX Financial Inc. is operationally supported by <strong>NEO Legal Services Professional Corporation</strong>, an LSO-licensed paralegal firm that provides legal, compliance, and collections services.</p>
+    <ul>
+      <li><strong>Counsel:</strong> Mo Farooqui</li>
+      <li><strong>LSO Licence:</strong> #P21785</li>
+      <li><strong>Firm:</strong> NEO Legal Services Professional Corporation</li>
+      <li><strong>Jurisdiction:</strong> Ontario, Canada</li>
+      <li><strong>Phone:</strong> <a href="tel:+16472003526">647-200-3526</a></li>
+      <li><strong>Email:</strong> <a href="mailto:ceo@neolegalservices.com">ceo@neolegalservices.com</a></li>
+    </ul>
+    <p>NEO Legal Services is regulated by the Law Society of Ontario (LSO). All paralegal conduct is subject to the LSO's <em>Paralegal Rules of Conduct</em>. Complaints about legal services may be directed to the LSO at <a href="https://lso.ca/" target="_blank" rel="noopener">lso.ca</a>.</p>
+  </div>
+
+  <div class="doc-section" id="complaints">
+    <h2>10. Complaints and Escalation</h2>
+    <p>LendX takes all complaints seriously. Our process:</p>
+    <ol>
+      <li><strong>Contact LendX directly:</strong> <a href="mailto:hello@lendxfinancial.com">hello@lendxfinancial.com</a> or <a href="tel:+16472003526">647-200-3526</a>. We will acknowledge within 2 business days and resolve within 10 business days.</li>
+      <li><strong>Escalate to provincial regulator</strong> if unresolved: Ontario Ministry of Public and Business Service Delivery (Consumer Protection Ontario).</li>
+      <li><strong>File with FCAC:</strong> Financial Consumer Agency of Canada for federally regulated matters.</li>
+      <li><strong>LSO for legal conduct complaints:</strong> <a href="https://lso.ca/complaints" target="_blank" rel="noopener">lso.ca/complaints</a></li>
+    </ol>
+  </div>
+
+  </article>
+</div>
+</div>
+
+<footer class="page-footer">
+  <div class="wrap">
+    <div class="foot-main">
+      <div class="foot-inner">
+        <div>
+          <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px">
+            <svg height="28" width="auto" viewBox="0 0 44 44" fill="none" role="img" aria-label="LendX Financial logo">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#14532d"></stop>
+            <stop offset="100%" stop-color="#22c55e"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#4ade80"></stop>
+            <stop offset="60%" stop-color="#16a34a"></stop>
+            <stop offset="100%" stop-color="#166534"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#86efac"></stop>
+            <stop offset="60%" stop-color="#22c55e"></stop>
+            <stop offset="100%" stop-color="#16a34a"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#064E3B"></stop>
+            <stop offset="100%" stop-color="#22c55e"></stop>
+          </linearGradient>
+        </defs>
+        <!-- Upper-left leaf (dark green) -->
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"></path>
+        <!-- Upper-right leaf (bright green) -->
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"></path>
+        <!-- Lower-left leaf (mid green) -->
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"></path>
+        <!-- Lower-right leaf (deep green) -->
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"></path>
+        </svg>
+            <span class="foot-brand-text">LendX Financial</span>
+          </div>
+          <div style="font-size:.8rem;color:rgba(255,255,255,.3);">Toronto, Ontario, Canada</div>
+        </div>
+        <div class="foot-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="legal.html">Legal &amp; Compliance</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="foot-legal">© 2026 LendX Financial Inc. All rights reserved. Payday lender licence pending under Ontario's <em>Payday Loans Act, 2008</em>. Not available in all provinces. This page is for informational purposes only and does not constitute legal advice.</div>
+    </div>
+  </div>
+</footer>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowmode="open"><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

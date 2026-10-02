@@ -1,0 +1,1847 @@
+<!DOCTYPE html><html lang="en" crxlauncher-bridged="" crxlauncher=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+@charset "utf-8";
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+</style><style>
+@charset "utf-8";
+
+
+
+</style><style>
+@charset "utf-8";
+
+:root { --ink: #111827; --ink-2: #1f2937; --ink-3: #374151; --cobalt: #059669; --cobalt-2: #047857; --cobalt-light: #d1fae5; --sky: #34d399; --teal: #059669; --mint: #ecfdf5; --amber: #f59e0b; --white: #ffffff; --off: #F9FAFB; --off-2: #f3f4f6; --border: #d1d5db; --border-2: #9ca3af; --muted: #6b7280; --text: #111827; --text-2: #374151; --green: #22c55e; --green-bg: #dcfce7; --green-text: #15803d; --red: #ef4444; --red-bg: #fee2e2; --red-text: #b91c1c; --purple: #7c3aed; --purple-bg: #ede9fe; --purple-text: #5b21b6; --r: 18px; --r-sm: 12px; --sh-sm: 0 2px 12px rgba(11,21,35,.06); --sh: 0 8px 40px rgba(11,21,35,.10); --sh-lg: 0 24px 80px rgba(11,21,35,.14); --max: 1160px; --font: 'Nunito', -apple-system, BlinkMacSystemFont, 'SF Pro Rounded', sans-serif; }
+
+*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; max-width: 100%; }
+
+body { font-family: var(--font); color: var(--text); background: var(--off); -webkit-font-smoothing: antialiased; overflow-x: hidden; letter-spacing: -0.01em; max-width: 100%; width: 100%; }
+
+.wrap { max-width: var(--max); margin: 0px auto; padding: 0px 24px; }
+
+.nav { position: sticky; top: 0px; z-index: 100; background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(24px); border-bottom: 1px solid var(--border); }
+
+.nav-inner { display: flex; justify-content: space-between; align-items: center; height: 62px; gap: 16px; }
+
+.brand { display: flex; gap: 10px; align-items: center; text-decoration: none; flex-shrink: 0; }
+
+.brand-word { font-weight: 800; font-size: 1.05rem; color: var(--ink); letter-spacing: -0.02em; }
+
+.brand-word .x { color: var(--sky); }
+
+.nav-links { display: flex; gap: 1px; justify-content: center; }
+
+.nav-links a { color: var(--text-2); text-decoration: none; font-size: 0.8rem; font-weight: 600; padding: 6px 10px; border-radius: 10px; transition: 0.17s; white-space: nowrap; }
+
+.nav-links a:hover, .nav-links a.active { color: var(--cobalt); background: var(--cobalt-light); }
+
+@media (max-width: 1300px) {
+  .nav-links a { font-size: 0.72rem; padding: 5px 8px; }
+  .brand-word { font-size: 0.9rem; }
+  .btn-apply { font-size: 0.8rem; padding: 7px 14px; }
+}
+
+.btn-apply { padding: 9px 20px; border-radius: 12px; font-weight: 700; font-size: 0.87rem; font-family: var(--font); cursor: pointer; transition: 0.18s; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; background: var(--cobalt); color: rgb(255, 255, 255); text-decoration: none; box-shadow: rgba(5, 150, 105, 0.3) 0px 4px 16px; }
+
+.btn-apply:hover { background: var(--cobalt-2); transform: translateY(-1px); }
+
+.ham-btn { display: none; flex-direction: column; gap: 5px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; padding: 8px; border-radius: 8px; }
+
+.ham-btn span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: 0.2s; }
+
+.ham-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+
+.ham-btn.open span:nth-child(2) { opacity: 0; }
+
+.ham-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mob-drawer { display: none; position: fixed; top: calc(64px + env(safe-area-inset-top,0px)); left: 0px; right: 0px; background: rgb(255, 255, 255); border-bottom: 1px solid var(--border); z-index: 99; padding: 12px 20px 20px; flex-direction: column; gap: 4px; box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px; animation: 0.18s ease 0s 1 normal none running slideDown; }
+
+.mob-drawer.open { display: flex; }
+
+.mob-drawer a { display: block; padding: 11px 14px; border-radius: 10px; font-size: 0.9rem; font-weight: 700; color: rgb(55, 65, 81); text-decoration: none; }
+
+.mob-drawer a:hover { background: rgb(249, 250, 251); color: var(--cobalt); }
+
+.mob-drawer .drawer-cta { margin-top: 8px; background: var(--cobalt); text-align: center; border-radius: 12px; padding: 13px; font-size: 0.95rem; color: rgb(255, 255, 255) !important; }
+
+.mob-drawer-overlay { display: none; position: fixed; inset: 0px; z-index: 98; }
+
+.mob-drawer-overlay.open { display: block; }
+
+@keyframes slideDown { 
+  0% { opacity: 0; transform: translateY(-6px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+@media (max-width: 1200px) {
+  .nav-links { display: none; }
+  .ham-btn { display: flex; }
+  .wrap { padding: 0px 16px; }
+}
+
+.page-hero { background: linear-gradient(135deg, var(--cobalt) 0%, #047857 60%, var(--sky) 100%); padding: 52px 0px 60px; position: relative; overflow: hidden; }
+
+.page-hero::before { content: ""; position: absolute; inset: 0px; background: radial-gradient(700px 400px at 80% 50%, rgba(255, 255, 255, 0.08), transparent 60%); pointer-events: none; }
+
+.page-hero-inner { position: relative; z-index: 1; text-align: center; }
+
+.hero-eyebrow { display: inline-block; background: rgba(255, 255, 255, 0.15); color: rgb(255, 255, 255); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; border-radius: 999px; padding: 5px 16px; margin-bottom: 16px; }
+
+.page-hero h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 900; color: rgb(255, 255, 255); letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 14px; animation: 0.5s ease 0.05s 1 normal both running riseIn; }
+
+.page-hero p { font-size: 1rem; color: rgba(255, 255, 255, 0.8); max-width: 580px; margin: 0px auto 28px; line-height: 1.65; animation: 0.5s ease 0.15s 1 normal both running riseIn; }
+
+.calc-tabs-wrap { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 62px; z-index: 90; }
+
+.calc-tabs { display: flex; gap: 4px; padding: 12px 0px; overflow-x: auto; scrollbar-width: none; }
+
+.calc-tabs::-webkit-scrollbar { display: none; }
+
+.ctab { flex-shrink: 0; display: flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 12px; border: 1.5px solid transparent; background: none; font-family: var(--font); font-size: 0.87rem; font-weight: 700; color: var(--text-2); cursor: pointer; transition: 0.17s; white-space: nowrap; }
+
+.ctab svg { opacity: 0.6; }
+
+.ctab:hover { background: var(--off-2); color: var(--cobalt); }
+
+.ctab.active { background: var(--cobalt-light); border-color: rgba(5, 150, 105, 0.2); color: var(--cobalt); }
+
+.ctab.active svg { opacity: 1; }
+
+.calc-panel { display: none; }
+
+.calc-panel.active { display: block; }
+
+.calc-layout { display: grid; grid-template-columns: 1fr 360px; gap: 24px; padding: 30px 0px 64px; }
+
+@media (max-width: 920px) {
+  .calc-layout { grid-template-columns: 1fr; }
+}
+
+.calc-layout-3 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 30px 0px 64px; }
+
+@media (max-width: 860px) {
+  .calc-layout-3 { grid-template-columns: 1fr; }
+}
+
+.card { background: var(--white); border-radius: 22px; border: 1px solid var(--border); box-shadow: var(--sh-sm); padding: 28px; }
+
+.card + .card { margin-top: 24px; }
+
+.card-title { font-size: 1.05rem; font-weight: 800; color: var(--ink); letter-spacing: -0.02em; margin-bottom: 4px; }
+
+.card-sub { font-size: 0.82rem; color: var(--muted); font-weight: 500; margin-bottom: 24px; }
+
+.field-group { margin-bottom: 20px; }
+
+.field-label { display: block; font-size: 0.8rem; font-weight: 700; color: var(--text-2); margin-bottom: 8px; }
+
+.field-hint { display: block; font-size: 0.73rem; color: var(--muted); font-weight: 500; margin-top: 5px; }
+
+.slider-row { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 10px; }
+
+.slider-big { font-size: 2.1rem; font-weight: 900; color: var(--ink); letter-spacing: -0.04em; line-height: 1; }
+
+.slider-big-sub { font-size: 0.72rem; font-weight: 600; color: var(--muted); margin-top: 2px; }
+
+input[type="range"] { width: 100%; height: 5px; border-radius: 99px; outline: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; background: linear-gradient(to right, var(--cobalt) 0%, var(--cobalt) var(--pct, 40%), var(--off-2) var(--pct, 40%), var(--off-2) 100%); cursor: pointer; appearance: none; }
+
+input[type="range"]::-webkit-slider-thumb { appearance: none; width: 22px; height: 22px; border-radius: 50%; background: var(--cobalt); border: 3px solid rgb(255, 255, 255); cursor: pointer; box-shadow: rgba(5, 150, 105, 0.4) 0px 2px 8px; }
+
+.slider-minmax { display: flex; justify-content: space-between; font-size: 0.72rem; font-weight: 600; color: var(--muted); margin-top: 5px; }
+
+.fi-input { width: 100%; padding: 12px 15px; border: 1.5px solid var(--border); border-radius: 12px; font-family: var(--font); font-size: 0.92rem; font-weight: 700; color: var(--text); background: var(--off); outline: none; transition: border-color 0.17s; }
+
+.fi-input:focus { border-color: var(--cobalt); background: var(--white); }
+
+.fi-select { width: 100%; padding: 12px 15px; border: 1.5px solid var(--border); border-radius: 12px; font-family: var(--font); font-size: 0.9rem; font-weight: 600; color: var(--text); background: var(--off); outline: none; cursor: pointer; transition: border-color 0.17s; }
+
+.fi-select:focus { border-color: var(--cobalt); background: var(--white); }
+
+.input-prefix-wrap { position: relative; }
+
+.input-prefix-wrap .prefix { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-weight: 800; color: var(--muted); font-size: 0.92rem; pointer-events: none; }
+
+.input-prefix-wrap input { padding-left: 26px; }
+
+.results-panel { background: linear-gradient(145deg, var(--ink) 0%, var(--ink-2) 100%); border-radius: 22px; padding: 28px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; box-shadow: rgba(11, 21, 35, 0.25) 0px 20px 60px; position: sticky; top: 130px; }
+
+.rp-title { font-size: 0.75rem; font-weight: 800; color: rgba(255, 255, 255, 0.45); letter-spacing: 0.09em; text-transform: uppercase; margin-bottom: 18px; }
+
+.rp-amount { background: rgba(5, 150, 105, 0.3); border: 1px solid rgba(5, 150, 105, 0.4); border-radius: 16px; padding: 18px; text-align: center; margin-bottom: 18px; }
+
+.rp-amount-lbl { font-size: 0.7rem; font-weight: 700; color: rgba(255, 255, 255, 0.5); letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 6px; }
+
+.rp-amount-val { font-size: 2.4rem; font-weight: 900; color: rgb(255, 255, 255); letter-spacing: -0.04em; line-height: 1; }
+
+.rp-amount-sub { font-size: 0.73rem; color: rgba(255, 255, 255, 0.45); margin-top: 6px; font-weight: 600; }
+
+.rp-breakdown { display: flex; flex-direction: column; gap: 0px; margin-bottom: 18px; }
+
+.rp-row { display: flex; justify-content: space-between; align-items: center; padding: 9px 0px; border-bottom: 1px solid rgba(255, 255, 255, 0.07); }
+
+.rp-row:last-child { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.rp-key { font-size: 0.8rem; font-weight: 600; color: rgba(255, 255, 255, 0.5); }
+
+.rp-val { font-size: 0.88rem; font-weight: 800; color: rgb(255, 255, 255); }
+
+.rp-val.green { color: rgb(74, 222, 128); }
+
+.rp-val.amber { color: rgb(251, 191, 36); }
+
+.rp-val.red { color: rgb(248, 113, 113); }
+
+.rp-val.sky { color: rgb(56, 189, 248); }
+
+.rp-savings-box { background: rgba(34, 197, 94, 0.12); border: 1px solid rgba(34, 197, 94, 0.25); border-radius: 14px; padding: 16px; margin-bottom: 18px; text-align: center; }
+
+.rp-savings-lbl { font-size: 0.7rem; font-weight: 800; color: rgba(74, 222, 128, 0.8); letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 6px; }
+
+.rp-savings-val { font-size: 2rem; font-weight: 900; color: rgb(74, 222, 128); letter-spacing: -0.04em; line-height: 1; }
+
+.rp-savings-sub { font-size: 0.72rem; color: rgba(255, 255, 255, 0.4); margin-top: 4px; }
+
+.rp-apr-badge { background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 14px 16px; margin-bottom: 18px; }
+
+.apr-badge-title { font-size: 0.7rem; font-weight: 800; color: rgba(239, 68, 68, 0.9); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 4px; }
+
+.apr-badge-val { font-size: 1.7rem; font-weight: 900; color: rgb(248, 113, 113); letter-spacing: -0.03em; line-height: 1; }
+
+.apr-badge-sub { font-size: 0.68rem; color: rgba(255, 255, 255, 0.35); margin-top: 4px; line-height: 1.4; }
+
+.rp-bar-section { margin-bottom: 18px; }
+
+.rp-bar-title { font-size: 0.7rem; font-weight: 700; color: rgba(255, 255, 255, 0.4); margin-bottom: 8px; }
+
+.cost-bar { height: 9px; border-radius: 99px; background: rgba(255, 255, 255, 0.1); overflow: hidden; }
+
+.cost-bar-fill { height: 100%; border-radius: 99px; transition: width 0.6s cubic-bezier(0.34, 1, 0.64, 1); }
+
+.rp-cta { width: 100%; padding: 14px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 14px; background: var(--cobalt); color: rgb(255, 255, 255); font-family: var(--font); font-size: 0.93rem; font-weight: 800; cursor: pointer; transition: 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: rgba(5, 150, 105, 0.4) 0px 4px 16px; text-decoration: none; }
+
+.rp-cta:hover { background: var(--cobalt-2); transform: translateY(-1px); }
+
+.rp-legal { font-size: 0.63rem; color: rgba(255, 255, 255, 0.22); text-align: center; margin-top: 9px; line-height: 1.5; }
+
+.afford-section { margin-top: 0px; }
+
+.afford-title { font-size: 0.74rem; font-weight: 700; color: rgba(255, 255, 255, 0.45); letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 10px; }
+
+.afford-input { width: 100%; padding: 10px 14px; border-radius: 11px; border: 1.5px solid rgba(255, 255, 255, 0.15); background: rgba(255, 255, 255, 0.08); color: rgb(255, 255, 255); font-family: var(--font); font-size: 0.9rem; outline: none; margin-bottom: 10px; }
+
+.afford-input::placeholder { color: rgba(255, 255, 255, 0.3); }
+
+.afford-input:focus { border-color: var(--cobalt-2); }
+
+.afford-meter { height: 8px; border-radius: 99px; background: rgba(255, 255, 255, 0.1); margin: 8px 0px 6px; overflow: hidden; }
+
+.afford-fill { height: 100%; border-radius: 99px; transition: width 0.6s, background 0.4s; }
+
+.afford-label { font-size: 0.73rem; font-weight: 700; color: rgba(255, 255, 255, 0.6); }
+
+.purpose-tabs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+
+.pt-btn { padding: 10px 6px; border: 1.5px solid var(--border); border-radius: 12px; background: var(--off); font-family: var(--font); font-size: 0.78rem; font-weight: 700; color: var(--text-2); cursor: pointer; transition: 0.17s; text-align: center; }
+
+.pt-btn.active { border-color: var(--cobalt); background: var(--cobalt-light); color: var(--cobalt); }
+
+.tbl-wrap { overflow-x: auto; }
+
+.data-table { width: 100%; border-collapse: collapse; }
+
+.data-table th { text-align: left; font-size: 0.7rem; font-weight: 800; color: var(--muted); letter-spacing: 0.07em; text-transform: uppercase; padding: 8px 12px; border-bottom: 2px solid var(--border); }
+
+.data-table th:not(:first-child) { text-align: right; }
+
+.data-table td { padding: 11px 12px; border-bottom: 1px solid var(--border); font-size: 0.84rem; }
+
+.data-table td:not(:first-child) { text-align: right; font-weight: 700; }
+
+.data-table tr:last-child td { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.data-table tr.highlight-row td { background: var(--cobalt-light); }
+
+.data-table tr.total-row td { background: var(--off); font-weight: 900; border-top: 2px solid var(--border); }
+
+.badge { border-radius: 999px; padding: 2px 10px; font-size: 0.7rem; font-weight: 700; }
+
+.badge-green { background: var(--green-bg); color: var(--green-text); }
+
+.badge-amber { background: rgb(254, 243, 199); color: rgb(146, 64, 14); }
+
+.badge-red { background: var(--red-bg); color: var(--red-text); }
+
+.badge-blue { background: var(--cobalt-light); color: var(--cobalt); }
+
+.badge-purple { background: var(--purple-bg); color: var(--purple-text); }
+
+.check { color: var(--green-text); }
+
+.cross { color: var(--red-text); }
+
+.partial { color: var(--amber); }
+
+.lendx-badge { display: inline-flex; align-items: center; gap: 5px; font-size: 0.7rem; font-weight: 800; color: var(--cobalt); background: var(--cobalt-light); border-radius: 999px; padding: 2px 8px; }
+
+.stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 22px; }
+
+.stat-box { background: var(--off); border: 1px solid var(--border); border-radius: 16px; padding: 16px; text-align: center; }
+
+.stat-box.highlight { background: var(--cobalt-light); border-color: rgba(5, 150, 105, 0.2); }
+
+.stat-box.green { background: var(--green-bg); border-color: rgba(34, 197, 94, 0.2); }
+
+.stat-box.amber { background: rgb(254, 243, 199); border-color: rgba(245, 158, 11, 0.2); }
+
+.stat-box.purple { background: var(--purple-bg); border-color: rgba(124, 58, 237, 0.2); }
+
+.stat-lbl { font-size: 0.7rem; font-weight: 700; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 6px; }
+
+.stat-val { font-size: 1.45rem; font-weight: 900; color: var(--ink); letter-spacing: -0.03em; line-height: 1; }
+
+.stat-box.green .stat-val { color: var(--green-text); }
+
+.stat-box.amber .stat-val { color: rgb(146, 64, 14); }
+
+.stat-box.purple .stat-val { color: var(--purple-text); }
+
+.stat-box.highlight .stat-val { color: var(--cobalt); }
+
+.stat-sub { font-size: 0.7rem; color: var(--muted); margin-top: 4px; }
+
+.compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+@media (max-width: 700px) {
+  .compare-grid { grid-template-columns: 1fr; }
+}
+
+.compare-col { border: 1.5px solid var(--border); border-radius: 18px; overflow: hidden; }
+
+.compare-col.active { border-color: var(--cobalt); box-shadow: rgba(5, 150, 105, 0.1) 0px 0px 0px 3px; }
+
+.compare-col-head { padding: 16px 20px; font-weight: 800; font-size: 0.92rem; background: var(--off); border-bottom: 1px solid var(--border); color: var(--ink); display: flex; justify-content: space-between; align-items: center; }
+
+.compare-col.active .compare-col-head { background: var(--cobalt-light); color: var(--cobalt); }
+
+.compare-col-body { padding: 20px; }
+
+.compare-row { display: flex; justify-content: space-between; padding: 8px 0px; border-bottom: 1px solid var(--border); font-size: 0.86rem; }
+
+.compare-row:last-child { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.compare-row-key { color: var(--muted); font-weight: 600; }
+
+.compare-row-val { font-weight: 800; color: var(--ink); }
+
+.compare-row-val.better { color: var(--green-text); }
+
+.compare-row-val.worse { color: var(--red-text); }
+
+.toggle-row { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+
+.toggle-label { font-size: 0.85rem; font-weight: 700; color: var(--text-2); }
+
+.toggle-switch { position: relative; width: 44px; height: 24px; cursor: pointer; }
+
+.toggle-switch input { display: none; }
+
+.toggle-track { position: absolute; inset: 0px; background: var(--border-2); border-radius: 999px; transition: background 0.2s; }
+
+.toggle-thumb { position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; background: rgb(255, 255, 255); border-radius: 50%; transition: transform 0.2s; box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px; }
+
+.toggle-switch input:checked ~ .toggle-track { background: var(--cobalt); }
+
+.toggle-switch input:checked ~ .toggle-thumb { transform: translateX(20px); }
+
+.timeline { display: flex; flex-direction: column; gap: 0px; }
+
+.tl-row { display: flex; gap: 14px; align-items: flex-start; padding: 14px 0px; border-bottom: 1px solid var(--border); }
+
+.tl-row:last-child { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.tl-dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 5px; flex-shrink: 0; }
+
+.tl-content { flex: 1 1 0%; }
+
+.tl-title { font-size: 0.88rem; font-weight: 800; color: var(--ink); margin-bottom: 3px; }
+
+.tl-sub { font-size: 0.78rem; color: var(--muted); }
+
+.tl-amount { font-size: 0.95rem; font-weight: 900; text-align: right; flex-shrink: 0; }
+
+.progress-bar-wrap { margin: 8px 0px; }
+
+.progress-label { display: flex; justify-content: space-between; font-size: 0.72rem; font-weight: 700; color: var(--muted); margin-bottom: 5px; }
+
+.progress-bar { height: 9px; border-radius: 99px; background: var(--off-2); overflow: hidden; }
+
+.progress-fill { height: 100%; border-radius: 99px; transition: width 0.7s cubic-bezier(0.34, 1, 0.64, 1); }
+
+.faq-section { padding: 56px 0px; background: var(--white); }
+
+.faq-title { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 900; color: var(--ink); letter-spacing: -0.03em; margin-bottom: 8px; }
+
+.faq-sub { font-size: 0.92rem; color: var(--muted); margin-bottom: 32px; }
+
+.faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+@media (max-width: 640px) {
+  .faq-grid { grid-template-columns: 1fr; }
+}
+
+.faq-item { background: var(--off); border: 1px solid var(--border); border-radius: 18px; padding: 22px; }
+
+.faq-q { font-size: 0.92rem; font-weight: 800; color: var(--ink); margin-bottom: 10px; }
+
+.faq-a { font-size: 0.84rem; color: var(--text-2); line-height: 1.65; }
+
+.page-footer { background: var(--ink); padding: 36px 0px; border-top: 1px solid rgba(255, 255, 255, 0.07); }
+
+.footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+
+.footer-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+
+.footer-copy { font-size: 0.75rem; color: rgba(255, 255, 255, 0.3); }
+
+.footer-links { display: flex; gap: 20px; }
+
+.footer-links a { font-size: 0.78rem; color: rgba(255, 255, 255, 0.4); text-decoration: none; transition: color 0.17s; }
+
+.footer-links a:hover { color: var(--sky); }
+
+.footer-legal { font-size: 0.67rem; color: rgba(255, 255, 255, 0.2); margin-top: 16px; line-height: 1.7; max-width: 900px; }
+
+.gallery { padding: 72px 0px; }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+@media (max-width: 860px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 540px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+}
+
+.gallery-item { border-radius: 22px; overflow: hidden; box-shadow: rgba(11, 21, 35, 0.06) 0px 2px 12px; transition: 0.3s; position: relative; }
+
+.gallery-item:hover { box-shadow: rgba(11, 21, 35, 0.1) 0px 8px 40px; transform: translateY(-4px); }
+
+.gallery-item img { width: 100%; height: 260px; object-fit: cover; display: block; }
+
+@media (max-width: 600px) {
+  .gallery-item img { height: 200px; }
+}
+
+.gallery-caption { position: absolute; bottom: 0px; left: 0px; right: 0px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); padding: 40px 16px 14px; color: rgb(255, 255, 255); font-size: 0.82rem; font-weight: 700; }
+
+@keyframes riseIn { 
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+body { padding-top: calc(64px + env(safe-area-inset-top,0px)) !important; }
+
+</style>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<title>Advanced Loan Calculator — LendX Financial Canada</title>
+<meta name="description" content="Free advanced Canadian loan calculator. Calculate early repayment savings, extra payment impact, amortization schedules, and compare loan options. LendX Financial.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="LendX Financial Inc.">
+<link rel="canonical" href="https://lendxfinancial.com/calculator.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta property="og:title" content="Advanced Loan Calculator — LendX Financial">
+<meta property="og:description" content="Calculate early repayment savings, extra payments, amortization schedules. Know your true cost before you borrow.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lendxfinancial.com/calculator.html">
+<meta property="og:image" content="https://lendxfinancial.com/favicon.svg">
+<meta property="og:image:alt" content="LendX Financial advanced loan calculator">
+<meta property="og:site_name" content="LendX Financial">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Advanced Loan Calculator — LendX Financial">
+<meta name="twitter:description" content="Early repayment, extra payments, amortization &amp; comparison calculators. Free and instant.">
+<meta name="twitter:image" content="https://lendxfinancial.com/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#059669">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="LendX">
+<style id="lx-nav-css">
+/* ── LendX canonical nav ── */
+.nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.nav-inner{display:flex;align-items:center;gap:1rem;padding:.75rem 1.25rem;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:.55rem;text-decoration:none;flex-shrink:0}
+.lx-logo-svg{width:36px;height:36px;flex-shrink:0}
+.brand-wordmark{font-family:var(--font,'Nunito',sans-serif);font-size:1.15rem;font-weight:800;color:#111827;letter-spacing:-.02em}
+.brand-wordmark .x-accent{color:#059669}
+.nav-center{display:flex;align-items:center;gap:.15rem;flex:1;justify-content:center}
+.nav-center a{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.38rem .65rem;border-radius:6px;white-space:nowrap;transition:background .15s,color .15s}
+.nav-center a:hover{background:#ecfdf5;color:#059669}
+.nav-center a.active{background:#d1fae5;color:#059669}
+.nav-right{display:flex;align-items:center;gap:.55rem;flex-shrink:0}
+.n-btn{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:700;padding:.42rem .9rem;border-radius:8px;text-decoration:none;cursor:pointer;transition:all .15s}
+.n-outline{border:1.5px solid #059669;color:#059669;background:transparent}
+.n-outline:hover{background:#ecfdf5}
+.n-solid{background:#059669;color:#fff;border:1.5px solid #059669}
+.n-solid:hover{background:#047857}
+.ham-btn{display:none;background:none;border:none;cursor:pointer;padding:.3rem;color:#111827}
+.nav-drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1000}
+.nav-drawer-overlay.open{display:block}
+.nav-drawer{position:fixed;top:0;right:-280px;width:260px;height:100%;background:#fff;z-index:1001;padding:1.5rem 1.25rem;display:flex;flex-direction:column;gap:.5rem;box-shadow:-4px 0 20px rgba(0,0,0,.12);transition:right .28s ease}
+.nav-drawer.open{right:0}
+.nav-drawer a{font-family:var(--font,'Nunito',sans-serif);font-size:.95rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.55rem .75rem;border-radius:8px;transition:background .15s}
+.nav-drawer a:hover{background:#ecfdf5;color:#059669}
+.drawer-cta{margin-top:auto!important;background:#059669!important;color:#fff!important;text-align:center;padding:.7rem 1rem!important;border-radius:10px!important}
+.drawer-cta:hover{background:#047857!important}
+@media(max-width:900px){.nav-center{display:none}.ham-btn{display:flex}}
+@media(max-width:540px){.n-outline{display:none}}
+</style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1334.0" data-gr-ext-installed="">
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <svg class="lx-logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LendX Financial logo">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#14532d"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4ade80"/><stop offset="60%" stop-color="#16a34a"/><stop offset="100%" stop-color="#166534"/></linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#86efac"/><stop offset="60%" stop-color="#22c55e"/><stop offset="100%" stop-color="#16a34a"/></linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#064E3B"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+        </defs>
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"/>
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"/>
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"/>
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"/>
+      </svg>
+      <span class="brand-wordmark">Lend<span class="x-accent">X</span> Financial</span>
+    </a>
+    <div class="nav-center">
+      <a href="index.html" >Personal</a>
+      <a href="business.html" >Business</a>
+      <a href="marketplace.html" >Marketplace</a>
+      <a href="payday.html" >Payday Loans</a>
+      <a href="cheque-cashing.html" >Cheque Cashing</a>
+      <a href="private-mortgage.html" >Private Mortgage</a>
+    </div>
+    <div class="nav-right">
+      <a class="n-btn n-outline" href="tel:+16472003526">647-200-3526</a>
+      <a class="n-btn n-solid" href="#calculate">Calculate →</a>
+      <button class="ham-btn" onclick="toggleMenu()" aria-label="Menu">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="nav-drawer-overlay" id="nav-overlay" onclick="toggleMenu()"></div>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="index.html" >Personal Loans</a>
+  <a href="business.html" >Business Financing</a>
+  <a href="marketplace.html" >Marketplace</a>
+  <a href="payday.html" >Payday Loans</a>
+  <a href="cheque-cashing.html" >Cheque Cashing</a>
+  <a href="private-mortgage.html" >Private Mortgage</a>
+  <a href="calculator.html">Calculator</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About Us</a>
+  <a class="drawer-cta" href="#calculate" onclick="toggleMenu()">Calculate →</a>
+</div>
+<!-- HERO -->
+<section class="page-hero">
+  <div class="wrap page-hero-inner">
+    <div class="hero-eyebrow">Advanced Loan Tools</div>
+    <h1>Calculate every angle — <em style="font-style:italic">before you borrow.</em></h1>
+    <p>Four powerful calculators: standard costs, early repayment savings, extra payment impact, and side-by-side loan comparison. All free, all instant.</p>
+  </div>
+</section>
+
+<!-- CALCULATOR TAB BAR -->
+<div class="calc-tabs-wrap">
+  <div class="wrap">
+    <div class="calc-tabs" role="tablist" aria-label="Calculator tools">
+      <button class="ctab active" role="tab" aria-selected="true">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M8 10h8M8 14h5"></path></svg>
+        Loan Cost
+      </button>
+      <button class="ctab" role="tab" aria-selected="false">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        Early Repayment
+      </button>
+      <button class="ctab" role="tab" aria-selected="false">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path d="M12 4v16m8-8H4"></path></svg>
+        Extra Payments
+      </button>
+      <button class="ctab" role="tab" aria-selected="false">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+        Loan Comparison
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     TAB 1 — LOAN COST (basic)
+══════════════════════════════════════════════ -->
+<div id="panel-basic" class="calc-panel active">
+<div class="wrap">
+  <div class="calc-layout">
+    <div>
+      <div class="card">
+        <div class="card-title">Loan Details</div>
+        <div class="card-sub">Adjust the sliders to see your exact costs update in real time.</div>
+
+        <div class="field-group">
+          <label class="field-label" for="sl-amount">Loan Amount</label>
+          <div class="slider-row">
+            <div>
+              <div class="slider-big" id="disp-amount">$800</div>
+              <div class="slider-big-sub">borrowed</div>
+            </div>
+            <div style="text-align:right">
+              <div style="font-size:1rem;font-weight:800;color:var(--cobalt)" id="disp-fee">$112.00</div>
+              <div class="slider-big-sub">total fee</div>
+            </div>
+          </div>
+          <input type="range" id="sl-amount" min="300" max="1500" value="800" step="50" aria-label="Loan amount slider" style="--pct: 41.66666666666667%;">
+          <div class="slider-minmax"><span>$300</span><span>$1,500</span></div>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="sl-term">Loan Term</label>
+          <div class="slider-row">
+            <div>
+              <div class="slider-big" id="disp-term">14</div>
+              <div class="slider-big-sub">days</div>
+            </div>
+            <div style="text-align:right">
+              <div style="font-size:.85rem;font-weight:700;color:var(--muted)" id="disp-duedate">Due Oct 16, 2026</div>
+            </div>
+          </div>
+          <input type="range" id="sl-term" min="7" max="62" value="14" step="1" aria-label="Loan term slider" style="--pct: 12.727272727272727%;">
+          <div class="slider-minmax"><span>7 days</span><span>62 days</span></div>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="sel-province">Province</label>
+          <select class="fi-select" id="sel-province">
+            <option value="ON">Ontario — $14/$100 max fee</option>
+            <option value="BC">British Columbia — $15/$100 max fee</option>
+            <option value="AB">Alberta — $15/$100 max fee</option>
+            <option value="MB">Manitoba — $17/$100 max fee</option>
+            <option value="SK">Saskatchewan — $17/$100 max fee</option>
+            <option value="NS">Nova Scotia — $19/$100 max fee</option>
+            <option value="NB">New Brunswick — $15/$100 max fee</option>
+            <option value="PEI">Prince Edward Island — $25/$100 max fee</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Loan Purpose</label>
+          <div class="purpose-tabs">
+            <button class="pt-btn active">💳 Emergency</button>
+            <button class="pt-btn">🏠 Bills</button>
+            <button class="pt-btn">🚗 Car Repair</button>
+            <button class="pt-btn">📦 Other</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMPARISON TABLE -->
+      <div class="card">
+        <div class="card-title">LendX vs. Other Options</div>
+        <div class="card-sub">How short-term loans stack up against common alternatives.</div>
+        <div class="tbl-wrap">
+          <table class="data-table">
+            <thead><tr><th>Option</th><th>Speed</th><th>Credit Check</th><th>Transparency</th></tr></thead>
+            <tbody>
+              <tr class="highlight-row">
+                <td><span class="lendx-badge">★ LendX</span></td>
+                <td style="text-align:right"><span class="check">✓</span> Same day</td>
+                <td style="text-align:right">Soft only</td>
+                <td style="text-align:right"><span class="check">✓</span> Full</td>
+              </tr>
+              <tr><td>Bank Overdraft</td><td style="text-align:right"><span class="check">✓</span> Instant</td><td style="text-align:right">N/A</td><td style="text-align:right"><span class="partial">~</span> Partial</td></tr>
+              <tr><td>Credit Card Cash</td><td style="text-align:right"><span class="check">✓</span> Instant</td><td style="text-align:right">Existing</td><td style="text-align:right"><span class="partial">~</span> Partial</td></tr>
+              <tr><td>Traditional Payday</td><td style="text-align:right"><span class="check">✓</span> Same day</td><td style="text-align:right">Varies</td><td style="text-align:right"><span class="cross">✗</span> Limited</td></tr>
+              <tr><td>Bank Personal Loan</td><td style="text-align:right"><span class="cross">✗</span> Days/Weeks</td><td style="text-align:right">Hard pull</td><td style="text-align:right"><span class="check">✓</span> Full</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- REPAYMENT SCHEDULE -->
+      <div class="card">
+        <div class="card-title">Repayment Summary</div>
+        <div class="card-sub">What you'll repay and when.</div>
+        <div class="tbl-wrap"><table class="data-table" id="basic-schedule-table">
+    <thead><tr><th>Event</th><th>Date</th><th>Amount</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Loan Funded (Interac e-Transfer®)</td><td style="text-align:right">Oct 2, 2026</td>
+        <td style="text-align:right;color:var(--green-text);font-weight:800">+$800.00</td>
+        <td style="text-align:right"><span class="badge badge-green">Today</span></td>
+      </tr>
+      <tr>
+        <td>Borrowing Fee</td><td style="text-align:right">Oct 16, 2026</td>
+        <td style="text-align:right;color:var(--red-text);font-weight:800">-$112.00</td>
+        <td style="text-align:right"><span class="badge badge-amber">Due Date</span></td>
+      </tr>
+      <tr>
+        <td>Principal Repayment</td><td style="text-align:right">Oct 16, 2026</td>
+        <td style="text-align:right;color:var(--red-text);font-weight:800">-$800.00</td>
+        <td style="text-align:right"><span class="badge badge-amber">Due Date</span></td>
+      </tr>
+      <tr class="total-row">
+        <td>Total Cost of Borrowing</td><td></td>
+        <td style="text-align:right">$112.00</td><td></td>
+      </tr>
+    </tbody></table></div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div>
+      <div class="results-panel">
+        <div class="rp-title">Your Loan Summary</div>
+        <div class="rp-amount">
+          <div class="rp-amount-lbl">Total Repayment</div>
+          <div class="rp-amount-val" id="rp-total">$912.00</div>
+          <div class="rp-amount-sub" id="rp-due">Due date: Oct 16, 2026</div>
+        </div>
+        <div class="rp-breakdown">
+          <div class="rp-row"><span class="rp-key">Loan Amount</span><span class="rp-val" id="rp-principal">$800.00</span></div>
+          <div class="rp-row"><span class="rp-key">Borrowing Fee</span><span class="rp-val amber" id="rp-fee">$112.00</span></div>
+          <div class="rp-row"><span class="rp-key">Fee Rate</span><span class="rp-val" id="rp-rate-per100">$14 per $100</span></div>
+          <div class="rp-row"><span class="rp-key">Term</span><span class="rp-val" id="rp-term-disp">14 days</span></div>
+          <div class="rp-row"><span class="rp-key">Province</span><span class="rp-val" id="rp-province">Ontario</span></div>
+        </div>
+        <div class="rp-bar-section">
+          <div class="rp-bar-title">Fee as % of total repayment</div>
+          <div class="cost-bar">
+            <div class="cost-bar-fill" id="cost-bar-fill" style="background: linear-gradient(90deg, rgb(4, 120, 87), rgb(52, 211, 153)); width: 12.3%;"></div>
+          </div>
+          <div style="display:flex;justify-content:space-between;margin-top:5px">
+            <span style="font-size:.67rem;color:rgba(255,255,255,.4)">Principal</span>
+            <span style="font-size:.67rem;color:#fbbf24" id="fee-pct-label">12.3% fee</span>
+          </div>
+        </div>
+        <div class="rp-apr-badge">
+          <div class="apr-badge-title">Annual Percentage Rate (APR)</div>
+          <div class="apr-badge-val" id="rp-apr">365.00%</div>
+          <div class="apr-badge-sub">High APR reflects the short term, not unusually high dollar cost. See total fee above for actual cost.</div>
+        </div>
+        <div class="afford-section" style="margin-bottom:18px">
+          <div class="afford-title">Affordability Check</div>
+          <input type="number" class="afford-input" id="afford-income" placeholder="Your monthly income ($)">
+          <div id="afford-result" style="display:none">
+            <div class="afford-meter"><div class="afford-fill" id="afford-fill"></div></div>
+            <div class="afford-label" id="afford-label"></div>
+          </div>
+        </div>
+        <a class="rp-cta" href="index.html#apply">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+          Apply Now — No Credit Impact
+        </a>
+        <div class="rp-legal">Soft credit check only. Licence pending under Ontario's Payday Loans Act, 2008.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     TAB 2 — EARLY REPAYMENT
+══════════════════════════════════════════════ -->
+<div id="panel-early" class="calc-panel">
+<div class="wrap">
+  <div class="calc-layout">
+    <div>
+      <div class="card">
+        <div class="card-title">Early Repayment Calculator</div>
+        <div class="card-sub">See how much interest you save by repaying a personal or instalment loan before its scheduled end date.</div>
+
+        <div class="field-group">
+          <label class="field-label" for="er-amount">Original Loan Amount</label>
+          <div class="input-prefix-wrap">
+            <span class="prefix">$</span>
+            <input class="fi-input" type="number" id="er-amount" value="10000" min="1000" max="100000" step="500">
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="er-rate">Annual Interest Rate (%)</label>
+          <input class="fi-input" type="number" id="er-rate" value="12.99" min="1" max="50" step="0.01">
+          <span class="field-hint">LendX personal loans: 9.9%–29.9% APR</span>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="er-months">Original Term (months)</label>
+          <input class="fi-input" type="number" id="er-months" value="36" min="6" max="84" step="1">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="er-paid">Months Already Paid</label>
+          <input class="fi-input" type="number" id="er-paid" value="12" min="0">
+          <span class="field-hint">Enter 0 if you haven't started repaying yet</span>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="er-earlymonth">Repay Early at Month</label>
+          <input class="fi-input" type="number" id="er-earlymonth" value="18" min="1">
+          <span class="field-hint">The month at which you make the lump-sum early repayment</span>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="er-penalty">Early Repayment Penalty (%)</label>
+          <input class="fi-input" type="number" id="er-penalty" value="0" min="0" max="10" step="0.1">
+          <span class="field-hint">LendX charges 0%. Check your agreement for other lenders.</span>
+        </div>
+      </div>
+
+      <!-- AMORTIZATION SCHEDULE (abbreviated) -->
+      <div class="card">
+        <div class="card-title">Amortization Snapshot</div>
+        <div class="card-sub">Key milestones in your repayment journey.</div>
+        <div id="er-timeline" class="timeline">
+    <div class="tl-row">
+      <div class="tl-dot" style="background:#047857"></div>
+      <div class="tl-content"><div class="tl-title">Loan Disbursed</div><div class="tl-sub">Today</div></div>
+      <div class="tl-amount" style="color:#047857">+$10,000.00</div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-dot" style="background:#f59e0b"></div>
+      <div class="tl-content"><div class="tl-title">Break-even Point</div><div class="tl-sub">Month 1 — principal now exceeds interest in each payment</div></div>
+      
+    </div>
+    <div class="tl-row">
+      <div class="tl-dot" style="background:#22c55e"></div>
+      <div class="tl-content"><div class="tl-title">Early Repayment Date</div><div class="tl-sub">Month 18 — payoff lump sum</div></div>
+      <div class="tl-amount" style="color:#22c55e">-$5,483.00</div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-dot" style="background:#4ade80"></div>
+      <div class="tl-content"><div class="tl-title">Interest Saved</div><div class="tl-sub">vs. paying 36 months to full term</div></div>
+      <div class="tl-amount" style="color:#4ade80">+$581.05</div>
+    </div></div>
+      </div>
+
+      <!-- MONTH-BY-MONTH TABLE -->
+      <div class="card">
+        <div class="card-title">Full Amortization Schedule</div>
+        <div class="card-sub">Principal, interest, and balance every month.</div>
+        <div class="tbl-wrap"><table class="data-table" id="er-amort-table"><thead><tr><th>#</th><th>Payment</th><th>Principal</th><th>Interest</th><th>Balance</th><th></th></tr></thead><tbody><tr>
+      <td>1</td>
+      <td>$336.89</td>
+      <td>$228.64</td>
+      <td>$108.25</td>
+      <td>$9,771.36</td>
+      <td></td>
+    </tr><tr>
+      <td>2</td>
+      <td>$336.89</td>
+      <td>$231.12</td>
+      <td>$105.77</td>
+      <td>$9,540.24</td>
+      <td></td>
+    </tr><tr>
+      <td>3</td>
+      <td>$336.89</td>
+      <td>$233.62</td>
+      <td>$103.27</td>
+      <td>$9,306.62</td>
+      <td></td>
+    </tr><tr>
+      <td>4</td>
+      <td>$336.89</td>
+      <td>$236.15</td>
+      <td>$100.74</td>
+      <td>$9,070.48</td>
+      <td></td>
+    </tr><tr>
+      <td>5</td>
+      <td>$336.89</td>
+      <td>$238.70</td>
+      <td>$98.19</td>
+      <td>$8,831.77</td>
+      <td></td>
+    </tr><tr>
+      <td>6</td>
+      <td>$336.89</td>
+      <td>$241.29</td>
+      <td>$95.60</td>
+      <td>$8,590.49</td>
+      <td></td>
+    </tr><tr>
+      <td>7</td>
+      <td>$336.89</td>
+      <td>$243.90</td>
+      <td>$92.99</td>
+      <td>$8,346.59</td>
+      <td></td>
+    </tr><tr>
+      <td>8</td>
+      <td>$336.89</td>
+      <td>$246.54</td>
+      <td>$90.35</td>
+      <td>$8,100.05</td>
+      <td></td>
+    </tr><tr>
+      <td>9</td>
+      <td>$336.89</td>
+      <td>$249.21</td>
+      <td>$87.68</td>
+      <td>$7,850.84</td>
+      <td></td>
+    </tr><tr>
+      <td>10</td>
+      <td>$336.89</td>
+      <td>$251.91</td>
+      <td>$84.99</td>
+      <td>$7,598.93</td>
+      <td></td>
+    </tr><tr>
+      <td>11</td>
+      <td>$336.89</td>
+      <td>$254.63</td>
+      <td>$82.26</td>
+      <td>$7,344.30</td>
+      <td></td>
+    </tr><tr>
+      <td>12</td>
+      <td>$336.89</td>
+      <td>$257.39</td>
+      <td>$79.50</td>
+      <td>$7,086.91</td>
+      <td></td>
+    </tr><tr>
+      <td>13</td>
+      <td>$336.89</td>
+      <td>$260.18</td>
+      <td>$76.72</td>
+      <td>$6,826.73</td>
+      <td></td>
+    </tr><tr>
+      <td>14</td>
+      <td>$336.89</td>
+      <td>$262.99</td>
+      <td>$73.90</td>
+      <td>$6,563.74</td>
+      <td></td>
+    </tr><tr>
+      <td>15</td>
+      <td>$336.89</td>
+      <td>$265.84</td>
+      <td>$71.05</td>
+      <td>$6,297.90</td>
+      <td></td>
+    </tr><tr>
+      <td>16</td>
+      <td>$336.89</td>
+      <td>$268.72</td>
+      <td>$68.17</td>
+      <td>$6,029.19</td>
+      <td></td>
+    </tr><tr>
+      <td>17</td>
+      <td>$336.89</td>
+      <td>$271.63</td>
+      <td>$65.27</td>
+      <td>$5,757.56</td>
+      <td></td>
+    </tr><tr style="background:var(--green-bg)">
+      <td>18</td>
+      <td>$336.89</td>
+      <td>$274.57</td>
+      <td>$62.33</td>
+      <td>$5,483.00</td>
+      <td><span class="badge badge-green">Payoff</span></td>
+    </tr><tr style="opacity:.35">
+      <td>19</td>
+      <td>$336.89</td>
+      <td>$277.54</td>
+      <td>$59.35</td>
+      <td>$5,205.46</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>20</td>
+      <td>$336.89</td>
+      <td>$280.54</td>
+      <td>$56.35</td>
+      <td>$4,924.92</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>21</td>
+      <td>$336.89</td>
+      <td>$283.58</td>
+      <td>$53.31</td>
+      <td>$4,641.34</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>22</td>
+      <td>$336.89</td>
+      <td>$286.65</td>
+      <td>$50.24</td>
+      <td>$4,354.69</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>23</td>
+      <td>$336.89</td>
+      <td>$289.75</td>
+      <td>$47.14</td>
+      <td>$4,064.94</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>24</td>
+      <td>$336.89</td>
+      <td>$292.89</td>
+      <td>$44.00</td>
+      <td>$3,772.05</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>25</td>
+      <td>$336.89</td>
+      <td>$296.06</td>
+      <td>$40.83</td>
+      <td>$3,475.99</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>26</td>
+      <td>$336.89</td>
+      <td>$299.26</td>
+      <td>$37.63</td>
+      <td>$3,176.73</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>27</td>
+      <td>$336.89</td>
+      <td>$302.50</td>
+      <td>$34.39</td>
+      <td>$2,874.22</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>28</td>
+      <td>$336.89</td>
+      <td>$305.78</td>
+      <td>$31.11</td>
+      <td>$2,568.44</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>29</td>
+      <td>$336.89</td>
+      <td>$309.09</td>
+      <td>$27.80</td>
+      <td>$2,259.36</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>30</td>
+      <td>$336.89</td>
+      <td>$312.43</td>
+      <td>$24.46</td>
+      <td>$1,946.92</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>31</td>
+      <td>$336.89</td>
+      <td>$315.82</td>
+      <td>$21.08</td>
+      <td>$1,631.11</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>32</td>
+      <td>$336.89</td>
+      <td>$319.23</td>
+      <td>$17.66</td>
+      <td>$1,311.87</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>33</td>
+      <td>$336.89</td>
+      <td>$322.69</td>
+      <td>$14.20</td>
+      <td>$989.18</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>34</td>
+      <td>$336.89</td>
+      <td>$326.18</td>
+      <td>$10.71</td>
+      <td>$663.00</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>35</td>
+      <td>$336.89</td>
+      <td>$329.71</td>
+      <td>$7.18</td>
+      <td>$333.28</td>
+      <td></td>
+    </tr><tr style="opacity:.35">
+      <td>36</td>
+      <td>$336.89</td>
+      <td>$333.28</td>
+      <td>$3.61</td>
+      <td>$0.00</td>
+      <td></td>
+    </tr></tbody></table></div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div>
+      <div class="results-panel">
+        <div class="rp-title">Early Repayment Summary</div>
+        <div class="rp-savings-box">
+          <div class="rp-savings-lbl">Interest Saved</div>
+          <div class="rp-savings-val" id="er-saved">$581.05</div>
+          <div class="rp-savings-sub" id="er-saved-sub">saving 18 months of payments</div>
+        </div>
+        <div class="rp-breakdown">
+          <div class="rp-row"><span class="rp-key">Payoff Amount</span><span class="rp-val sky" id="er-payoff">$5,483.00</span></div>
+          <div class="rp-row"><span class="rp-key">Balance at Early Month</span><span class="rp-val" id="er-balance">$5,483.00</span></div>
+          <div class="rp-row"><span class="rp-key">Penalty Fee</span><span class="rp-val red" id="er-penalty-val">$0.00</span></div>
+          <div class="rp-row"><span class="rp-key">Interest to Early Date</span><span class="rp-val amber" id="er-int-paid">$1,547.04</span></div>
+          <div class="rp-row"><span class="rp-key">Total Interest (full term)</span><span class="rp-val" id="er-int-total">$2,128.09</span></div>
+          <div class="rp-row"><span class="rp-key">Months Saved</span><span class="rp-val green" id="er-months-saved">18 months</span></div>
+          <div class="rp-row"><span class="rp-key">Monthly Payment</span><span class="rp-val" id="er-monthly">$336.89</span></div>
+        </div>
+        <div class="rp-bar-section">
+          <div class="rp-bar-title">Interest saved vs. total interest</div>
+          <div class="cost-bar">
+            <div class="cost-bar-fill" id="er-bar-fill" style="background: linear-gradient(90deg, rgb(34, 197, 94), rgb(74, 222, 128)); width: 27.3%;"></div>
+          </div>
+          <div style="display:flex;justify-content:space-between;margin-top:5px">
+            <span style="font-size:.67rem;color:rgba(255,255,255,.4)">Interest paid</span>
+            <span style="font-size:.67rem;color:#4ade80" id="er-bar-label">27.3% saved</span>
+          </div>
+        </div>
+        <div style="height:14px"></div>
+        <a class="rp-cta" href="index.html#apply">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+          Apply — No Prepayment Penalty
+        </a>
+        <div class="rp-legal">LendX charges zero early repayment penalty on all loans.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     TAB 3 — EXTRA PAYMENTS
+══════════════════════════════════════════════ -->
+<div id="panel-extra" class="calc-panel">
+<div class="wrap">
+  <div class="calc-layout">
+    <div>
+      <div class="card">
+        <div class="card-title">Extra Payment Calculator</div>
+        <div class="card-sub">Discover how adding extra monthly, annual, or one-time payments slashes interest and shortens your loan.</div>
+
+        <div class="field-group">
+          <label class="field-label" for="xp-amount">Loan Amount</label>
+          <div class="input-prefix-wrap">
+            <span class="prefix">$</span>
+            <input class="fi-input" type="number" id="xp-amount" value="15000" min="500" step="500">
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="xp-rate">Annual Interest Rate (%)</label>
+          <input class="fi-input" type="number" id="xp-rate" value="11.99" min="1" max="50" step="0.01">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="xp-months">Loan Term (months)</label>
+          <input class="fi-input" type="number" id="xp-months" value="48" min="6" max="120" step="1">
+        </div>
+
+        <div style="border-top:1px solid var(--border);margin:20px 0 20px;padding-top:20px">
+          <div class="card-title" style="margin-bottom:4px">Extra Payment Options</div>
+          <div class="card-sub">Add any combination — all three stack together.</div>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="xp-monthly">Extra Monthly Payment</label>
+          <div class="input-prefix-wrap">
+            <span class="prefix">$</span>
+            <input class="fi-input" type="number" id="xp-monthly" value="100" min="0" step="10">
+          </div>
+          <span class="field-hint">Added to every regular monthly payment</span>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="xp-annual">Extra Annual Payment</label>
+          <div class="input-prefix-wrap">
+            <span class="prefix">$</span>
+            <input class="fi-input" type="number" id="xp-annual" value="500" min="0" step="100">
+          </div>
+          <span class="field-hint">Lump sum paid once a year (e.g. tax refund)</span>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="xp-onetime">One-Time Extra Payment</label>
+          <div class="input-prefix-wrap">
+            <span class="prefix">$</span>
+            <input class="fi-input" type="number" id="xp-onetime" value="0" min="0" step="100">
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="xp-onetimemonth">One-Time Payment at Month #</label>
+          <input class="fi-input" type="number" id="xp-onetimemonth" value="6" min="1">
+        </div>
+      </div>
+
+      <!-- STATS -->
+      <div class="card">
+        <div class="card-title">Impact at a Glance</div>
+        <div class="card-sub">Standard schedule vs. with your extra payments.</div>
+        <div class="stat-grid" id="xp-stat-grid"><div class="stat-box ">
+    <div class="stat-lbl">Standard Payoff</div>
+    <div class="stat-val">48 mo</div>
+    <div class="stat-sub">No extra payments</div>
+  </div><div class="stat-box green">
+    <div class="stat-lbl">New Payoff</div>
+    <div class="stat-val">34 mo</div>
+    <div class="stat-sub">With your extras</div>
+  </div><div class="stat-box amber">
+    <div class="stat-lbl">Standard Interest</div>
+    <div class="stat-val">$3,956.83</div>
+    <div class="stat-sub">Without extras</div>
+  </div><div class="stat-box highlight">
+    <div class="stat-lbl">Interest Saved</div>
+    <div class="stat-val">$1,192.86</div>
+    <div class="stat-sub">30.1% reduction</div>
+  </div></div>
+        <div class="progress-bar-wrap">
+          <div class="progress-label"><span>Interest paid</span><span id="xp-bar-lbl">69.9% of original interest</span></div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="xp-bar" style="background: linear-gradient(90deg,var(--cobalt),var(--sky)); width: 69.9%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AMORTIZATION TABLE -->
+      <div class="card">
+        <div class="card-title">Amortization Schedule — With Extra Payments</div>
+        <div class="card-sub">Months where extra payments apply are highlighted.</div>
+        <div class="tbl-wrap"><table class="data-table" id="xp-table"><thead><tr><th>#</th><th>Payment</th><th>Extra</th><th>Interest</th><th>Principal</th><th>Balance</th></tr></thead><tbody><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>1</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$149.88</td>
+      <td>$345.06</td>
+      <td>$14,654.94</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>2</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$146.43</td>
+      <td>$348.51</td>
+      <td>$14,306.43</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>3</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$142.95</td>
+      <td>$351.99</td>
+      <td>$13,954.45</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>4</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$139.43</td>
+      <td>$355.51</td>
+      <td>$13,598.94</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>5</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$135.88</td>
+      <td>$359.06</td>
+      <td>$13,239.88</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>6</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$132.29</td>
+      <td>$362.65</td>
+      <td>$12,877.24</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>7</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$128.67</td>
+      <td>$366.27</td>
+      <td>$12,510.97</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>8</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$125.01</td>
+      <td>$369.93</td>
+      <td>$12,141.04</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>9</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$121.31</td>
+      <td>$373.62</td>
+      <td>$11,767.41</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>10</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$117.58</td>
+      <td>$377.36</td>
+      <td>$11,390.06</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>11</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$113.81</td>
+      <td>$381.13</td>
+      <td>$11,008.93</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>12</td>
+      <td>$994.93</td>
+      <td><span class="badge badge-blue">+$600.00</span></td>
+      <td>$110.00</td>
+      <td>$884.94</td>
+      <td>$10,123.99</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>13</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$101.16</td>
+      <td>$393.78</td>
+      <td>$9,730.21</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>14</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$97.22</td>
+      <td>$397.71</td>
+      <td>$9,332.50</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>15</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$93.25</td>
+      <td>$401.69</td>
+      <td>$8,930.81</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>16</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$89.23</td>
+      <td>$405.70</td>
+      <td>$8,525.11</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>17</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$85.18</td>
+      <td>$409.75</td>
+      <td>$8,115.36</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>18</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$81.09</td>
+      <td>$413.85</td>
+      <td>$7,701.51</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>19</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$76.95</td>
+      <td>$417.98</td>
+      <td>$7,283.53</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>20</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$72.77</td>
+      <td>$422.16</td>
+      <td>$6,861.37</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>21</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$68.56</td>
+      <td>$426.38</td>
+      <td>$6,434.99</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>22</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$64.30</td>
+      <td>$430.64</td>
+      <td>$6,004.36</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>23</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$59.99</td>
+      <td>$434.94</td>
+      <td>$5,569.42</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>24</td>
+      <td>$994.93</td>
+      <td><span class="badge badge-blue">+$600.00</span></td>
+      <td>$55.65</td>
+      <td>$939.29</td>
+      <td>$4,630.13</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>25</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$46.26</td>
+      <td>$448.67</td>
+      <td>$4,181.46</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>26</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$41.78</td>
+      <td>$453.15</td>
+      <td>$3,728.30</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>27</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$37.25</td>
+      <td>$457.68</td>
+      <td>$3,270.62</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>28</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$32.68</td>
+      <td>$462.25</td>
+      <td>$2,808.37</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>29</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$28.06</td>
+      <td>$466.87</td>
+      <td>$2,341.49</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>30</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$23.40</td>
+      <td>$471.54</td>
+      <td>$1,869.95</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>31</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$18.68</td>
+      <td>$476.25</td>
+      <td>$1,393.70</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>32</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$13.93</td>
+      <td>$481.01</td>
+      <td>$912.70</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>33</td>
+      <td>$494.93</td>
+      <td><span class="badge badge-blue">+$100.00</span></td>
+      <td>$9.12</td>
+      <td>$485.81</td>
+      <td>$426.88</td>
+    </tr><tr style="background:rgba(5,150,105,.04);border-left:3px solid var(--cobalt)">
+      <td>34</td>
+      <td>$431.15</td>
+      <td><span class="badge badge-blue">+$36.21</span></td>
+      <td>$4.27</td>
+      <td>$426.88</td>
+      <td>$0.00</td>
+    </tr></tbody></table></div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div>
+      <div class="results-panel">
+        <div class="rp-title">Extra Payment Impact</div>
+        <div class="rp-savings-box">
+          <div class="rp-savings-lbl">Total Interest Saved</div>
+          <div class="rp-savings-val" id="xp-saved">$1,192.86</div>
+          <div class="rp-savings-sub" id="xp-saved-sub">by making extra payments over 34 months</div>
+        </div>
+        <div class="rp-breakdown">
+          <div class="rp-row"><span class="rp-key">Regular Payment</span><span class="rp-val" id="xp-reg-payment">$394.93</span></div>
+          <div class="rp-row"><span class="rp-key">Avg Payment w/ Extras</span><span class="rp-val sky" id="xp-avg-payment">$522.47</span></div>
+          <div class="rp-row"><span class="rp-key">Payoff — Standard</span><span class="rp-val" id="xp-std-payoff">48 months</span></div>
+          <div class="rp-row"><span class="rp-key">Payoff — With Extras</span><span class="rp-val green" id="xp-new-payoff">34 months</span></div>
+          <div class="rp-row"><span class="rp-key">Time Saved</span><span class="rp-val green" id="xp-time-saved">14 months</span></div>
+          <div class="rp-row"><span class="rp-key">Interest — Standard</span><span class="rp-val amber" id="xp-std-int">$3,956.83</span></div>
+          <div class="rp-row"><span class="rp-key">Interest — With Extras</span><span class="rp-val green" id="xp-new-int">$2,763.97</span></div>
+        </div>
+        <div class="rp-bar-section">
+          <div class="rp-bar-title">Interest reduction</div>
+          <div class="cost-bar">
+            <div class="cost-bar-fill" id="xp-int-bar" style="background: linear-gradient(90deg, rgb(34, 197, 94), rgb(74, 222, 128)); width: 30.1%;"></div>
+          </div>
+          <div style="display:flex;justify-content:space-between;margin-top:5px">
+            <span style="font-size:.67rem;color:rgba(255,255,255,.4)">Original</span>
+            <span style="font-size:.67rem;color:#4ade80" id="xp-int-bar-lbl">30.1% saved</span>
+          </div>
+        </div>
+        <div style="height:14px"></div>
+        <a class="rp-cta" href="index.html#apply">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+          Apply Now — Free Extra Payments
+        </a>
+        <div class="rp-legal">LendX charges no fees for extra or early payments on any loan product.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     TAB 4 — LOAN COMPARISON
+══════════════════════════════════════════════ -->
+<div id="panel-compare" class="calc-panel">
+<div class="wrap">
+  <div style="padding:30px 0 64px">
+    <div class="calc-layout-3" style="padding:0 0 24px">
+      <!-- LOAN A -->
+      <div class="card">
+        <div class="card-title" style="color:var(--cobalt)">Loan A</div>
+        <div class="card-sub">Enter details for the first loan option.</div>
+        <div class="field-group">
+          <label class="field-label" for="ca-name">Label</label>
+          <input class="fi-input" type="text" id="ca-name" value="LendX Personal Loan">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="ca-amount">Loan Amount</label>
+          <div class="input-prefix-wrap"><span class="prefix">$</span>
+            <input class="fi-input" type="number" id="ca-amount" value="10000" min="100" step="500">
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="ca-rate">Annual Interest Rate (%)</label>
+          <input class="fi-input" type="number" id="ca-rate" value="9.9" min="0.1" max="99" step="0.01">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="ca-months">Term (months)</label>
+          <input class="fi-input" type="number" id="ca-months" value="36" min="1" max="360" step="1">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="ca-fee">Origination Fee ($)</label>
+          <div class="input-prefix-wrap"><span class="prefix">$</span>
+            <input class="fi-input" type="number" id="ca-fee" value="0" min="0" step="10">
+          </div>
+          <span class="field-hint">One-time upfront fee, if any</span>
+        </div>
+      </div>
+
+      <!-- LOAN B -->
+      <div class="card">
+        <div class="card-title" style="color:var(--teal)">Loan B</div>
+        <div class="card-sub">Enter details for the second loan option.</div>
+        <div class="field-group">
+          <label class="field-label" for="cb-name">Label</label>
+          <input class="fi-input" type="text" id="cb-name" value="Bank Personal Loan">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="cb-amount">Loan Amount</label>
+          <div class="input-prefix-wrap"><span class="prefix">$</span>
+            <input class="fi-input" type="number" id="cb-amount" value="10000" min="100" step="500">
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="cb-rate">Annual Interest Rate (%)</label>
+          <input class="fi-input" type="number" id="cb-rate" value="14.99" min="0.1" max="99" step="0.01">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="cb-months">Term (months)</label>
+          <input class="fi-input" type="number" id="cb-months" value="36" min="1" max="360" step="1">
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="cb-fee">Origination Fee ($)</label>
+          <div class="input-prefix-wrap"><span class="prefix">$</span>
+            <input class="fi-input" type="number" id="cb-fee" value="150" min="0" step="10">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDE-BY-SIDE RESULTS -->
+    <div class="compare-grid" id="compare-cols">
+    <div class="compare-col active">
+      <div class="compare-col-head"><span>LendX Personal Loan</span><span style="font-size:.75rem;color:var(--cobalt)">9.90% APR</span></div>
+      <div class="compare-col-body">
+        <div class="compare-row"><span class="compare-row-key">Monthly Payment</span><span class="compare-row-val better">$322.20</span></div>
+        <div class="compare-row"><span class="compare-row-key">Total Interest</span><span class="compare-row-val better">$1,599.29</span></div>
+        <div class="compare-row"><span class="compare-row-key">Origination Fee</span><span class="compare-row-val better">$0.00</span></div>
+        <div class="compare-row"><span class="compare-row-key">Total Cost</span><span class="compare-row-val better">$11,599.29</span></div>
+        <div class="compare-row"><span class="compare-row-key">Effective APR</span><span class="compare-row-val better">9.90%</span></div>
+        <div class="compare-row"><span class="compare-row-key">Term</span><span class="compare-row-val">36 months</span></div>
+      </div>
+    </div>
+    <div class="compare-col ">
+      <div class="compare-col-head"><span>Bank Personal Loan</span><span style="font-size:.75rem;color:var(--teal)">14.99% APR</span></div>
+      <div class="compare-col-body">
+        <div class="compare-row"><span class="compare-row-key">Monthly Payment</span><span class="compare-row-val worse">$346.60</span></div>
+        <div class="compare-row"><span class="compare-row-key">Total Interest</span><span class="compare-row-val worse">$2,477.76</span></div>
+        <div class="compare-row"><span class="compare-row-key">Origination Fee</span><span class="compare-row-val worse">$150.00</span></div>
+        <div class="compare-row"><span class="compare-row-key">Total Cost</span><span class="compare-row-val worse">$12,627.76</span></div>
+        <div class="compare-row"><span class="compare-row-key">Effective APR</span><span class="compare-row-val worse">16.06%</span></div>
+        <div class="compare-row"><span class="compare-row-key">Term</span><span class="compare-row-val">36 months</span></div>
+      </div>
+    </div></div>
+
+    <!-- FULL COMPARISON TABLE -->
+    <div class="card" style="margin-top:24px">
+      <div class="card-title">Full Side-by-Side Breakdown</div>
+      <div class="card-sub">All key metrics compared. <strong style="color:var(--green-text)">Green</strong> = better value.</div>
+      <div class="tbl-wrap"><table class="data-table" id="compare-detail-table">
+    <thead><tr><th>Metric</th><th style="color:var(--cobalt)">LendX Personal Loan</th><th style="color:var(--teal)">Bank Personal Loan</th></tr></thead>
+    <tbody><tr>
+      <td style="font-weight:700">Loan Amount</td>
+      <td style="text-align:right;color:var(--green-text);">$10,000.00 ✓</td>
+      <td style="text-align:right;">$10,000.00</td>
+    </tr><tr>
+      <td style="font-weight:700">Interest Rate</td>
+      <td style="text-align:right;color:var(--green-text);">9.90% ✓</td>
+      <td style="text-align:right;">14.99%</td>
+    </tr><tr>
+      <td style="font-weight:700">Effective APR (w/ fees)</td>
+      <td style="text-align:right;color:var(--green-text);">9.90% ✓</td>
+      <td style="text-align:right;">16.06%</td>
+    </tr><tr>
+      <td style="font-weight:700">Monthly Payment</td>
+      <td style="text-align:right;color:var(--green-text);">$322.20 ✓</td>
+      <td style="text-align:right;">$346.60</td>
+    </tr><tr>
+      <td style="font-weight:700">Loan Term</td>
+      <td style="text-align:right;color:var(--green-text);">36 mo ✓</td>
+      <td style="text-align:right;">36 mo</td>
+    </tr><tr>
+      <td style="font-weight:700">Total Interest Paid</td>
+      <td style="text-align:right;color:var(--green-text);">$1,599.29 ✓</td>
+      <td style="text-align:right;">$2,477.76</td>
+    </tr><tr>
+      <td style="font-weight:700">Origination Fee</td>
+      <td style="text-align:right;color:var(--green-text);">$0.00 ✓</td>
+      <td style="text-align:right;">$150.00</td>
+    </tr><tr>
+      <td style="font-weight:700">Total Cost of Loan</td>
+      <td style="text-align:right;color:var(--green-text);">$11,599.29 ✓</td>
+      <td style="text-align:right;">$12,627.76</td>
+    </tr><tr>
+      <td style="font-weight:700">Total Amount Repaid</td>
+      <td style="text-align:right;color:var(--green-text);">$11,599.29 ✓</td>
+      <td style="text-align:right;">$12,477.76</td>
+    </tr></tbody></table></div>
+    </div>
+
+    <!-- AMORTIZATION BOTH -->
+    <div class="calc-layout-3" style="padding:24px 0 0">
+      <div class="card">
+        <div class="card-title" style="color:var(--cobalt)">Loan A — Amortization</div>
+        <div class="tbl-wrap"><table class="data-table" id="ca-amort"><thead><tr><th>#</th><th>Payment</th><th>Interest</th><th>Principal</th><th>Balance</th></tr></thead><tbody><tr><td>1</td><td>$322.20</td><td>$82.50</td><td>$239.70</td><td>$9,760.30</td></tr><tr><td>2</td><td>$322.20</td><td>$80.52</td><td>$241.68</td><td>$9,518.62</td></tr><tr><td>3</td><td>$322.20</td><td>$78.53</td><td>$243.67</td><td>$9,274.94</td></tr><tr><td>4</td><td>$322.20</td><td>$76.52</td><td>$245.68</td><td>$9,029.26</td></tr><tr><td>5</td><td>$322.20</td><td>$74.49</td><td>$247.71</td><td>$8,781.55</td></tr><tr><td>6</td><td>$322.20</td><td>$72.45</td><td>$249.75</td><td>$8,531.79</td></tr><tr><td>7</td><td>$322.20</td><td>$70.39</td><td>$251.82</td><td>$8,279.98</td></tr><tr><td>8</td><td>$322.20</td><td>$68.31</td><td>$253.89</td><td>$8,026.08</td></tr><tr><td>9</td><td>$322.20</td><td>$66.22</td><td>$255.99</td><td>$7,770.10</td></tr><tr><td>10</td><td>$322.20</td><td>$64.10</td><td>$258.10</td><td>$7,512.00</td></tr><tr><td>11</td><td>$322.20</td><td>$61.97</td><td>$260.23</td><td>$7,251.77</td></tr><tr><td>12</td><td>$322.20</td><td>$59.83</td><td>$262.38</td><td>$6,989.39</td></tr><tr><td>13</td><td>$322.20</td><td>$57.66</td><td>$264.54</td><td>$6,724.85</td></tr><tr><td>14</td><td>$322.20</td><td>$55.48</td><td>$266.72</td><td>$6,458.13</td></tr><tr><td>15</td><td>$322.20</td><td>$53.28</td><td>$268.92</td><td>$6,189.21</td></tr><tr><td>16</td><td>$322.20</td><td>$51.06</td><td>$271.14</td><td>$5,918.07</td></tr><tr><td>17</td><td>$322.20</td><td>$48.82</td><td>$273.38</td><td>$5,644.69</td></tr><tr><td>18</td><td>$322.20</td><td>$46.57</td><td>$275.63</td><td>$5,369.05</td></tr><tr><td>19</td><td>$322.20</td><td>$44.29</td><td>$277.91</td><td>$5,091.15</td></tr><tr><td>20</td><td>$322.20</td><td>$42.00</td><td>$280.20</td><td>$4,810.95</td></tr><tr><td>21</td><td>$322.20</td><td>$39.69</td><td>$282.51</td><td>$4,528.43</td></tr><tr><td>22</td><td>$322.20</td><td>$37.36</td><td>$284.84</td><td>$4,243.59</td></tr><tr><td>23</td><td>$322.20</td><td>$35.01</td><td>$287.19</td><td>$3,956.40</td></tr><tr><td>24</td><td>$322.20</td><td>$32.64</td><td>$289.56</td><td>$3,666.84</td></tr><tr><td>25</td><td>$322.20</td><td>$30.25</td><td>$291.95</td><td>$3,374.88</td></tr><tr><td>26</td><td>$322.20</td><td>$27.84</td><td>$294.36</td><td>$3,080.52</td></tr><tr><td>27</td><td>$322.20</td><td>$25.41</td><td>$296.79</td><td>$2,783.74</td></tr><tr><td>28</td><td>$322.20</td><td>$22.97</td><td>$299.24</td><td>$2,484.50</td></tr><tr><td>29</td><td>$322.20</td><td>$20.50</td><td>$301.71</td><td>$2,182.79</td></tr><tr><td>30</td><td>$322.20</td><td>$18.01</td><td>$304.19</td><td>$1,878.60</td></tr><tr><td>31</td><td>$322.20</td><td>$15.50</td><td>$306.70</td><td>$1,571.90</td></tr><tr><td>32</td><td>$322.20</td><td>$12.97</td><td>$309.23</td><td>$1,262.66</td></tr><tr><td>33</td><td>$322.20</td><td>$10.42</td><td>$311.79</td><td>$950.88</td></tr><tr><td>34</td><td>$322.20</td><td>$7.84</td><td>$314.36</td><td>$636.52</td></tr><tr><td>35</td><td>$322.20</td><td>$5.25</td><td>$316.95</td><td>$319.57</td></tr><tr><td>36</td><td>$322.20</td><td>$2.64</td><td>$319.57</td><td>$0.00</td></tr></tbody></table></div>
+      </div>
+      <div class="card">
+        <div class="card-title" style="color:var(--teal)">Loan B — Amortization</div>
+        <div class="tbl-wrap"><table class="data-table" id="cb-amort"><thead><tr><th>#</th><th>Payment</th><th>Interest</th><th>Principal</th><th>Balance</th></tr></thead><tbody><tr><td>1</td><td>$346.60</td><td>$124.92</td><td>$221.69</td><td>$9,778.31</td></tr><tr><td>2</td><td>$346.60</td><td>$122.15</td><td>$224.46</td><td>$9,553.86</td></tr><tr><td>3</td><td>$346.60</td><td>$119.34</td><td>$227.26</td><td>$9,326.59</td></tr><tr><td>4</td><td>$346.60</td><td>$116.50</td><td>$230.10</td><td>$9,096.50</td></tr><tr><td>5</td><td>$346.60</td><td>$113.63</td><td>$232.97</td><td>$8,863.52</td></tr><tr><td>6</td><td>$346.60</td><td>$110.72</td><td>$235.88</td><td>$8,627.64</td></tr><tr><td>7</td><td>$346.60</td><td>$107.77</td><td>$238.83</td><td>$8,388.81</td></tr><tr><td>8</td><td>$346.60</td><td>$104.79</td><td>$241.81</td><td>$8,146.99</td></tr><tr><td>9</td><td>$346.60</td><td>$101.77</td><td>$244.83</td><td>$7,902.16</td></tr><tr><td>10</td><td>$346.60</td><td>$98.71</td><td>$247.89</td><td>$7,654.26</td></tr><tr><td>11</td><td>$346.60</td><td>$95.61</td><td>$250.99</td><td>$7,403.27</td></tr><tr><td>12</td><td>$346.60</td><td>$92.48</td><td>$254.13</td><td>$7,149.15</td></tr><tr><td>13</td><td>$346.60</td><td>$89.30</td><td>$257.30</td><td>$6,891.85</td></tr><tr><td>14</td><td>$346.60</td><td>$86.09</td><td>$260.51</td><td>$6,631.34</td></tr><tr><td>15</td><td>$346.60</td><td>$82.84</td><td>$263.77</td><td>$6,367.57</td></tr><tr><td>16</td><td>$346.60</td><td>$79.54</td><td>$267.06</td><td>$6,100.51</td></tr><tr><td>17</td><td>$346.60</td><td>$76.21</td><td>$270.40</td><td>$5,830.11</td></tr><tr><td>18</td><td>$346.60</td><td>$72.83</td><td>$273.78</td><td>$5,556.33</td></tr><tr><td>19</td><td>$346.60</td><td>$69.41</td><td>$277.20</td><td>$5,279.13</td></tr><tr><td>20</td><td>$346.60</td><td>$65.95</td><td>$280.66</td><td>$4,998.47</td></tr><tr><td>21</td><td>$346.60</td><td>$62.44</td><td>$284.17</td><td>$4,714.31</td></tr><tr><td>22</td><td>$346.60</td><td>$58.89</td><td>$287.71</td><td>$4,426.59</td></tr><tr><td>23</td><td>$346.60</td><td>$55.30</td><td>$291.31</td><td>$4,135.29</td></tr><tr><td>24</td><td>$346.60</td><td>$51.66</td><td>$294.95</td><td>$3,840.34</td></tr><tr><td>25</td><td>$346.60</td><td>$47.97</td><td>$298.63</td><td>$3,541.71</td></tr><tr><td>26</td><td>$346.60</td><td>$44.24</td><td>$302.36</td><td>$3,239.34</td></tr><tr><td>27</td><td>$346.60</td><td>$40.46</td><td>$306.14</td><td>$2,933.20</td></tr><tr><td>28</td><td>$346.60</td><td>$36.64</td><td>$309.96</td><td>$2,623.24</td></tr><tr><td>29</td><td>$346.60</td><td>$32.77</td><td>$313.84</td><td>$2,309.40</td></tr><tr><td>30</td><td>$346.60</td><td>$28.85</td><td>$317.76</td><td>$1,991.65</td></tr><tr><td>31</td><td>$346.60</td><td>$24.88</td><td>$321.73</td><td>$1,669.92</td></tr><tr><td>32</td><td>$346.60</td><td>$20.86</td><td>$325.74</td><td>$1,344.18</td></tr><tr><td>33</td><td>$346.60</td><td>$16.79</td><td>$329.81</td><td>$1,014.37</td></tr><tr><td>34</td><td>$346.60</td><td>$12.67</td><td>$333.93</td><td>$680.43</td></tr><tr><td>35</td><td>$346.60</td><td>$8.50</td><td>$338.10</td><td>$342.33</td></tr><tr><td>36</td><td>$346.60</td><td>$4.28</td><td>$342.33</td><td>$0.00</td></tr></tbody></table></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="wrap">
+    <div class="faq-title">Calculator FAQ</div>
+    <div class="faq-sub">Answers to common questions about loan costs and calculations.</div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-q">How does early repayment save money?</div>
+        <div class="faq-a">Interest accrues on your outstanding balance each month. The sooner you reduce that balance to zero, the fewer months of interest you pay. Even paying a few months early on a medium-term loan can save hundreds of dollars.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does LendX charge prepayment penalties?</div>
+        <div class="faq-a">No — LendX charges zero penalties for early or extra payments on all loan products. Many traditional lenders charge 1–3% of the outstanding balance, so always check before repaying early.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How are extra payments applied?</div>
+        <div class="faq-a">Extra payments are applied directly to your principal balance, not future interest. This accelerates payoff and reduces the total interest you pay. LendX allows unlimited extra payments at no charge.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Why is APR so high for short-term loans?</div>
+        <div class="faq-a">APR is annualized. A $14/$100 fee for 14 days extrapolates to ~365% APR — but the actual dollar cost is just $112 on an $800 loan. APR is a useful comparison tool but must be interpreted in context of the loan term.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What's the difference between APR and interest rate?</div>
+        <div class="faq-a">The interest rate is the base cost of borrowing. APR (Annual Percentage Rate) includes all fees — origination fees, administration fees — giving a fuller picture of total cost. Always compare APR when shopping loans.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Are these calculators accurate for my LendX loan?</div>
+        <div class="faq-a">These tools use standard amortization and payday loan formulas. Your actual loan agreement will govern exact amounts. Apply to get a precise, personalized offer with guaranteed rates — no credit impact to check.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="wrap" style="text-align:center;margin-bottom:36px">
+    <div style="display:inline-block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#22c55e;margin-bottom:10px">Real People, Real Stories</div>
+    <h2 style="font-size:1.8rem;font-weight:900;color:var(--ink,#0b1523);margin:0 auto;max-width:600px;line-height:1.25">Canadians choosing LendX Financial.</h2>
+  </div>
+  <div class="wrap">
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-10.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Real people, real approvals, real fast.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-11.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Financial peace of mind, delivered.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-12.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Join thousands of satisfied Canadians.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="page-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <a class="footer-brand" href="index.html">
+        <svg height="28" width="auto" viewBox="0 0 44 44" fill="none" role="img" aria-label="LendX Financial logo">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#14532d"></stop>
+            <stop offset="100%" stop-color="#22c55e"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#4ade80"></stop>
+            <stop offset="60%" stop-color="#16a34a"></stop>
+            <stop offset="100%" stop-color="#166534"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#86efac"></stop>
+            <stop offset="60%" stop-color="#22c55e"></stop>
+            <stop offset="100%" stop-color="#16a34a"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#064E3B"></stop>
+            <stop offset="100%" stop-color="#22c55e"></stop>
+          </linearGradient>
+        </defs>
+        <!-- Upper-left leaf (dark green) -->
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"></path>
+        <!-- Upper-right leaf (bright green) -->
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"></path>
+        <!-- Lower-left leaf (mid green) -->
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"></path>
+        <!-- Lower-right leaf (deep green) -->
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"></path>
+        </svg>
+        <span style="font-weight:800;color:#fff;font-size:.95rem;letter-spacing:-0.02em">LendX Financial</span>
+      </a>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="marketplace.html">Invest</a>
+        <a href="index.html#compliance">Compliance</a>
+        <a href="mailto:hello@lendxfinancial.com">Contact</a>
+      </div>
+      <div class="footer-copy">© 2026 LendX Financial Inc.</div>
+    </div>
+    <div class="footer-legal">
+      <strong style="color:rgba(255,255,255,.3)">Legal Disclaimer:</strong> These calculators are for illustrative purposes only and do not constitute a loan offer, commitment to lend, or financial advice. Actual costs depend on provincial regulations, applicant eligibility, and signed loan agreement terms. LendX Financial Inc. payday lender licence pending under the <em>Payday Loans Act, 2008</em> (S.O. 2008, c. 9, Ontario). <strong style="color:rgba(255,255,255,.3)">Maximum cost of borrowing per $100:</strong> Ontario $14 · BC / AB / NB $15 · MB / SK $17 · NS $19 · PEI $25. Not available in all provinces. © 2026 LendX Financial Inc.
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowmode="open"><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

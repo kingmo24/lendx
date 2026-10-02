@@ -1,0 +1,987 @@
+<!DOCTYPE html><html lang="en" crxlauncher-bridged="" crxlauncher=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+@charset "utf-8";
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+</style><style>
+@charset "utf-8";
+
+
+
+</style><style>
+@charset "utf-8";
+
+:root { --cobalt: #1546c8; --cobalt-2: #0f35a0; --cobalt-light: #eef2ff; --green: #059669; --green-2: #047857; --green-light: #d1fae5; --amber: #f59e0b; --amber-light: #fef3c7; --red: #ef4444; --red-light: #fee2e2; --ink: #111827; --text: #374151; --muted: #6b7280; --border: #e5e7eb; --off: #f9fafb; --white: #ffffff; --font: 'Nunito',-apple-system,sans-serif; --sh: 0 20px 60px rgba(0,0,0,.1); }
+
+*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+html { text-size-adjust: 100%; overflow-x: hidden; }
+
+body { font-family: var(--font); background: var(--white); color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+.wrap { max-width: 1160px; margin: 0px auto; padding: 0px 24px; }
+
+.nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); position: fixed; top: 0px; left: 0px; right: 0px; z-index: 100; padding-top: env(safe-area-inset-top,0px); }
+
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+
+.brand { display: flex; gap: 12px; align-items: center; text-decoration: none; flex-shrink: 0; }
+
+.lx-logo-svg { height: 38px; width: auto; display: block; }
+
+.brand-wordmark { font-family: var(--font); font-weight: 800; font-size: 1.15rem; color: var(--ink); letter-spacing: -0.02em; line-height: 1; }
+
+.brand-wordmark .x-accent { color: var(--cobalt); }
+
+.nav-links { display: flex; gap: 1px; align-items: center; justify-content: center; }
+
+.nav-links a { font-size: 0.8rem; font-weight: 700; color: var(--muted); text-decoration: none; padding: 6px 10px; border-radius: 9px; transition: 0.17s; white-space: nowrap; }
+
+.nav-links a:hover { color: var(--ink); background: var(--off); }
+
+.nav-links a.active { color: var(--cobalt); background: var(--cobalt-light); }
+
+@media (max-width: 1300px) {
+  .nav-links a { font-size: 0.72rem; padding: 5px 8px; }
+  .brand-wordmark { font-size: 0.95rem; }
+  .nav-cta { font-size: 0.8rem; padding: 7px 14px !important; }
+}
+
+.nav-cta { text-decoration: none; background: var(--cobalt) !important; color: rgb(255, 255, 255) !important; padding: 8px 18px !important; border-radius: 10px !important; font-size: 0.84rem !important; font-weight: 800 !important; }
+
+.nav-cta:hover { background: var(--cobalt-2) !important; }
+
+@media (max-width: 1200px) {
+  .nav-links { display: none; }
+}
+
+.hero { background: linear-gradient(135deg, rgb(21, 70, 200) 0%, rgb(15, 53, 160) 50%, rgb(5, 150, 105) 100%); padding: 72px 0px 80px; position: relative; overflow: hidden; }
+
+.hero::before { content: ""; position: absolute; inset: 0px; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+
+.hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.2); color: rgba(255, 255, 255, 0.9); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 14px; border-radius: 99px; margin-bottom: 20px; }
+
+.hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; color: rgb(255, 255, 255); letter-spacing: -0.04em; line-height: 1.08; margin-bottom: 16px; }
+
+.hero h1 span { color: rgb(110, 231, 183); }
+
+.hero-sub { font-size: 1.05rem; color: rgba(255, 255, 255, 0.85); max-width: 560px; line-height: 1.6; margin-bottom: 32px; }
+
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.btn-hero-p { background: rgb(255, 255, 255); color: var(--cobalt); font-family: var(--font); font-size: 0.95rem; font-weight: 900; padding: 14px 28px; border-radius: 14px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; text-decoration: none; transition: 0.17s; display: inline-block; }
+
+.btn-hero-p:hover { background: rgb(224, 231, 255); transform: translateY(-2px); }
+
+.btn-hero-s { background: transparent; color: rgb(255, 255, 255); font-family: var(--font); font-size: 0.95rem; font-weight: 800; padding: 14px 24px; border-radius: 14px; border: 1.5px solid rgba(255, 255, 255, 0.35); cursor: pointer; text-decoration: none; transition: 0.17s; display: inline-block; }
+
+.btn-hero-s:hover { background: rgba(255, 255, 255, 0.1); }
+
+.hero-trust { display: flex; gap: 24px; margin-top: 40px; flex-wrap: wrap; }
+
+.hero-trust-item { display: flex; align-items: center; gap: 8px; color: rgba(255, 255, 255, 0.8); font-size: 0.82rem; font-weight: 700; }
+
+.hero-trust-item svg { width: 16px; height: 16px; stroke: rgba(255, 255, 255, 0.8); }
+
+.stats-bar { background: var(--ink); padding: 20px 0px; }
+
+.stats-row { display: flex; gap: 0px; justify-content: center; flex-wrap: wrap; }
+
+.stat-item { text-align: center; padding: 8px 32px; border-right: 1px solid rgba(255, 255, 255, 0.1); }
+
+.stat-item:last-child { border-right-width: medium; border-right-style: none; border-right-color: currentcolor; }
+
+.stat-num { font-size: 1.6rem; font-weight: 900; color: rgb(255, 255, 255); letter-spacing: -0.03em; }
+
+.stat-lbl { font-size: 0.7rem; font-weight: 700; color: rgba(255, 255, 255, 0.5); text-transform: uppercase; letter-spacing: 0.07em; margin-top: 2px; }
+
+.section { padding: 72px 0px; }
+
+.section-bg { background: var(--off); }
+
+.eyebrow { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cobalt); margin-bottom: 10px; }
+
+.section-title { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 900; color: var(--ink); letter-spacing: -0.03em; margin-bottom: 10px; }
+
+.section-sub { font-size: 0.95rem; color: var(--muted); max-width: 540px; line-height: 1.6; margin-bottom: 36px; }
+
+.matrix-wrap { overflow-x: auto; border-radius: 18px; border: 1.5px solid var(--border); box-shadow: var(--sh); margin-top: 24px; }
+
+.rate-table { width: 100%; border-collapse: collapse; min-width: 580px; }
+
+.rate-table thead tr { background: var(--cobalt); }
+
+.rate-table thead th { color: rgb(255, 255, 255); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 14px 16px; text-align: center; }
+
+.rate-table thead th:first-child { text-align: left; border-radius: 0px; }
+
+.rate-table tbody tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
+
+.rate-table tbody tr:hover { background: rgb(240, 244, 255); }
+
+.rate-table tbody tr:last-child { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.rate-table tbody td { padding: 13px 16px; font-size: 0.85rem; color: var(--text); text-align: center; font-weight: 600; }
+
+.rate-table tbody td:first-child { text-align: left; font-weight: 800; color: var(--ink); background: var(--off); }
+
+.rate-table .fee-cell { font-weight: 900; color: var(--cobalt); }
+
+.rate-table .net-cell { font-weight: 900; color: var(--green); }
+
+.rate-table .highlight { background: rgb(240, 244, 255) !important; }
+
+.matrix-legend { display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap; }
+
+.ml-item { display: flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 700; color: var(--muted); }
+
+.ml-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+.apr-box { background: var(--amber-light); border: 1.5px solid rgb(252, 211, 77); border-radius: 14px; padding: 18px 20px; margin-top: 20px; font-size: 0.8rem; color: rgb(146, 64, 14); line-height: 1.6; }
+
+.apr-box strong { color: rgb(120, 53, 15); }
+
+.grade-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 28px; }
+
+.grade-card { border-radius: 18px; padding: 24px; border: 2px solid transparent; position: relative; overflow: hidden; transition: 0.2s; }
+
+.grade-card:hover { transform: translateY(-3px); box-shadow: rgba(0, 0, 0, 0.12) 0px 12px 40px; }
+
+.grade-card.a { background: linear-gradient(135deg, rgb(209, 250, 229), rgb(236, 253, 245)); border-color: rgb(110, 231, 183); }
+
+.grade-card.b { background: linear-gradient(135deg, rgb(224, 231, 255), rgb(238, 242, 255)); border-color: rgb(165, 180, 252); }
+
+.grade-card.c { background: linear-gradient(135deg, rgb(254, 243, 199), rgb(255, 251, 235)); border-color: rgb(252, 211, 77); }
+
+.grade-badge { font-size: 1.8rem; font-weight: 900; line-height: 1; margin-bottom: 8px; }
+
+.grade-badge.a { color: var(--green); }
+
+.grade-badge.b { color: var(--cobalt); }
+
+.grade-badge.c { color: var(--amber); }
+
+.grade-title { font-size: 0.9rem; font-weight: 900; color: var(--ink); margin-bottom: 6px; }
+
+.grade-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.5; margin-bottom: 12px; }
+
+.grade-rate { font-size: 1.4rem; font-weight: 900; letter-spacing: -0.02em; }
+
+.grade-rate.a { color: var(--green); }
+
+.grade-rate.b { color: var(--cobalt); }
+
+.grade-rate.c { color: var(--amber); }
+
+.grade-rate-lbl { font-size: 0.68rem; color: var(--muted); font-weight: 700; }
+
+.grade-criteria { list-style: none; margin-top: 12px; }
+
+.grade-criteria li { font-size: 0.75rem; color: var(--text); padding: 2px 0px; display: flex; align-items: center; gap: 6px; }
+
+.calc-section { background: linear-gradient(135deg, rgb(240, 244, 255), rgb(232, 245, 233)); padding: 72px 0px; }
+
+.calc-card { background: var(--white); border-radius: 24px; border: 1px solid var(--border); box-shadow: var(--sh); padding: 36px; max-width: 680px; margin: 0px auto; }
+
+.calc-title { font-size: 1.4rem; font-weight: 900; color: var(--ink); margin-bottom: 6px; letter-spacing: -0.025em; }
+
+.calc-sub { font-size: 0.88rem; color: var(--muted); margin-bottom: 24px; }
+
+.calc-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+
+.calc-field label { display: block; font-size: 0.8rem; font-weight: 800; color: var(--ink); margin-bottom: 6px; letter-spacing: 0.02em; }
+
+.calc-field input, .calc-field select { width: 100%; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: 10px; font-family: var(--font); font-size: 0.9rem; font-weight: 700; color: var(--ink); background: rgb(255, 255, 255); outline: none; transition: border-color 0.17s; }
+
+.calc-field input:focus, .calc-field select:focus { border-color: var(--cobalt); }
+
+.calc-result { background: var(--off); border-radius: 14px; padding: 20px; margin-top: 4px; border: 1.5px solid var(--border); }
+
+.cr-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0px; font-size: 0.88rem; border-bottom: 1px solid var(--border); }
+
+.cr-row:last-child { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; margin-top: 4px; padding-top: 12px; }
+
+.cr-key { color: var(--muted); font-weight: 600; }
+
+.cr-val { font-weight: 800; color: var(--ink); }
+
+.cr-fee { color: var(--amber); font-weight: 900; }
+
+.cr-net { color: var(--green); font-weight: 900; font-size: 1.15rem; }
+
+.cr-apr { color: var(--muted); font-size: 0.75rem; }
+
+.form-section { padding: 80px 0px; background: var(--ink); }
+
+.form-card { background: var(--white); border-radius: 24px; padding: 40px; max-width: 760px; margin: 0px auto; box-shadow: rgba(0, 0, 0, 0.25) 0px 40px 100px; }
+
+.form-card h2 { font-size: 1.5rem; font-weight: 900; color: var(--ink); margin-bottom: 6px; letter-spacing: -0.025em; }
+
+.form-card > p { font-size: 0.88rem; color: var(--muted); margin-bottom: 28px; }
+
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+@media (max-width: 560px) {
+  .form-grid { grid-template-columns: 1fr; }
+}
+
+.form-full { grid-column: 1 / -1; }
+
+.fgroup { display: flex; flex-direction: column; gap: 5px; }
+
+.fgroup label { font-size: 0.78rem; font-weight: 800; color: var(--ink); letter-spacing: 0.02em; }
+
+.fgroup input, .fgroup select, .fgroup textarea { padding: 11px 13px; border: 1.5px solid var(--border); border-radius: 10px; font-family: var(--font); font-size: 0.88rem; color: var(--ink); outline: none; transition: border-color 0.17s; }
+
+.fgroup input:focus, .fgroup select:focus, .fgroup textarea:focus { border-color: var(--cobalt); }
+
+.fgroup textarea { resize: vertical; min-height: 80px; }
+
+.fgroup.err input, .fgroup.err select { border-color: var(--red); }
+
+.form-calc-box { background: var(--off); border: 1.5px solid var(--border); border-radius: 14px; padding: 16px; margin: 8px 0px; display: none; }
+
+.fc-row { display: flex; justify-content: space-between; font-size: 0.85rem; padding: 4px 0px; }
+
+.fc-row.total { border-top: 1px solid var(--border); margin-top: 6px; padding-top: 10px; font-weight: 900; font-size: 0.95rem; }
+
+.fc-key { color: var(--muted); }
+
+.fc-val { font-weight: 800; color: var(--ink); }
+
+.fc-fee { color: var(--amber); font-weight: 900; }
+
+.fc-net { color: var(--green); font-weight: 900; font-size: 1.05rem; }
+
+.submit-btn { width: 100%; padding: 15px; background: var(--cobalt); color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 13px; font-family: var(--font); font-size: 0.97rem; font-weight: 900; cursor: pointer; transition: background 0.18s; margin-top: 12px; }
+
+.submit-btn:hover { background: var(--cobalt-2); }
+
+.submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.err-msg { background: var(--red-light); border: 1.5px solid rgb(252, 165, 165); color: rgb(185, 28, 28); font-size: 0.82rem; font-weight: 600; padding: 10px 14px; border-radius: 10px; display: none; margin-bottom: 12px; }
+
+.success-msg { background: var(--green-light); border: 1.5px solid rgb(110, 231, 183); color: rgb(6, 95, 70); padding: 20px; border-radius: 14px; display: none; line-height: 1.7; }
+
+.success-msg h3 { font-size: 1.1rem; font-weight: 900; margin-bottom: 8px; }
+
+.form-note { font-size: 0.7rem; color: var(--muted); text-align: center; margin-top: 10px; line-height: 1.5; }
+
+.disc-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.82rem; }
+
+.disc-table th { background: var(--cobalt); color: rgb(255, 255, 255); padding: 10px 14px; text-align: left; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; }
+
+.disc-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text); }
+
+.disc-table tr:last-child td { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.disc-table tr:nth-child(2n) td { background: var(--off); }
+
+.steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 28px; }
+
+.step-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 18px; padding: 24px; position: relative; }
+
+.step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--cobalt); color: rgb(255, 255, 255); font-size: 0.9rem; font-weight: 900; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+
+.step-title { font-size: 0.95rem; font-weight: 900; color: var(--ink); margin-bottom: 6px; }
+
+.step-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.55; }
+
+.comp-table { width: 100%; border-collapse: collapse; border-radius: 18px; overflow: hidden; box-shadow: var(--sh); }
+
+.comp-table th { background: var(--cobalt); color: rgb(255, 255, 255); padding: 14px 18px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; text-align: center; }
+
+.comp-table th:first-child { text-align: left; }
+
+.comp-table td { padding: 12px 18px; border-bottom: 1px solid var(--border); font-size: 0.85rem; font-weight: 600; text-align: center; color: var(--text); }
+
+.comp-table td:first-child { text-align: left; font-weight: 800; color: var(--ink); }
+
+.comp-table tr:last-child td { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.comp-table tr.lendx-row td { background: rgb(240, 244, 255); font-weight: 900; }
+
+.comp-table tr.lendx-row td:first-child { color: var(--cobalt); }
+
+.tick { color: var(--green); }
+
+.cross { color: var(--red); }
+
+.footer-mini { background: var(--ink); padding: 36px 0px; color: rgba(255, 255, 255, 0.5); font-size: 0.78rem; text-align: center; line-height: 2; }
+
+.footer-mini a { color: rgba(255, 255, 255, 0.6); text-decoration: none; margin: 0px 10px; }
+
+.footer-mini a:hover { color: rgb(255, 255, 255); }
+
+.ham-btn { display: none; flex-direction: column; gap: 5px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; padding: 8px; border-radius: 8px; }
+
+.ham-btn span { display: block; width: 22px; height: 2px; background: rgb(255, 255, 255); border-radius: 2px; transition: 0.2s; }
+
+.ham-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+
+.ham-btn.open span:nth-child(2) { opacity: 0; }
+
+.ham-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mob-drawer { display: none; position: fixed; top: calc(64px + env(safe-area-inset-top,0px)); left: 0px; right: 0px; background: rgb(255, 255, 255); border-bottom: 1px solid var(--border); z-index: 99; padding: 12px 20px 20px; flex-direction: column; gap: 4px; box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px; animation: 0.18s ease 0s 1 normal none running slideDown; }
+
+.mob-drawer.open { display: flex; }
+
+.mob-drawer a { display: block; padding: 11px 14px; border-radius: 10px; font-size: 0.9rem; font-weight: 700; color: rgb(55, 65, 81); text-decoration: none; }
+
+.mob-drawer a:hover, .mob-drawer a:active { background: rgb(249, 250, 251); color: var(--cobalt); }
+
+.mob-drawer .drawer-cta { margin-top: 8px; background: var(--cobalt); text-align: center; border-radius: 12px; padding: 13px; font-size: 0.95rem; color: rgb(255, 255, 255) !important; }
+
+.mob-drawer-overlay { display: none; position: fixed; inset: 0px; z-index: 98; }
+
+.mob-drawer-overlay.open { display: block; }
+
+@keyframes slideDown { 
+  0% { opacity: 0; transform: translateY(-6px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+@media (max-width: 1200px) {
+  .nav-links { display: none; }
+  .ham-btn { display: flex; }
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 48px 0px 56px; }
+  .section { padding: 48px 0px; }
+  .calc-row { grid-template-columns: 1fr; }
+  .stat-item { padding: 8px 16px; }
+  .hero h1 { font-size: clamp(1.8rem, 7vw, 2.4rem); }
+  .hero-sub { font-size: 0.95rem; }
+  .hero-ctas { flex-direction: column; align-items: stretch; }
+  .btn-hero-p, .btn-hero-s { text-align: center; }
+  .wrap { padding: 0px 16px; }
+  .feature-grid { grid-template-columns: 1fr; }
+}
+
+body { padding-top: calc(64px + env(safe-area-inset-top,0px)) !important; }
+
+.gallery { padding: 72px 0px; }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+@media (max-width: 860px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 540px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+}
+
+.gallery-item { border-radius: 22px; overflow: hidden; box-shadow: rgba(11, 21, 35, 0.06) 0px 2px 12px; transition: 0.3s; position: relative; }
+
+.gallery-item:hover { box-shadow: rgba(11, 21, 35, 0.1) 0px 8px 40px; transform: translateY(-4px); }
+
+.gallery-item img { width: 100%; height: 260px; object-fit: cover; display: block; }
+
+@media (max-width: 600px) {
+  .gallery-item img { height: 200px; }
+}
+
+.gallery-caption { position: absolute; bottom: 0px; left: 0px; right: 0px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); padding: 40px 16px 14px; color: rgb(255, 255, 255); font-size: 0.82rem; font-weight: 700; }
+
+</style>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<title>Payday Loans — LendX Financial | Up to $1,500 Same Day</title>
+<meta name="description" content="LendX payday loans from $300–$1,500. Ontario regulated at $14 per $100. Apply online, get approved in minutes, funds same day via Interac e-Transfer.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+<style id="lx-nav-css">
+/* ── LendX canonical nav ── */
+.nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.nav-inner{display:flex;align-items:center;gap:1rem;padding:.75rem 1.25rem;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:.55rem;text-decoration:none;flex-shrink:0}
+.lx-logo-svg{width:36px;height:36px;flex-shrink:0}
+.brand-wordmark{font-family:var(--font,'Nunito',sans-serif);font-size:1.15rem;font-weight:800;color:#111827;letter-spacing:-.02em}
+.brand-wordmark .x-accent{color:#059669}
+.nav-center{display:flex;align-items:center;gap:.15rem;flex:1;justify-content:center}
+.nav-center a{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.38rem .65rem;border-radius:6px;white-space:nowrap;transition:background .15s,color .15s}
+.nav-center a:hover{background:#ecfdf5;color:#059669}
+.nav-center a.active{background:#d1fae5;color:#059669}
+.nav-right{display:flex;align-items:center;gap:.55rem;flex-shrink:0}
+.n-btn{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:700;padding:.42rem .9rem;border-radius:8px;text-decoration:none;cursor:pointer;transition:all .15s}
+.n-outline{border:1.5px solid #059669;color:#059669;background:transparent}
+.n-outline:hover{background:#ecfdf5}
+.n-solid{background:#059669;color:#fff;border:1.5px solid #059669}
+.n-solid:hover{background:#047857}
+.ham-btn{display:none;background:none;border:none;cursor:pointer;padding:.3rem;color:#111827}
+.nav-drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1000}
+.nav-drawer-overlay.open{display:block}
+.nav-drawer{position:fixed;top:0;right:-280px;width:260px;height:100%;background:#fff;z-index:1001;padding:1.5rem 1.25rem;display:flex;flex-direction:column;gap:.5rem;box-shadow:-4px 0 20px rgba(0,0,0,.12);transition:right .28s ease}
+.nav-drawer.open{right:0}
+.nav-drawer a{font-family:var(--font,'Nunito',sans-serif);font-size:.95rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.55rem .75rem;border-radius:8px;transition:background .15s}
+.nav-drawer a:hover{background:#ecfdf5;color:#059669}
+.drawer-cta{margin-top:auto!important;background:#059669!important;color:#fff!important;text-align:center;padding:.7rem 1rem!important;border-radius:10px!important}
+.drawer-cta:hover{background:#047857!important}
+@media(max-width:900px){.nav-center{display:none}.ham-btn{display:flex}}
+@media(max-width:540px){.n-outline{display:none}}
+</style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1334.0" data-gr-ext-installed="">
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <svg class="lx-logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LendX Financial logo">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#14532d"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4ade80"/><stop offset="60%" stop-color="#16a34a"/><stop offset="100%" stop-color="#166534"/></linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#86efac"/><stop offset="60%" stop-color="#22c55e"/><stop offset="100%" stop-color="#16a34a"/></linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#064E3B"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+        </defs>
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"/>
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"/>
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"/>
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"/>
+      </svg>
+      <span class="brand-wordmark">Lend<span class="x-accent">X</span> Financial</span>
+    </a>
+    <div class="nav-center">
+      <a href="index.html" >Personal</a>
+      <a href="business.html" >Business</a>
+      <a href="marketplace.html" >Marketplace</a>
+      <a href="payday.html" class="active">Payday Loans</a>
+      <a href="cheque-cashing.html" >Cheque Cashing</a>
+      <a href="private-mortgage.html" >Private Mortgage</a>
+    </div>
+    <div class="nav-right">
+      <a class="n-btn n-outline" href="tel:+16472003526">647-200-3526</a>
+      <a class="n-btn n-solid" href="#apply">Apply Now →</a>
+      <button class="ham-btn" onclick="toggleMenu()" aria-label="Menu">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="nav-drawer-overlay" id="nav-overlay" onclick="toggleMenu()"></div>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="index.html" >Personal Loans</a>
+  <a href="business.html" >Business Financing</a>
+  <a href="marketplace.html" >Marketplace</a>
+  <a href="payday.html" class="active">Payday Loans</a>
+  <a href="cheque-cashing.html" >Cheque Cashing</a>
+  <a href="private-mortgage.html" >Private Mortgage</a>
+  <a href="calculator.html">Calculator</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About Us</a>
+  <a class="drawer-cta" href="#apply" onclick="toggleMenu()">Apply Now →</a>
+</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow">🇨🇦 Ontario Regulated · $14 per $100 · Same Day Funding</div>
+    <h1>Payday Loans<br><span>$300 – $1,500</span></h1>
+    <p class="hero-sub">Get approved in minutes. Funds via Interac e-Transfer same day. Ontario regulated, transparent fees — no hidden charges ever.</p>
+    <div class="hero-btns">
+      <a class="btn-hero-p" href="payday.html#apply">Apply in 3 Minutes →</a>
+      <a class="btn-hero-s" href="payday.html#matrix">See Rate Matrix ↓</a>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-trust-item"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"></path></svg>No credit check required</div>
+      <div class="hero-trust-item"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"></path></svg>Ontario Payday Loans Act compliant</div>
+      <div class="hero-trust-item"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"></path></svg>Funds in as little as 15 minutes</div>
+      <div class="hero-trust-item"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"></path></svg>Max $14 per $100 borrowed</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="wrap">
+    <div class="stats-row">
+      <div class="stat-item"><div class="stat-num">$300–$1,500</div><div class="stat-lbl">Loan Range</div></div>
+      <div class="stat-item"><div class="stat-num">$14/$100</div><div class="stat-lbl">Max Fee (Ontario)</div></div>
+      <div class="stat-item"><div class="stat-num">62 days</div><div class="stat-lbl">Max Term</div></div>
+      <div class="stat-item"><div class="stat-num">15 min</div><div class="stat-lbl">Avg. Approval</div></div>
+      <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-lbl">Apply Online</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- RATE MATRIX -->
+<section id="matrix" class="section">
+  <div class="wrap">
+    <div class="eyebrow">Lending Rate Matrix</div>
+    <h2 class="section-title">Full Payday Loan Rate Table</h2>
+    <p class="section-sub">Ontario regulated: maximum $14 per $100 borrowed. All fees shown below. You always know exactly what you owe before you sign.</p>
+
+    <!-- MATRIX TABLE -->
+    <div class="matrix-wrap">
+      <table class="rate-table">
+        <thead>
+          <tr>
+            <th>Loan Amount</th>
+            <th>7 Days</th>
+            <th>14 Days</th>
+            <th>21 Days</th>
+            <th>30 Days</th>
+            <th>45 Days</th>
+            <th>62 Days</th>
+          </tr>
+        </thead>
+        <tbody id="matrix-tbody"><tr><td>$300.00</td><td class="fee-cell" title="Fee: $42.00 | Repay: $342.00 | APR: 730%">$42.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 730%</small></td><td class="fee-cell" title="Fee: $42.00 | Repay: $342.00 | APR: 365%">$42.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 365%</small></td><td class="fee-cell" title="Fee: $42.00 | Repay: $342.00 | APR: 243%">$42.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 243%</small></td><td class="fee-cell" title="Fee: $42.00 | Repay: $342.00 | APR: 170%">$42.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 170%</small></td><td class="fee-cell" title="Fee: $42.00 | Repay: $342.00 | APR: 114%">$42.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 114%</small></td><td class="fee-cell" title="Fee: $42.00 | Repay: $342.00 | APR: 82%">$42.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 82%</small></td></tr><tr><td>$400.00</td><td class="fee-cell" title="Fee: $56.00 | Repay: $456.00 | APR: 730%">$56.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 730%</small></td><td class="fee-cell" title="Fee: $56.00 | Repay: $456.00 | APR: 365%">$56.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 365%</small></td><td class="fee-cell" title="Fee: $56.00 | Repay: $456.00 | APR: 243%">$56.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 243%</small></td><td class="fee-cell" title="Fee: $56.00 | Repay: $456.00 | APR: 170%">$56.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 170%</small></td><td class="fee-cell" title="Fee: $56.00 | Repay: $456.00 | APR: 114%">$56.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 114%</small></td><td class="fee-cell" title="Fee: $56.00 | Repay: $456.00 | APR: 82%">$56.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 82%</small></td></tr><tr class="highlight"><td>$500.00</td><td class="fee-cell" title="Fee: $70.00 | Repay: $570.00 | APR: 730%">$70.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 730%</small></td><td class="fee-cell" title="Fee: $70.00 | Repay: $570.00 | APR: 365%">$70.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 365%</small></td><td class="fee-cell" title="Fee: $70.00 | Repay: $570.00 | APR: 243%">$70.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 243%</small></td><td class="fee-cell" title="Fee: $70.00 | Repay: $570.00 | APR: 170%">$70.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 170%</small></td><td class="fee-cell" title="Fee: $70.00 | Repay: $570.00 | APR: 114%">$70.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 114%</small></td><td class="fee-cell" title="Fee: $70.00 | Repay: $570.00 | APR: 82%">$70.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 82%</small></td></tr><tr><td>$600.00</td><td class="fee-cell" title="Fee: $84.00 | Repay: $684.00 | APR: 730%">$84.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 730%</small></td><td class="fee-cell" title="Fee: $84.00 | Repay: $684.00 | APR: 365%">$84.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 365%</small></td><td class="fee-cell" title="Fee: $84.00 | Repay: $684.00 | APR: 243%">$84.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 243%</small></td><td class="fee-cell" title="Fee: $84.00 | Repay: $684.00 | APR: 170%">$84.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 170%</small></td><td class="fee-cell" title="Fee: $84.00 | Repay: $684.00 | APR: 114%">$84.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 114%</small></td><td class="fee-cell" title="Fee: $84.00 | Repay: $684.00 | APR: 82%">$84.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 82%</small></td></tr><tr><td>$700.00</td><td class="fee-cell" title="Fee: $98.00 | Repay: $798.00 | APR: 730%">$98.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 730%</small></td><td class="fee-cell" title="Fee: $98.00 | Repay: $798.00 | APR: 365%">$98.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 365%</small></td><td class="fee-cell" title="Fee: $98.00 | Repay: $798.00 | APR: 243%">$98.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 243%</small></td><td class="fee-cell" title="Fee: $98.00 | Repay: $798.00 | APR: 170%">$98.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 170%</small></td><td class="fee-cell" title="Fee: $98.00 | Repay: $798.00 | APR: 114%">$98.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 114%</small></td><td class="fee-cell" title="Fee: $98.00 | Repay: $798.00 | APR: 82%">$98.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 82%</small></td></tr><tr><td>$800.00</td><td class="fee-cell" title="Fee: $112.00 | Repay: $912.00 | APR: 730%">$112.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 730%</small></td><td class="fee-cell" title="Fee: $112.00 | Repay: $912.00 | APR: 365%">$112.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 365%</small></td><td class="fee-cell" title="Fee: $112.00 | Repay: $912.00 | APR: 243%">$112.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 243%</small></td><td class="fee-cell" title="Fee: $112.00 | Repay: $912.00 | APR: 170%">$112.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 170%</small></td><td class="fee-cell" title="Fee: $112.00 | Repay: $912.00 | APR: 114%">$112.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 114%</small></td><td class="fee-cell" title="Fee: $112.00 | Repay: $912.00 | APR: 82%">$112.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 82%</small></td></tr><tr><td>$900.00</td><td class="fee-cell" title="Fee: $126.00 | Repay: $1,026.00 | APR: 730%">$126.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 730%</small></td><td class="fee-cell" title="Fee: $126.00 | Repay: $1,026.00 | APR: 365%">$126.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 365%</small></td><td class="fee-cell" title="Fee: $126.00 | Repay: $1,026.00 | APR: 243%">$126.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 243%</small></td><td class="fee-cell" title="Fee: $126.00 | Repay: $1,026.00 | APR: 170%">$126.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 170%</small></td><td class="fee-cell" title="Fee: $126.00 | Repay: $1,026.00 | APR: 114%">$126.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 114%</small></td><td class="fee-cell" title="Fee: $126.00 | Repay: $1,026.00 | APR: 82%">$126.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 82%</small></td></tr><tr><td>$1,000.00</td><td class="fee-cell" title="Fee: $140.00 | Repay: $1,140.00 | APR: 730%">$140.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 730%</small></td><td class="fee-cell" title="Fee: $140.00 | Repay: $1,140.00 | APR: 365%">$140.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 365%</small></td><td class="fee-cell" title="Fee: $140.00 | Repay: $1,140.00 | APR: 243%">$140.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 243%</small></td><td class="fee-cell" title="Fee: $140.00 | Repay: $1,140.00 | APR: 170%">$140.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 170%</small></td><td class="fee-cell" title="Fee: $140.00 | Repay: $1,140.00 | APR: 114%">$140.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 114%</small></td><td class="fee-cell" title="Fee: $140.00 | Repay: $1,140.00 | APR: 82%">$140.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 82%</small></td></tr><tr><td>$1,200.00</td><td class="fee-cell" title="Fee: $168.00 | Repay: $1,368.00 | APR: 730%">$168.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 730%</small></td><td class="fee-cell" title="Fee: $168.00 | Repay: $1,368.00 | APR: 365%">$168.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 365%</small></td><td class="fee-cell" title="Fee: $168.00 | Repay: $1,368.00 | APR: 243%">$168.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 243%</small></td><td class="fee-cell" title="Fee: $168.00 | Repay: $1,368.00 | APR: 170%">$168.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 170%</small></td><td class="fee-cell" title="Fee: $168.00 | Repay: $1,368.00 | APR: 114%">$168.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 114%</small></td><td class="fee-cell" title="Fee: $168.00 | Repay: $1,368.00 | APR: 82%">$168.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 82%</small></td></tr><tr><td>$1,500.00</td><td class="fee-cell" title="Fee: $210.00 | Repay: $1,710.00 | APR: 730%">$210.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 730%</small></td><td class="fee-cell" title="Fee: $210.00 | Repay: $1,710.00 | APR: 365%">$210.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 365%</small></td><td class="fee-cell" title="Fee: $210.00 | Repay: $1,710.00 | APR: 243%">$210.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 243%</small></td><td class="fee-cell" title="Fee: $210.00 | Repay: $1,710.00 | APR: 170%">$210.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 170%</small></td><td class="fee-cell" title="Fee: $210.00 | Repay: $1,710.00 | APR: 114%">$210.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 114%</small></td><td class="fee-cell" title="Fee: $210.00 | Repay: $1,710.00 | APR: 82%">$210.00<br><small style="font-size:.68rem;color:var(--muted);font-weight:600">APR 82%</small></td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="matrix-legend">
+      <div class="ml-item"><div class="ml-dot" style="background:var(--cobalt)"></div> Fee charged (fixed at $14/$100)</div>
+      <div class="ml-item"><div class="ml-dot" style="background:var(--green)"></div> Net amount you receive</div>
+      <div class="ml-item"><div class="ml-dot" style="background:var(--amber)"></div> Total repayment due on payday</div>
+    </div>
+
+    <div class="apr-box">
+      <strong>⚠️ Ontario Payday Loans Act Disclosure:</strong> The maximum cost of borrowing under the Payday Loans Act, 2008 is <strong>$14 per $100</strong> borrowed. On a $500 loan for 14 days, the cost of borrowing is $70.00, the annual percentage rate (APR) is <strong>365%</strong>. If you cannot repay your loan on time, contact us immediately. Payday loans are high-cost borrowing. Consider all alternatives. A payday loan is not appropriate for long-term financial needs.
+    </div>
+  </div>
+</section>
+
+<!-- LOAN GRADES -->
+<section class="section-bg section">
+  <div class="wrap">
+    <div class="eyebrow">Borrower Grades</div>
+    <h2 class="section-title">How we grade your application</h2>
+    <p class="section-sub">Our risk-based system assigns your application a grade based on income, employment, and banking history. Your grade determines your loan limit — not your fee rate.</p>
+    <div class="grade-grid">
+      <div class="grade-card a">
+        <div class="grade-badge a">A</div>
+        <div class="grade-title">Prime Borrower</div>
+        <div class="grade-desc">Steady employment, verified income, clean banking history, prior repayment record.</div>
+        <div class="grade-rate a">Up to $1,500</div>
+        <div class="grade-rate-lbl">Maximum loan amount</div>
+        <ul class="grade-criteria">
+          <li>✅ Employed 3+ months</li>
+          <li>✅ Income $2,000+/month</li>
+          <li>✅ No NSF in 90 days</li>
+          <li>✅ Prior LendX loan repaid</li>
+        </ul>
+      </div>
+      <div class="grade-card b">
+        <div class="grade-badge b">B</div>
+        <div class="grade-title">Standard Borrower</div>
+        <div class="grade-desc">Regular income source, acceptable banking activity, first-time or limited history.</div>
+        <div class="grade-rate b">Up to $1,000</div>
+        <div class="grade-rate-lbl">Maximum loan amount</div>
+        <ul class="grade-criteria">
+          <li>✅ Any income source</li>
+          <li>✅ Income $1,200+/month</li>
+          <li>⚠️ 1–2 NSF permitted</li>
+          <li>✅ First-time welcome</li>
+        </ul>
+      </div>
+      <div class="grade-card c">
+        <div class="grade-badge c">C</div>
+        <div class="grade-title">Introductory Borrower</div>
+        <div class="grade-desc">New applicant or limited income verification. Starter loan to build relationship.</div>
+        <div class="grade-rate c">Up to $500</div>
+        <div class="grade-rate-lbl">Maximum loan amount</div>
+        <ul class="grade-criteria">
+          <li>✅ ODSP / OW / EI accepted</li>
+          <li>✅ Income $800+/month</li>
+          <li>⚠️ Higher NSF acceptable</li>
+          <li>✅ No prior LendX needed</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- COMPARISON TABLE -->
+    <h3 style="font-size:1.1rem;font-weight:900;color:var(--ink);margin:48px 0 20px;letter-spacing:-.02em">LendX vs. Other Payday Lenders</h3>
+    <div style="overflow-x:auto">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th style="background:#0f35a0">LendX</th>
+            <th>Cash Money</th>
+            <th>Money Mart</th>
+            <th>iCash</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="lendx-row"><td>Cost per $100</td><td>$14.00</td><td>$14.00</td><td>$14.00</td><td>$14.00</td></tr>
+          <tr><td>Max loan (Ontario)</td><td class="tick">$1,500</td><td class="tick">$1,500</td><td class="tick">$1,500</td><td class="tick">$1,500</td></tr>
+          <tr class="lendx-row"><td>Same-day Interac</td><td class="tick">✅ Yes</td><td class="tick">✅ Yes</td><td class="tick">✅ Yes</td><td class="tick">✅ Yes</td></tr>
+          <tr><td>24/7 online apply</td><td class="tick">✅ Yes</td><td class="cross">❌ No</td><td class="tick">✅ Yes</td><td class="tick">✅ Yes</td></tr>
+          <tr class="lendx-row"><td>No credit check</td><td class="tick">✅ Yes</td><td class="cross">❌ No</td><td class="cross">❌ No</td><td class="tick">✅ Yes</td></tr>
+          <tr><td>P2P investor-funded</td><td class="tick">✅ Unique</td><td class="cross">❌ No</td><td class="cross">❌ No</td><td class="cross">❌ No</td></tr>
+          <tr class="lendx-row"><td>Legal collections support</td><td class="tick">✅ NEO Legal</td><td class="cross">❌ No</td><td class="cross">❌ No</td><td class="cross">❌ No</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- LIVE CALCULATOR -->
+<section class="calc-section">
+  <div class="wrap">
+    <div class="eyebrow" style="text-align:center;display:block">Live Calculator</div>
+    <h2 class="section-title" style="text-align:center">Calculate your exact cost</h2>
+    <div class="calc-card">
+      <div class="calc-title">Payday Loan Cost Calculator</div>
+      <div class="calc-sub">Ontario regulated · $14 per $100 · No hidden fees</div>
+      <div class="calc-row">
+        <div class="calc-field">
+          <label>Loan Amount</label>
+          <select id="calc-amount">
+            <option value="300">$300</option>
+            <option value="400">$400</option>
+            <option value="500" selected="">$500</option>
+            <option value="600">$600</option>
+            <option value="700">$700</option>
+            <option value="800">$800</option>
+            <option value="900">$900</option>
+            <option value="1000">$1,000</option>
+            <option value="1100">$1,100</option>
+            <option value="1200">$1,200</option>
+            <option value="1300">$1,300</option>
+            <option value="1400">$1,400</option>
+            <option value="1500">$1,500</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label>Loan Term</label>
+          <select id="calc-term">
+            <option value="7">7 days</option>
+            <option value="14" selected="">14 days</option>
+            <option value="21">21 days</option>
+            <option value="30">30 days</option>
+            <option value="45">45 days</option>
+            <option value="62">62 days</option>
+          </select>
+        </div>
+      </div>
+      <div class="calc-result" id="calc-result">
+        <div class="cr-row"><span class="cr-key">Loan Amount</span><span class="cr-val" id="cr-principal">$500.00</span></div>
+        <div class="cr-row"><span class="cr-key">LendX Fee ($14 per $100)</span><span class="cr-fee" id="cr-fee">$70.00</span></div>
+        <div class="cr-row"><span class="cr-key">LendX Revenue (origination 3%)</span><span class="cr-val" id="cr-revenue" style="color:var(--cobalt)">$15.00</span></div>
+        <div class="cr-row"><span class="cr-key">Investor Yield (funded via P2P)</span><span class="cr-val" id="cr-yield" style="color:var(--green)">$55.00</span></div>
+        <div class="cr-row"><span class="cr-key">Repay on Payday</span><span class="cr-net" id="cr-repay">$570.00</span></div>
+        <div class="cr-row"><span class="cr-key cr-apr" id="cr-apr-lbl">APR (14-day term)</span><span class="cr-val cr-apr" id="cr-apr">365%</span></div>
+      </div>
+      <a href="payday.html#apply" class="submit-btn" style="display:block;text-align:center;text-decoration:none;margin-top:16px">Apply for $500.00 — Get Approved in Minutes →</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Process</div>
+    <h2 class="section-title">How it works</h2>
+    <p class="section-sub">Apply online in 3 minutes. No branch visit. Funds via Interac e-Transfer — usually within 15 minutes of approval.</p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <div class="step-title">Apply online (3 min)</div>
+        <div class="step-desc">Fill out the short application form below. Tell us your income, employment, and the amount you need. No credit check — just income verification.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div class="step-title">Instant decision</div>
+        <div class="step-desc">Our system reviews your application and provides an instant or near-instant decision. Most applicants are approved within 5–15 minutes during business hours.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div class="step-title">Review &amp; e-sign</div>
+        <div class="step-desc">Review your loan agreement with all fees clearly disclosed as required under the Ontario Payday Loans Act. Sign electronically. No surprises.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <div class="step-title">Funds deposited</div>
+        <div class="step-desc">Receive your loan via Interac e-Transfer to your email or phone number. Funds typically arrive within 15 minutes. Repay on your next payday via EFT.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ONTARIO DISCLOSURE TABLE -->
+<section class="section-bg section">
+  <div class="wrap">
+    <div class="eyebrow">Regulatory Disclosure</div>
+    <h2 class="section-title">Ontario Payday Loans Act — Required Disclosures</h2>
+    <p class="section-sub">As required under the Payday Loans Act, 2008 (Ontario), LendX Financial Inc. discloses the following information for all payday loans.</p>
+    <table class="disc-table">
+      <thead>
+        <tr><th>Disclosure Item</th><th>Details</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Maximum cost of borrowing</td><td><strong>$14.00 per $100 borrowed</strong> — the regulated maximum in Ontario</td></tr>
+        <tr><td>Default charges</td><td>One NSF fee of $20.00 if your repayment EFT is returned. No ongoing interest accrual on defaulted payday loans.</td></tr>
+        <tr><td>Rollover / extension</td><td>Under Ontario law, you may NOT roll over a payday loan. A new loan can only be issued after the prior loan is repaid in full.</td></tr>
+        <tr><td>Cancellation rights</td><td>You may cancel this loan agreement within <strong>2 business days</strong> of signing by returning the full principal amount to LendX Financial.</td></tr>
+        <tr><td>Repayment method</td><td>Pre-authorized debit (EFT) from your bank account on your next scheduled payday — or the agreed repayment date.</td></tr>
+        <tr><td>Governing law</td><td>Province of Ontario, Canada. Payday Loans Act, 2008, S.O. 2008, c. 9.</td></tr>
+        <tr><td>LendX licence</td><td>Payday lending licence application pending with the Ontario Ministry of Public and Business Service Delivery (MPBSD).</td></tr>
+        <tr><td>Complaints</td><td>Ontario Consumer Protection Branch: 1-800-889-9768 or consumerprotection.go.gov.on.ca</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- APPLICATION FORM -->
+<section id="apply" class="form-section">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:36px">
+      <div class="eyebrow" style="color:rgba(255,255,255,.5)">Apply Now</div>
+      <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;color:#fff;letter-spacing:-.04em">Get your payday loan today</h2>
+      <p style="color:rgba(255,255,255,.6);margin-top:8px;font-size:.9rem">Takes 3 minutes · No credit check · Same-day Interac e-Transfer</p>
+    </div>
+    <div class="form-card">
+      <h2>Payday Loan Application</h2>
+      <p>Ontario applicants only. All information is kept strictly confidential under PIPEDA.</p>
+
+      <div class="err-msg" id="form-err"></div>
+      <div class="success-msg" id="form-success"></div>
+
+      <form id="payday-form">
+        <div class="form-grid">
+          <div class="fgroup">
+            <label>First Name *</label>
+            <input type="text" name="first_name" placeholder="Mohammed" required="">
+          </div>
+          <div class="fgroup">
+            <label>Last Name *</label>
+            <input type="text" name="last_name" placeholder="Farooqui" required="">
+          </div>
+          <div class="fgroup">
+            <label>Email Address *</label>
+            <input type="email" name="email" placeholder="jane@gmail.com" required="">
+          </div>
+          <div class="fgroup">
+            <label>Phone Number *</label>
+            <input type="tel" name="phone" placeholder="416-555-0100" required="">
+          </div>
+          <div class="fgroup">
+            <label>Loan Amount Requested *</label>
+            <select name="loan_amount" id="form-amount" required="">
+              <option value="">— Select amount —</option>
+              <option value="300">$300</option>
+              <option value="400">$400</option>
+              <option value="500">$500</option>
+              <option value="600">$600</option>
+              <option value="700">$700</option>
+              <option value="800">$800</option>
+              <option value="900">$900</option>
+              <option value="1000">$1,000</option>
+              <option value="1100">$1,100</option>
+              <option value="1200">$1,200</option>
+              <option value="1300">$1,300</option>
+              <option value="1400">$1,400</option>
+              <option value="1500">$1,500</option>
+            </select>
+          </div>
+          <div class="fgroup">
+            <label>Loan Term *</label>
+            <select name="loan_term" id="form-term" required="">
+              <option value="">— Select term —</option>
+              <option value="7">7 days</option>
+              <option value="14">14 days (most popular)</option>
+              <option value="21">21 days</option>
+              <option value="30">30 days</option>
+              <option value="45">45 days</option>
+              <option value="62">62 days (maximum)</option>
+            </select>
+          </div>
+          <div class="fgroup">
+            <label>Income Source *</label>
+            <select name="income_source" required="">
+              <option value="">— Select income type —</option>
+              <option>Employment — Full-time</option>
+              <option>Employment — Part-time</option>
+              <option>Employment — Self-employed</option>
+              <option>ODSP (Ontario Disability)</option>
+              <option>Ontario Works (OW)</option>
+              <option>Employment Insurance (EI)</option>
+              <option>CPP / OAS / GIS</option>
+              <option>Other government benefit</option>
+            </select>
+          </div>
+          <div class="fgroup">
+            <label>Monthly Net Income *</label>
+            <select name="monthly_income" required="">
+              <option value="">— Select range —</option>
+              <option>Under $1,000</option>
+              <option>$1,000 – $1,500</option>
+              <option>$1,500 – $2,000</option>
+              <option>$2,000 – $3,000</option>
+              <option>$3,000 – $4,000</option>
+              <option>$4,000+</option>
+            </select>
+          </div>
+          <div class="fgroup">
+            <label>Next Payday Date *</label>
+            <input type="date" name="next_payday" required="" id="next-payday-input" min="2026-10-03">
+          </div>
+          <div class="fgroup">
+            <label>Province *</label>
+            <select name="province" required="">
+              <option value="Ontario" selected="">Ontario</option>
+              <option>British Columbia</option>
+              <option>Alberta</option>
+              <option>Manitoba</option>
+              <option>Saskatchewan</option>
+              <option>Nova Scotia</option>
+              <option>New Brunswick</option>
+              <option>Prince Edward Island</option>
+              <option>Newfoundland and Labrador</option>
+            </select>
+          </div>
+          <div class="fgroup">
+            <label>Preferred Payout *</label>
+            <select name="payout_method" required="">
+              <option value="">— Select method —</option>
+              <option>Interac e-Transfer (fastest)</option>
+              <option>Direct Bank Deposit (EFT)</option>
+            </select>
+          </div>
+          <div class="fgroup form-full">
+            <label>Interac e-Transfer Email or Phone</label>
+            <input type="text" name="etransfer_contact" placeholder="your@email.com or 416-555-0100">
+          </div>
+          <div class="fgroup form-full">
+            <label>Purpose of Loan</label>
+            <select name="purpose">
+              <option value="">— Optional —</option>
+              <option>Bills / Utilities</option>
+              <option>Groceries / Food</option>
+              <option>Rent</option>
+              <option>Car repair</option>
+              <option>Medical / Dental</option>
+              <option>Emergency expense</option>
+              <option>Debt payment</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Live fee preview -->
+        <div class="form-calc-box" id="form-calc-preview">
+          <div class="fc-row"><span class="fc-key">Loan Amount</span><span class="fc-val" id="fp-amount">—</span></div>
+          <div class="fc-row"><span class="fc-key">Total Fee ($14 per $100)</span><span class="fc-fee" id="fp-fee">—</span></div>
+          <div class="fc-row total"><span class="fc-key">You Repay on Payday</span><span class="fc-net" id="fp-repay">—</span></div>
+        </div>
+
+        <div style="background:#fef3c7;border:1.5px solid #fcd34d;border-radius:10px;padding:12px 14px;margin:12px 0;font-size:.78rem;color:#92400e;line-height:1.6">
+          <strong>⚠️ Borrower Rights (Ontario Payday Loans Act, 2008):</strong> You have the right to cancel this loan within 2 business days of receiving the funds at no cost. The maximum fee is $14 per $100 borrowed. You cannot be charged interest on a defaulted payday loan. For financial counselling: Ontario 211 · 1-800-267-8097
+        </div>
+
+        <div class="fgroup form-full" style="margin-top:8px">
+          <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-size:.8rem;font-weight:600;color:var(--text)">
+            <input type="checkbox" name="consent" required="" style="margin-top:2px;flex-shrink:0">
+            <span>I confirm I am 18+ years old, a Canadian resident, and I have read and understood the fee disclosure above. I authorize LendX Financial Inc. to verify my income and banking information and to initiate a pre-authorized debit from my bank account on my repayment date.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn" id="payday-submit-btn">Submit Application — Get Decision in Minutes →</button>
+        <p class="form-note">Your information is encrypted and protected under PIPEDA. Approval is not guaranteed and subject to income and identity verification. LendX Financial Inc. may contact you by phone or email to complete your application.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="wrap" style="text-align:center;margin-bottom:36px">
+    <div style="display:inline-block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#22c55e;margin-bottom:10px">Real People, Real Stories</div>
+    <h2 style="font-size:1.8rem;font-weight:900;color:var(--ink,#0b1523);margin:0 auto;max-width:600px;line-height:1.25">Canadians choosing LendX Financial.</h2>
+  </div>
+  <div class="wrap">
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-19.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Your financial goals, our priority.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-20.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Stress-free lending for Canadians.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-21.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Making borrowing simple and accessible.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer-mini">
+  <div class="wrap">
+    <p>© 2026 LendX Financial Inc. · Ontario, Canada · <a href="tel:+16472003526">647-200-3526</a> · <a href="mailto:hello@lendxfinancial.com">hello@lendxfinancial.com</a></p>
+    <p style="margin-top:8px"><a href="index.html">Home</a><a href="cheque-cashing.html">Cheque Cashing</a><a href="marketplace.html">Invest</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="legal.html">Legal</a></p>
+    <p style="margin-top:10px;font-size:.7rem;opacity:.6">LendX Financial Inc. is pursuing a payday lending licence under the Ontario Payday Loans Act, 2008. Maximum cost of borrowing: $14 per $100. This is a demonstration platform — no actual loans are being issued at this time. All financial projections are estimates only.</p>
+  </div>
+</footer>
+
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowmode="open"><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

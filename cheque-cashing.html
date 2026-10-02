@@ -1,0 +1,1040 @@
+<!DOCTYPE html><html lang="en" crxlauncher-bridged="" crxlauncher=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+@charset "utf-8";
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+</style><style>
+@charset "utf-8";
+
+
+
+</style><style>
+@charset "utf-8";
+
+:root { --cobalt: #1546c8; --cobalt-2: #0f35a0; --cobalt-light: #eef2ff; --green: #059669; --green-2: #047857; --green-light: #d1fae5; --amber: #f59e0b; --amber-light: #fef3c7; --ink: #111827; --text: #374151; --muted: #6b7280; --border: #e5e7eb; --off: #f9fafb; --white: #ffffff; --font: 'Nunito',-apple-system,sans-serif; --sh: 0 20px 60px rgba(0,0,0,.1); }
+
+*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+html { text-size-adjust: 100%; overflow-x: hidden; }
+
+body { font-family: var(--font); background: var(--white); color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+.wrap { max-width: 1160px; margin: 0px auto; padding: 0px 24px; }
+
+.nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); position: fixed; top: 0px; left: 0px; right: 0px; z-index: 100; padding: 0px; }
+
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+
+.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+
+.nav-logo svg { height: 30px; }
+
+.nav-logo-word { font-weight: 800; font-size: 1rem; color: var(--ink); letter-spacing: -0.02em; }
+
+.nav-logo-word span { color: var(--cobalt); }
+
+.nav-links { display: flex; gap: 1px; align-items: center; justify-content: center; }
+
+.nav-links a { font-size: 0.8rem; font-weight: 700; color: var(--muted); text-decoration: none; padding: 6px 10px; border-radius: 9px; transition: 0.17s; white-space: nowrap; }
+
+.nav-links a:hover, .nav-links a.active { color: var(--cobalt); background: var(--cobalt-light); }
+
+@media (max-width: 1300px) {
+  .nav-links a { font-size: 0.72rem; padding: 5px 8px; }
+  .nav-logo-word { font-size: 0.9rem; }
+  .nav-cta { font-size: 0.8rem; padding: 7px 14px; }
+}
+
+.nav-cta { background: var(--cobalt); color: rgb(255, 255, 255); padding: 8px 18px; border-radius: 10px; font-family: var(--font); font-size: 0.84rem; font-weight: 800; text-decoration: none; transition: background 0.17s; }
+
+.nav-cta:hover { background: var(--cobalt-2); }
+
+.hero { background: linear-gradient(135deg, rgb(15, 53, 160) 0%, rgb(21, 70, 200) 40%, rgb(13, 148, 136) 100%); padding: 80px 0px 90px; position: relative; overflow: hidden; }
+
+.hero::after { content: ""; position: absolute; inset: 0px; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); pointer-events: none; }
+
+.hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+
+.hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.2); color: rgba(255, 255, 255, 0.9); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 14px; border-radius: 99px; margin-bottom: 20px; }
+
+.hero h1 { font-size: 2.8rem; font-weight: 900; color: rgb(255, 255, 255); letter-spacing: -0.035em; line-height: 1.1; margin-bottom: 18px; }
+
+.hero h1 em { color: rgb(110, 231, 183); font-style: normal; }
+
+.hero-sub { font-size: 1rem; color: rgba(255, 255, 255, 0.72); line-height: 1.65; margin-bottom: 32px; max-width: 480px; }
+
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.btn-hero-primary { background: rgb(255, 255, 255); color: var(--cobalt); padding: 14px 28px; border-radius: 12px; font-family: var(--font); font-size: 0.95rem; font-weight: 900; text-decoration: none; transition: 0.2s; display: inline-block; }
+
+.btn-hero-primary:hover { background: rgb(224, 231, 255); transform: translateY(-2px); }
+
+.btn-hero-secondary { background: rgba(255, 255, 255, 0.12); border: 1.5px solid rgba(255, 255, 255, 0.3); color: rgb(255, 255, 255); padding: 14px 24px; border-radius: 12px; font-family: var(--font); font-size: 0.95rem; font-weight: 800; text-decoration: none; transition: 0.2s; display: inline-block; }
+
+.btn-hero-secondary:hover { background: rgba(255, 255, 255, 0.2); }
+
+.cheque-visual { background: rgba(255, 255, 255, 0.06); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 20px; padding: 28px; backdrop-filter: blur(8px); }
+
+.cv-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
+
+.cv-bank { font-size: 0.72rem; font-weight: 800; color: rgba(255, 255, 255, 0.5); letter-spacing: 0.08em; text-transform: uppercase; }
+
+.cv-date { font-size: 0.72rem; color: rgba(255, 255, 255, 0.5); }
+
+.cv-pay-label { font-size: 0.72rem; font-weight: 700; color: rgba(255, 255, 255, 0.5); margin-bottom: 4px; }
+
+.cv-pay-to { font-size: 1rem; font-weight: 800; color: rgb(255, 255, 255); border-bottom: 1px solid rgba(255, 255, 255, 0.2); padding-bottom: 8px; margin-bottom: 16px; }
+
+.cv-amount-row { display: flex; justify-content: space-between; align-items: center; }
+
+.cv-amount-words { font-size: 0.82rem; color: rgba(255, 255, 255, 0.65); flex: 1 1 0%; }
+
+.cv-amount-box { background: rgba(255, 255, 255, 0.1); border: 1.5px solid rgba(255, 255, 255, 0.25); border-radius: 8px; padding: 8px 16px; font-size: 1.3rem; font-weight: 900; color: rgb(110, 231, 183); white-space: nowrap; }
+
+.cv-badge { display: inline-flex; align-items: center; gap: 6px; background: rgb(5, 150, 105); color: rgb(255, 255, 255); font-size: 0.72rem; font-weight: 800; padding: 5px 12px; border-radius: 99px; margin-top: 16px; }
+
+.stats-strip { background: var(--cobalt); padding: 24px 0px; }
+
+.stats-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0px; text-align: center; }
+
+.stat-item { padding: 8px 20px; border-right: 1px solid rgba(255, 255, 255, 0.15); }
+
+.stat-item:last-child { border-right-width: medium; border-right-style: none; border-right-color: currentcolor; }
+
+.stat-num { font-size: 1.7rem; font-weight: 900; color: rgb(255, 255, 255); letter-spacing: -0.02em; line-height: 1; }
+
+.stat-lbl { font-size: 0.73rem; font-weight: 700; color: rgba(255, 255, 255, 0.6); margin-top: 4px; letter-spacing: 0.03em; }
+
+.section { padding: 72px 0px; }
+
+.section-bg { background: var(--off); }
+
+.eyebrow { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cobalt); margin-bottom: 10px; }
+
+.section-title { font-size: 2rem; font-weight: 900; letter-spacing: -0.03em; color: var(--ink); margin-bottom: 12px; line-height: 1.15; }
+
+.section-sub { font-size: 0.95rem; color: var(--muted); line-height: 1.65; max-width: 560px; }
+
+.fee-section { padding: 72px 0px; background: var(--off); }
+
+.fee-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 36px; }
+
+.fee-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 18px; padding: 24px; transition: 0.2s; position: relative; overflow: hidden; }
+
+.fee-card:hover { border-color: var(--cobalt); box-shadow: rgba(21, 70, 200, 0.1) 0px 8px 40px; transform: translateY(-3px); }
+
+.fee-card.popular { border-color: var(--cobalt); }
+
+.fee-card.popular::before { content: "Most Common"; position: absolute; top: 0px; right: 0px; background: var(--cobalt); color: rgb(255, 255, 255); font-size: 0.65rem; font-weight: 800; padding: 4px 12px; border-radius: 0px 18px 0px 10px; letter-spacing: 0.06em; }
+
+.fee-icon { font-size: 2rem; margin-bottom: 12px; }
+
+.fee-type { font-size: 0.72rem; font-weight: 800; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
+
+.fee-name { font-size: 1.05rem; font-weight: 900; color: var(--ink); margin-bottom: 8px; }
+
+.fee-rate { font-size: 2rem; font-weight: 900; color: var(--cobalt); letter-spacing: -0.03em; line-height: 1; margin-bottom: 4px; }
+
+.fee-min { font-size: 0.75rem; color: var(--muted); margin-bottom: 16px; }
+
+.fee-examples { background: var(--off); border-radius: 10px; padding: 12px; margin-bottom: 16px; }
+
+.fee-ex-row { display: flex; justify-content: space-between; font-size: 0.78rem; padding: 3px 0px; color: var(--text); }
+
+.fee-ex-key { color: var(--muted); }
+
+.fee-ex-val { font-weight: 800; color: var(--ink); }
+
+.fee-ex-net { font-weight: 800; color: var(--green); }
+
+.fee-badge { display: inline-flex; align-items: center; gap: 5px; font-size: 0.72rem; font-weight: 700; color: var(--green); background: var(--green-light); padding: 3px 10px; border-radius: 99px; }
+
+.steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-top: 40px; }
+
+.step-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 18px; padding: 28px 24px; text-align: center; }
+
+.step-num { width: 44px; height: 44px; background: var(--cobalt); color: rgb(255, 255, 255); border-radius: 50%; display: grid; place-items: center; font-size: 1.1rem; font-weight: 900; margin: 0px auto 16px; }
+
+.step-title { font-size: 0.97rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; }
+
+.step-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.55; }
+
+.payout-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 36px; }
+
+.payout-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 16px; padding: 22px; display: flex; gap: 14px; align-items: flex-start; transition: border-color 0.2s; }
+
+.payout-card:hover { border-color: var(--cobalt); }
+
+.payout-icon { width: 42px; height: 42px; border-radius: 12px; background: var(--cobalt-light); display: grid; place-items: center; font-size: 1.2rem; flex-shrink: 0; }
+
+.payout-name { font-size: 0.9rem; font-weight: 800; color: var(--ink); margin-bottom: 4px; }
+
+.payout-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+
+.payout-time { font-size: 0.72rem; font-weight: 800; color: var(--green); margin-top: 5px; }
+
+.elig-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; margin-top: 36px; }
+
+.elig-list { list-style: none; }
+
+.elig-list li { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0px; border-bottom: 1px solid var(--border); font-size: 0.88rem; color: var(--text); }
+
+.elig-list li:last-child { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.elig-list li .ei { flex-shrink: 0; margin-top: 1px; }
+
+.form-section { padding: 80px 0px; background: linear-gradient(135deg, rgb(240, 244, 255), rgb(232, 245, 233)); }
+
+.form-card { background: var(--white); border-radius: 24px; border: 1px solid var(--border); box-shadow: var(--sh); padding: 40px; max-width: 760px; margin: 0px auto; }
+
+.form-card h2 { font-size: 1.5rem; font-weight: 900; color: var(--ink); letter-spacing: -0.025em; margin-bottom: 6px; }
+
+.form-card > p { font-size: 0.88rem; color: var(--muted); margin-bottom: 28px; }
+
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.form-full { grid-column: 1 / -1; }
+
+.fgroup { display: flex; flex-direction: column; gap: 5px; }
+
+.fgroup label { font-size: 0.78rem; font-weight: 700; color: var(--text); }
+
+.fgroup input, .fgroup select, .fgroup textarea { width: 100%; padding: 11px 13px; border: 1.5px solid var(--border); border-radius: 11px; font-family: var(--font); font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.17s; background: var(--white); }
+
+.fgroup input:focus, .fgroup select:focus, .fgroup textarea:focus { border-color: var(--cobalt); }
+
+.fgroup textarea { resize: vertical; min-height: 80px; }
+
+.fgroup select { cursor: pointer; }
+
+.form-calc { background: var(--off); border: 1.5px solid var(--border); border-radius: 14px; padding: 18px; margin: 10px 0px; }
+
+.fc-row { display: flex; justify-content: space-between; align-items: center; padding: 5px 0px; font-size: 0.84rem; }
+
+.fc-row.total { border-top: 1px solid var(--border); margin-top: 6px; padding-top: 12px; font-weight: 800; font-size: 0.95rem; }
+
+.fc-key { color: var(--muted); }
+
+.fc-val { font-weight: 700; color: var(--ink); }
+
+.fc-net { color: var(--green); font-weight: 900; font-size: 1.1rem; }
+
+.submit-btn { width: 100%; padding: 15px; background: var(--cobalt); color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 13px; font-family: var(--font); font-size: 0.97rem; font-weight: 900; cursor: pointer; transition: background 0.18s; margin-top: 8px; }
+
+.submit-btn:hover { background: var(--cobalt-2); }
+
+.submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.form-note { font-size: 0.72rem; color: var(--muted); text-align: center; margin-top: 10px; line-height: 1.5; }
+
+.success-msg { background: rgb(209, 250, 229); border: 1.5px solid rgb(110, 231, 183); border-radius: 14px; padding: 22px; text-align: center; display: none; }
+
+.success-msg h3 { font-size: 1.1rem; font-weight: 800; color: rgb(6, 95, 70); margin-bottom: 6px; }
+
+.success-msg p { font-size: 0.85rem; color: rgb(4, 120, 87); }
+
+.err-msg { background: rgb(254, 226, 226); border: 1.5px solid rgb(252, 165, 165); color: rgb(185, 28, 28); font-size: 0.8rem; font-weight: 600; padding: 10px 14px; border-radius: 10px; display: none; margin-bottom: 12px; }
+
+.footer-mini { background: var(--ink); padding: 28px 0px; text-align: center; color: rgba(255, 255, 255, 0.45); font-size: 0.78rem; }
+
+.footer-mini a { color: rgba(255, 255, 255, 0.45); text-decoration: none; margin: 0px 10px; }
+
+.footer-mini a:hover { color: rgb(255, 255, 255); }
+
+.ham-btn { display: none; flex-direction: column; gap: 5px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; padding: 8px; border-radius: 8px; margin-left: 8px; }
+
+.ham-btn span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: 0.2s; }
+
+.ham-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+
+.ham-btn.open span:nth-child(2) { opacity: 0; }
+
+.ham-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mob-drawer { display: none; position: fixed; top: calc(64px + env(safe-area-inset-top,0px)); left: 0px; right: 0px; background: rgb(255, 255, 255); border-bottom: 1px solid var(--border); z-index: 99; padding: 12px 20px 20px; flex-direction: column; gap: 4px; box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px; animation: 0.18s ease 0s 1 normal none running slideDown; }
+
+.mob-drawer.open { display: flex; }
+
+.mob-drawer a { display: block; padding: 11px 14px; border-radius: 10px; font-size: 0.9rem; font-weight: 700; color: rgb(55, 65, 81); text-decoration: none; }
+
+.mob-drawer a:hover, .mob-drawer a:active { background: var(--off); color: var(--cobalt); }
+
+.mob-drawer .drawer-cta { margin-top: 8px; background: var(--cobalt); text-align: center; border-radius: 12px; padding: 13px; font-size: 0.95rem; color: rgb(255, 255, 255) !important; }
+
+.mob-drawer-overlay { display: none; position: fixed; inset: 0px; z-index: 98; }
+
+.mob-drawer-overlay.open { display: block; }
+
+@keyframes slideDown { 
+  0% { opacity: 0; transform: translateY(-6px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+@media (max-width: 1200px) {
+  .nav-links, .nav-cta { display: none; }
+  .ham-btn { display: flex; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .cheque-visual { display: none; }
+  .hero h1 { font-size: clamp(1.8rem, 7vw, 2.4rem); }
+  .stats-inner { grid-template-columns: repeat(2, 1fr); }
+  .stat-item:nth-child(2) { border-right-width: medium; border-right-style: none; border-right-color: currentcolor; }
+  .form-grid { grid-template-columns: 1fr; }
+  .elig-grid { grid-template-columns: 1fr; }
+  .hero { padding: 52px 0px 56px; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .btn-hero-primary, .btn-hero-secondary { text-align: center; }
+  .hero-sub { font-size: 0.95rem; }
+  .wrap { padding: 0px 16px; }
+}
+
+@media (max-width: 480px) {
+  .stats-inner { grid-template-columns: 1fr; }
+  .stat-item { border-bottom: 1px solid var(--border); border-right-width: medium !important; border-right-style: none !important; border-right-color: currentcolor !important; }
+}
+
+body { padding-top: calc(64px + env(safe-area-inset-top,0px)) !important; }
+
+.gallery { padding: 72px 0px; }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+@media (max-width: 860px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 540px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+}
+
+.gallery-item { border-radius: 22px; overflow: hidden; box-shadow: rgba(11, 21, 35, 0.06) 0px 2px 12px; transition: 0.3s; position: relative; }
+
+.gallery-item:hover { box-shadow: rgba(11, 21, 35, 0.1) 0px 8px 40px; transform: translateY(-4px); }
+
+.gallery-item img { width: 100%; height: 260px; object-fit: cover; display: block; }
+
+@media (max-width: 600px) {
+  .gallery-item img { height: 200px; }
+}
+
+.gallery-caption { position: absolute; bottom: 0px; left: 0px; right: 0px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); padding: 40px 16px 14px; color: rgb(255, 255, 255); font-size: 0.82rem; font-weight: 700; }
+
+</style>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<title>Instant Cheque Cashing — LendX Financial</title>
+<meta name="description" content="Cash your cheque instantly with LendX Financial. Government, payroll, and personal cheques cashed same-day via Interac e-Transfer. Canada-wide service.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+<style id="lx-nav-css">
+/* ── LendX canonical nav ── */
+.nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.nav-inner{display:flex;align-items:center;gap:1rem;padding:.75rem 1.25rem;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:.55rem;text-decoration:none;flex-shrink:0}
+.lx-logo-svg{width:36px;height:36px;flex-shrink:0}
+.brand-wordmark{font-family:var(--font,'Nunito',sans-serif);font-size:1.15rem;font-weight:800;color:#111827;letter-spacing:-.02em}
+.brand-wordmark .x-accent{color:#059669}
+.nav-center{display:flex;align-items:center;gap:.15rem;flex:1;justify-content:center}
+.nav-center a{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.38rem .65rem;border-radius:6px;white-space:nowrap;transition:background .15s,color .15s}
+.nav-center a:hover{background:#ecfdf5;color:#059669}
+.nav-center a.active{background:#d1fae5;color:#059669}
+.nav-right{display:flex;align-items:center;gap:.55rem;flex-shrink:0}
+.n-btn{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:700;padding:.42rem .9rem;border-radius:8px;text-decoration:none;cursor:pointer;transition:all .15s}
+.n-outline{border:1.5px solid #059669;color:#059669;background:transparent}
+.n-outline:hover{background:#ecfdf5}
+.n-solid{background:#059669;color:#fff;border:1.5px solid #059669}
+.n-solid:hover{background:#047857}
+.ham-btn{display:none;background:none;border:none;cursor:pointer;padding:.3rem;color:#111827}
+.nav-drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1000}
+.nav-drawer-overlay.open{display:block}
+.nav-drawer{position:fixed;top:0;right:-280px;width:260px;height:100%;background:#fff;z-index:1001;padding:1.5rem 1.25rem;display:flex;flex-direction:column;gap:.5rem;box-shadow:-4px 0 20px rgba(0,0,0,.12);transition:right .28s ease}
+.nav-drawer.open{right:0}
+.nav-drawer a{font-family:var(--font,'Nunito',sans-serif);font-size:.95rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.55rem .75rem;border-radius:8px;transition:background .15s}
+.nav-drawer a:hover{background:#ecfdf5;color:#059669}
+.drawer-cta{margin-top:auto!important;background:#059669!important;color:#fff!important;text-align:center;padding:.7rem 1rem!important;border-radius:10px!important}
+.drawer-cta:hover{background:#047857!important}
+@media(max-width:900px){.nav-center{display:none}.ham-btn{display:flex}}
+@media(max-width:540px){.n-outline{display:none}}
+</style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1334.0" data-gr-ext-installed="">
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <svg class="lx-logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LendX Financial logo">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#14532d"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4ade80"/><stop offset="60%" stop-color="#16a34a"/><stop offset="100%" stop-color="#166534"/></linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#86efac"/><stop offset="60%" stop-color="#22c55e"/><stop offset="100%" stop-color="#16a34a"/></linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#064E3B"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+        </defs>
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"/>
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"/>
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"/>
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"/>
+      </svg>
+      <span class="brand-wordmark">Lend<span class="x-accent">X</span> Financial</span>
+    </a>
+    <div class="nav-center">
+      <a href="index.html" >Personal</a>
+      <a href="business.html" >Business</a>
+      <a href="marketplace.html" >Marketplace</a>
+      <a href="payday.html" >Payday Loans</a>
+      <a href="cheque-cashing.html" class="active">Cheque Cashing</a>
+      <a href="private-mortgage.html" >Private Mortgage</a>
+    </div>
+    <div class="nav-right">
+      <a class="n-btn n-outline" href="tel:+16472003526">647-200-3526</a>
+      <a class="n-btn n-solid" href="#quote">Get a Quote →</a>
+      <button class="ham-btn" onclick="toggleMenu()" aria-label="Menu">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="nav-drawer-overlay" id="nav-overlay" onclick="toggleMenu()"></div>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="index.html" >Personal Loans</a>
+  <a href="business.html" >Business Financing</a>
+  <a href="marketplace.html" >Marketplace</a>
+  <a href="payday.html" >Payday Loans</a>
+  <a href="cheque-cashing.html" class="active">Cheque Cashing</a>
+  <a href="private-mortgage.html" >Private Mortgage</a>
+  <a href="calculator.html">Calculator</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About Us</a>
+  <a class="drawer-cta" href="#quote" onclick="toggleMenu()">Get a Quote →</a>
+</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <div class="hero-eyebrow">💵 Instant Cheque Cashing</div>
+      <h1>Cash your cheque <em>instantly</em> — no bank required</h1>
+      <p class="hero-sub">Government, payroll, and personal cheques cashed same-day. Get your money via Interac e-Transfer in minutes. No account needed. Canada-wide service.</p>
+      <div class="hero-actions">
+        <a class="btn-hero-primary" href="cheque-cashing.html#apply-form">Cash My Cheque Now →</a>
+        <a class="btn-hero-secondary" href="cheque-cashing.html#fees">See Fee Rates ↓</a>
+      </div>
+    </div>
+    <div class="cheque-visual">
+      <div class="cv-header">
+        <div class="cv-bank">Royal Sample Bank of Canada</div>
+        <div class="cv-date">April 5, 2026</div>
+      </div>
+      <div class="cv-pay-label">Pay to the order of</div>
+      <div class="cv-pay-to">Mohammed Farooqui</div>
+      <div class="cv-amount-row">
+        <div class="cv-amount-words">One thousand five hundred and 00/100 dollars</div>
+        <div class="cv-amount-box">$1,500.00</div>
+      </div>
+      <div class="cv-badge">✓ Cashed Instantly · e-Transfer in 5 min</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="wrap stats-inner">
+    <div class="stat-item"><div class="stat-num">5 min</div><div class="stat-lbl">Avg. payout time</div></div>
+    <div class="stat-item"><div class="stat-num">$10K</div><div class="stat-lbl">Max cheque size</div></div>
+    <div class="stat-item"><div class="stat-num">1.5%</div><div class="stat-lbl">Gov't cheque fee</div></div>
+    <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-lbl">Online applications</div></div>
+  </div>
+</div>
+
+<!-- FEE SCHEDULE -->
+<section id="fees" class="fee-section">
+  <div class="wrap">
+    <div class="eyebrow">Transparent Pricing</div>
+    <h2 class="section-title">Simple, flat fee rates</h2>
+    <p class="section-sub">No hidden charges. The rate you see is the only fee you pay. Minimum fees apply for small cheques.</p>
+
+    <div class="fee-grid">
+
+      <div class="fee-card">
+        <div class="fee-icon">🏛️</div>
+        <div class="fee-type">Government</div>
+        <div class="fee-name">Gov't &amp; CRA Cheques</div>
+        <div class="fee-rate">1.5%</div>
+        <div class="fee-min">Minimum fee: $5.00</div>
+        <div class="fee-examples">
+          <div class="fee-ex-row"><span class="fee-ex-key">$500 cheque</span><span class="fee-ex-val">Fee: $7.50</span><span class="fee-ex-net">Net: $492.50</span></div>
+          <div class="fee-ex-row"><span class="fee-ex-key">$1,000 cheque</span><span class="fee-ex-val">Fee: $15.00</span><span class="fee-ex-net">Net: $985.00</span></div>
+          <div class="fee-ex-row"><span class="fee-ex-key">$2,000 cheque</span><span class="fee-ex-val">Fee: $30.00</span><span class="fee-ex-net">Net: $1,970.00</span></div>
+        </div>
+        <div class="fee-badge">✓ Lowest rate</div>
+        <p style="font-size:.72rem;color:var(--muted);margin-top:10px">Includes: CRA, OAS, CPP, EI, ODSP, Ontario Works, GST/HST credits, tax refunds</p>
+      </div>
+
+      <div class="fee-card popular">
+        <div class="fee-icon">💼</div>
+        <div class="fee-type">Employment</div>
+        <div class="fee-name">Payroll Cheques</div>
+        <div class="fee-rate">2.5%</div>
+        <div class="fee-min">Minimum fee: $8.00</div>
+        <div class="fee-examples">
+          <div class="fee-ex-row"><span class="fee-ex-key">$800 cheque</span><span class="fee-ex-val">Fee: $20.00</span><span class="fee-ex-net">Net: $780.00</span></div>
+          <div class="fee-ex-row"><span class="fee-ex-key">$1,500 cheque</span><span class="fee-ex-val">Fee: $37.50</span><span class="fee-ex-net">Net: $1,462.50</span></div>
+          <div class="fee-ex-row"><span class="fee-ex-key">$3,000 cheque</span><span class="fee-ex-val">Fee: $75.00</span><span class="fee-ex-net">Net: $2,925.00</span></div>
+        </div>
+        <div class="fee-badge">✓ Most common</div>
+        <p style="font-size:.72rem;color:var(--muted);margin-top:10px">Includes: employer payroll, direct-deposit cheques, HR-issued payments</p>
+      </div>
+
+      <div class="fee-card">
+        <div class="fee-icon">🏢</div>
+        <div class="fee-type">Business</div>
+        <div class="fee-name">Business &amp; Corporate</div>
+        <div class="fee-rate">3.5%</div>
+        <div class="fee-min">Minimum fee: $12.00</div>
+        <div class="fee-examples">
+          <div class="fee-ex-row"><span class="fee-ex-key">$1,000 cheque</span><span class="fee-ex-val">Fee: $35.00</span><span class="fee-ex-net">Net: $965.00</span></div>
+          <div class="fee-ex-row"><span class="fee-ex-key">$2,500 cheque</span><span class="fee-ex-val">Fee: $87.50</span><span class="fee-ex-net">Net: $2,412.50</span></div>
+          <div class="fee-ex-row"><span class="fee-ex-key">$5,000 cheque</span><span class="fee-ex-val">Fee: $175.00</span><span class="fee-ex-net">Net: $4,825.00</span></div>
+        </div>
+        <div class="fee-badge">✓ Fast turnaround</div>
+        <p style="font-size:.72rem;color:var(--muted);margin-top:10px">Includes: vendor payments, contractor cheques, business-to-business</p>
+      </div>
+
+      <div class="fee-card">
+        <div class="fee-icon">👤</div>
+        <div class="fee-type">Personal</div>
+        <div class="fee-name">Personal Cheques</div>
+        <div class="fee-rate">5%</div>
+        <div class="fee-min">Minimum fee: $15.00</div>
+        <div class="fee-examples">
+          <div class="fee-ex-row"><span class="fee-ex-key">$300 cheque</span><span class="fee-ex-val">Fee: $15.00</span><span class="fee-ex-net">Net: $285.00</span></div>
+          <div class="fee-ex-row"><span class="fee-ex-key">$750 cheque</span><span class="fee-ex-val">Fee: $37.50</span><span class="fee-ex-net">Net: $712.50</span></div>
+          <div class="fee-ex-row"><span class="fee-ex-key">$1,500 cheque</span><span class="fee-ex-val">Fee: $75.00</span><span class="fee-ex-net">Net: $1,425.00</span></div>
+        </div>
+        <div class="fee-badge" style="background:#fef3c7;color:#92400e">⚡ Same-day</div>
+        <p style="font-size:.72rem;color:var(--muted);margin-top:10px">Includes: personal bank cheques, certified cheques, money orders</p>
+      </div>
+
+    </div>
+
+    <!-- FULL RATE MATRIX TABLE -->
+    <div style="margin-top:48px">
+      <h3 style="font-size:1.1rem;font-weight:900;color:var(--ink);margin-bottom:6px;letter-spacing:-.02em">📊 Full Cheque Cashing Rate Matrix</h3>
+      <p style="font-size:.85rem;color:var(--muted);margin-bottom:16px">Exact fee &amp; net payout for every cheque type and amount — no surprises.</p>
+      <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:18px;border:1.5px solid var(--border);box-shadow:0 8px 40px rgba(0,0,0,.07)">
+        <table id="cc-matrix" style="width:100%;border-collapse:collapse;min-width:680px">
+          <thead>
+            <tr style="background:var(--cobalt)">
+              <th style="color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:13px 16px;text-align:left">Cheque Amount</th>
+              <th style="color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:13px 16px;text-align:center">Gov't / CRA<br><span style="font-weight:600;font-size:.68rem;opacity:.8">1.5% (min $5)</span></th>
+              <th style="color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:13px 16px;text-align:center">Payroll<br><span style="font-weight:600;font-size:.68rem;opacity:.8">2.5% (min $8)</span></th>
+              <th style="color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:13px 16px;text-align:center">Business<br><span style="font-weight:600;font-size:.68rem;opacity:.8">3.5% (min $12)</span></th>
+              <th style="color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:13px 16px;text-align:center">Personal<br><span style="font-weight:600;font-size:.68rem;opacity:.8">5% (min $15)</span></th>
+              <th style="color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:13px 16px;text-align:center">Certified<br><span style="font-weight:600;font-size:.68rem;opacity:.8">2% (min $5)</span></th>
+            </tr>
+          </thead>
+          <tbody id="cc-matrix-tbody"><tr style="border-bottom: 1px solid rgb(229, 231, 235); background: rgb(249, 250, 251);"><td style="padding:11px 16px;font-weight:900;color:var(--ink);font-size:.85rem">$100.00</td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$5.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $95.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$8.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $92.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$12.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $88.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$15.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $85.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$5.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $95.00</span>
+      </td></tr><tr style="border-bottom: 1px solid rgb(229, 231, 235);"><td style="padding:11px 16px;font-weight:900;color:var(--ink);font-size:.85rem">$200.00</td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$5.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $195.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$8.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $192.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$12.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $188.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$15.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $185.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$5.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $195.00</span>
+      </td></tr><tr style="border-bottom: 1px solid rgb(229, 231, 235); background: rgb(249, 250, 251);"><td style="padding:11px 16px;font-weight:900;color:var(--ink);font-size:.85rem">$300.00</td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$5.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $295.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$8.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $292.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$12.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $288.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$15.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $285.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$6.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $294.00</span>
+      </td></tr><tr style="border-bottom: 1px solid rgb(229, 231, 235);"><td style="padding:11px 16px;font-weight:900;color:var(--ink);font-size:.85rem">$500.00</td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$7.50</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $492.50</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$12.50</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $487.50</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$17.50</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $482.50</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$25.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $475.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$10.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $490.00</span>
+      </td></tr><tr style="border-bottom: 1px solid rgb(229, 231, 235); background: rgb(249, 250, 251);"><td style="padding:11px 16px;font-weight:900;color:var(--ink);font-size:.85rem">$750.00</td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$11.25</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $738.75</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$18.75</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $731.25</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$26.25</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $723.75</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$37.50</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $712.50</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$15.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $735.00</span>
+      </td></tr><tr style="border-bottom: 1px solid rgb(229, 231, 235);"><td style="padding:11px 16px;font-weight:900;color:var(--ink);font-size:.85rem">$1,000.00</td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$15.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $985.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$25.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $975.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$35.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $965.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$50.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $950.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$20.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $980.00</span>
+      </td></tr><tr style="border-bottom: 1px solid rgb(229, 231, 235); background: rgb(249, 250, 251);"><td style="padding:11px 16px;font-weight:900;color:var(--ink);font-size:.85rem">$1,500.00</td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$22.50</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $1,477.50</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$37.50</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $1,462.50</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$52.50</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $1,447.50</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$75.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $1,425.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$30.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $1,470.00</span>
+      </td></tr><tr style="border-bottom: 1px solid rgb(229, 231, 235);"><td style="padding:11px 16px;font-weight:900;color:var(--ink);font-size:.85rem">$2,000.00</td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$30.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $1,970.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$50.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $1,950.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$70.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $1,930.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$100.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $1,900.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$40.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $1,960.00</span>
+      </td></tr><tr style="border-bottom: 1px solid rgb(229, 231, 235); background: rgb(249, 250, 251);"><td style="padding:11px 16px;font-weight:900;color:var(--ink);font-size:.85rem">$2,500.00</td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$37.50</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $2,462.50</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$62.50</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $2,437.50</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$87.50</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $2,412.50</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$125.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $2,375.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$50.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $2,450.00</span>
+      </td></tr><tr style="border-bottom: 1px solid rgb(229, 231, 235);"><td style="padding:11px 16px;font-weight:900;color:var(--ink);font-size:.85rem">$3,000.00</td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$45.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $2,955.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$75.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $2,925.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$105.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $2,895.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$150.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $2,850.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$60.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $2,940.00</span>
+      </td></tr><tr style="border-bottom: 1px solid rgb(229, 231, 235); background: rgb(249, 250, 251);"><td style="padding:11px 16px;font-weight:900;color:var(--ink);font-size:.85rem">$5,000.00</td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$75.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $4,925.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$125.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $4,875.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$175.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $4,825.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$250.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $4,750.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$100.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $4,900.00</span>
+      </td></tr><tr style="border-bottom: 1px solid rgb(229, 231, 235);"><td style="padding:11px 16px;font-weight:900;color:var(--ink);font-size:.85rem">$7,500.00</td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$112.50</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $7,387.50</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$187.50</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $7,312.50</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$262.50</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $7,237.50</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$375.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $7,125.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$150.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $7,350.00</span>
+      </td></tr><tr style="border-bottom: 1px solid rgb(229, 231, 235); background: rgb(249, 250, 251);"><td style="padding:11px 16px;font-weight:900;color:var(--ink);font-size:.85rem">$10,000.00</td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$150.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $9,850.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$250.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $9,750.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$350.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $9,650.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$500.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $9,500.00</span>
+      </td><td style="padding:11px 16px;text-align:center;font-size:.82rem">
+        <span style="font-weight:900;color:var(--cobalt)">−$200.00</span><br>
+        <span style="font-weight:700;color:var(--green);font-size:.78rem">→ $9,800.00</span>
+      </td></tr></tbody>
+        </table>
+      </div>
+      <p style="font-size:.72rem;color:var(--muted);margin-top:10px">* Bold = LendX fee charged. Net = amount you receive via Interac e-Transfer. All amounts in CAD.</p>
+    </div>
+
+    <!-- REVENUE NOTE -->
+    <div style="background:var(--cobalt-light);border:1.5px solid #c7d7ff;border-radius:14px;padding:18px 20px;margin-top:24px;display:flex;gap:16px;align-items:flex-start">
+      <div style="font-size:1.5rem;flex-shrink:0">💰</div>
+      <div>
+        <div style="font-size:.85rem;font-weight:900;color:var(--cobalt);margin-bottom:4px">How LendX earns revenue on cheque cashing</div>
+        <div style="font-size:.8rem;color:var(--text);line-height:1.6">100% of the fee listed above is retained by LendX Financial Inc. as revenue. On a $1,000 payroll cheque, LendX earns <strong>$25.00</strong>. On a $5,000 business cheque, LendX earns <strong>$175.00</strong>. Volume of 50 cheques/month at average $1,500 = <strong>~$2,250/month</strong> in revenue from this product alone.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Process</div>
+    <h2 class="section-title">Cash your cheque in 3 steps</h2>
+    <p class="section-sub">Simple, fast, and fully online. No branch visit required.</p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <div class="step-title">Submit your request</div>
+        <div class="step-desc">Fill out the form below with your cheque details and upload a photo or scan of the cheque. Takes under 2 minutes.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div class="step-title">Instant verification</div>
+        <div class="step-desc">We verify the cheque with the issuing bank and confirm your identity. Most cheques are approved within 5–15 minutes.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div class="step-title">Receive your funds</div>
+        <div class="step-desc">We send your net payout via Interac e-Transfer, bank deposit, or cash pick-up at our Toronto office. Funds arrive same day.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <div class="step-title">Mail or drop off cheque</div>
+        <div class="step-desc">You mail us the original cheque or drop it off in person. Payout is released immediately upon submission — no waiting required.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAYOUT OPTIONS -->
+<section class="section section-bg">
+  <div class="wrap">
+    <div class="eyebrow">Payout Methods</div>
+    <h2 class="section-title">Get paid your way</h2>
+    <p class="section-sub">Multiple payout options — choose what works best for you.</p>
+    <div class="payout-grid">
+      <div class="payout-card">
+        <div class="payout-icon">⚡</div>
+        <div>
+          <div class="payout-name">Interac e-Transfer</div>
+          <div class="payout-desc">Sent to your email or phone. Works with any Canadian bank account.</div>
+          <div class="payout-time">⏱ Under 5 minutes</div>
+        </div>
+      </div>
+      <div class="payout-card">
+        <div class="payout-icon">🏦</div>
+        <div>
+          <div class="payout-name">Direct Bank Deposit</div>
+          <div class="payout-desc">EFT deposit straight to your chequing or savings account.</div>
+          <div class="payout-time">⏱ Same business day</div>
+        </div>
+      </div>
+      <div class="payout-card">
+        <div class="payout-icon">💵</div>
+        <div>
+          <div class="payout-name">Cash Pick-Up</div>
+          <div class="payout-desc">Collect cash in person at our Toronto office. ID required.</div>
+          <div class="payout-time">⏱ Same day (walk-in)</div>
+        </div>
+      </div>
+      <div class="payout-card">
+        <div class="payout-icon">📱</div>
+        <div>
+          <div class="payout-name">Mobile Wallet</div>
+          <div class="payout-desc">Deposit to PayPal, Apple Cash, or other digital wallets.</div>
+          <div class="payout-time">⏱ Under 30 minutes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ELIGIBILITY -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Who Qualifies</div>
+    <h2 class="section-title">Eligibility &amp; accepted cheques</h2>
+    <div class="elig-grid">
+      <div>
+        <h3 style="font-size:1rem;font-weight:800;color:var(--ink);margin-bottom:16px">✅ We accept</h3>
+        <ul class="elig-list">
+          <li><span class="ei">✅</span>Canadian government cheques (CRA, OAS, CPP, EI)</li>
+          <li><span class="ei">✅</span>Provincial benefit cheques (ODSP, OW, disability)</li>
+          <li><span class="ei">✅</span>Employer payroll cheques</li>
+          <li><span class="ei">✅</span>Business &amp; corporate cheques</li>
+          <li><span class="ei">✅</span>Certified cheques &amp; money orders</li>
+          <li><span class="ei">✅</span>Personal cheques (under $2,500)</li>
+          <li><span class="ei">✅</span>Insurance settlement cheques</li>
+          <li><span class="ei">✅</span>Legal settlement &amp; estate cheques</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:1rem;font-weight:800;color:var(--ink);margin-bottom:16px">📋 Requirements</h3>
+        <ul class="elig-list">
+          <li><span class="ei">🪪</span>Valid government-issued photo ID</li>
+          <li><span class="ei">🇨🇦</span>Canadian resident (any province)</li>
+          <li><span class="ei">📅</span>Must be 18 years of age or older</li>
+          <li><span class="ei">📝</span>Cheque payable to you (or your business)</li>
+          <li><span class="ei">💰</span>Cheque amount: $100 – $10,000</li>
+          <li><span class="ei">📅</span>Cheque dated within 6 months</li>
+          <li><span class="ei">🏦</span>Drawn on a Canadian financial institution</li>
+          <li><span class="ei">📱</span>Valid email or phone for Interac e-Transfer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION FORM -->
+<section id="apply-form" class="form-section">
+  <div class="wrap">
+    <div class="form-card">
+      <h2>Cash Your Cheque Now</h2>
+      <p>Fill out the form below — we'll review and process your request within minutes. No obligation.</p>
+
+      <div class="err-msg" id="form-err"></div>
+      <div class="success-msg" id="form-success"></div>
+
+      <form id="cheque-form">
+        <div class="form-grid">
+          <div class="fgroup">
+            <label>First Name *</label>
+            <input type="text" name="first_name" placeholder="Mohammed" required="">
+          </div>
+          <div class="fgroup">
+            <label>Last Name *</label>
+            <input type="text" name="last_name" placeholder="Farooqui" required="">
+          </div>
+          <div class="fgroup">
+            <label>Email Address *</label>
+            <input type="email" name="email" placeholder="jane@gmail.com" required="">
+          </div>
+          <div class="fgroup">
+            <label>Phone Number *</label>
+            <input type="tel" name="phone" placeholder="416-555-0100" required="">
+          </div>
+          <div class="fgroup">
+            <label>Cheque Type *</label>
+            <select name="cheque_type" id="cheque-type" required="">
+              <option value="">— Select cheque type —</option>
+              <option value="Government / CRA (1.5%)">Government / CRA (1.5%)</option>
+              <option value="Payroll / Employer (2.5%)">Payroll / Employer (2.5%)</option>
+              <option value="Business / Corporate (3.5%)">Business / Corporate (3.5%)</option>
+              <option value="Personal (5%)">Personal (5%)</option>
+              <option value="Certified / Money Order (2%)">Certified / Money Order (2%)</option>
+            </select>
+          </div>
+          <div class="fgroup">
+            <label>Cheque Amount *</label>
+            <input type="number" name="cheque_amount" id="cheque-amount" placeholder="1500.00" min="100" max="10000" step="0.01" required="">
+          </div>
+          <div class="fgroup form-full">
+            <label>Cheque Issuer / Payor</label>
+            <input type="text" name="issuer" placeholder="e.g. Canada Revenue Agency, Acme Corp, John Smith">
+          </div>
+          <div class="fgroup form-full">
+            <label>Preferred Payout Method *</label>
+            <select name="payout_method" required="">
+              <option value="">— Select payout method —</option>
+              <option value="Interac e-Transfer">Interac e-Transfer (fastest)</option>
+              <option value="Direct Bank Deposit (EFT)">Direct Bank Deposit (EFT)</option>
+              <option value="Cash Pick-Up (Toronto office)">Cash Pick-Up (Toronto office)</option>
+              <option value="Mobile Wallet">Mobile Wallet</option>
+            </select>
+          </div>
+          <div class="fgroup form-full">
+            <label>Province *</label>
+            <select name="province" required="">
+              <option value="">— Select province —</option>
+              <option>Ontario</option><option>British Columbia</option><option>Alberta</option>
+              <option>Quebec</option><option>Manitoba</option><option>Saskatchewan</option>
+              <option>Nova Scotia</option><option>New Brunswick</option>
+              <option>Prince Edward Island</option><option>Newfoundland and Labrador</option>
+            </select>
+          </div>
+          <div class="fgroup form-full">
+            <label>Additional Notes</label>
+            <textarea name="notes" placeholder="Any details about the cheque, special instructions, or questions…"></textarea>
+          </div>
+        </div>
+
+        <!-- Live Fee Calculator -->
+        <div class="form-calc" id="fee-calc" style="display:none">
+          <div class="fc-row"><span class="fc-key">Cheque Amount</span><span class="fc-val" id="calc-amount">—</span></div>
+          <div class="fc-row"><span class="fc-key" id="calc-fee-label">LendX Fee</span><span class="fc-val" id="calc-fee">—</span></div>
+          <div class="fc-row total"><span class="fc-key">You Receive</span><span class="fc-net" id="calc-net">—</span></div>
+        </div>
+
+        <button type="submit" class="submit-btn" id="cheque-submit-btn">Submit Cheque Cashing Request →</button>
+        <p class="form-note">By submitting, you consent to LendX Financial contacting you to process this request. We never share your data with third parties. Subject to verification and approval. Not available in Quebec for personal cheques over $1,500.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="wrap" style="text-align:center;margin-bottom:36px">
+    <div style="display:inline-block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#22c55e;margin-bottom:10px">Real People, Real Stories</div>
+    <h2 style="font-size:1.8rem;font-weight:900;color:var(--ink,#0b1523);margin:0 auto;max-width:600px;line-height:1.25">Canadians choosing LendX Financial.</h2>
+  </div>
+  <div class="wrap">
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-13.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Your journey to financial wellness starts now.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-14.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Quick approvals, happy customers.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-15.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Building a better financial future together.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer-mini">
+  <div class="wrap">
+    <p>© 2026 LendX Financial Inc. · Ontario, Canada · <a href="tel:+16472003526">647-200-3526</a> · <a href="mailto:hello@lendxfinancial.com">hello@lendxfinancial.com</a></p>
+    <p style="margin-top:8px"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="legal.html">Legal</a></p>
+    <p style="margin-top:10px;font-size:.7rem;opacity:.6">Cheque cashing subject to verification and availability. Processing times may vary. LendX Financial Inc. is not a regulated money service business — cheque cashing services are facilitated through licensed partners. Maximum cheque $10,000. Fees subject to change.</p>
+  </div>
+</footer>
+
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowmode="open"><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

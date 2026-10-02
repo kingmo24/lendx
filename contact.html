@@ -1,0 +1,730 @@
+<!DOCTYPE html><html lang="en" crxlauncher-bridged="" crxlauncher=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+@charset "utf-8";
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 500; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 600; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 800; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOOaBXso.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIMeaBXso.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIOuaBXso.woff2") format("woff2"); unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofIO-aBXso.woff2") format("woff2"); unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Nunito; font-style: normal; font-weight: 900; font-display: swap; src: url("https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+</style><style>
+@charset "utf-8";
+
+
+
+</style><style>
+@charset "utf-8";
+
+:root { --ink: #0b1523; --ink-2: #1c2e45; --ink-3: #2d4263; --cobalt: #059669; --cobalt-2: #047857; --cobalt-light: #d1fae5; --sky: #34d399; --teal: #0d9488; --mint: #d1fae5; --white: #ffffff; --off: #f7f9fc; --off-2: #eef2f9; --border: #dde4f0; --border-2: #c8d4e8; --muted: #6278a0; --text: #1a2540; --text-2: #384e72; --green-bg: #dcfce7; --green-text: #15803d; --amber-bg: #fef3c7; --amber-text: #92400e; --max: 820px; --r: 18px; --r-sm: 12px; --sh-sm: 0 2px 12px rgba(11,21,35,.06); --sh: 0 8px 40px rgba(11,21,35,.10); --font: 'Nunito',-apple-system,BlinkMacSystemFont,'SF Pro Rounded',sans-serif; }
+
+*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; max-width: 100%; }
+
+body { font-family: var(--font); color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; overflow-x: hidden; letter-spacing: -0.01em; max-width: 100%; width: 100%; }
+
+.wrap { max-width: 1100px; margin: 0px auto; padding: 0px 24px; }
+
+.nav { position: fixed; top: 0px; left: 0px; right: 0px; z-index: 100; padding-top: env(safe-area-inset-top,0px); background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(24px); border-bottom: 1px solid var(--border); }
+
+.nav-inner { display: flex; justify-content: space-between; align-items: center; height: 62px; gap: 16px; }
+
+.brand { display: flex; gap: 10px; align-items: center; text-decoration: none; flex-shrink: 0; }
+
+.brand-word { font-weight: 800; font-size: 1.05rem; color: var(--ink); letter-spacing: -0.02em; }
+
+.brand-word .x { color: var(--sky); }
+
+.nav-links { display: flex; gap: 1px; justify-content: center; }
+
+.nav-links a { color: var(--text-2); text-decoration: none; font-size: 0.8rem; font-weight: 600; padding: 6px 10px; border-radius: 10px; transition: 0.17s; white-space: nowrap; }
+
+.nav-links a:hover, .nav-links a.active { color: var(--cobalt); background: var(--cobalt-light); }
+
+@media (max-width: 1300px) {
+  .nav-links a { font-size: 0.72rem; padding: 5px 8px; }
+  .brand-word { font-size: 0.9rem; }
+  .btn-apply { font-size: 0.8rem; padding: 7px 14px; }
+}
+
+.btn-apply { padding: 9px 20px; border-radius: 12px; font-weight: 700; font-size: 0.87rem; font-family: var(--font); cursor: pointer; transition: 0.18s; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; background: var(--cobalt); color: rgb(255, 255, 255); text-decoration: none; box-shadow: rgba(5, 150, 105, 0.3) 0px 4px 16px; }
+
+.btn-apply:hover { background: var(--cobalt-2); transform: translateY(-1px); }
+
+.ham-btn { display: none; flex-direction: column; gap: 5px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; padding: 8px; border-radius: 8px; }
+
+.ham-btn span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: 0.2s; }
+
+.ham-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+
+.ham-btn.open span:nth-child(2) { opacity: 0; }
+
+.ham-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mob-drawer { display: none; position: fixed; top: calc(64px + env(safe-area-inset-top,0px)); left: 0px; right: 0px; background: rgb(255, 255, 255); border-bottom: 1px solid var(--border); z-index: 99; padding: 12px 20px 20px; flex-direction: column; gap: 4px; box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px; animation: 0.18s ease 0s 1 normal none running slideDown; }
+
+.mob-drawer.open { display: flex; }
+
+.mob-drawer a { display: block; padding: 11px 14px; border-radius: 10px; font-size: 0.9rem; font-weight: 700; color: rgb(55, 65, 81); text-decoration: none; }
+
+.mob-drawer a:hover { background: rgb(249, 250, 251); color: var(--cobalt); }
+
+.mob-drawer .drawer-cta { margin-top: 8px; background: var(--cobalt); text-align: center; border-radius: 12px; padding: 13px; font-size: 0.95rem; color: rgb(255, 255, 255) !important; }
+
+.mob-drawer-overlay { display: none; position: fixed; inset: 0px; z-index: 98; }
+
+.mob-drawer-overlay.open { display: block; }
+
+@keyframes slideDown { 
+  0% { opacity: 0; transform: translateY(-6px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+@media (max-width: 1200px) {
+  .nav-links { display: none; }
+  .ham-btn { display: flex; }
+  .contact-grid { padding: 0px 16px; }
+  .form-card, .info-card { padding: 20px 16px; }
+  .wrap { padding: 0px 16px; }
+}
+
+.page-hero { background: linear-gradient(135deg,var(--cobalt) 0%,#047857 60%,var(--sky) 100%); padding: 56px 0px 64px; position: relative; overflow: hidden; }
+
+.page-hero::before { content: ""; position: absolute; inset: 0px; background: radial-gradient(700px 400px at 80% 50%, rgba(255, 255, 255, 0.08), transparent 60%); pointer-events: none; }
+
+.page-hero-inner { position: relative; z-index: 1; text-align: center; }
+
+.hero-eyebrow { display: inline-block; background: rgba(255, 255, 255, 0.15); color: rgb(255, 255, 255); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; border-radius: 999px; padding: 5px 16px; margin-bottom: 16px; }
+
+.page-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: rgb(255, 255, 255); letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 14px; }
+
+.page-hero p { font-size: 0.92rem; color: rgba(255, 255, 255, 0.75); max-width: 500px; margin: 0px auto; }
+
+.contact-body { padding: 56px 0px 80px; background: var(--off); }
+
+.contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 32px; max-width: var(--max); margin: 0px auto; padding: 0px 24px; }
+
+@media (max-width: 720px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+.info-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; box-shadow: var(--sh-sm); padding: 28px 28px 24px; margin-bottom: 20px; }
+
+.info-card h2 { font-size: 1.05rem; font-weight: 900; color: var(--ink); letter-spacing: -0.02em; margin-bottom: 18px; }
+
+.contact-item { display: flex; gap: 14px; align-items: flex-start; padding: 12px 0px; border-bottom: 1px solid var(--border); }
+
+.contact-item:last-child { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.ci-icon { width: 38px; height: 38px; border-radius: 11px; background: var(--cobalt-light); display: grid; place-items: center; font-size: 1rem; flex-shrink: 0; }
+
+.ci-label { font-size: 0.72rem; font-weight: 800; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 3px; }
+
+.ci-val { font-size: 0.9rem; font-weight: 700; color: var(--text); }
+
+.ci-val a { color: var(--cobalt); text-decoration: none; }
+
+.ci-val a:hover { text-decoration: underline; }
+
+.ci-sub { font-size: 0.72rem; color: var(--muted); margin-top: 2px; line-height: 1.45; }
+
+.hours-row { display: flex; justify-content: space-between; padding: 7px 0px; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+
+.hours-row:last-child { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+
+.hours-day { font-weight: 700; color: var(--text); }
+
+.hours-time { color: var(--muted); font-weight: 500; }
+
+.hours-time.open { color: var(--teal); font-weight: 700; }
+
+.dept-chip { display: inline-flex; align-items: center; gap: 6px; background: var(--off-2); border: 1px solid var(--border); border-radius: 99px; padding: 5px 12px; font-size: 0.75rem; font-weight: 700; color: var(--text-2); margin: 4px 4px 4px 0px; }
+
+.dept-chip a { color: var(--cobalt); text-decoration: none; }
+
+.dept-chip a:hover { text-decoration: underline; }
+
+.form-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; box-shadow: var(--sh-sm); padding: 32px; }
+
+.form-card h2 { font-size: 1.1rem; font-weight: 900; color: var(--ink); letter-spacing: -0.02em; margin-bottom: 6px; }
+
+.form-card p.sub { font-size: 0.82rem; color: var(--muted); margin-bottom: 24px; line-height: 1.5; }
+
+.fg { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+.fg.full { grid-template-columns: 1fr; }
+
+@media (max-width: 500px) {
+  .fg { grid-template-columns: 1fr; }
+}
+
+.field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 2px; }
+
+.field.span2 { grid-column: span 2; }
+
+@media (max-width: 500px) {
+  .field.span2 { grid-column: span 1; }
+}
+
+.fl { font-size: 0.78rem; font-weight: 700; color: var(--text-2); }
+
+.fl .req { color: rgb(239, 68, 68); margin-left: 2px; }
+
+.fi, .fs, .fta { padding: 10px 13px; border: 1.5px solid var(--border); border-radius: 11px; font-family: var(--font); font-size: 0.88rem; font-weight: 500; color: var(--text); outline: none; transition: border-color 0.17s, background 0.17s; background: var(--off); }
+
+.fi:focus, .fs:focus, .fta:focus { border-color: var(--cobalt); background: var(--white); }
+
+.fi.invalid, .fta.invalid { border-color: rgb(239, 68, 68); background: rgb(255, 245, 245); }
+
+.fta { resize: vertical; min-height: 110px; }
+
+.fs { cursor: pointer; }
+
+.fe { font-size: 0.7rem; color: rgb(239, 68, 68); font-weight: 600; display: none; }
+
+.fe.show { display: block; }
+
+.subject-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
+
+.stag { padding: 7px 14px; border-radius: 99px; border: 1.5px solid var(--border); background: var(--off); font-family: var(--font); font-size: 0.77rem; font-weight: 700; color: var(--muted); cursor: pointer; transition: 0.17s; }
+
+.stag:hover { border-color: var(--cobalt); color: var(--cobalt); background: var(--cobalt-light); }
+
+.stag.active { border-color: var(--cobalt); background: var(--cobalt-light); color: var(--cobalt); }
+
+.alert { border-radius: 11px; padding: 11px 14px; font-size: 0.82rem; font-weight: 600; display: none; align-items: center; gap: 9px; margin-bottom: 16px; }
+
+.alert.show { display: flex; }
+
+.alert.error { background: rgb(254, 226, 226); color: rgb(185, 28, 28); border: 1px solid rgb(252, 165, 165); }
+
+.alert.success { background: rgb(220, 252, 231); color: rgb(21, 128, 61); border: 1px solid rgb(134, 239, 172); }
+
+.submit-btn { width: 100%; padding: 14px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: 13px; background: var(--cobalt); color: rgb(255, 255, 255); font-family: var(--font); font-size: 0.95rem; font-weight: 800; cursor: pointer; transition: 0.2s; display: flex; align-items: center; justify-content: center; gap: 9px; box-shadow: rgba(5, 150, 105, 0.3) 0px 4px 16px; margin-top: 20px; }
+
+.submit-btn:hover:not(:disabled) { background: var(--cobalt-2); transform: translateY(-1px); }
+
+.submit-btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none !important; }
+
+@keyframes spin { 
+  100% { transform: rotate(360deg); }
+}
+
+.btn-spinner { display: inline-block; width: 17px; height: 17px; border-width: 2.5px; border-style: solid; border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0.4) rgba(255, 255, 255, 0.4); border-image: none; border-radius: 50%; animation: 0.7s linear 0s infinite normal none running spin; flex-shrink: 0; }
+
+.success-content { text-align: center; padding: 12px 0px 4px; }
+
+.suc-icon { font-size: 3rem; margin-bottom: 14px; }
+
+.suc-title { font-size: 1.2rem; font-weight: 900; color: var(--ink); letter-spacing: -0.02em; margin-bottom: 8px; }
+
+.suc-sub { font-size: 0.88rem; color: var(--text-2); line-height: 1.6; max-width: 340px; margin: 0px auto 20px; }
+
+.faq-section { max-width: var(--max); margin: 48px auto 0px; padding: 0px 24px; }
+
+.faq-section h2 { font-size: 1.3rem; font-weight: 900; color: var(--ink); letter-spacing: -0.025em; margin-bottom: 24px; }
+
+.faq-item { background: var(--white); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; margin-bottom: 10px; }
+
+.faq-q { width: 100%; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; padding: 16px 20px; text-align: left; font-family: var(--font); font-size: 0.9rem; font-weight: 700; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+
+.faq-q:hover { background: var(--off); }
+
+.faq-chevron { width: 18px; height: 18px; stroke: var(--muted); flex-shrink: 0; transition: transform 0.2s; }
+
+.faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+.faq-a { max-height: 0px; overflow: hidden; transition: max-height 0.25s; }
+
+.faq-item.open .faq-a { max-height: 300px; }
+
+.faq-a-inner { padding: 0px 20px 16px; font-size: 0.85rem; color: var(--text-2); line-height: 1.7; }
+
+.faq-a-inner a { color: var(--cobalt); }
+
+.page-footer { background: var(--ink); padding: 0px; }
+
+.foot-main { padding: 40px 0px 28px; }
+
+.foot-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap; }
+
+.foot-brand-text { font-weight: 800; color: rgb(255, 255, 255); font-size: 0.97rem; letter-spacing: -0.02em; }
+
+.foot-links { display: flex; gap: 20px; flex-wrap: wrap; }
+
+.foot-links a { font-size: 0.8rem; color: rgba(255, 255, 255, 0.4); text-decoration: none; transition: color 0.17s; }
+
+.foot-links a:hover { color: var(--sky); }
+
+.foot-legal { font-size: 0.67rem; color: rgba(255, 255, 255, 0.2); line-height: 1.7; border-top: 1px solid rgba(255, 255, 255, 0.07); padding-top: 20px; margin-top: 20px; }
+
+body { padding-top: calc(64px + env(safe-area-inset-top,0px)) !important; }
+
+.gallery { padding: 72px 0px; }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+@media (max-width: 860px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 540px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+}
+
+.gallery-item { border-radius: 22px; overflow: hidden; box-shadow: rgba(11, 21, 35, 0.06) 0px 2px 12px; transition: 0.3s; position: relative; }
+
+.gallery-item:hover { box-shadow: rgba(11, 21, 35, 0.1) 0px 8px 40px; transform: translateY(-4px); }
+
+.gallery-item img { width: 100%; height: 260px; object-fit: cover; display: block; }
+
+@media (max-width: 600px) {
+  .gallery-item img { height: 200px; }
+}
+
+.gallery-caption { position: absolute; bottom: 0px; left: 0px; right: 0px; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); padding: 40px 16px 14px; color: rgb(255, 255, 255); font-size: 0.82rem; font-weight: 700; }
+
+</style>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<title>Contact Us — LendX Financial Inc.</title>
+<meta name="description" content="Contact LendX Financial. Reach our team by phone, email, or the contact form. We're here to help with your loan application, account, or any questions.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="LendX Financial Inc.">
+<link rel="canonical" href="https://lendxfinancial.com/contact.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta property="og:title" content="Contact Us — LendX Financial">
+<meta property="og:description" content="Get in touch with the LendX Financial team. Phone, email, or contact form — we respond within one business day.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lendxfinancial.com/contact.html">
+<meta property="og:image" content="https://lendxfinancial.com/favicon.svg">
+<meta property="og:site_name" content="LendX Financial">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#059669">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="LendX">
+<style id="lx-nav-css">
+/* ── LendX canonical nav ── */
+.nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.nav-inner{display:flex;align-items:center;gap:1rem;padding:.75rem 1.25rem;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:.55rem;text-decoration:none;flex-shrink:0}
+.lx-logo-svg{width:36px;height:36px;flex-shrink:0}
+.brand-wordmark{font-family:var(--font,'Nunito',sans-serif);font-size:1.15rem;font-weight:800;color:#111827;letter-spacing:-.02em}
+.brand-wordmark .x-accent{color:#059669}
+.nav-center{display:flex;align-items:center;gap:.15rem;flex:1;justify-content:center}
+.nav-center a{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.38rem .65rem;border-radius:6px;white-space:nowrap;transition:background .15s,color .15s}
+.nav-center a:hover{background:#ecfdf5;color:#059669}
+.nav-center a.active{background:#d1fae5;color:#059669}
+.nav-right{display:flex;align-items:center;gap:.55rem;flex-shrink:0}
+.n-btn{font-family:var(--font,'Nunito',sans-serif);font-size:.82rem;font-weight:700;padding:.42rem .9rem;border-radius:8px;text-decoration:none;cursor:pointer;transition:all .15s}
+.n-outline{border:1.5px solid #059669;color:#059669;background:transparent}
+.n-outline:hover{background:#ecfdf5}
+.n-solid{background:#059669;color:#fff;border:1.5px solid #059669}
+.n-solid:hover{background:#047857}
+.ham-btn{display:none;background:none;border:none;cursor:pointer;padding:.3rem;color:#111827}
+.nav-drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1000}
+.nav-drawer-overlay.open{display:block}
+.nav-drawer{position:fixed;top:0;right:-280px;width:260px;height:100%;background:#fff;z-index:1001;padding:1.5rem 1.25rem;display:flex;flex-direction:column;gap:.5rem;box-shadow:-4px 0 20px rgba(0,0,0,.12);transition:right .28s ease}
+.nav-drawer.open{right:0}
+.nav-drawer a{font-family:var(--font,'Nunito',sans-serif);font-size:.95rem;font-weight:600;color:#1f2937;text-decoration:none;padding:.55rem .75rem;border-radius:8px;transition:background .15s}
+.nav-drawer a:hover{background:#ecfdf5;color:#059669}
+.drawer-cta{margin-top:auto!important;background:#059669!important;color:#fff!important;text-align:center;padding:.7rem 1rem!important;border-radius:10px!important}
+.drawer-cta:hover{background:#047857!important}
+@media(max-width:900px){.nav-center{display:none}.ham-btn{display:flex}}
+@media(max-width:540px){.n-outline{display:none}}
+</style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1334.0" data-gr-ext-installed="">
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <svg class="lx-logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LendX Financial logo">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#14532d"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4ade80"/><stop offset="60%" stop-color="#16a34a"/><stop offset="100%" stop-color="#166534"/></linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#86efac"/><stop offset="60%" stop-color="#22c55e"/><stop offset="100%" stop-color="#16a34a"/></linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#064E3B"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+        </defs>
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"/>
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"/>
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"/>
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"/>
+      </svg>
+      <span class="brand-wordmark">Lend<span class="x-accent">X</span> Financial</span>
+    </a>
+    <div class="nav-center">
+      <a href="index.html" >Personal</a>
+      <a href="business.html" >Business</a>
+      <a href="marketplace.html" >Marketplace</a>
+      <a href="payday.html" >Payday Loans</a>
+      <a href="cheque-cashing.html" >Cheque Cashing</a>
+      <a href="private-mortgage.html" >Private Mortgage</a>
+    </div>
+    <div class="nav-right">
+      <a class="n-btn n-outline" href="tel:+16472003526">647-200-3526</a>
+      <a class="n-btn n-solid" href="#contact-form">Contact Us →</a>
+      <button class="ham-btn" onclick="toggleMenu()" aria-label="Menu">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="nav-drawer-overlay" id="nav-overlay" onclick="toggleMenu()"></div>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="index.html" >Personal Loans</a>
+  <a href="business.html" >Business Financing</a>
+  <a href="marketplace.html" >Marketplace</a>
+  <a href="payday.html" >Payday Loans</a>
+  <a href="cheque-cashing.html" >Cheque Cashing</a>
+  <a href="private-mortgage.html" >Private Mortgage</a>
+  <a href="calculator.html">Calculator</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About Us</a>
+  <a class="drawer-cta" href="#contact-form" onclick="toggleMenu()">Contact Us →</a>
+</div>
+<section class="page-hero">
+  <div class="wrap page-hero-inner">
+    <div class="hero-eyebrow">Support</div>
+    <h1>Contact Us</h1>
+    <p>Our team is here to help — with your application, account, or any questions about borrowing.</p>
+  </div>
+</section>
+
+<div class="contact-body">
+  <div class="contact-grid">
+
+    <!-- LEFT: Info -->
+    <div>
+      <div class="info-card">
+        <h2>Get in Touch</h2>
+        <div class="contact-item">
+          <div class="ci-icon">📞</div>
+          <div>
+            <div class="ci-label">Phone</div>
+            <div class="ci-val"><a href="tel:+16472003526">647-200-3526</a></div>
+            <div class="ci-val"><a href="tel:+18885192435">1-888-519-2435</a> (toll-free)</div>
+            <div class="ci-sub">Mon–Fri 9am–6pm ET</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">✉️</div>
+          <div>
+            <div class="ci-label">General Email</div>
+            <div class="ci-val"><a href="mailto:hello@lendxfinancial.com">hello@lendxfinancial.com</a></div>
+            <div class="ci-sub">We respond within 1 business day</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">🔒</div>
+          <div>
+            <div class="ci-label">Privacy Officer</div>
+            <div class="ci-val"><a href="mailto:privacy@lendxfinancial.com">privacy@lendxfinancial.com</a></div>
+            <div class="ci-sub">PIPEDA requests, data access, consent withdrawal</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">📍</div>
+          <div>
+            <div class="ci-label">Head Office</div>
+            <div class="ci-val">Toronto, Ontario, Canada</div>
+            <div class="ci-sub">LendX Financial Inc. (CBCA)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h2>Business Hours</h2>
+        <div class="hours-row"><span class="hours-day">Monday</span><span class="hours-time open">9:00 am – 6:00 pm ET</span></div>
+        <div class="hours-row"><span class="hours-day">Tuesday</span><span class="hours-time open">9:00 am – 6:00 pm ET</span></div>
+        <div class="hours-row"><span class="hours-day">Wednesday</span><span class="hours-time open">9:00 am – 6:00 pm ET</span></div>
+        <div class="hours-row"><span class="hours-day">Thursday</span><span class="hours-time open">9:00 am – 6:00 pm ET</span></div>
+        <div class="hours-row"><span class="hours-day">Friday</span><span class="hours-time open">9:00 am – 6:00 pm ET</span></div>
+        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">Closed</span></div>
+        <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">Closed</span></div>
+      </div>
+
+      <div class="info-card">
+        <h2>Department Contacts</h2>
+        <p style="font-size:.82rem;color:var(--muted);margin-bottom:14px;line-height:1.5">Reach the right team directly:</p>
+        <div>
+          <div class="dept-chip">💼 Loans — <a href="mailto:hello@lendxfinancial.com">hello@lendxfinancial.com</a></div>
+          <div class="dept-chip">⚖️ Legal / NEO — <a href="mailto:ceo@neolegalservices.com">ceo@neolegalservices.com</a></div>
+          <div class="dept-chip">🔒 Privacy — <a href="mailto:privacy@lendxfinancial.com">privacy@lendxfinancial.com</a></div>
+          <div class="dept-chip">📊 Investors — <a href="mailto:invest@lendxfinancial.com">invest@lendxfinancial.com</a></div>
+          <div class="dept-chip">🛠️ Support — <a href="mailto:support@lendxfinancial.com">support@lendxfinancial.com</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div>
+      <div class="form-card" id="form-card">
+        <h2>Send Us a Message</h2>
+        <p class="sub">Fill in the form below and we'll get back to you within one business day.</p>
+
+        <div class="alert error" id="form-alert"></div>
+        <div id="form-fields">
+          <div class="fg" style="margin-bottom:14px">
+            <div class="field">
+              <label class="fl" for="ct-first">First Name <span class="req">*</span></label>
+              <input class="fi" id="ct-first" type="text" placeholder="Jane" autocomplete="given-name">
+              <span class="fe" id="err-ct-first">Required</span>
+            </div>
+            <div class="field">
+              <label class="fl" for="ct-last">Last Name <span class="req">*</span></label>
+              <input class="fi" id="ct-last" type="text" placeholder="Smith" autocomplete="family-name">
+              <span class="fe" id="err-ct-last">Required</span>
+            </div>
+            <div class="field">
+              <label class="fl" for="ct-email">Email Address <span class="req">*</span></label>
+              <input class="fi" id="ct-email" type="email" placeholder="jane@email.com" autocomplete="email">
+              <span class="fe" id="err-ct-email">Valid email required</span>
+            </div>
+            <div class="field">
+              <label class="fl" for="ct-phone">Phone (optional)</label>
+              <input class="fi" id="ct-phone" type="tel" placeholder="416-555-0100" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="field" style="margin-bottom:14px">
+            <label class="fl">Subject <span class="req">*</span></label>
+            <div class="subject-tags" id="subject-tags">
+              <button class="stag active" type="button">Loan Application</button>
+              <button class="stag" type="button">Account / Repayment</button>
+              <button class="stag" type="button">Complaint</button>
+              <button class="stag" type="button">Privacy / PIPEDA</button>
+              <button class="stag" type="button">Investor Inquiry</button>
+              <button class="stag" type="button">Other</button>
+            </div>
+          </div>
+
+          <div class="fg full" style="margin-bottom:14px">
+            <div class="field">
+              <label class="fl" for="ct-msg">Message <span class="req">*</span></label>
+              <textarea class="fta fi" id="ct-msg" placeholder="How can we help? Please include your reference number if you have one."></textarea>
+              <span class="fe" id="err-ct-msg">Please enter your message</span>
+            </div>
+          </div>
+
+          <button class="submit-btn" type="button" id="ct-submit">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.3"><path d="M22 2L11 13"></path><path d="M22 2L15 22 11 13 2 9l20-7z"></path></svg>
+            Send Message
+          </button>
+          <p style="font-size:.68rem;color:var(--muted);text-align:center;margin-top:10px;line-height:1.6">
+            We respond within <strong>1 business day</strong>. For urgent loan matters call <a href="tel:+16472003526" style="color:var(--cobalt)">647-200-3526</a>.
+          </p>
+        </div>
+
+        <div id="success-content" class="success-content" style="display:none">
+          <div class="suc-icon">✅</div>
+          <div class="suc-title">Message Received!</div>
+          <div class="suc-sub">Thanks <strong id="suc-name"></strong> — we'll reply to <strong id="suc-email"></strong> within one business day (Mon–Fri, 9am–6pm ET).</div>
+          <a href="index.html" style="display:inline-block;margin-top:8px;font-size:.85rem;font-weight:700;color:var(--cobalt);text-decoration:none;">← Return to LendX home</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item open">
+      <button class="faq-q" type="button">
+        How quickly do I get a response?
+        <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">We respond to all enquiries within <strong>one business day</strong> (Mon–Fri, 9am–6pm ET). For urgent matters related to an active loan or payment, call us at <a href="tel:+16472003526">647-200-3526</a> for same-day assistance.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">
+        How do I check the status of my loan application?
+        <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">After completing the KYC identity verification step, our team reviews your application within <strong>1 business hour</strong>. You'll receive an email with your reference number. If you haven't heard back, email us at <a href="mailto:hello@lendxfinancial.com">hello@lendxfinancial.com</a> with your reference number.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">
+        How do I request early repayment?
+        <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">You can repay your loan early at any time with zero prepayment penalties. Contact us via email at <a href="mailto:hello@lendxfinancial.com">hello@lendxfinancial.com</a> or call <a href="tel:+16472003526">647-200-3526</a> to arrange early repayment. You'll need your reference number.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">
+        How do I access or delete my personal data (PIPEDA)?
+        <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Under Canada's PIPEDA, you have the right to access, correct, or withdraw consent for your personal information. Send a written request to <a href="mailto:privacy@lendxfinancial.com">privacy@lendxfinancial.com</a>. Note that certain records must be retained for up to 7 years per FINTRAC regulations.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">
+        How do I file a complaint?
+        <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">We take all complaints seriously. Contact us at <a href="mailto:support@lendxfinancial.com">support@lendxfinancial.com</a> or call <a href="tel:+16472003526">647-200-3526</a>. We'll acknowledge within 2 business days and resolve within 10 business days. If unresolved, escalate to <strong>Consumer Protection Ontario</strong> (Ministry of Public and Business Service Delivery) or the <strong>Financial Consumer Agency of Canada (FCAC)</strong>.</div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">
+        I'm having trouble repaying — what should I do?
+        <svg class="faq-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Contact us <strong>before your due date</strong> — we're obligated under the <em>Payday Loans Act, 2008</em> to offer an extended repayment plan in qualifying circumstances. Do not wait until after the due date. You can also contact the <strong>Credit Counselling Society</strong> at <a href="tel:18885278999">1-888-527-8999</a> (free, non-profit) for independent advice.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="wrap" style="text-align:center;margin-bottom:36px">
+    <div style="display:inline-block;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#22c55e;margin-bottom:10px">Real People, Real Stories</div>
+    <h2 style="font-size:1.8rem;font-weight:900;color:var(--ink,#0b1523);margin:0 auto;max-width:600px;line-height:1.25">Canadians choosing LendX Financial.</h2>
+  </div>
+  <div class="wrap">
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-16.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Approved and relieved — the LendX way.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-17.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Technology meets trust in lending.</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://lendx-liard.vercel.app/images/img-18.jpg" alt="Happy Canadians using LendX" loading="lazy">
+        <div class="gallery-caption">Fair rates, fast decisions, real people.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="page-footer">
+  <div class="wrap">
+    <div class="foot-main">
+      <div class="foot-inner">
+        <div>
+          <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px">
+            <svg height="28" width="auto" viewBox="0 0 44 44" fill="none" role="img" aria-label="LendX Financial logo">
+        <defs>
+          <linearGradient id="lx-g1" x1="5" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#14532d"></stop>
+            <stop offset="100%" stop-color="#22c55e"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g2" x1="39" y1="5" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#4ade80"></stop>
+            <stop offset="60%" stop-color="#16a34a"></stop>
+            <stop offset="100%" stop-color="#166534"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g3" x1="5" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#86efac"></stop>
+            <stop offset="60%" stop-color="#22c55e"></stop>
+            <stop offset="100%" stop-color="#16a34a"></stop>
+          </linearGradient>
+          <linearGradient id="lx-g4" x1="39" y1="39" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#064E3B"></stop>
+            <stop offset="100%" stop-color="#22c55e"></stop>
+          </linearGradient>
+        </defs>
+        <!-- Upper-left leaf (dark green) -->
+        <path d="M5 5 C18 2 26 16 22 22 C16 26 2 18 5 5Z" fill="url(#lx-g1)"></path>
+        <!-- Upper-right leaf (bright green) -->
+        <path d="M39 5 C44 18 26 16 22 22 C18 28 26 2 39 5Z" fill="url(#lx-g2)"></path>
+        <!-- Lower-left leaf (mid green) -->
+        <path d="M5 39 C0 26 18 28 22 22 C26 16 18 42 5 39Z" fill="url(#lx-g3)"></path>
+        <!-- Lower-right leaf (deep green) -->
+        <path d="M39 39 C26 42 18 28 22 22 C28 18 42 26 39 39Z" fill="url(#lx-g4)"></path>
+        </svg>
+            <span class="foot-brand-text">LendX Financial</span>
+          </div>
+          <div style="font-size:.8rem;color:rgba(255,255,255,.3);">Toronto, Ontario, Canada<br><a href="mailto:hello@lendxfinancial.com" style="color:rgba(255,255,255,.3);text-decoration:none;">hello@lendxfinancial.com</a></div>
+        </div>
+        <div class="foot-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="legal.html">Legal &amp; Compliance</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="foot-legal">© 2026 LendX Financial Inc. All rights reserved. Payday lender licence pending under Ontario's <em>Payday Loans Act, 2008</em>. Not available in all provinces. This website does not constitute legal or financial advice.</div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowmode="open"><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
