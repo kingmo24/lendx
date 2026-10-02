@@ -920,6 +920,13 @@ footer { background: rgb(15, 23, 42); border-top: 1px solid rgba(255, 255, 255, 
 
 <style id="lx-nav-override">
 /* ══ LendX nav override — always wins ══ */
+/* Force green brand vars regardless of page-level CSS */
+:root{
+  --cobalt:#059669!important;
+  --cobalt-2:#047857!important;
+  --cobalt-light:#d1fae5!important;
+  --nav-border:#e5e7eb!important;
+}
 .nav{position:sticky!important;top:0!important;z-index:900!important;background:#fff!important;
   border-bottom:1px solid #e5e7eb!important;box-shadow:0 1px 6px rgba(0,0,0,.06)!important;
   backdrop-filter:none!important}
@@ -934,22 +941,22 @@ footer { background: rgb(15, 23, 42); border-top: 1px solid rgba(255, 255, 255, 
 .brand-wordmark .x-accent{color:#059669!important}
 .nav-center{display:flex!important;align-items:center!important;gap:.15rem!important;
   flex:1!important;justify-content:center!important}
-.nav-center a{font-size:.82rem!important;font-weight:600!important;color:#1f2937!important;
+.nav-center a{font-size:.82rem!important;font-weight:600!important;color:#374151!important;
   text-decoration:none!important;padding:.38rem .65rem!important;border-radius:6px!important;
-  white-space:nowrap!important;transition:background .15s,color .15s!important}
+  white-space:nowrap!important;background:transparent!important;border:none!important}
 .nav-center a:hover{background:#ecfdf5!important;color:#059669!important}
 .nav-center a.active{background:#d1fae5!important;color:#059669!important}
 .nav-right{display:flex!important;align-items:center!important;gap:.55rem!important;flex-shrink:0!important}
 .n-btn{font-size:.82rem!important;font-weight:700!important;padding:.42rem .9rem!important;
   border-radius:8px!important;text-decoration:none!important;cursor:pointer!important;
   transition:all .15s!important;display:inline-flex!important;align-items:center!important}
-.n-outline{border:1.5px solid #059669!important;color:#059669!important;background:transparent!important}
+.n-outline{border:1.5px solid #059669!important;color:#059669!important;background:transparent!important;box-shadow:none!important}
 .n-outline:hover{background:#ecfdf5!important}
-.n-solid{background:#059669!important;color:#fff!important;border:1.5px solid #059669!important}
+.n-solid{background:#059669!important;color:#fff!important;border:1.5px solid #059669!important;box-shadow:none!important}
 .n-solid:hover{background:#047857!important}
 .ham-btn{background:none!important;border:none!important;cursor:pointer!important;
   padding:.3rem!important;color:#111827!important;line-height:1!important}
-/* Drawer — hidden by default, shown via JS class */
+/* Drawer */
 .nav-drawer-overlay{position:fixed!important;inset:0!important;background:rgba(0,0,0,.35)!important;
   z-index:1000!important;display:none!important}
 .nav-drawer-overlay.open{display:block!important}
@@ -961,12 +968,11 @@ footer { background: rgb(15, 23, 42); border-top: 1px solid rgba(255, 255, 255, 
 .nav-drawer.open{right:0!important}
 .nav-drawer a{font-size:.95rem!important;font-weight:600!important;color:#1f2937!important;
   text-decoration:none!important;padding:.55rem .75rem!important;border-radius:8px!important;
-  transition:background .15s!important;display:block!important}
+  display:block!important;background:transparent!important}
 .nav-drawer a:hover,.nav-drawer a.active{background:#ecfdf5!important;color:#059669!important}
 .drawer-cta{margin-top:auto!important;background:#059669!important;color:#fff!important;
   text-align:center!important;padding:.7rem 1rem!important;border-radius:10px!important}
 .drawer-cta:hover{background:#047857!important}
-/* Responsive */
 @media(max-width:900px){
   .nav-center{display:none!important}
   .ham-btn{display:flex!important;align-items:center!important;justify-content:center!important}
